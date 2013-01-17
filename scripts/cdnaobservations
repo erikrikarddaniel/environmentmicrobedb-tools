@@ -28,6 +28,7 @@ FORMATS = {
   },
 }
 DEFAULT_FORMAT = 'json'
+NUM_LINES_REPORT = 10000	# Print a period for each 10000 line of sam input read
 
 def formats(format = false)
   if format and FORMATS[format]
@@ -185,7 +186,7 @@ end
 opt_parser = OptionParser.new do |opts|
   opts.banner = <<BANNER
 cdnaobservations: Parses individual cDNA ORFs annotations plus a SAM formatted mapping of reads to ORFs, and outputs a summary as a json file
-  cdnaobservations [options] file0..filen
+  cdnaobservations [options] file.sam
 BANNER
 
   opts.on "--format=format", "Output format, default #{DEFAULT_FORMAT}"  do |v| 
@@ -245,17 +246,13 @@ JSONHEADER
     annotation_parser(v, :orf2id_line_parser)
   end
 
-  opts.on "--read2orfmap=FILE", "Map (sam format) of individual reads against ORFs" do |v|
-    @options[:read2orfmap] = v
-  end
-
   opts.on "-v", "--verbose", "Be verbose"  do |v| 
     @options[:verbose] = v 
   end
 end
 begin
   opt_parser.parse!
-  mandatory = FORMATS[@options[:format]]['mandopts'] + [ :read2orfmap, :header ]	# Fill in with mandatory option names (i.e. starting with :)
+  mandatory = FORMATS[@options[:format]]['mandopts'] + [ :header ]	# Fill in with mandatory option names (i.e. starting with :)
   missing = mandatory.select { |param| @options[param].nil? }
   unless missing.empty?
     warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
@@ -321,7 +318,8 @@ begin
 	io = File.new(file)
       end
     end
-    io.each do |line|
+    io.each_with_index do |line,i|
+      STDERR.print "." if i % NUM_LINES_REPORT == 0 and @options[:verbose]
       next if line[0] == '@'
       line.chomp!
       fields = line.split("\t")
@@ -332,6 +330,7 @@ begin
 	warn "Found no annotation for #{fields[2]}"
       end
     end
+    STDERR.puts if @options[:verbose]
   end
 rescue
   warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
