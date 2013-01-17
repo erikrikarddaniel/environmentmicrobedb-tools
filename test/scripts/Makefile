@@ -13,12 +13,12 @@ all: cdnaobservations
 clean:
 	@rm -rf *.out *.tmp err
 
-cdnaobservations: cdnaobservations.00 cdnaobservations.02
+cdnaobservations: cdnaobservations.00 cdnaobservations.01
 
 cdnaobservations.00:
 	@../../scripts/cdnaobservations --header > $@.out
 	@$(CHECK)
 
-cdnaobservations.02:
+cdnaobservations.01:
 	@../../scripts/cdnaobservations --header=$@.header --read2orfmap=$@.sam --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
 	@$(CHECK)
