@@ -171,7 +171,7 @@ def orf2id_line_parser(type, db, fields)
 end
 
 def jsoncall()
-  warn "Printing #{@observations.keys.length} observations in JSON format" if @options[:verbose]
+  warn "Printing #{@observations.values.inject(0) { |n,o| n + o.n_specific } } observations with #{@observations.values.length} annotation patterns in JSON format" if @options[:verbose]
   print <<JSON
 {
 #{`cat "#{@options[:header]}"`}
