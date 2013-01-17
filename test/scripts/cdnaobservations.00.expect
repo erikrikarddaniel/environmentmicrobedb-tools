@@ -1,0 +1,25 @@
+# This is a template for the header information required in a cDNA observations
+# JSON file for import into an environmentmicrobedb database.
+#
+# The file will be included verbatim though stripped of comments (like this
+# line) and empty lines.
+#
+# One file per sample should be generated, there are no provisions for anything
+# else unfortunately.
+#
+  "project": {
+    "name": "__PROJECT_NAME__",				# E.g. Atlantic transcriptomics 2010
+    "sample_sets": [
+      {
+	"name": "__SAMPLE_SET_NAME__",			# E.g. station 1 transcriptomes
+	"samples": [
+	  { "code": "__SAMPLE_CODE__" }			# E.g. Ca for added Carbon, replicate a
+	]
+      }
+    ]
+  },
+  "annotation_source": {
+    "dbname": "__DBNAME__",				# E.g NCBI NR
+    "dbversion": "__DBVERSION__",			# Perhaps download date unless there is an official version number
+    "algorithm": "__SHORT_DESCRIPTION_OF_ALGORITHM__"	# Something like 'Velvet assembly, FragGeneScan ORF calling, blastp, Megan LCA' perhaps
+  }

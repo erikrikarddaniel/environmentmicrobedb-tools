@@ -1,0 +1,306 @@
+{
+  "project": {
+    "name": "LNU:Atlantic_2010",
+    "sample_sets": [
+      {
+        "name": "Metatranscriptomes",
+        "samples": [
+          {
+            "code": "Ca"
+          }
+        ]
+      }
+    ]
+  },
+  "annotation_source": {
+    "dbname": "NCBI NR",
+    "dbversion": "20121204",
+    "algorithm": "Velvet assembly, FragGeneScan ORF calling, blastp, Megan LCA"
+  },
+  "cdna_observations": [
+    {
+      "n_specific": 8,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "2"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 0,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "204455"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 4,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "31989"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 5,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "28211"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 38,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "436308"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    },
+    {
+      "n_specific": 4,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "436308"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00368"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    },
+    {
+      "n_specific": 13,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "1224"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 15,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "1224"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K07248"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 37,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "1224"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00135"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 43,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "1007082"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    },
+    {
+      "n_specific": 26,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "54526"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00128"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 2,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "54526"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00135"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
+        }
+      ]
+    },
+    {
+      "n_specific": 17,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "338191"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    },
+    {
+      "n_specific": 259,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "338190"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    },
+    {
+      "n_specific": 607,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "338190"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "K00368"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Copper-containing nitrite reductase (EC 1.7.2.1)"
+        }
+      ]
+    }
+  ]
+}

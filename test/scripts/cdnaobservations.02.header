@@ -1,0 +1,16 @@
+  "project": {
+    "name": "LNU:Atlantic_2010",
+    "sample_sets": [
+      {
+	"name": "Metatranscriptomes",
+	"samples": [
+	  { "code": "Ca" }
+	]
+      }
+    ]
+  },
+  "annotation_source": {
+    "dbname": "NCBI NR",
+    "dbversion": "20121204",
+    "algorithm": "Velvet assembly, FragGeneScan ORF calling, blastp, Megan LCA"
+  },
