@@ -1,0 +1,78 @@
+{
+  "project": {
+    "name": "LNU:Atlantic_2010",
+    "sample_sets": [
+      {
+        "name": "Metatranscriptomes",
+        "samples": [
+          {
+            "code": "Ca"
+          }
+        ]
+      }
+    ]
+  },
+  "annotation_source": {
+    "dbname": "NCBI NR",
+    "dbversion": "20121204",
+    "algorithm": "Velvet assembly, FragGeneScan ORF calling, blastp, Megan LCA"
+  },
+  "cdna_observations": [
+    {
+      "n_specific": 67,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "856793"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Not assigned"
+        }
+      ]
+    },
+    {
+      "n_specific": 12,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "-1"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "No hits"
+        },
+        {
+          "source_db": "SEED",
+          "name": "Not assigned"
+        }
+      ]
+    },
+    {
+      "n_specific": 60,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "-2"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "KEGG",
+          "name": "Not assigned"
+        },
+        {
+          "source_db": "SEED",
+          "name": "LSU ribosomal protein L2p (L8e)"
+        }
+      ]
+    }
+  ]
+}

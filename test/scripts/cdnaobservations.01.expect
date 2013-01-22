@@ -39,26 +39,6 @@
       ]
     },
     {
-      "n_specific": 0,
-      "n_unspecific": 0,
-      "taxons": [
-        {
-          "source_db": "NCBI",
-          "source_identifier": "204455"
-        }
-      ],
-      "functions": [
-        {
-          "source_db": "KEGG",
-          "name": "K00128"
-        },
-        {
-          "source_db": "SEED",
-          "name": "Aldehyde dehydrogenase A (EC 1.2.1.22)"
-        }
-      ]
-    },
-    {
       "n_specific": 4,
       "n_unspecific": 0,
       "taxons": [

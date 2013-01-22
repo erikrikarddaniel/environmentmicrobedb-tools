@@ -100,6 +100,25 @@ JSON
   def taxons
     annotations.find_all { |a| a.type == 'taxon' }
   end
+
+  def count_per_type_db
+    r = {}
+    annotations.each do |a|
+      r[a.type_db] ||= 0
+      r[a.type_db] += 1
+    end
+    r
+  end
+
+  def delete_duplicates!
+    last_type_db = nil
+    new_annotations = []
+    annotations.sort_by { |a| a.type_db }.each do |annot|
+      new_annotations << annot unless ( last_type_db and last_type_db == annot.type_db )
+      last_type_db = annot.type_db
+    end
+    @annotations = new_annotations
+  end
 end
 
 class Annotation
@@ -121,10 +140,10 @@ class Annotation
   end
 
   def ==(annot)
-    return false if type != annot.type
-    return false if db != annot.db
-    return false if id != annot.id
-    return false if name != annot.name
+    return false if type and annot.type and type != annot.type
+    return false if db and annot.db and db != annot.db
+    return false if id and annot.id and id != annot.id
+    return false if name and annot.name and name != annot.name
     true
   end
 
@@ -139,6 +158,10 @@ class Annotation
       return n
     end
     return self.id <=> annot.name
+  end
+
+  def type_db
+    "#{type}:#{db}"
   end
 end
 
@@ -177,10 +200,25 @@ def jsoncall()
 {
 #{`cat "#{@options[:header]}"`}
   "cdna_observations": [
-#{@observations.keys.map { |k| @observations[k].json("    ") }.join(",")}
+#{@observations.keys.find_all { |k| @observations[k].n_specific > 0 or @observations[k].n_unspecific > 0 }.map { |k| @observations[k].json("    ") }.join(",")}
   ]
 }
 JSON
+end
+
+def _find_longest_annotation_match(readname)
+  unless @annotations[readname]
+    i = -2
+    while (r = readname[0..i]).length >= @options[:trunclen] and not @annotations[readname]
+      if @annotations[r]
+	#warn "#{__LINE__}: Found\n\t#{r} for\n\t#{readname}"
+	@annotations[readname] = @annotations[r]
+	break
+      end
+      i -= 1
+    end
+  end
+  @annotations[readname]
 end
 
 opt_parser = OptionParser.new do |opts|
@@ -267,7 +305,7 @@ end
 
 warn "*** You have NO annotations, press Ctrl-C if this is in error, and correct your command line (try --verbose) ***" if @annotations == {}
 
-warn "Parsed annotations for #{@annotations.keys.length} ORFs" if @options[:verbose]
+warn "Parsed annotations for #{@annotations.keys.length} annotation targets" if @options[:verbose]
 
 
 unless FORMATS.keys.find { |f| f == @options[:format] }
@@ -276,30 +314,41 @@ unless FORMATS.keys.find { |f| f == @options[:format] }
   exit 1
 end
 
+# Warn about AnnotationGroups with multiple annotations of the same type:db
+warn "Checking for duplicate annotations of the same type and from the same db" if @options[:verbose]
+warnings = 0
+@annotations.keys.each do |target|
+  annot = @annotations[target]
+  counts = annot.count_per_type_db
+  #warn "#{__LINE__}: counts: #{counts}"
+  if ( dups = counts.keys.find_all { |t| counts[t] > 1 } ).length > 0
+    #warn "Read '#{target}' has multiple annotations of the same type and db: #{dups.map { |d| "#{d}: #{counts[d]}" }}"
+    annot.delete_duplicates!
+    warnings += 1
+  #else
+    #warn "#{__LINE__}: Read '#{target}' has no multiple annotations"
+  end
+end
+warn "Found #{warnings} targets with multiple annotations, out of a total of #{@annotations.keys.length} targets. Only the first of each type kept." if @options[:verbose]
+
 # Reduce AnnotationGroup objects to unique
 @observations = {}
+num_unique = 0
 @annotations.keys.each do |annotkey|
-  if identical_group = @observations.keys.find { |ag| ag == @annotations[annotkey] }
-    @annotations[annotkey] = identical_group
-  else
-    @observations[@annotations[annotkey]] = @annotations[annotkey]
-  end
-end
-
-def _find_longest_annotation_match(readname)
-  unless @annotations[readname]
-    i = -2
-    while (r = readname[0..i]).length >= @options[:trunclen] and not @annotations[readname]
-      if @annotations[r]
-	#warn "#{__LINE__}: Found\n\t#{r} for\n\t#{readname}"
-	@annotations[readname] = @annotations[r]
-	break
-      end
-      i -= 1
+  ag = nil
+  begin
+    if identical_group = @observations.keys.find { |ag| ag == @annotations[annotkey] }
+      @annotations[annotkey] = identical_group
+    else
+      @observations[@annotations[annotkey]] = @annotations[annotkey]
+      num_unique += 1
     end
+  rescue
+    warn "Failed to compare #{annotkey}: #{@annotations[annotkey]} and #{ag}: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit 2
   end
-  @annotations[readname]
 end
+warn "Reduced the number of unique AnnotationGroups to #{num_unique}" if @options[:verbose]
 
 # Loop over infiles
 begin
@@ -327,7 +376,7 @@ begin
       if a = _find_longest_annotation_match(fields[2])
 	a.n_specific += 1
       else
-	warn "Found no annotation for #{fields[2]}"
+	warn "Found no annotation for #{fields[2]}" if @options[:verbose]
       end
     end
     STDERR.puts if @options[:verbose]
