@@ -19,22 +19,6 @@
   },
   "cdna_observations": [
     {
-      "n_specific": 67,
-      "n_unspecific": 0,
-      "taxons": [
-        {
-          "source_db": "NCBI",
-          "source_identifier": "856793"
-        }
-      ],
-      "functions": [
-        {
-          "source_db": "SEED",
-          "name": "Not assigned"
-        }
-      ]
-    },
-    {
       "n_specific": 12,
       "n_unspecific": 0,
       "taxons": [
@@ -71,6 +55,22 @@
         {
           "source_db": "SEED",
           "name": "LSU ribosomal protein L2p (L8e)"
+        }
+      ]
+    },
+    {
+      "n_specific": 67,
+      "n_unspecific": 0,
+      "taxons": [
+        {
+          "source_db": "NCBI",
+          "source_identifier": "856793"
+        }
+      ],
+      "functions": [
+        {
+          "source_db": "SEED",
+          "name": "Not assigned"
         }
       ]
     }

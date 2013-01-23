@@ -45,7 +45,8 @@ end
   input_separator: "\t",
   trunclen: 40
 }
-@annotations = { }	# Will contain keys for each ORF name pointing to a list of annotations
+@target2annotation_groups = { }	# Will contain keys for each target name pointing to a list of annotations
+@annotation_group2targets = { }	# Will contain a reverse map to the above from object_id to target string
 
 class AnnotationGroup
   attr_accessor :annotations, :n_specific, :n_unspecific
@@ -55,10 +56,6 @@ class AnnotationGroup
     @n_specific = 0
     @n_unspecific = 0
     @sorted = false
-  end
-
-  def to_s
-    "AnnotationGroup, annotations: [#{annotations.map { |a| a.to_s }.join(", ")}]"
   end
 
   def json(indent)
@@ -119,6 +116,11 @@ JSON
     end
     @annotations = new_annotations
   end
+
+  def to_s
+    self.sort!
+    r = "AnnotationGroup: " + annotations.map { |a| a.to_s }.join("|")
+  end
 end
 
 class Annotation
@@ -129,10 +131,6 @@ class Annotation
     @db = params[:db]
     @id = params[:id]
     @name = params[:name]
-  end
-
-  def to_s
-    "Annotation: type: #{type}, db: #{db}, id: #{id}, name: #{name}"
   end
 
   def json(indent = "    ")
@@ -157,11 +155,19 @@ class Annotation
     if ( n = self.name <=> annot.name ) != 0
       return n
     end
-    return self.id <=> annot.name
+    return self.id <=> annot.id
   end
 
   def type_db
     "#{type}:#{db}"
+  end
+
+  def to_s
+    r = type
+    r += ":#{db}" if db
+    r += ":#{name}" if name
+    r += ":#{id}" if id
+    r
   end
 end
 
@@ -184,41 +190,44 @@ end
 def name2orf_line_parser(type, db, fields)
   name = fields.shift
   fields.each do |f|
-    @annotations[f] ||= AnnotationGroup.new
-    @annotations[f].annotations << Annotation.new(type: type, db: db, name: name)
+    @target2annotation_groups[f] ||= AnnotationGroup.new
+    @annotation_group2targets[@target2annotation_groups[f].object_id] = f
+    @target2annotation_groups[f].annotations << Annotation.new(type: type, db: db, name: name)
   end
 end
 
 def orf2id_line_parser(type, db, fields)
-  @annotations[fields[0]] ||= AnnotationGroup.new
-  @annotations[fields[0]].annotations << Annotation.new(type: type, db: db, id: fields[1])
+  @target2annotation_groups[fields[0]] ||= AnnotationGroup.new
+    @annotation_group2targets[@target2annotation_groups[fields[0]].object_id] = fields[0]
+  @target2annotation_groups[fields[0]].annotations << Annotation.new(type: type, db: db, id: fields[1])
 end
 
 def jsoncall()
-  warn "Printing #{@observations.values.inject(0) { |n,o| n + o.n_specific } } observations with #{@observations.values.length} annotation patterns in JSON format" if @options[:verbose]
+  warn "Printing #{@observations.inject(0) { |n,o| n + o.n_specific } } observations with #{@observations.length} annotation patterns in JSON format" if @options[:verbose]
   print <<JSON
 {
 #{`cat "#{@options[:header]}"`}
   "cdna_observations": [
-#{@observations.keys.find_all { |k| @observations[k].n_specific > 0 or @observations[k].n_unspecific > 0 }.map { |k| @observations[k].json("    ") }.join(",")}
+#{@observations.find_all { |ag| ag.n_specific > 0 or ag.n_unspecific > 0 }.sort_by { |ag| ag.to_s }.map { |ag| ag.json("    ") }.join(",")}
   ]
 }
 JSON
 end
+## #{@target2annotation_groups.keys.find_all { |k| @target2annotation_groups[k].n_specific > 0 or @target2annotation_groups[k].n_unspecific > 0 }.map { |k| @target2annotation_groups[k].json("    ") }.join(",")}
 
 def _find_longest_annotation_match(readname)
-  unless @annotations[readname]
+  unless @target2annotation_groups[readname]
     i = -2
-    while (r = readname[0..i]).length >= @options[:trunclen] and not @annotations[readname]
-      if @annotations[r]
+    while (r = readname[0..i]).length >= @options[:trunclen] and not @target2annotation_groups[readname]
+      if @target2annotation_groups[r]
 	#warn "#{__LINE__}: Found\n\t#{r} for\n\t#{readname}"
-	@annotations[readname] = @annotations[r]
+	@target2annotation_groups[readname] = @target2annotation_groups[r]
 	break
       end
       i -= 1
     end
   end
-  @annotations[readname]
+  @target2annotation_groups[readname]
 end
 
 opt_parser = OptionParser.new do |opts|
@@ -303,9 +312,9 @@ rescue OptionParser::InvalidOption, OptionParser::MissingArgument
   exit 1
 end
 
-warn "*** You have NO annotations, press Ctrl-C if this is in error, and correct your command line (try --verbose) ***" if @annotations == {}
+warn "*** You have NO annotations, press Ctrl-C if this is in error, and correct your command line (try --verbose) ***" if @target2annotation_groups == {}
 
-warn "Parsed annotations for #{@annotations.keys.length} annotation targets" if @options[:verbose]
+warn "Parsed annotations for #{@target2annotation_groups.keys.length} annotation targets" if @options[:verbose]
 
 
 unless FORMATS.keys.find { |f| f == @options[:format] }
@@ -317,8 +326,8 @@ end
 # Warn about AnnotationGroups with multiple annotations of the same type:db
 warn "Checking for duplicate annotations of the same type and from the same db" if @options[:verbose]
 warnings = 0
-@annotations.keys.each do |target|
-  annot = @annotations[target]
+@target2annotation_groups.keys.each do |target|
+  annot = @target2annotation_groups[target]
   counts = annot.count_per_type_db
   #warn "#{__LINE__}: counts: #{counts}"
   if ( dups = counts.keys.find_all { |t| counts[t] > 1 } ).length > 0
@@ -329,26 +338,25 @@ warnings = 0
     #warn "#{__LINE__}: Read '#{target}' has no multiple annotations"
   end
 end
-warn "Found #{warnings} targets with multiple annotations, out of a total of #{@annotations.keys.length} targets. Only the first of each type kept." if @options[:verbose]
+warn "Found #{warnings} targets with multiple annotations sharing type and db, out of a total of #{@target2annotation_groups.keys.length} targets. Only the first of each type kept." if @options[:verbose]
 
 # Reduce AnnotationGroup objects to unique
-@observations = {}
+@observations = []
 num_unique = 0
-@annotations.keys.each do |annotkey|
-  ag = nil
-  begin
-    if identical_group = @observations.keys.find { |ag| ag == @annotations[annotkey] }
-      @annotations[annotkey] = identical_group
-    else
-      @observations[@annotations[annotkey]] = @annotations[annotkey]
-      num_unique += 1
-    end
-  rescue
-    warn "Failed to compare #{annotkey}: #{@annotations[annotkey]} and #{ag}: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
-    exit 2
+now = Time.now
+warn "Starting search for unique AnnotationGroups, #{@target2annotation_groups.keys.length} groups now" if @options[:verbose]
+last_one = nil
+@target2annotation_groups.values.sort_by { |ag| ag.to_s }.each do |ag|
+  if last_one and last_one.to_s == ag.to_s
+    target = @annotation_group2targets[ag.object_id]
+    @target2annotation_groups[target] = last_one
+  else
+    @observations << ag
+    num_unique += 1
+    last_one = ag
   end
 end
-warn "Reduced the number of unique AnnotationGroups to #{num_unique}" if @options[:verbose]
+warn "Reduced the number of unique AnnotationGroups to #{num_unique} (used #{sprintf "%2.2f", Time.now - now} seconds for that)" if @options[:verbose]
 
 # Loop over infiles
 begin
