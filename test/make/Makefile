@@ -9,6 +9,7 @@ clean:
 
 environmentmicrobedb.fraggenescan.makefile: environmentmicrobedb.fraggenescan.makefile.00
 
+# Tests the basic functionality. Since %.fgs.length_sum is dependent on %.fgs.faa, the latter is also tested.
 environmentmicrobedb.fraggenescan.makefile.00:
-	@cd $@.d; make -f environmentmicrobedb.fraggenescan.makefile -n $@.contigs.fgs.faa | grep -v "^make" > $@.out
+	@cd $@.d; make -f environmentmicrobedb.fraggenescan.makefile -n $@.contigs.fgs.length_sum | grep -v "^make" > $@.out
 	@cd $@.d; $(CHECK)

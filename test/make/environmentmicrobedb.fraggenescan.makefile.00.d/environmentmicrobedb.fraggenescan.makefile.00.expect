@@ -1,1 +1,3 @@
 /proj/b2010008/FragGeneScan/run_FragGeneScan.pl -genome=environmentmicrobedb.fraggenescan.makefile.00.fna -out=environmentmicrobedb.fraggenescan.makefile.00.contigs.fgs -complete=1 -train=complete
+grep -o "length_[0-9]*" environmentmicrobedb.fraggenescan.makefile.00.contigs.fgs.faa | sed 's/length_//' | readlensum > environmentmicrobedb.fraggenescan.makefile.00.contigs.fgs.length_sum
+rm environmentmicrobedb.fraggenescan.makefile.00.contigs.fgs.faa
