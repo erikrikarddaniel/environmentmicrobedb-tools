@@ -1,0 +1,1 @@
+/proj/b2010008/FragGeneScan/run_FragGeneScan.pl -genome=environmentmicrobedb.fraggenescan.makefile.00.fna -out=environmentmicrobedb.fraggenescan.makefile.00.contigs.fgs -complete=1 -train=complete
