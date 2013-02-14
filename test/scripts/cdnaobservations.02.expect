@@ -19,7 +19,7 @@
   },
   "cdna_observations": [
     {
-      "n_specific": 12,
+      "n_specific": 5,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "n_specific": 60,
+      "n_specific": 31,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "n_specific": 67,
+      "n_specific": 29,
       "n_unspecific": 0,
       "taxons": [
         {

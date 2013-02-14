@@ -297,6 +297,7 @@ JSONHEADER
     @options[:verbose] = v 
   end
 end
+
 begin
   opt_parser.parse!
   mandatory = FORMATS[@options[:format]]['mandopts'] + [ :header ]	# Fill in with mandatory option names (i.e. starting with :)
@@ -315,7 +316,6 @@ end
 warn "*** You have NO annotations, press Ctrl-C if this is in error, and correct your command line (try --verbose) ***" if @target2annotation_groups == {}
 
 warn "Parsed annotations for #{@target2annotation_groups.keys.length} annotation targets" if @options[:verbose]
-
 
 unless FORMATS.keys.find { |f| f == @options[:format] }
   warn "Format #{@options[:format]} unsupported"
@@ -375,12 +375,15 @@ begin
 	io = File.new(file)
       end
     end
+    last_hit = ''
     io.each_with_index do |line,i|
       STDERR.print "." if i % NUM_LINES_REPORT == 0 and @options[:verbose]
       next if line[0] == '@'
       line.chomp!
       fields = line.split("\t")
       next if fields[2] == '*'
+      next if fields[0] == last_hit
+      last_hit = fields[0]
       if a = _find_longest_annotation_match(fields[2])
 	a.n_specific += 1
       else

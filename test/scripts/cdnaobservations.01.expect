@@ -19,7 +19,7 @@
   },
   "cdna_observations": [
     {
-      "n_specific": 13,
+      "n_specific": 7,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "n_specific": 8,
+      "n_specific": 4,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "n_specific": 5,
+      "n_specific": 2,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "n_specific": 4,
+      "n_specific": 2,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "n_specific": 26,
+      "n_specific": 13,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "n_specific": 37,
+      "n_specific": 18,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "n_specific": 2,
+      "n_specific": 1,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "n_specific": 607,
+      "n_specific": 310,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "n_specific": 4,
+      "n_specific": 3,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "n_specific": 15,
+      "n_specific": 8,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "n_specific": 43,
+      "n_specific": 20,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -235,7 +235,7 @@
       ]
     },
     {
-      "n_specific": 259,
+      "n_specific": 124,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "n_specific": 17,
+      "n_specific": 8,
       "n_unspecific": 0,
       "taxons": [
         {
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "n_specific": 38,
+      "n_specific": 19,
       "n_unspecific": 0,
       "taxons": [
         {
