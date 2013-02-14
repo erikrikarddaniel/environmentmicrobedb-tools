@@ -274,7 +274,7 @@ BANNER
     "dbname": "__DBNAME__",				# E.g NCBI NR
     "dbversion": "__DBVERSION__",			# Perhaps download date unless there is an official version number
     "algorithm": "__SHORT_DESCRIPTION_OF_ALGORITHM__"	# Something like 'Velvet assembly, FragGeneScan ORF calling, blastp, Megan LCA' perhaps
-  }
+  },
 JSONHEADER
       exit 0
     end
