@@ -1,0 +1,5 @@
+SBATCH_M4_COMMON_DEFINITIONS =-D__PROJECT__=$(PROJECT) -D__EMAIL__=$(EMAIL) -D__PREFIX__=$(PREFIX) -D__CORES_PER_NODE__=$(CORES_PER_NODE)
+
+# The following could be made more modular by deleting the $< > $@. One day...
+SBATCH_M4_STANDARD_CALL = m4 $(SBATCH_M4_COMMON_DEFINITIONS) $< > $@
+SBATCH_M4_SINGLE_MAKE_TARGET_NODE_CALL = m4 $(SBATCH_M4_COMMON_DEFINITIONS) -D__MAKE_TARGET__=$(basename $@) -D__N_NODES__=$(N_NODES) -D__PARTITION__=node $< > $@
