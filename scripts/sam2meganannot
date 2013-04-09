@@ -1,0 +1,266 @@
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# sam2meganannot
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
+
+$VERBOSE = true
+
+require 'amatch'
+include Amatch
+require 'optparse'
+
+FORMATS = {
+  'megancsv' => { 
+    'call' => :megancsvcall, 
+    'desc' => 'Megan CSV formats for taxonomy, SEED and KEGG (given input data for all three)',
+    'mandopts' => [ ]
+  },
+}
+DEFAULT_FORMAT = 'megancsv'
+
+MIN_NAME_LENGTH_MATCH_FRACTION = 0.9	# Minimum length of found name that matches name in classification
+PROGRESS_OUTPUT_NUM_SAM_LINES = 10000	# Show progress by outputting a dot for each n
+
+OUTPUT_TYPES = {
+  :kegg => { :suffix => 'kegg' },
+  :seed => { :suffix => 'seed' },
+  :tax => { :suffix => 'taxonomy' }
+}
+
+def formats(format = false)
+  if format and FORMATS[format]
+    "#{format}: #{FORMATS[format]['desc']}\n"
+  elsif format and format != ''
+    "Format #{format} not supported\n"
+  else
+    "Supported formats:\n\t" + FORMATS.keys.sort.map { |f| "#{f}#{ f == DEFAULT_FORMAT ? ' * default *' : ''}" }.join("\n\t") + "\n"
+  end
+end
+
+@options = {
+  :format => DEFAULT_FORMAT,
+  :inputsep => "\t",
+  :outputsep => "\t",
+  :trunclen => 60
+}
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+sam2meganannot: Reads a SAM file and Megan classification(s) and writes files suitable for Megan import
+  sam2meganannot [options] file0.sam .. filen.sam
+BANNER
+
+  opts.on "--basename=STRING", "Start of file name to use for output files" do |v|
+    @options[:basename] = v
+  end
+
+  opts.on "--format=format", "Output format, default #{DEFAULT_FORMAT}"  do |v| 
+    @options[:format] = v 
+  end
+
+  opts.on "--formats[=v]", "Lists available output formats or, with a format as parameter, writes a description of a format"  do |v|
+    puts formats v 
+    exit 0
+  end
+
+  opts.on "--full_names_fasta=FASTAFILE", "Fasta file with full names that will correct any Megan truncated names" do |v|
+    @options[:full_names_fasta] = v
+  end
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "--inputsep=CHAR", "Character to split input lines on, default #{@options[:inputsep]}" do |v|
+    @options[:inputsep] = v
+  end
+
+  opts.on "--megankeggcsv=FILE", "File containing a Megan KEGG classification (only leaves) in KEGG name, read name format" do |v|
+    @options[:megankeggcsv] = v
+  end
+
+  opts.on "--meganseedcsv=FILE", "File containing a Megan SEED classification (only leaves) in SEED name, read name format" do |v|
+    @options[:meganseedcsv] = v
+  end
+
+  opts.on "--megantaxcsv=FILE", "File containing a Megan taxonomy classification (only leaves) in read name, taxon name format" do |v|
+    @options[:megantaxcsv] = v
+  end
+
+  opts.on "--outputsep=CHAR", "Character to separate fields for output lines, default #{@options[:outputsep]}" do |v|
+    @options[:outputsep] = v
+  end
+
+  opts.on "--trunclen=INT", "If a read name is not found in a Megan classification, try names down to this length, default #{@options[:trunclen]}" do |v|
+    @options[:trunclen] = v.to_i
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = FORMATS[@options[:format]]['mandopts'] + [ :basename, :trunclen ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
+end
+
+def megancsvcall()
+  @results.keys.each do |type|
+    begin
+      file = "#{@options[:basename]}.#{OUTPUT_TYPES[type][:suffix]}.csv"
+      warn "#{Time.new}: Writing output for #{type} to #{file}" if @options[:verbose]
+      out = File.open(file , "w")
+      @results[type].keys.sort.each do |cls|
+	out.puts [ cls, @results[type][cls] ].flatten.join(@options[:outputsep])
+      end
+      out.close
+    rescue
+      warn "Couldn't open #{file} for output: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+      exit 2
+    end
+  end
+end
+
+@close_match_cache = {
+  :kegg => {},
+  :seed => {},
+  :tax => {}
+}
+
+def _parse_func(filename)
+  r = {}
+  if filename
+    begin
+      warn "#{Time.new}: Reading functional classification from #{filename}" if @options[:verbose]
+      File.open(filename).each do |line|
+	fields = line.chomp.split(@options[:inputsep]).map { |s| s.strip }
+	fields[1..-1].each do |read|
+	  r[read] = fields[0]
+	end
+      end
+    rescue
+      warn "Failed to read functional classification (#{filename}): #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+      exit 2
+    end
+  end
+  r
+end
+
+def _parse_tax(filename)
+  r = {}
+  if filename
+    begin
+      warn "#{Time.new}: Reading taxonomical classification from #{filename}" if @options[:verbose]
+      File.open(filename).each do |line|
+	fields = line.chomp.split(@options[:inputsep]).map { |s| s.lstrip.rstrip }
+	r[fields[0]] = fields[1]
+      end
+    rescue
+      warn "Failed to read taxonomical classification (#{filename}): #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+      exit 2
+    end
+  end
+  r
+end
+
+def _find_longest_match(classification, readname, classtype)
+  unless @close_match_cache[classtype][readname]
+    i = -1
+    while (r = readname[0..i]).length >= @options[:trunclen] and not @close_match_cache[classtype][readname]
+      if classification[r]
+	@close_match_cache[classtype][readname] = r
+      end
+      i += -1
+    end
+    unless @close_match_cache[classtype][readname]
+      @close_match_cache[classtype][readname] = 'WONT MATCH'
+    end
+  end
+  classification[@close_match_cache[classtype][readname]]
+end
+
+unless FORMATS.keys.find { |f| f == @options[:format] }
+  warn "Format #{@options[:format]} unsupported"
+  warn formats
+  exit 1
+end
+
+# Parse classification files
+@classifications = {
+  :kegg => _parse_func(@options[:megankeggcsv]),
+  :seed => _parse_func(@options[:meganseedcsv]),
+  :tax => _parse_tax(@options[:megantaxcsv])
+}
+
+# The @results variable will contain one hash for each type of data: KEGG,
+# SEED and taxonomy. The hashes will contain one entry for each class pointing
+# to an array with one entry per input SAM file.
+@results = {
+  :kegg => {},
+  :seed => {},
+  :tax => {}
+}
+
+# Loop over infiles
+begin
+  file = nil
+  ARGV.each_with_index do |file, filenum|
+    if file == '-'
+      STDERR.print "Parsing STDIN " if @options[:verbose]
+      io = STDIN
+    else
+      STDERR.print "Parsing #{file} (one '.' per #{PROGRESS_OUTPUT_NUM_SAM_LINES} lines read) " if @options[:verbose]
+      if file =~ /.gz$/
+	io = IO.popen("gunzip -c #{file}", "r")
+      elsif file =~ /.bz2$/
+	io = IO.popen("bunzip2 -c #{file}", "r")
+      else
+	io = File.new(file)
+      end
+    end
+    io.each_with_index do |line, linenum|
+      STDERR.print "." if @options[:verbose] and linenum % PROGRESS_OUTPUT_NUM_SAM_LINES == 0
+      line.chomp!
+      next if line[0] == '@'
+      fields = line.split("\t")
+      next if fields[2] == '*'
+      @classifications.keys.each do |type|
+	cls = @classifications[type][fields[2]]
+	cls = _find_longest_match(@classifications[type], fields[2], type) unless cls
+	if cls
+	  @results[type][cls] = Array.new(ARGV.length, 0) unless @results[type][cls]
+	  @results[type][cls][filenum] += 1
+	end
+      end
+    end
+      warn " done" if @options[:verbose]
+  end
+rescue
+  warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end
+
+# Print out the results
+self.method(FORMATS[@options[:format]]['call']).call()
