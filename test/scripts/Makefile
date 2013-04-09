@@ -8,25 +8,25 @@ GREP_CHECK = pattern=`cat $@.expect`; if [ `grep "$$pattern" $@.out | wc -l` -gt
 
 XML_CHECK =
 
-all: cdnaobservations sam2meganannot 
+all: addobs_to_annotations sam2meganannot 
 
 clean:
 	@rm -rf *.out *.tmp err sam2meganannot.*.out*
 
-cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
+addobs_to_annotations: addobs_to_annotations.00 addobs_to_annotations.01 addobs_to_annotations.02
 
 sam2meganannot: sam2meganannot.00 sam2meganannot.01
 
-cdnaobservations.00:
-	@../../scripts/cdnaobservations --header > $@.out
+addobs_to_annotations.00:
+	@../../scripts/addobs_to_annotations --header > $@.out
 	@$(CHECK)
 
-cdnaobservations.01:
-	@../../scripts/cdnaobservations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
+addobs_to_annotations.01:
+	@../../scripts/addobs_to_annotations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
 	@$(CHECK)
 
-cdnaobservations.02:
-	@../../scripts/cdnaobservations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
+addobs_to_annotations.02:
+	@../../scripts/addobs_to_annotations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
 	@$(CHECK)
 
 sam2meganannot.00:
