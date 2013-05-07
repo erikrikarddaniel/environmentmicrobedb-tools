@@ -1,0 +1,114 @@
+TAXONOMY
+gamma proteobacterium HIMB55	2	0
+Glaciecola nitratireducens FR1064	32	11
+Glaciecola sp. HTCC2999	1742	407
+Lacinutrix sp. 5H-3-7-4	0	2
+Marinobacter algicola DG893	4	0
+Methylophaga aminisulfidivorans MP	3	10
+No hits	52	11
+Not assigned	775	123
+Oceanospirillum	0	22
+SEED
+Agmatine deiminase (EC 3.5.3.12)	8	12
+Alkylphosphonate utilization operon protein PhnA	3	4
+ATP-dependent RNA helicase DbpA	19	0
+ATP synthase A chain (EC 3.6.3.14)	2	0
+ATP synthase alpha chain (EC 3.6.3.14)	4	0
+ATP synthase beta chain (EC 3.6.3.14)	527	182
+ATP synthase epsilon chain (EC 3.6.3.14)	103	42
+ATP synthase gamma chain (EC 3.6.3.14)	4	10
+Circadian input kinase A	1	0
+Cobalt-zinc-cadmium resistance protein CzcA	0	12
+Dihydroorotase (EC 3.5.2.3)	27	20
+DNA-directed RNA polymerase alpha subunit (EC 2.7.7.6)	12	8
+DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)	1435	482
+GTP cyclohydrolase I (EC 3.5.4.16) type 1	6	13
+LSU ribosomal protein L10p (P0)	1004	466
+LSU ribosomal protein L11p (L12e)	106	64
+LSU ribosomal protein L14p (L23e)	0	4
+LSU ribosomal protein L15p (L27Ae)	673	79
+LSU ribosomal protein L16p (L10e)	0	2
+LSU ribosomal protein L17p	4	0
+LSU ribosomal protein L18p (L5e)	205	54
+LSU ribosomal protein L1p (L10Ae)	370	174
+LSU ribosomal protein L22p (L17e)	2	2
+LSU ribosomal protein L23p (L23Ae)	2	0
+LSU ribosomal protein L24p (L26e)	2	4
+LSU ribosomal protein L29p (L35e)	0	2
+LSU ribosomal protein L2p (L8e)	4	14
+LSU ribosomal protein L3p (L3e)	6	2
+LSU ribosomal protein L4p (L1e)	2	8
+LSU ribosomal protein L5p (L11e)	124	42
+LSU ribosomal protein L6p (L9e)	523	150
+N-carbamoylputrescine amidase (3.5.1.53)	12	4
+No hits	52	11
+Not assigned	9061	1677
+PnuC-like transporter linked to Choline/ethanolamine kinase and OMR	32	1
+Polysaccharide export lipoprotein Wza	14	14
+Putative choline kinase, PnuC-associated, THI-regulated	2	0
+SSU ribosomal protein S11p (S14e)	4	0
+SSU ribosomal protein S13p (S18e)	461	107
+SSU ribosomal protein S14p (S29e)	262	60
+SSU ribosomal protein S17p (S11e)	0	2
+SSU ribosomal protein S19p (S15e)	0	2
+SSU ribosomal protein S3p (S3e)	0	4
+SSU ribosomal protein S4p (S9e)	10	6
+SSU ribosomal protein S5p (S2e)	1092	198
+SSU ribosomal protein S7p (S5e)	2	2
+SSU ribosomal protein S8p (S15Ae)	152	52
+TonB-dependent receptor	70	40
+Transcription antitermination protein NusG	184	62
+Translation elongation factor G	8	6
+Translation elongation factor Tu	2	4
+Tyrosine-protein kinase Wzc (EC 2.7.10.2)	26	10
+KEGG
+K00426	0	4
+K00958	4	0
+K01465	27	20
+K01495	6	13
+K02108	2	0
+K02111	4	0
+K02112	527	182
+K02114	103	42
+K02115	4	10
+K02358	2	4
+K02863	370	174
+K02864	1004	466
+K02867	106	64
+K02874	0	4
+K02876	673	79
+K02878	0	2
+K02879	4	0
+K02881	205	54
+K02886	4	14
+K02890	2	2
+K02892	2	0
+K02895	2	4
+K02904	0	2
+K02906	6	2
+K02926	2	8
+K02931	124	42
+K02933	523	150
+K02935	670	332
+K02948	4	0
+K02952	461	107
+K02954	262	60
+K02961	0	2
+K02965	0	2
+K02982	0	4
+K02986	10	6
+K02988	1092	198
+K02992	2	2
+K02994	152	52
+K03040	12	8
+K03043	1435	482
+K03073	590	48
+K03076	6663	1089
+K06193	3	4
+K07636	1	0
+K07649	3	0
+K07787	0	12
+K10536	8	12
+K12251	12	4
+No hits	52	11
+Not assigned	1486	337
