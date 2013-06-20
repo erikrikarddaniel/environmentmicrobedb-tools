@@ -3,8 +3,8 @@ mapback: Contigs.mapback.bam
 
 mapback-flagstat: Contigs.mapback.flagstat
 
-Contigs.mapback.bam: inputpairs Contigs.erne 
-	erne-map --threads 8 `cat $<` --reference $(word 2,$^) --bam --output $$SNIC_TMP/$@ > $$SNIC_TMP/$(basename $@).out 2> $$SNIC_TMP/$(basename $@).err && mv $$SNIC_TMP/$(basename $@)* .
+Contigs.mapback.bam: inputpairs Contigs.eht 
+	erne-map --threads 8 `cat $<` --reference $(word 2,$^) --output $$SNIC_TMP/$@ > $(basename $@).out 2> $(basename $@).err && mv $$SNIC_TMP/$(basename $@)* .
 
 %.flagstat: %.bam
 	samtools flagstat $< > $@
@@ -15,5 +15,5 @@ inputpairs: RayCommand.txt
 
 .SECONDARY:
 
-%.erne: %.fasta
-	erne-create --fasta $< --reference $@
+%.eht: %.fasta
+	erne-create --fasta $< --reference $(basename $@)
