@@ -1,0 +1,45 @@
+KEGG Orthology (KO)	Metabolism	Carbohydrate Metabolism	00010 Glycolysis / Gluconeogenesis [PATH:ko00010]	GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]	K10705
+KEGG Orthology (KO)	Metabolism	Carbohydrate Metabolism	00010 Glycolysis / Gluconeogenesis [PATH:ko00010]	GAPDHS; glyceraldehyde-3-phosphate dehydrogenase, spermatogenic [EC:1.2.1.12]	K00150
+KEGG Orthology (KO)	Metabolism	Carbohydrate Metabolism	00010 Glycolysis / Gluconeogenesis [PATH:ko00010]	gap2; glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) [EC:1.2.1.59]	K00927
+KEGG Orthology (KO)	Metabolism	Carbohydrate Metabolism	00010 Glycolysis / Gluconeogenesis [PATH:ko00010]	PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]	K01834
+KEGG Orthology (KO)	Metabolism	Carbohydrate Metabolism	00010 Glycolysis / Gluconeogenesis [PATH:ko00010]	PGAM, gpm; phosphoglycerate mutase [EC:5.4.2.1]	K01689
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00190 Oxidative phosphorylation [PATH:ko00190]	ND4; NADH dehydrogenase I subunit 4 [EC:1.6.5.3]	K03882
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00190 Oxidative phosphorylation [PATH:ko00190]	ND4L; NADH dehydrogenase I subunit 4L [EC:1.6.5.3]	K03883
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00190 Oxidative phosphorylation [PATH:ko00190]	ND5; NADH dehydrogenase I subunit 5 [EC:1.6.5.3]	K03884
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00190 Oxidative phosphorylation [PATH:ko00190]	ND6; NADH dehydrogenase I subunit 6 [EC:1.6.5.3]	K03934
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00190 Oxidative phosphorylation [PATH:ko00190]	NDUFS1; NADH dehydrogenase (ubiquinone) Fe-S protein 1 [EC:1.6.5.3 1.6.99.3]	K03935
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00196 Photosynthesis - antenna proteins [PATH:ko00196]	LHCB6; light-harvesting complex II chlorophyll a/b binding protein 6	K14172
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00710 Carbon fixation in photosynthetic organisms [PATH:ko00710]	rbcL; ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]	K01602
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00710 Carbon fixation in photosynthetic organisms [PATH:ko00710]	rbcS; ribulose-bisphosphate carboxylase small chain [EC:4.1.1.39]	K00927
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00710 Carbon fixation in photosynthetic organisms [PATH:ko00710]	PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]	K05298
+KEGG Orthology (KO)	Metabolism	Energy Metabolism	00710 Carbon fixation in photosynthetic organisms [PATH:ko00710]	GAPA; glyceraldehyde-3-phosphate dehydrogenase (NADP+) (phosphorylating) [EC:1.2.1.13]	K00150
+KEGG Orthology (KO)	Metabolism	Metabolism of Cofactors and Vitamins	00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]	cobIJ; precorrin-2 C20-methyltransferase / precorrin-3B C17-methyltransferase [EC:2.1.1.130 2.1.1.131]	K02229
+KEGG Orthology (KO)	Metabolism	Metabolism of Cofactors and Vitamins	00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]	E1.14.13.83, cobG; precorrin-3B synthase [EC:1.14.13.83]	K05934
+KEGG Orthology (KO)	Metabolism	Metabolism of Cofactors and Vitamins	00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]	E2.1.1.131, cobJ, cbiH; precorrin-3B C17-methyltransferase [EC:2.1.1.131]	K02189
+KEGG Orthology (KO)	Metabolism	Metabolism of Cofactors and Vitamins	00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]	cbiG; cobalamin biosynthesis protein CbiG	K13541
+KEGG Orthology (KO)	Metabolism	Metabolism of Cofactors and Vitamins	00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]	cbiGH-cobJ; cobalamin biosynthesis protein CbiG / precorrin-3B C17-methyltransferase [EC:2.1.1.131]	K05936
+KEGG Orthology (KO)	Genetic Information Processing	Translation	03010 Ribosome [PATH:ko03010]	RP-S17, rpsQ; small subunit ribosomal protein S17	K02963
+KEGG Orthology (KO)	Genetic Information Processing	Translation	03010 Ribosome [PATH:ko03010]	RP-S18, rpsR; small subunit ribosomal protein S18	K02965
+KEGG Orthology (KO)	Genetic Information Processing	Translation	03010 Ribosome [PATH:ko03010]	RP-S19, rpsS; small subunit ribosomal protein S19	K02968
+KEGG Orthology (KO)	Genetic Information Processing	Translation	03010 Ribosome [PATH:ko03010]	RP-S20, rpsT; small subunit ribosomal protein S20	K02970
+KEGG Orthology (KO)	Genetic Information Processing	Translation	03010 Ribosome [PATH:ko03010]	RP-S21, rpsU; small subunit ribosomal protein S21	K02972
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	yejB; microcin C transport system permease protein	K13895
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	yejE; microcin C transport system permease protein	K13896
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	yejF; microcin C transport system ATP-binding protein	K02016
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	ABC.FEV.S; iron complex transport system substrate-binding protein	K02015
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	ABC.FEV.P; iron complex transport system permease protein	K02013
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	ftsX; cell division transport system permease protein	K09812
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	ftsE; cell division transport system ATP-binding protein	K07091
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	lptF; lipopolysaccharide export system permease protein	K11720
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	lptG; lipopolysaccharide export system permease protein	K06861
+KEGG Orthology (KO)	Environmental Information Processing	Membrane Transport	02010 ABC transporters [PATH:ko02010]	lptB; lipopolysaccharide export system ATP-binding protein [EC:3.6.3.-]	K05641
+KEGG Orthology (KO)	Cellular Processes	Cell Motility	02040 Flagellar assembly [PATH:ko02040]	fliE; flagellar hook-basal body complex protein FliE	K02388
+KEGG Orthology (KO)	Cellular Processes	Cell Motility	02040 Flagellar assembly [PATH:ko02040]	flgC; flagellar basal-body rod protein FlgC	K02387
+KEGG Orthology (KO)	Cellular Processes	Cell Motility	02040 Flagellar assembly [PATH:ko02040]	flgB; flagellar basal-body rod protein FlgB	K02386
+KEGG Orthology (KO)	Cellular Processes	Cell Motility	02040 Flagellar assembly [PATH:ko02040]	flgA; flagella basal body P-ring formation protein FlgA	K02398
+KEGG Orthology (KO)	Cellular Processes	Cell Motility	02040 Flagellar assembly [PATH:ko02040]	flgM; negative regulator of flagellin synthesis FlgM	K02399
+KEGG Orthology (KO)	Human Diseases	Neurodegenerative Diseases	05012 Parkinson's disease [PATH:ko05012]	ND4; NADH dehydrogenase I subunit 4 [EC:1.6.5.3]	K03882
+KEGG Orthology (KO)	Human Diseases	Neurodegenerative Diseases	05012 Parkinson's disease [PATH:ko05012]	ND4L; NADH dehydrogenase I subunit 4L [EC:1.6.5.3]	K03883
+KEGG Orthology (KO)	Human Diseases	Neurodegenerative Diseases	05012 Parkinson's disease [PATH:ko05012]	ND5; NADH dehydrogenase I subunit 5 [EC:1.6.5.3]	K03884
+KEGG Orthology (KO)	Human Diseases	Neurodegenerative Diseases	05012 Parkinson's disease [PATH:ko05012]	ND6; NADH dehydrogenase I subunit 6 [EC:1.6.5.3]	K03942
+KEGG Orthology (KO)	Human Diseases	Neurodegenerative Diseases	05012 Parkinson's disease [PATH:ko05012]	NDUFV1; NADH dehydrogenase (ubiquinone) flavoprotein 1 [EC:1.6.5.3 1.6.99.3]	K03943
