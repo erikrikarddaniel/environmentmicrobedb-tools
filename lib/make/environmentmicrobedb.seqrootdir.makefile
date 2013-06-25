@@ -1,2 +1,6 @@
-%.interleaved.fastq: %.read1.fastq %.read2.fastq
-	shuffleSequences_fastq.pl $^ $@
+%.seqcount: %.fastq.gz
+	echo -n "$<: " > $@
+	gunzip -c $< | grep -c '@HWI-' >> $@
+
+%.interleaved.fastq.gz: %.read1.fastq.gz %.read2.fastq.gz
+	interleave_fastq $^ | gzip -c > $@

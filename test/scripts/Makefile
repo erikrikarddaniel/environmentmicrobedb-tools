@@ -8,12 +8,14 @@ GREP_CHECK = pattern=`cat $@.expect`; if [ `grep "$$pattern" $@.out | wc -l` -gt
 
 XML_CHECK =
 
-all: cdnaobservations sam2meganannot 
+all: cdnaobservations m5nr2annot sam2meganannot 
 
 clean:
 	@rm -rf *.out *.tmp err sam2meganannot.*.out*
 
 cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
+
+m5nr2annot: m5nr2annot.00
 
 sam2meganannot: sam2meganannot.00 sam2meganannot.01
 
@@ -27,6 +29,12 @@ cdnaobservations.01:
 
 cdnaobservations.02:
 	@../../scripts/cdnaobservations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
+	@$(CHECK)
+
+m5nr2annot.00:
+	@../../scripts/m5nr2annot --verbose --datadir=m5nr2annot.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
+	@echo "--> SEED <--" >> $@.out
+	@cat $@.seed >> $@.out
 	@$(CHECK)
 
 sam2meganannot.00:

@@ -1,0 +1,45 @@
+23fb9b25308b3f3b8667791590c1a3c0	cbr:CBG00908	C. briggsae CBR-SYM-2 protein	Caenorhabditis briggsae AF16	KEGG
+23fb9f1a4fa600c76fdec6b7d446eb5c	smf:Smon_0344	hypothetical protein	Streptobacillus moniliformis DSM 12112	KEGG
+23fb9f40363b1cbad2c5b6435b02fc0d	rbi:RB2501_00641	two-component system response regulator	Robiginitalea biformata HTCC2501	KEGG
+23fba002efd5fb866a55251f01314789	ptr:749737	similar to meltrin-beta/ADAM 19 homologue	Pan troglodytes (chimpanzee)	KEGG
+23fba08da0b8167dd6e4119e4e342eaf	dra:DR_A0120	hypothetical protein	Deinococcus radiodurans R1	KEGG
+25414692de8aadb1bf364c21b0cc3c83	pop:POPTR_278176	hypothetical protein	Populus trichocarpa (black cottonwood)	KEGG
+254149347b5e5d6da562ba5f99c2fcb3	rno:362100	endonuclease G	Rattus norvegicus (Norway rat)	KEGG
+25414944acefb2d2ee2845063b51adf0	cao:Celal_0196	two component transcriptional regulator, LytTR family	Cellulophaga algicola DSM 14237	KEGG
+25414a4e204229008bdc3e690194b5f5	bpy:Bphyt_5791	cupin 2 conserved barrel domain protein	Burkholderia phytofirmans PsJN	KEGG
+254154dd3848465a42e89c3ef09b133f	cre:CHLREDRAFT_128082	hypothetical protein	Chlamydomonas reinhardtii	KEGG
+37db334084eee009792aaf761c4903b4	mei:Msip34_1068	transmembrane protein	Methylovorus sp. SIP3-4	KEGG
+37db3569cdcd76686a4ee123381c2958	sea:SeAg_B2150	cobalamin biosynthesis protein CbiG	Salmonella enterica subsp. enterica serovar Agona SL483	KEGG
+37db39f991de45babd4b9f6920b5783b	zpr:ZPR_0860	peptidase T	Zunongwangia profunda SM-A87	KEGG
+37db3a9626fdc5830463eef6860a7ebc	bcz:pE33L466_0410	IS231 transposase	Bacillus cereus E33L (zebra killer)	KEGG
+37db3baec1a69bd212d8b565ca7aa515	ent:Ent638_0083	fimbrial protein	Enterobacter sp. 638	KEGG
+73de9298a198cd7533275f1b964dcff7	syc:syc1389_d	hypothetical protein	Synechococcus elongatus PCC6301	KEGG
+73de92a4dd2ab355a52a390d63b8ce19	sbi:SORBI_04g005907	hypothetical protein	Sorghum bicolor (sorghum)	KEGG
+73de94e014c3d7dbed291c21de7700a3	ilo:IL0310	metal-dependent hydrolase	Idiomarina loihiensis L2TR	KEGG
+73de964746a289bd96cb795f0ed05062	hsa:114904	C1q and tumor necrosis factor related protein 6	Homo sapiens (human)	KEGG
+73de995964012f7509063a4477ad8159	cci:CC1G_10897	hypothetical protein	Coprinopsis cinerea okayama7#130	KEGG
+77e9078918fe53c7fe4ba2ae81fff891	ccs:CCNA_01563	2-dehydro-3-deoxygluconokinase (EC:2.7.1.45)	Caulobacter crescentus NA1000	KEGG
+77e90c41570f9855710f51e754a903fa	olu:OSTLU_32676	hypothetical protein	Ostreococcus lucimarinus CCE9901	KEGG
+77e90e882504fb9a5043600553f53bc4	fbc:FB2170_14118	two-component system response regulator	Maribacter sp. HTCC2170	KEGG
+77e90fd987938569a6d87d2e3943e6d0	xom:XOO_3200	sulfite reductase subunit beta	Xanthomonas oryzae pv. oryzae MAFF 311018	KEGG
+77e91bb9ce2a6938504f1b53e0e7658a	fsu:Fisuc_2724	hypothetical protein	Fibrobacter succinogenes subsp. succinogenes S85	KEGG
+822add19292567860b481a87c3469974	avn:Avin_44340	permease YjgP/YjgQ family	Azotobacter vinelandii DJ	KEGG
+822ae03cb9bedc365c0dd8f5070a4955	mva:Mvan_3912	30S ribosomal protein S20	Mycobacterium vanbaalenii PYR-1	KEGG
+822ae6bb527ff0e8b9a702166b211f99	cat:CA2559_08441	peptidase T	Croceibacter atlanticus HTCC2559	KEGG
+822af330763740e4b355873f914f2321	lba:Lebu_1625	protein of unknown function DUF1722	Leptotrichia buccalis DSM 1135	KEGG
+822af6232b74c8357776e803edb2eed2	rba:RB5447	hypothetical protein	Rhodopirellula baltica SH 1 (Pirellula sp. strain 1)	KEGG
+bf97cbd516d29fbb4d3ca0d6a9f44e37	mgl:MGL_2893	hypothetical protein	Malassezia globosa CBS 7966	KEGG
+bf97cbe89c05ada4d18229031966b336	tad:TRIADDRAFT_20353	hypothetical protein	Trichoplax adhaerens	KEGG
+bf97cdef972b39d600e66a11d850a626	gfo:GFO_2523	peptidase T (EC:3.4.11.4)	Gramella forsetii KT0803	KEGG
+bf97d2a0c2db2b4ad7522a5390fe141d	fps:FP0287	hypothetical protein	Flavobacterium psychrophilum JIP02/86	KEGG
+bf97d2e40affbaf7f3af30f52800ef61	btb:BMB171_C1922	excalibur domain-containing protein	Bacillus thuringiensis BMB171	KEGG
+d95ca57a5be5d8c84f05697197fb1dd6	ani:AN0387.2	hypothetical protein	Aspergillus nidulans FGSC A4	KEGG
+d95ca73f078f503a30509426113bcdbf	amd:AMED_7849	GCN5-related N-acetyltransferase	Amycolatopsis mediterranei U32	KEGG
+d95ca77c7c9002407e2a102b17f4b80d	rbi:RB2501_00646	hypothetical protein	Robiginitalea biformata HTCC2501	KEGG
+d95cab78da4460f670c52cdd18d1df26	abn:AB57_2846	hypothetical protein	Acinetobacter baumannii AB0057	KEGG
+d95cab78da4460f670c52cdd18d1df26	aby:ABAYE1060	hypothetical protein	Acinetobacter baumannii AYE	KEGG
+effe2b6fa44c4093063a55d127097ffe	dsi:Dsim_GD23374	GD23374 gene product from transcript GD23374-RA	Drosophila simulans	KEGG
+effe2c8c6fd49093d11bbe51e5d39d77	asa:ASA_1395	PTS system, fructose-specific IIBC component	Aeromonas salmonicida subsp. salmonicida A449	KEGG
+effe2d579a0a002bf0cf074b030b42aa	cao:Celal_0199	hypothetical protein	Cellulophaga algicola DSM 14237	KEGG
+effe3065f5db54adaf9e826c900d1111	pag:PLES_05211	nitric-oxide reductase subunit B	Pseudomonas aeruginosa LESB58	KEGG
+effe319b8ff978f3c370e39b4b3556f1	pam:PANA_3316	hypothetical protein	Pantoea ananatis LMG 20103	KEGG

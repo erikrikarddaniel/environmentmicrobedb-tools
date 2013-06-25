@@ -1,0 +1,128 @@
+Metabolism of Aromatic Compounds	Anaerobic degradation of aromatic compounds	Hydroxyaromatic_decarboxylase_family	Hydroxyaromatic non-oxidative decarboxylase protein C (EC 4.1.1.-)	SS000075
+Metabolism of Aromatic Compounds	Anaerobic degradation of aromatic compounds	Hydroxyaromatic_decarboxylase_family	Hydroxyaromatic non-oxidative decarboxylase protein D (EC 4.1.1.-)	SS000076
+Regulation and Cell signaling	Regulation of virulence	Streptococcal_Mga_Regulon	Two-component system response regulator	SS000077
+Regulation and Cell signaling	Regulation of virulence	Streptococcal_Mga_Regulon	Two-component system histidine kinase	SS000078
+Regulation and Cell signaling	Regulation of virulence	Streptococcal_Mga_Regulon	Immunogenic secreted protein	SS000079
+Protein Metabolism	Protein biosynthesis	Ribosome_SSU_eukaryotic_and_archaeal	SSU ribosomal protein S29e (S14p)	SS0000768
+Protein Metabolism	Protein biosynthesis	Ribosome_SSU_eukaryotic_and_archaeal	SSU ribosomal protein S30e	SS0000769
+Protein Metabolism	Protein biosynthesis	Ribosome_SSU_eukaryotic_and_archaeal	SSU ribosomal protein SAe (S2p)	SS0000770
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein ImpB	SS0000771
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein ImpC	SS0000772
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein similar to VCA0109	SS0000773
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Protein ImpG/VasA	SS0000774
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein ImpH/VasB	SS0000775
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein ImpI/VasC	SS0000776
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Type VI secretion lipoprotein/VasD	SS0000777
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Uncharacterized protein ImpJ/VasE	SS0000778
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Outer membrane protein ImpK/VasF, OmpA/MotB domain	SS0000779
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	ClpB protein	SS0000780
+Membrane Transport	Protein secretion system, Type VI	Type_VI_secretion_systems	Sigma-54 dependent transcriptional regulator	SS0000781
+Regulation and Cell signaling	Quorum sensing and biofilm formation	Acyl_Homoserine_Lactone_(AHL)_Autoinducer_Quorum_Sensing_	Autoinducer-binding transcriptional regulator BpsR	SS00007698
+Regulation and Cell signaling	Quorum sensing and biofilm formation	Acyl_Homoserine_Lactone_(AHL)_Autoinducer_Quorum_Sensing_	hypothetical protein clustered with LuxR	SS00007699
+Regulation and Cell signaling	Quorum sensing and biofilm formation	Acyl_Homoserine_Lactone_(AHL)_Autoinducer_Quorum_Sensing_	Autoinducer synthesis protein SolI	SS00007700
+Regulation and Cell signaling	Quorum sensing and biofilm formation	Acyl_Homoserine_Lactone_(AHL)_Autoinducer_Quorum_Sensing_	Transcriptional activator protein solR	SS00007701
+Protein Metabolism	Protein folding	Thermosome,_archaeal	Thermosome subunit	SS00007702
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c2	SS00007703
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome C550 (Soluble cytochrome C)	SS00007704
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Photosystem II protein PsbV, cytochrome c550	SS00007705
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Membrane-attached cytochrome c550	SS00007706
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome C553 (soluble cytochrome f)	SS00007707
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Putative diheme cytochrome c-553	SS00007708
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c552 precursor (EC 1.7.2.2)	SS00007709
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c552	SS00007710
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c-552 precursor	SS00007711
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c551/c552	SS00007712
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Soluble cytochrome b562	SS00007713
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	soluble [2Fe-2S] ferredoxin	SS00007714
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Ferredoxin	SS00007715
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	cytochrome b-5	SS00007716
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c4	SS00007717
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	FIG135464: Cytochrome c4	SS00007718
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Ferredoxin, 2Fe-2S	SS00007719
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Probable cytochrome c2	SS00007720
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Probable cytochrome c-552	SS00007721
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	Cytochrome c553	SS00007722
+Respiration		Soluble_cytochromes_and_functionally_related_electron_carriers	cytochrome c-551	SS00007723
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Glycosyltransferase LafA, responsible for the formation of Glc-DAG	SS00007724
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Glycosyltransferase LafB, responsible for the formation of Gal-Glc-DAG	SS00007725
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Integral membrane protein LafC, accessory function in glycolipid and LTA synthesis	SS00007726
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid primase LtaP	SS00007727
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IVa	SS00007728
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IVb	SS00007729
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIIb1	SS00007730
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIIb2	SS00007731
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIIa	SS00007732
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type Ia	SS00007733
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type Ib	SS00007734
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIa	SS00007735
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIb	SS00007736
+Cell Wall and Capsule	Gram-Positive cell wall components	Polyglycerolphosphate_lipoteichoic_acid_biosynthesis	Lipoteichoic acid synthase LtaS Type IIc	SS00007737
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Segregation and condensation protein A	SS00007738
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Segregation and condensation protein B	SS00007739
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Pseudouridine synthase family protein	SS00007740
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Ribosomal large subunit pseudouridine synthase B (EC 4.2.1.70)	SS00007741
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Chromosome (plasmid) partitioning protein ParA	SS00007742
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Chromosome (plasmid) partitioning protein ParB	SS00007743
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Chromosome (plasmid) partitioning protein ParB-2	SS00007744
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Chromosome partition protein smc	SS00007745
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Ribonuclease III (EC 3.1.26.3)	SS00007746
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Signal recognition particle receptor protein FtsY (=alpha subunit) (TC 3.A.5.1.1)	SS00007747
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Signal recognition particle, subunit Ffh SRP54 (TC 3.A.5.1.1)	SS00007748
+Cell Division and Cell Cycle		Two_cell_division_clusters_relating_to_chromosome_partitioning	Signal recognition particle associated protein	SS00007749
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal small subunit pseudouridine synthase A (EC 4.2.1.70)	SS00007750
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	rRNA small subunit 7-methylguanosine (m7G) methyltransferase GidB	SS00007751
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA small subunit methyltransferase D (EC 2.1.1.-)	SS00007752
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA small subunit methyltransferase B (EC 2.1.1.-)	SS00007753
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA small subunit methyltransferase C (EC 2.1.1.52)	SS00007754
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown m4Cm1402 A	SS00007755
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown m4Cm1402 B	SS00007756
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA small subunit methyltransferase F (EC 2.1.1.-)	SS00007757
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA small subunit methyltransferase E (EC 2.1.1.-)	SS00007758
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknownm2G1616	SS00007759
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Dimethyladenosine transferase (EC 2.1.1.-)	SS00007760
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA large subunit methyltransferase A (EC 2.1.1.51)	SS00007761
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase A (EC 4.2.1.70)	SS00007762
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	23S rRNA (Uracil-5-) -methyltransferase rumB (EC 2.1.1.-)	SS00007763
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase C (EC 4.2.1.70)	SS00007764
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA large subunit methyltransferase F (EC 2.1.1.51)	SS00007765
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	23S rRNA (guanine-N-2-) -methyltransferase rlmG (EC 2.1.1.-)	SS00007766
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase D (EC 4.2.1.70)	SS00007767
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown methyltransferase Psi1915	SS00007768
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	23S rRNA (Uracil-5-) -methyltransferase RumA (EC 2.1.1.-)	SS00007769
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown methyltransferase m5C1962	SS00007770
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown methyltransferase m6A2030	SS00007771
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown methyltransferase m7G2069	SS00007772
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	23S rRNA (guanosine-2'-O-) -methyltransferase rlmB (EC 2.1.1.-)	SS00007773
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown methyltransferase mm2G2445	SS00007774
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown hU2449	SS00007775
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase E (EC 5.4.99.-)	SS00007776
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Unknown Cm2498	SS00007777
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	s2C2501	SS00007778
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA large subunit methyltransferase N (EC 2.1.1.-)	SS00007779
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal RNA large subunit methyltransferase E (EC 2.1.1.-)	SS00007780
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase F (EC 4.2.1.70)	SS00007781
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Ribosomal large subunit pseudouridine synthase B (EC 4.2.1.70)	SS00007782
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Metal-dependent hydrolase YbeY, involved in rRNA and/or ribosome maturation and assembly	SS00007783
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	tRNA:m(5)U-54 MTase gid	SS00007784
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	RNA binding methyltransferase FtsJ like	SS00007785
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	LSU m3Psi1915 methyltransferase RlmH	SS00007786
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	RsuA-like	SS00007787
+RNA Metabolism	RNA processing and modification	rRNA_modification_Bacteria	Pseudouridine synthase family protein	SS00007788
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	D-3-phosphoglycerate dehydrogenase (EC 1.1.1.95)	SS00007789
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Phosphoserine aminotransferase (EC 2.6.1.52)	SS00007790
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Phosphoserine aminotransferase, putative (EC 2.6.1.52)	SS00007791
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Phosphoserine phosphatase (EC 3.1.3.3)	SS00007792
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Phosphoserine phosphatase, putative (EC 3.1.3.3)	SS00007793
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Serine hydroxymethyltransferase (EC 2.1.2.1)	SS00007794
+Amino Acids and Derivatives	Alanine, serine, and glycine	Serine_Biosynthesis	Serine hydroxymethyltransferase 1 (EC 2.1.2.1)	SS00007795
+Virulence, Disease and Defense	Resistance to antibiotics and toxic compounds	Lysozyme_inhibitors	Inhibitor of vertebrate lysozyme precursor	SS00007796
+Virulence, Disease and Defense	Resistance to antibiotics and toxic compounds	Lysozyme_inhibitors	Periplasmic lysozyme inhibitor of c-type lysozyme	SS00007797
+Virulence, Disease and Defense	Resistance to antibiotics and toxic compounds	Lysozyme_inhibitors	Membrane-bound lysozyme inhibitor of c-type lysozyme	SS00007798
+Virulence, Disease and Defense	Resistance to antibiotics and toxic compounds	Lysozyme_inhibitors	Per-activated serine protease autotransporter enterotoxin EspC	SS00007799
+Fatty Acids, Lipids, and Isoprenoids	Fatty acids	Polyunsaturated_Fatty_Acids_synthesis	omega-3 polyunsaturated fatty acid synthase subunit, PfaA	SS00007800
+Fatty Acids, Lipids, and Isoprenoids	Fatty acids	Polyunsaturated_Fatty_Acids_synthesis	omega-3 polyunsaturated fatty acid synthase subunit, PfaB	SS00007801
+Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Chemotaxis regulator - transmits chemoreceptor signals to flagelllar motor components CheY	SS000011684
+Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Two-component system histidine kinase	SS000011685
+Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Two-component system response regulator	SS000011686
+Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Putative two-component sensor histidine kinase	SS000011687
+Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Putative two-component response regulator	SS000011688
