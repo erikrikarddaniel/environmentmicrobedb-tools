@@ -20,6 +20,8 @@ $VERBOSE = true
 
 require 'optparse'
 
+PROGRESS_INTERVAL = 100000
+
 @options = {
   fracfrombestbitscore: false,
   maxnumhits: false,
@@ -135,17 +137,23 @@ def seed_parser(db)
   #
   # 1. SEED.md52id2ont
   begin
-    warn "\tSEED.md52id2ont" if @options[:verbose]
+    STDERR.print "\tSEED.md52id2ont" if @options[:verbose]
     data = {}
     @data['SEED']['md52id2ont'] = data
-    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2ont").each do |line|
-      line.chomp!
-      fields = line.split(/\s*\t\s*/)
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2ont").each_with_index do |line, linenum|
+      STDERR.print '.' if @options[:verbose] and linenum % PROGRESS_INTERVAL == 0
+      begin
+	line.chomp!
+	fields = line.split(/\s*\t\s*/)
 
-      # We have entries with multiple annotations
-      data[fields[0]] ||= []
-      data[fields[0]] << fields[1]
+	# We have entries with multiple annotations
+	data[fields[0]] ||= []
+	data[fields[0]] << fields[1]
+      rescue ArgumentError
+	STDERR.print "E#{linenum}" if @options[:verbose]
+      end
     end
+    warn "done" if @options[:verbose]
   rescue
     warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
     exit
@@ -153,23 +161,30 @@ def seed_parser(db)
 
   # 2. SEED.md52id2func
   begin
-    warn "\tSEED.md52id2func" if @options[:verbose]
+    STDERR.print "\tSEED.md52id2func" if @options[:verbose]
     data = {}
     @data['SEED']['md52id2func'] = data
-    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2func").each do |line|
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2func").each_with_index do |line, linenum|
+      STDERR.print '.' if @options[:verbose] and linenum % PROGRESS_INTERVAL == 0
+      n = linenum
       line.chomp!
-      fields = line.split(/\s*\t\s*/)
+      begin
+	fields = line.split(/\s*\t\s*/)
 
-      # We may have multiple rows. We only care about picking up the complete list of organisms
-      if data[fields[0]]
-	data[fields[0]][:organisms] << fields[3]
-      else
-	data[fields[0]] = { 
-	  desc: fields[2],
-	  organisms: [ fields[3] ]
-	}
+	# We may have multiple rows. We only care about picking up the complete list of organisms
+	if data[fields[0]]
+	  data[fields[0]][:organisms] << fields[3]
+	else
+	  data[fields[0]] = { 
+	    desc: fields[2],
+	    organisms: [ fields[3] ]
+	  }
+	end
+      rescue ArgumentError
+	STDERR.print "E#{linenum}" if @options[:verbose]
       end
     end
+    warn "done" if @options[:verbose]
   rescue
     warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2func: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
     exit
@@ -219,6 +234,9 @@ def seed_handler(db, hits)
   end
   lca = "(LCA: #{organisms.join(", ")})"
   no_seed_hit << lca
+
+  # No output if we didn't find anything above (== no organisms)
+  output = [ ] if organisms.length == 0
 
   # 2. Do we have any SEED subsystem hits, if so find the one with the highest score
   seed_hits = {}

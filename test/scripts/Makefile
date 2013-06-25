@@ -32,7 +32,16 @@ cdnaobservations.02:
 	@$(CHECK)
 
 m5nr2annot.00:
-	@../../scripts/m5nr2annot --verbose --datadir=m5nr2annot.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
+	@rm -f $@.seed
+	@../../scripts/m5nr2annot --verbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
+	@echo "--> SEED <--" >> $@.out
+	@cat $@.seed >> $@.out
+	@$(CHECK)
+
+# This needs a symbolic link to a real M5nr data repository
+m5nr2annot.large:
+	@rm -f $@.seed
+	@../../scripts/m5nr2annot --verbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab
 	@echo "--> SEED <--" >> $@.out
 	@cat $@.seed >> $@.out
 	@$(CHECK)

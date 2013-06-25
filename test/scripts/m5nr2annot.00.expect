@@ -1,11 +1,11 @@
-Parsing data files in m5nr2annot.data/KEGG
-Parsing data files in m5nr2annot.data/UniProt
-Parsing data files in m5nr2annot.data/SEED
-	SEED.md52id2ont
-	SEED.md52id2func
+Parsing data files in m5nr2annot.00.data/KEGG
+Parsing data files in m5nr2annot.00.data/UniProt
+Parsing data files in m5nr2annot.00.data/SEED
+	SEED.md52id2ont.done
+	SEED.md52id2func.E1198done
 	SEED.id2subsystems
-Parsing data files in m5nr2annot.data/NCBI
-Parsing data files in m5nr2annot.data/InterPro
+Parsing data files in m5nr2annot.00.data/NCBI
+Parsing data files in m5nr2annot.00.data/InterPro
 Parsing m5nr2annot.00.blasttab
 InterPro: Hits for tr|A2TND1|A2TND1_9FLAO: 92f1aff22a98181d3e51b1b757d3fa8c, d7277892659488394c602f21053d11fd
 KEGG: Hits for tr|A2TND1|A2TND1_9FLAO: 92f1aff22a98181d3e51b1b757d3fa8c, d7277892659488394c602f21053d11fd
@@ -32,6 +32,11 @@ KEGG: Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04
 NCBI: Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04570945842aa0fd82ecc2ba959, a8c8fad4d7f47d97189cce81775e2553, 822ae6bb527ff0e8b9a702166b211f99, aa0b02c80855f72246d525846e8543d7, fa7af8e890647a409b52b315b41b5d48, 59f31add94c3dd1b706f72ee3e821cbb, 5d17c2638ec3fe48f0e669c4fc89932e, d0ad661b40e4555fa64bef0b15b224bb, 8bfad9c53d8aeddb9a154a6bb3298f86, bf97cdef972b39d600e66a11d850a626, 37db39f991de45babd4b9f6920b5783b
 SEED: Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04570945842aa0fd82ecc2ba959, a8c8fad4d7f47d97189cce81775e2553, 822ae6bb527ff0e8b9a702166b211f99, aa0b02c80855f72246d525846e8543d7, fa7af8e890647a409b52b315b41b5d48, 59f31add94c3dd1b706f72ee3e821cbb, 5d17c2638ec3fe48f0e669c4fc89932e, d0ad661b40e4555fa64bef0b15b224bb, 8bfad9c53d8aeddb9a154a6bb3298f86, bf97cdef972b39d600e66a11d850a626, 37db39f991de45babd4b9f6920b5783b
 UniProt: Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04570945842aa0fd82ecc2ba959, a8c8fad4d7f47d97189cce81775e2553, 822ae6bb527ff0e8b9a702166b211f99, aa0b02c80855f72246d525846e8543d7, fa7af8e890647a409b52b315b41b5d48, 59f31add94c3dd1b706f72ee3e821cbb, 5d17c2638ec3fe48f0e669c4fc89932e, d0ad661b40e4555fa64bef0b15b224bb, 8bfad9c53d8aeddb9a154a6bb3298f86, bf97cdef972b39d600e66a11d850a626, 37db39f991de45babd4b9f6920b5783b
+InterPro: Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
+KEGG: Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
+NCBI: Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
+SEED: Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
+UniProt: Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
 --> SEED <--
 tr|A2TND1|A2TND1_9FLAO	No SEED hit	hypothetical protein	(LCA: Cellulophaga sp. MED134, Dokdonia donghaensis MED134, Krokinobacter sp. 4H-3-7-5)
 tr|A2TND3|A2TND3_9FLAO	No SEED hit	hypothetical protein	(LCA: Cellulophaga sp. MED134, Krokinobacter sp. 4H-3-7-5)
