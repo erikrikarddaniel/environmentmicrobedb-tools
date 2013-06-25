@@ -383,11 +383,12 @@ begin
       fields = line.split("\t")
       next if fields[2] == '*'
       next if fields[0] == last_hit
-      last_hit = fields[0]
       if a = _find_longest_annotation_match(fields[2])
+	warn "#{fields[0]}: Found annotation for #{fields[2]}: #{a}" if @options[:verbose]
 	a.n_specific += 1
+	last_hit = fields[0]
       else
-	warn "Found no annotation for #{fields[2]}" if @options[:verbose]
+	warn "#{fields[0]}: Found no annotation for #{fields[2]}" if @options[:verbose]
       end
     end
     STDERR.puts if @options[:verbose]

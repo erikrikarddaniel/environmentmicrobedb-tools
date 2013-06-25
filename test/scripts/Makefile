@@ -24,5 +24,5 @@ cdnaobservations.01:
 	@$(CHECK)
 
 cdnaobservations.02:
-	@../../scripts/cdnaobservations --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
+	@../../scripts/cdnaobservations --verbose --header=$@.header --orf2id=taxon:NCBI:$@.orf2taxid --name2orf=function:SEED:$@.seedname2orf --name2orf=function:KEGG:$@.keggname2orf $@.orfs.sam | ruby -r json -e "puts JSON.pretty_generate(JSON.parse(ARGF.read))" > $@.out
 	@$(CHECK)
