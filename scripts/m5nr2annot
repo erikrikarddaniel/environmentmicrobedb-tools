@@ -166,7 +166,6 @@ def seed_parser(db)
     @data['SEED']['md52id2func'] = data
     File.new("#{@options[:datadir]}/#{db}/SEED.md52id2func").each_with_index do |line, linenum|
       STDERR.print '.' if @options[:verbose] and linenum % PROGRESS_INTERVAL == 0
-      n = linenum
       line.chomp!
       begin
 	fields = line.split(/\s*\t\s*/)
@@ -192,14 +191,20 @@ def seed_parser(db)
 
   # 3. SEED.id2subsystems
   begin
-    warn "\tSEED.id2subsystems" if @options[:verbose]
+    STDERR.print "\tSEED.id2subsystems" if @options[:verbose]
     data = {}
     @data['SEED']['id2subsystems'] = data
-    File.new("#{@options[:datadir]}/#{db}/SEED.id2subsystems").each do |line|
-      line.chomp!
-      fields = line.split(/\s*\t\s*/)
-      data[fields[-1]] = fields[0..-2]
+    File.new("#{@options[:datadir]}/#{db}/SEED.id2subsystems").each_with_index do |line, linenum|
+      STDERR.print '.' if @options[:verbose] and linenum % PROGRESS_INTERVAL == 0
+      begin
+	line.chomp!
+	fields = line.split(/\s*\t\s*/)
+	data[fields[-1]] = fields[0..-2]
+      rescue ArgumentError
+	STDERR.print "E#{linenum}" if @options[:verbose]
+      end
     end
+    warn "done" if @options[:verbose]
   rescue
     warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.id2subsystems: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
     exit

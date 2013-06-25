@@ -3,7 +3,7 @@ Parsing data files in m5nr2annot.00.data/UniProt
 Parsing data files in m5nr2annot.00.data/SEED
 	SEED.md52id2ont.done
 	SEED.md52id2func.E1198done
-	SEED.id2subsystems
+	SEED.id2subsystems.done
 Parsing data files in m5nr2annot.00.data/NCBI
 Parsing data files in m5nr2annot.00.data/InterPro
 Parsing m5nr2annot.00.blasttab
