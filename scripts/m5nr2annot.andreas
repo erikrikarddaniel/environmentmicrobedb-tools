@@ -1,0 +1,555 @@
+#!/usr/bin/ruby
+
+#DIR="/media/DATA/m5nr.6/ruby/"
+DIR="/proj/b2011178/db/md5nr.6/"
+
+
+h=ARGV.index("-h")
+if h
+puts <<HELP
+
+ruby m5nr.rb  -t <[blast, phmmer]>  -i <tabular blast or phmmer>  -o <output file>  -s <[SEED, KEGG, KO]>  -m <mapping file>  -e <evalue cut-off>  -id <identity cut-off>  -l <alignment length cut-off>
+
+Required parameters:
+-t	Indicate whether your input comes from phmmer or blast annotation (values: blast, phmmer)
+-i	Input file: tabular output from blast (-m 8) or phmmer (--tblout)
+-o	Output file
+-s	Database source (values: SEED, KEGG, KO)
+
+Options:
+-m      Tab-delimited file with mapping data, obtained from "samtools idxstats". i.e. "sequence name (tab)  sequence length (tab)  # mapped reads"
+-e      Max e-value (default: 10E-5)
+-id	Min % of identity (default: 50) - Only for blast
+-l	Min length of the alignment (default: 15) - Only for blast
+-h      Show this help
+
+HELP
+exit
+end
+
+if !ARGV.index("-t")
+puts "-t is a required option"
+exit
+end
+
+if !ARGV.index("-i")
+puts "-i is a required option"
+exit
+end
+=begin
+if !ARGV.index("-m")
+puts "-m is a required option"
+exit
+end
+=end
+
+if !ARGV.index("-o")
+puts "-o is a required option"
+exit
+end
+
+=begin
+if !ARGV.index("-e")
+puts "-e is a required option"
+exit
+end
+=end
+
+if !ARGV.index("-s")
+puts "-s is a required option"
+exit
+end
+
+
+t=ARGV[ARGV.index("-t")+1]
+ta=["blast", "phmmer"]
+if !ta.index(t)
+puts "Allowed values for -t: blast, phmmer"
+exit
+end
+
+s=ARGV[ARGV.index("-s")+1]
+sa=["SEED", "seed", "Seed", "KEGG", "Kegg", "kegg", "KO", "ko", "Ko"]
+if !sa.index(s)
+puts "Allowed values for -s: SEED, KEGG, KO"
+exit
+end
+
+=begin
+e=ARGV[ARGV.index("-e")+1].to_f
+if !e.between?(0,10)
+puts "Please indicate a valid number as e-value cut-off (-e)"
+exit
+end
+=end
+
+
+if !File.exists?(ARGV[ARGV.index("-i")+1])
+print "Unable to open "
+print ARGV[ARGV.index("-i")+1]
+print "\n"
+exit
+end 
+
+if ARGV.index("-m")
+if !File.exists?(ARGV[ARGV.index("-m")+1])
+print "Unable to open "
+print ARGV[ARGV.index("-m")+1]
+print "\n"
+exit
+end
+end
+
+
+=begin
+#Load annotation
+puts "Loading annotations..."
+a=File.readlines(ARGV[ARGV.index("-i")+1])
+annotation=[]
+md5id_a=[]
+contig_a=[]
+evalue_a=[]
+score_a=[]
+identity_a=[]
+over_a=[]
+
+print "Number of total annotations:  "
+print a.length
+print "\n"
+=end
+
+e_t=0.00001
+if ARGV.index("-e")
+e_t=ARGV[ARGV.index("-e")+1].to_f
+end
+
+i_t=50
+if ARGV.index("-id")
+i_t=ARGV[ARGV.index("-id")+1].to_f
+end
+
+l_t=15
+if ARGV.index("-l")
+l_t=ARGV[ARGV.index("-l")+1].to_f
+end
+
+ann=ARGV[ARGV.index("-t")+1]
+
+case
+
+when ann=="phmmer" || ann=="Phmmer" || ann=="PHMMER"
+
+#Load annotation
+puts "Loading phmmer annotation...."
+a=File.readlines(ARGV[ARGV.index("-i")+1])
+annotation=[]
+md5id_a=[]
+contig_a=[]
+evalue_a=[]
+score_a=[]
+identity_a=[]
+over_a=[]
+
+an=0
+n=3
+while n<a.length  do
+annotation[n-3]=a[n].split(/\ +/)
+if annotation[n-3][4].to_f<=e_t
+md5id_a[an]=annotation[an][0]
+contig_a[an]=annotation[an][2]
+evalue_a[an]=annotation[an][4]
+score_a[an]="NA"
+identity_a[an]="NA"
+over_a[an]="NA"
+an=an+1
+end
+n=n+1
+end
+
+
+when ann=="blast" || ann=="Blast" || ann=="BLAST"
+
+#Load annotation
+puts "Loading blast annotations..."
+a=File.readlines(ARGV[ARGV.index("-i")+1])
+annotation=[]
+md5id_a=[]
+contig_a=[]
+evalue_a=[]
+score_a=[]
+identity_a=[]
+over_a=[]
+
+
+an=0
+n=0
+while n< a.length do
+annotation[n]=a[n].split(/\t+/)
+
+if annotation[n][8].to_f>= annotation[n][6].to_f
+over=annotation[n][7].to_f-annotation[n][8].to_f
+else
+over=annotation[n][9].to_f-annotation[n][6].to_f
+end
+
+if annotation[n][10].to_f<=e_t
+	if annotation[n][2].to_f>=i_t
+		if over>=l_t
+		md5id_a[an]=annotation[n][1]
+		contig_a[an]=annotation[n][0]
+		evalue_a[an]=annotation[n][10]
+		if annotation[n][8].to_f>= annotation[n][6].to_f
+		over_a[an]=annotation[n][7].to_f-annotation[n][8].to_f
+		else
+		over_a[an]=annotation[n][9].to_f-annotation[n][6].to_f
+		end	
+		identity_a[an]= annotation[n][2]
+		score_a[an]=annotation[n][11]
+		an=an+1
+		end
+	end
+end
+n=n+1
+end
+
+
+end
+
+annotation=""
+
+print "Number of total annotations:  "
+print a.length
+print "\n"
+
+print "Number of valid annotations: "
+print md5id_a.length
+print "\n" 
+
+print "Number of valid annotated sequences: "
+print contig_a.uniq.length
+print "\n"
+
+if ARGV.index("-m")
+h=ARGV[ARGV.index("-m")+1]
+end
+
+if h
+#Load hit
+puts "Loading mapping file...."
+hit=[]
+contig_h=[]
+nhit=[]
+q=0
+b=File.readlines(ARGV[ARGV.index("-m")+1])
+while q<b.length-1 do
+hit[q]=b[q].split(/\t+/)
+contig_h[q]=hit[q][0]
+nhit[q]=hit[q][2]
+q=q+1
+end
+end
+
+sys=ARGV[ARGV.index("-s")+1]
+
+case 
+
+when sys=="KEGG" || sys=="kegg" || sys=="kegg"
+
+#Load KEGG Tables
+puts "Loading KEGG......"
+kg_m5id=File.readlines(DIR+"KEGG.md52id2ont.m5id")
+kg_kegg=File.readlines(DIR+"KEGG.md52id2ont.kegg")
+kg_func=File.readlines(DIR+"KEGG.md52id2ont.func")
+
+
+
+n=0
+while n<kg_m5id.length
+kg_m5id[n]=kg_m5id[n].chop
+n=n+1
+end
+
+
+puts "Calculating query......."
+#out=ARGV[ARGV.index("-o")+1]
+#o=File.open(out,"w")
+
+out2=ARGV[ARGV.index("-o")+1]
+o2=File.open(out2,"w")
+
+o2.write("Seq")
+o2.write("\t")
+o2.write("Ref")
+o2.write("\t")
+o2.write("Evalue")
+o2.write("\t")
+o2.write("Identity")
+o2.write("\t")
+o2.write("Align_length")
+o2.write("\t")
+o2.write("Function")
+o2.write("\t")
+o2.write("Kegg")
+o2.write("\t")
+o2.write("Hit")
+o2.write("\n")
+
+
+i=1
+c=0
+test=""
+test2=""
+while c<md5id_a.length
+ind=kg_m5id.index(md5id_a[c])
+if contig_a[c]!=test
+	if ind
+		o2.write(contig_a[c])
+		o2.write("\t")
+		o2.write(md5id_a[c])     
+		o2.write("\t")
+		o2.write(evalue_a[c])
+		o2.write("\t")
+		o2.write(identity_a[c])
+		o2.write("\t")
+		o2.write(over_a[c])
+		o2.write("\t")
+		o2.write(kg_func[ind].chop)
+		o2.write("\t")
+		o2.write(kg_kegg[ind].chop)
+		o2.write("\t")
+		if h
+		hitid=contig_h.index(contig_a[c])
+                if hitid
+		o2.write(nhit[hitid])
+		else
+		o2.write("1")
+		end
+		else
+		o2.write("1")
+		end
+		o2.write("\n")
+		test=contig_a[c]
+
+
+	end
+end
+c=c+1 
+
+if c==i*md5id_a.length/100
+print i
+print "%"
+print "\n" 
+i=i+1
+end
+end
+
+when sys=="KO" || sys=="ko" || sys=="Ko"
+
+#Load KEGG Tables
+puts "Loading KO......"
+kg_m5id=File.readlines(DIR+"KEGG.md52id2ont.m5id")
+kg_kegg=File.readlines(DIR+"KEGG.md52id2ont.kegg")
+kg_func=File.readlines(DIR+"KEGG.md52id2ont.func")
+ko_l1=File.readlines(DIR+"ko.id2hierachy.l1")
+ko_l2=File.readlines(DIR+"ko.id2hierachy.l2")
+ko_l3=File.readlines(DIR+"ko.id2hierachy.l3")
+ko_l4=File.readlines(DIR+"ko.id2hierachy.l4")
+ko_kegg=File.readlines(DIR+"ko.id2hierachy.kegg")
+
+
+n=0
+while n<kg_m5id.length
+kg_m5id[n]=kg_m5id[n].chop
+n=n+1
+end
+
+
+puts "Calculating query......."
+out=ARGV[ARGV.index("-o")+1]
+o=File.open(out,"w")
+
+o.write("Seq")
+o.write("\t")
+o.write("Ref")
+o.write("\t")
+o.write("Evalue")
+o.write("\t")
+o.write("Identity")
+o.write("\t")
+o.write("Align_length")
+o.write("\t")
+o.write("Level1")
+o.write("\t")
+o.write("Level2")
+o.write("\t")
+o.write("Level3")
+o.write("\t")
+o.write("Function")
+o.write("\t")
+o.write("Kegg")
+o.write("\t")
+o.write("Hit")
+o.write("\n")
+
+#out2=ARGV[0]+".kegg.tab"
+#o2=File.open(out2,"w")
+
+i=1
+c=0
+test=""
+test2=""
+while c<md5id_a.length
+ind=kg_m5id.index(md5id_a[c])
+if contig_a[c]!=test
+	if ind
+	ind2=ko_kegg.index(kg_kegg[ind])
+		if ind2
+			o.write(contig_a[c])
+			o.write("\t")
+			o.write(md5id_a[c])
+			o.write("\t")
+			o.write(evalue_a[c])
+			o.write("\t")
+			o.write(identity_a[c])
+			o.write("\t")
+			o.write(over_a[c])
+			o.write("\t")
+			o.write(ko_l1[ind2].chop)
+			o.write("\t")
+			o.write(ko_l2[ind2].chop)
+			o.write("\t")
+			o.write(ko_l3[ind2].chop)
+			o.write("\t")
+			o.write(ko_l4[ind2].chop)
+			o.write("\t")
+			o.write(ko_kegg[ind2].chop)
+			o.write("\t")
+			if h
+        	        hitid=contig_h.index(contig_a[c])
+                	if hitid
+                	o.write(nhit[hitid])
+                	else
+                	o.write("1")
+			end
+               		else
+                	o.write("1")
+			end
+			o.write("\n")
+			test=contig_a[c]
+			
+		end
+	end
+end
+c=c+1
+if c==i*md5id_a.length/100
+print i
+print "%"
+print "\n" 
+i=i+1
+end
+end
+
+when sys=="SEED" || sys=="seed" || sys=="Seed"
+
+#Load SEED Tables
+puts "Loading Subsystems......"
+ss_ssid=File.readlines(DIR+"SEED.id2subsystems.ssid")
+ss_l1=File.readlines(DIR+"SEED.id2subsystems.l1")
+ss_l2=File.readlines(DIR+"SEED.id2subsystems.l2")
+ss_l3=File.readlines(DIR+"SEED.id2subsystems.l3")
+ss_fc=File.readlines(DIR+"SEED.id2subsystems.fc")
+oo_ssid=File.readlines(DIR+"SEED.md52id2ont.ssid")
+oo_m5id=File.readlines(DIR+"SEED.md52id2ont.m5id")
+
+
+n=0
+while n<oo_m5id.length
+oo_m5id[n]=oo_m5id[n].chop
+n=n+1
+end
+
+puts "Calculating query......."
+out=ARGV[ARGV.index("-o")+1]
+o=File.open(out,"w")
+
+o.write("Seq")
+o.write("\t")
+o.write("Ref")
+o.write("\t")
+o.write("Evalue")
+o.write("\t")
+o.write("Identity")
+o.write("\t")
+o.write("Align_length")
+o.write("\t")
+o.write("Level1")
+o.write("\t")
+o.write("Level2")
+o.write("\t")
+o.write("Level3")
+o.write("\t")
+o.write("Function")
+o.write("\t")
+o.write("Hit")
+o.write("\n")
+
+
+i=1
+c=0
+test=""
+while c<md5id_a.length
+if contig_a[c]!=test
+ind=oo_m5id.index(md5id_a[c])
+	if ind
+	ind2=ss_ssid.index(oo_ssid[ind])
+		if ind2
+
+			o.write(contig_a[c])
+			o.write("\t")
+			o.write(md5id_a[c])     
+			o.write("\t")
+			o.write(evalue_a[c])
+			o.write("\t")
+			o.write(identity_a[c])
+			o.write("\t")
+			o.write(over_a[c])
+			o.write("\t")
+			o.write(ss_l1[ind2].chop)
+			o.write("\t")
+			o.write(ss_l2[ind2].chop)
+			o.write("\t")
+			o.write(ss_l3[ind2].chop)
+			o.write("\t")
+			o.write(ss_fc[ind2].chop)
+			o.write("\t")
+			if h
+                        hitid=contig_h.index(contig_a[c])
+                        if hitid
+                        o.write(nhit[hitid])
+                        else
+                        o.write("1")
+                        end
+                        else
+                        o.write("1")
+                        end
+			o.write("\n")
+			test=contig_a[c]
+			
+		end
+	end
+end
+c=c+1
+if c==i*md5id_a.length/100
+print i
+print "%"
+print "\n"
+i=i+1
+end
+end
+
+
+else
+
+puts "Please specify a source (SEED, KEGG, KO)"
+
+end

@@ -1,0 +1,28 @@
+The directory ftp.metagenomics.anl.gov/data/MD5nr/sources/ contains tar balls
+for databases (SEED, NCBI, KEGG etc.). Broken files with the same names can be
+found in ftp.metagenomics.anl.gov/data/M5nr/sources/ (note: missing 'D' in
+'M5nr').
+
+At least the SEED tar ball appears to contain two files that could be used to
+construct an annotation: SEED.id2subsystems and SEED.md52id2ont. The former
+contains the full subsystem hierarchy and the latter a lookup table from md5 sum
+to subsystem identity (e.g. SS00009563) (plus subsystem name).
+
+In the NCBI tar ball the file RefSeq.md52id2func contains lots of information.
+The file RefSeq.id2tax contains the full taxonomic hierarchy (but not the id)
+indexed with the RefSeq accession. It does not, however, seem to be complete
+(see e.g. the md5 sum 0fe0f9a4ed6e995ecebd4bf6d6250802, mapping to the RefSeq
+accession NC_016791, which does not appear in the taxonomy file, nor can the
+strain (Clostridium sp. BNL1100) be found; the accession number does not appear
+in any other file). In fact, it appears very incomplete (none of the hits in my
+test file of 48 proteins could be found).
+
+The InterPro tar ball contains InterPro.md52id2func which has a mapping from md5
+sum to function and organism name. There are multiple lines per md5 sum.
+
+In the KEGG tar ball KEGG.md52id2ont contains a mapping from md5 sums to K
+numbers which can be looked up in the ko.id2hierachy file.
+
+In the UniProt tar ball TrEMBL.md52id2func contains md5 sums, UniProt
+accessions, protein names and organism names. The TrEMBL.md52id2ont contains a
+mapping from md5 sums to GO identifiers and terms (multiple hits per md5 sum).

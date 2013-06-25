@@ -1,4 +1,4 @@
-sessionname environmentmicrobedb-tools
+sessionname envmicrobedb-tools
 setenv PROJROOT $PWD
 chdir $PROJROOT/test/make
 screen -t tmake

@@ -1,0 +1,221 @@
+0fe0f6979c4e9755889dd94f97a0e805	IPR019776	Flagellar basal body rod protein, conserved site	Shewanella denitrificans (strain OS217 / ATCC BAA-1090 / DSM 15013)	InterPro
+0fe0f6979c4e9755889dd94f97a0e805	IPR020013	Fagellar hook-basal body protein, FlgE/F/G	Shewanella denitrificans (strain OS217 / ATCC BAA-1090 / DSM 15013)	InterPro
+0fe0faa6e635508c9150688aac899995	IPR001789	Signal transduction response regulator, receiver domain	Zobellia galactanivorans (strain DSM 12802 / CIP 106680 / NCIMB 13871 / Dsij)	InterPro
+0fe0faa6e635508c9150688aac899995	IPR007492	LytTr, DNA-binding domain	Zobellia galactanivorans (strain DSM 12802 / CIP 106680 / NCIMB 13871 / Dsij)	InterPro
+0fe0faa6e635508c9150688aac899995	IPR011006	CheY-like superfamily	Zobellia galactanivorans (strain DSM 12802 / CIP 106680 / NCIMB 13871 / Dsij)	InterPro
+0fe101a823ac29f1452677cd79fca3f3	IPR003594	ATPase-like, ATP-binding domain	Corynebacterium sp. L2-79-05	InterPro
+0fe101a823ac29f1452677cd79fca3f3	IPR011712	Signal transduction histidine kinase, subgroup 3, dimerisation and phosphoacceptor domain	Corynebacterium sp. L2-79-05	InterPro
+1faf719e6afe89f294e4e1f0c2240189	IPR010838	Uncharacterised protein family UPF0354	Bacillus licheniformis (strain DSM 13 / ATCC 14580)	InterPro
+1faf719e6afe89f294e4e1f0c2240189	IPR010838	Uncharacterised protein family UPF0354	Bacillus sp. BT1B_CT2	InterPro
+1faf753ff5fafe33c3ab122379971bad	IPR006680	Amidohydrolase 1	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+1faf753ff5fafe33c3ab122379971bad	IPR011059	Metal-dependent hydrolase, composite domain	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+1faf7618185dcb2b6264c8900facfce9	IPR004045	Glutathione S-transferase, N-terminal	Ralstonia solanacearum (Pseudomonas solanacearum)	InterPro
+1faf7618185dcb2b6264c8900facfce9	IPR010987	Glutathione S-transferase, C-terminal-like	Ralstonia solanacearum (Pseudomonas solanacearum)	InterPro
+23fb9ea013bcc071159810e569675d2a	IPR013823	Ribosomal protein L7/L12, C-terminal	Deinococcus proteolyticus (strain ATCC 35074 / DSM 20540 / JCM 6276 / NBRC 101906 / NCIMB 13154 / VKM Ac-1939 / CCM 2703)	InterPro
+23fb9ea013bcc071159810e569675d2a	IPR014719	Ribosomal protein L7/L12, C-terminal/adaptor protein ClpS-like	Deinococcus proteolyticus (strain ATCC 35074 / DSM 20540 / JCM 6276 / NBRC 101906 / NCIMB 13154 / VKM Ac-1939 / CCM 2703)	InterPro
+23fb9f40363b1cbad2c5b6435b02fc0d	IPR001789	Signal transduction response regulator, receiver domain	Robiginitalea biformata (strain ATCC BAA-864 / HTCC2501 / KCTC 12146)	InterPro
+23fb9f40363b1cbad2c5b6435b02fc0d	IPR007492	LytTr, DNA-binding domain	Robiginitalea biformata (strain ATCC BAA-864 / HTCC2501 / KCTC 12146)	InterPro
+23fb9f40363b1cbad2c5b6435b02fc0d	IPR011006	CheY-like superfamily	Robiginitalea biformata (strain ATCC BAA-864 / HTCC2501 / KCTC 12146)	InterPro
+23fba07af5001d119497de478321dc69	IPR011598	Helix-loop-helix DNA-binding	Saccharomyces cerevisiae (strain FostersO) (Baker's yeast)	InterPro
+23fba07af5001d119497de478321dc69	IPR024097	Basic helix-loop-helix leucine zipper transcription factor	Saccharomyces cerevisiae (strain FostersO) (Baker's yeast)	InterPro
+254149347b5e5d6da562ba5f99c2fcb3	IPR018524	DNA/RNA non-specific endonuclease, active site	Rattus norvegicus (Rat)	InterPro
+254149347b5e5d6da562ba5f99c2fcb3	IPR020821	Extracellular Endonuclease, subunit A	Rattus norvegicus (Rat)	InterPro
+25414944acefb2d2ee2845063b51adf0	IPR001789	Signal transduction response regulator, receiver domain	Cellulophaga algicola (strain DSM 14237 / IC166 / ACAM 630)	InterPro
+25414944acefb2d2ee2845063b51adf0	IPR007492	LytTr, DNA-binding domain	Cellulophaga algicola (strain DSM 14237 / IC166 / ACAM 630)	InterPro
+25414944acefb2d2ee2845063b51adf0	IPR011006	CheY-like superfamily	Cellulophaga algicola (strain DSM 14237 / IC166 / ACAM 630)	InterPro
+25414985e83b72843ddb83909ad5ce7f	IPR000674	Aldehyde oxidase/xanthine dehydrogenase, a/b hammerhead	Cupriavidus necator (strain ATCC 43291 / DSM 13513 / N-1) (Ralstonia eutropha)	InterPro
+25414985e83b72843ddb83909ad5ce7f	IPR008274	Aldehyde oxidase/xanthine dehydrogenase, molybdopterin binding	Cupriavidus necator (strain ATCC 43291 / DSM 13513 / N-1) (Ralstonia eutropha)	InterPro
+25abbbb23fb32b7148f7eef9a51b2b1c	IPR023801	Histone deacetylase domain	Solibacter usitatus (strain Ellin6076)	InterPro
+25abbc1950d0c31b74f3855e75dc3c31	IPR021768	Protein of unknown function DUF3332	Vibrio shilonii AK1	InterPro
+25abc04570945842aa0fd82ecc2ba959	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+25abc04570945842aa0fd82ecc2ba959	IPR002933	Peptidase M20	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+25abc04570945842aa0fd82ecc2ba959	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+25abc04570945842aa0fd82ecc2ba959	IPR011650	Peptidase M20, dimerisation	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+25abc28bf9b0ef67278162bee93a4558	IPR002146	ATPase, F0 complex, subunit B/B', bacterial/chloroplast	Saccharomonospora azurea NA-128	InterPro
+25abc28bf9b0ef67278162bee93a4558	IPR002146	ATPase, F0 complex, subunit B/B', bacterial/chloroplast	Saccharomonospora azurea SZMC 14600	InterPro
+37db39a34f86d061f26f7000332b0274	IPR012677	Nucleotide-binding, alpha-beta plait	Ajellomyces capsulata (strain NAm1 / WU24) (Darling's disease fungus) (Histoplasma capsulatum)	InterPro
+37db39b327744e8fea5470fe536f7552	IPR007358	Nucleoid-associated protein NdpA	Aggregatibacter actinomycetemcomitans ANH9381	InterPro
+37db39f991de45babd4b9f6920b5783b	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Zunongwangia profunda (strain DSM 18752 / CCTCC AB 206139 / SM-A87)	InterPro
+37db39f991de45babd4b9f6920b5783b	IPR002933	Peptidase M20	Zunongwangia profunda (strain DSM 18752 / CCTCC AB 206139 / SM-A87)	InterPro
+37db39f991de45babd4b9f6920b5783b	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Zunongwangia profunda (strain DSM 18752 / CCTCC AB 206139 / SM-A87)	InterPro
+37db39f991de45babd4b9f6920b5783b	IPR011650	Peptidase M20, dimerisation	Zunongwangia profunda (strain DSM 18752 / CCTCC AB 206139 / SM-A87)	InterPro
+37db3a9626fdc5830463eef6860a7ebc	IPR002559	Transposase, IS4-like	Bacillus cereus (strain ZK / E33L)	InterPro
+37db3a9626fdc5830463eef6860a7ebc	IPR012337	Ribonuclease H-like domain	Bacillus cereus (strain ZK / E33L)	InterPro
+59f31a97cdccb7b79bf8b1b9f461ad66	IPR011006	CheY-like superfamily	Streptomyces avermitilis	InterPro
+59f31a97cdccb7b79bf8b1b9f461ad66	IPR011991	Winged helix-turn-helix transcription repressor DNA-binding	Streptomyces avermitilis	InterPro
+59f31add94c3dd1b706f72ee3e821cbb	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+59f31add94c3dd1b706f72ee3e821cbb	IPR002933	Peptidase M20	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+59f31add94c3dd1b706f72ee3e821cbb	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+59f31add94c3dd1b706f72ee3e821cbb	IPR011650	Peptidase M20, dimerisation	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+59f31c4d8c7589b025d03c4a58915821	IPR000560	Histidine phosphatase superfamily, clade-2	Escherichia coli MS 21-1	InterPro
+59f31fb1b15fe3141f4547c22b090b56	IPR004087	K Homology domain	Homo sapiens (Human)	InterPro
+5d17bfb07a3137b782790023b7194d50	IPR003593	AAA+ ATPase domain	Beutenbergia cavernae (strain ATCC BAA-8 / DSM 12333 / NBRC 16432)	InterPro
+5d17bfb07a3137b782790023b7194d50	IPR017871	ABC transporter, conserved site	Beutenbergia cavernae (strain ATCC BAA-8 / DSM 12333 / NBRC 16432)	InterPro
+5d17c2638ec3fe48f0e669c4fc89932e	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Flavobacteria bacterium (strain BBFL7)	InterPro
+5d17c2638ec3fe48f0e669c4fc89932e	IPR002933	Peptidase M20	Flavobacteria bacterium (strain BBFL7)	InterPro
+5d17c2638ec3fe48f0e669c4fc89932e	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Flavobacteria bacterium (strain BBFL7)	InterPro
+5d17c2638ec3fe48f0e669c4fc89932e	IPR011650	Peptidase M20, dimerisation	Flavobacteria bacterium (strain BBFL7)	InterPro
+5d17c52f4dd155545b25a7d4d0091b70	IPR002771	Multiple antibiotic resistance (MarC)-related	Burkholderia sp. (strain 383) (Burkholderia cepacia (strain ATCC 17760 / NCIB 9086 / R18194))	InterPro
+5d17c5b60f91a6d92c76cd89de89a162	IPR000897	Signal recognition particle, SRP54 subunit, GTPase	Nitratiruptor sp. (strain SB155-2)	InterPro
+643b1ec93ef9d6cab80f3901c9a85aa2	IPR021688	Protein of unknown function DUF3270	Streptococcus sanguinis SK150	InterPro
+643b2018e1184536dec18af9aea9b34a	IPR009293	Uncharacterised protein family UPF0478	Streptococcus sanguinis SK355	InterPro
+643b21453c8769f6c89dd0a834483142	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+643b21453c8769f6c89dd0a834483142	IPR002933	Peptidase M20	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+643b21453c8769f6c89dd0a834483142	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+643b21453c8769f6c89dd0a834483142	IPR011650	Peptidase M20, dimerisation	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+643b21acaa96c62dcf47e9fd0a75b5c1	IPR000349	Hepadnavirus major surface antigen	Hepatitis B virus (HBV)	InterPro
+643b23f8b9f3e6b2220265ad9110110e	IPR006145	Pseudouridine synthase, RsuA and RluB/C/D/E/F	Streptococcus infantis SK1302	InterPro
+659ac079edcfb8998d58d460caed8d5f	IPR012337	Ribonuclease H-like domain	Finegoldia magna ACS-171-V-Col3	InterPro
+659ac11c951c79a02cd9473c76aa8bf3	IPR000515	Binding-protein-dependent transport systems inner membrane component	Clostridium hathewayi WAL-18680	InterPro
+659ac2c55ab9d2e01ce132bf1c4487e7	IPR001789	Signal transduction response regulator, receiver domain	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+659ac2c55ab9d2e01ce132bf1c4487e7	IPR007492	LytTr, DNA-binding domain	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+659ac2c55ab9d2e01ce132bf1c4487e7	IPR011006	CheY-like superfamily	Lacinutrix sp. (strain 5H-3-7-4)	InterPro
+659ac2f35fcdcd6bb62c8d384214b564	IPR013783	Immunoglobulin-like fold	Borrelia turicatae (strain 91E135)	InterPro
+659ac2f35fcdcd6bb62c8d384214b564	IPR014756	Immunoglobulin E-set	Borrelia turicatae (strain 91E135)	InterPro
+73de92bc3a81c84f6866245eefd98ea8	IPR023616	Cytochrome c oxidase, subunit I domain	Troides aeacus	InterPro
+73de94a11bd7f26faaec627f42f8a87f	IPR000522	ABC transporter, permease protein	Vibrio harveyi 1DA3	InterPro
+73de94e014c3d7dbed291c21de7700a3	IPR011059	Metal-dependent hydrolase, composite domain	Idiomarina loihiensis (strain ATCC BAA-735 / DSM 15497 / L2-TR)	InterPro
+73de9514ae4a9bc551474bbed11a6867	IPR002125	CMP/dCMP deaminase, zinc-binding	Pseudoxanthomonas spadix (strain BD-a59)	InterPro
+73de9514ae4a9bc551474bbed11a6867	IPR016193	Cytidine deaminase-like	Pseudoxanthomonas spadix (strain BD-a59)	InterPro
+77e90c41570f9855710f51e754a903fa	IPR016027	Nucleic acid-binding, OB-fold-like	Ostreococcus lucimarinus (strain CCE9901)	InterPro
+77e90cd46f5366d8dd35b0109ceb1988	IPR019660	Putative sensory transduction regulator YbjN	Rhodobacteraceae bacterium HTCC2083	InterPro
+77e90e882504fb9a5043600553f53bc4	IPR001789	Signal transduction response regulator, receiver domain	Maribacter sp. (strain HTCC2170 / KCCM 42371)	InterPro
+77e90e882504fb9a5043600553f53bc4	IPR007492	LytTr, DNA-binding domain	Maribacter sp. (strain HTCC2170 / KCCM 42371)	InterPro
+77e90e882504fb9a5043600553f53bc4	IPR011006	CheY-like superfamily	Maribacter sp. (strain HTCC2170 / KCCM 42371)	InterPro
+77e90ff2833183f31a7cbd300c84114d	IPR000956	Stathmin	Osmerus mordax (Rainbow smelt) (Atherina mordax)	InterPro
+77e910083d3863f932015e340207f54b	IPR000471	Interferon alpha/beta/delta	Ovis aries (Sheep)	InterPro
+8121c376ef1df7648f9c994e7af0ce62	IPR005123	Oxoglutarate/iron-dependent oxygenase	Methylobacter tundripaludum SV96	InterPro
+8121c465c6bd225733449b5e07ea3384	IPR013216	Methyltransferase type 11	Thioalkalimicrobium aerophilum AL3	InterPro
+8121c4d8ffc17b48ce1eab85ca8d0cae	IPR001789	Signal transduction response regulator, receiver domain	Kordia algicida OT-1	InterPro
+8121c4d8ffc17b48ce1eab85ca8d0cae	IPR007492	LytTr, DNA-binding domain	Kordia algicida OT-1	InterPro
+8121c4d8ffc17b48ce1eab85ca8d0cae	IPR011006	CheY-like superfamily	Kordia algicida OT-1	InterPro
+8121c55aeeb04aaa35a46862d8e79481	IPR003598	Immunoglobulin subtype 2	Drosophila willistoni (Fruit fly)	InterPro
+8121c55aeeb04aaa35a46862d8e79481	IPR003599	Immunoglobulin subtype	Drosophila willistoni (Fruit fly)	InterPro
+81a12398734dea36c3c0d3f26c01b0ef	IPR018060	DNA binding HTH domain, AraC-type	Arthrobacter arilaitensis (strain DSM 16368 / CIP 108037 / JCM 13566 / Re117)	InterPro
+81a12398734dea36c3c0d3f26c01b0ef	IPR018062	HTH domain AraC-type, conserved site	Arthrobacter arilaitensis (strain DSM 16368 / CIP 108037 / JCM 13566 / Re117)	InterPro
+81a124530801e7ba6a92f3568b0353d5	IPR001789	Signal transduction response regulator, receiver domain	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+81a124530801e7ba6a92f3568b0353d5	IPR007492	LytTr, DNA-binding domain	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+81a124530801e7ba6a92f3568b0353d5	IPR011006	CheY-like superfamily	Leeuwenhoekiella blandensis (strain CECT 7118 / CCUG 51940 / MED217) (Flavobacterium sp. (strain MED217))	InterPro
+81a128e447a6fa0023076a83b533fbe4	IPR004593	Exonuclease SbcD	Oscillochloris trichoides DG-6	InterPro
+81a128e447a6fa0023076a83b533fbe4	IPR024654	Calcineurin-like phosphoesterase superfamily domain	Oscillochloris trichoides DG-6	InterPro
+822adda5b027e37291354a33e784cc52	IPR015964	Cytochrome C oxidase subunit II-like, transmembrane domain	Hylobates pileatus (Pileated gibbon)	InterPro
+822ae03cb9bedc365c0dd8f5070a4955	IPR002583	Ribosomal protein S20	Mycobacterium vanbaalenii (strain DSM 7251 / PYR-1)	InterPro
+822ae6bb527ff0e8b9a702166b211f99	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Croceibacter atlanticus (strain ATCC BAA-628 / HTCC2559 / KCTC 12090)	InterPro
+822ae6bb527ff0e8b9a702166b211f99	IPR002933	Peptidase M20	Croceibacter atlanticus (strain ATCC BAA-628 / HTCC2559 / KCTC 12090)	InterPro
+822ae6bb527ff0e8b9a702166b211f99	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Croceibacter atlanticus (strain ATCC BAA-628 / HTCC2559 / KCTC 12090)	InterPro
+822ae6bb527ff0e8b9a702166b211f99	IPR011650	Peptidase M20, dimerisation	Croceibacter atlanticus (strain ATCC BAA-628 / HTCC2559 / KCTC 12090)	InterPro
+822ae896aa887945b68de6d7f1ed2aa3	IPR003439	ABC transporter-like	Azospirillum lipoferum (strain 4B)	InterPro
+822ae896aa887945b68de6d7f1ed2aa3	IPR003593	AAA+ ATPase domain	Azospirillum lipoferum (strain 4B)	InterPro
+827ba36fe1f4ecde1240655890504d1e	IPR016035	Acyl transferase/acyl hydrolase/lysophospholipase	Sporothrix schenckii (Rose-picker's disease fungus)	InterPro
+827ba3a43ed5636c3f18aec376350365	IPR000221	Protamine P1	Canis familiaris (Dog) (Canis lupus familiaris)	InterPro
+827ba6f717a1315eab5772baafbc480e	IPR001789	Signal transduction response regulator, receiver domain	Flavobacteriales bacterium ALC-1	InterPro
+827ba6f717a1315eab5772baafbc480e	IPR007492	LytTr, DNA-binding domain	Flavobacteriales bacterium ALC-1	InterPro
+827ba6f717a1315eab5772baafbc480e	IPR011006	CheY-like superfamily	Flavobacteriales bacterium ALC-1	InterPro
+827bacac8497710d5fb4d13b972e3b72	IPR007782	Vitamin K-dependent gamma-carboxylase	Homo sapiens (Human)	InterPro
+827bacac8497710d5fb4d13b972e3b72	IPR011020	HTTM	Homo sapiens (Human)	InterPro
+828f08551988434e12c82d1b0ef96528	IPR012001	Thiamine pyrophosphate enzyme, N-terminal TPP-binding domain	Bacillus thuringiensis serovar pulsiensis BGSC 4CC1	InterPro
+828f08551988434e12c82d1b0ef96528	IPR023757	3D-(3,5/4)-trihydroxycyclohexane-1,2-dione hydrolase	Bacillus thuringiensis serovar pulsiensis BGSC 4CC1	InterPro
+828f0b1d224abe584637fea0970fcb4d	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Dokdonia donghaensis MED134	InterPro
+828f0b1d224abe584637fea0970fcb4d	IPR002933	Peptidase M20	Dokdonia donghaensis MED134	InterPro
+828f0b1d224abe584637fea0970fcb4d	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Dokdonia donghaensis MED134	InterPro
+828f0b1d224abe584637fea0970fcb4d	IPR011650	Peptidase M20, dimerisation	Dokdonia donghaensis MED134	InterPro
+828f0bce792d07bc1f8dbfc353a61391	IPR011010	DNA breaking-rejoining enzyme, catalytic core	Bacillus thuringiensis subsp. kurstaki	InterPro
+828f0bce792d07bc1f8dbfc353a61391	IPR013762	Integrase-like, catalytic core	Bacillus thuringiensis subsp. kurstaki	InterPro
+9811242d13b0dc022c73b1fd9139624d	IPR003329	Acylneuraminate cytidylyltransferase	Synechococcus sp. (strain WH7805)	InterPro
+9811242d13b0dc022c73b1fd9139624d	IPR004528	3-deoxy-D-manno-octulosonate cytidylyltransferase	Synechococcus sp. (strain WH7805)	InterPro
+9811247329c6da2116f2cc6d81e53447	IPR001789	Signal transduction response regulator, receiver domain	Cellulophaga lytica (strain ATCC 23178 / DSM 7489 / JCM 8516 / NBRC 14961 / NCIMB 1423 / VKM B-1433 / Cy l20)	InterPro
+9811247329c6da2116f2cc6d81e53447	IPR007492	LytTr, DNA-binding domain	Cellulophaga lytica (strain ATCC 23178 / DSM 7489 / JCM 8516 / NBRC 14961 / NCIMB 1423 / VKM B-1433 / Cy l20)	InterPro
+9811247329c6da2116f2cc6d81e53447	IPR011006	CheY-like superfamily	Cellulophaga lytica (strain ATCC 23178 / DSM 7489 / JCM 8516 / NBRC 14961 / NCIMB 1423 / VKM B-1433 / Cy l20)	InterPro
+98112954a937ebca71870002b0b4e5c5	IPR011047	Quinonprotein alcohol dehydrogenase-like	Acidithiobacillus sp. GGI-221	InterPro
+98112954a937ebca71870002b0b4e5c5	IPR018391	Pyrrolo-quinoline quinone beta-propeller repeat	Acidithiobacillus sp. GGI-221	InterPro
+a5a012cae000eca128f18e22a3dc034d	IPR016040	NAD(P)-binding domain	Bacillus cereus G9241	InterPro
+a5a0130260f41ccd813a5c2ddd01fc95	IPR000515	Binding-protein-dependent transport systems inner membrane component	Paenibacillus sp. oral taxon 786 str. D14	InterPro
+a5a0138cb17e1b092edd7b06925185f4	IPR001789	Signal transduction response regulator, receiver domain	Dokdonia donghaensis MED134	InterPro
+a5a0138cb17e1b092edd7b06925185f4	IPR007492	LytTr, DNA-binding domain	Dokdonia donghaensis MED134	InterPro
+a5a0138cb17e1b092edd7b06925185f4	IPR011006	CheY-like superfamily	Dokdonia donghaensis MED134	InterPro
+a5a014d3041e4786c1b0138f8a8fffa0	IPR003594	ATPase-like, ATP-binding domain	Aeromonas phage 65	InterPro
+a5a01500e5a63d3b04b430549f872aa3	IPR003495	Cobalamin (vitamin B12) biosynthesis CobW-like	Syntrophomonas wolfei subsp. wolfei (strain Goettingen)	InterPro
+a9ded59b30467fa5f3f54b3f1c97d643	IPR000883	Cytochrome c oxidase, subunit I	Sepia pharaonis (Pharaoh cuttlefish)	InterPro
+a9ded59b30467fa5f3f54b3f1c97d643	IPR023616	Cytochrome c oxidase, subunit I domain	Sepia pharaonis (Pharaoh cuttlefish)	InterPro
+a9ded754db0004b574dc3accd46f98a7	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Kordia algicida OT-1	InterPro
+a9ded754db0004b574dc3accd46f98a7	IPR002933	Peptidase M20	Kordia algicida OT-1	InterPro
+a9ded754db0004b574dc3accd46f98a7	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Kordia algicida OT-1	InterPro
+a9ded754db0004b574dc3accd46f98a7	IPR011650	Peptidase M20, dimerisation	Kordia algicida OT-1	InterPro
+a9ded8ee9374e009acdd883a0bec0464	IPR003679	Aminoglycoside 3-N-acetyltransferase	Campylobacter jejuni subsp. jejuni HB93-13	InterPro
+a9dedb06bf29afa1aca62d66c4ad362f	IPR007698	Alanine dehydrogenase/PNT, NAD(H)-binding domain	Propionibacterium acnes HL050PA1	InterPro
+aa0afe7bb69c5ec4ed5f4dadacb987e2	IPR016027	Nucleic acid-binding, OB-fold-like	Kordia algicida OT-1	InterPro
+aa0afe7bb69c5ec4ed5f4dadacb987e2	IPR019844	Cold-shock conserved site	Kordia algicida OT-1	InterPro
+aa0b02c80855f72246d525846e8543d7	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	unidentified eubacterium SCB49	InterPro
+aa0b02c80855f72246d525846e8543d7	IPR002933	Peptidase M20	unidentified eubacterium SCB49	InterPro
+aa0b02c80855f72246d525846e8543d7	IPR010161	Peptidase M20B, tripeptide aminopeptidase	unidentified eubacterium SCB49	InterPro
+aa0b02c80855f72246d525846e8543d7	IPR011650	Peptidase M20, dimerisation	unidentified eubacterium SCB49	InterPro
+aa0b039cc112e6d2dea0e40577567474	IPR000515	Binding-protein-dependent transport systems inner membrane component	Methanococcus aeolicus (strain Nankai-3 / ATCC BAA-1280)	InterPro
+aa0b040395155f61062d03e242088f58	IPR001140	ABC transporter, transmembrane domain	Ruegeria sp. PR1b	InterPro
+ab7cf3881cfaa0ce01d59f8c3da91ee3	IPR013087	Zinc finger, C2H2-type/integrase, DNA-binding	Pan troglodytes (Chimpanzee)	InterPro
+ab7cf3881cfaa0ce01d59f8c3da91ee3	IPR015880	Zinc finger, C2H2-like	Pan troglodytes (Chimpanzee)	InterPro
+ab7cf45dc995980b3a79b48321eb9e8c	IPR001789	Signal transduction response regulator, receiver domain	unidentified eubacterium SCB49	InterPro
+ab7cf45dc995980b3a79b48321eb9e8c	IPR007492	LytTr, DNA-binding domain	unidentified eubacterium SCB49	InterPro
+ab7cf45dc995980b3a79b48321eb9e8c	IPR011006	CheY-like superfamily	unidentified eubacterium SCB49	InterPro
+ab7cf58b33aeb836dd11922f7a1e0372	IPR000402	ATPase, P-type cation exchange, beta subunit	Bos taurus (Bovine)	InterPro
+ab7cf58b33aeb836dd11922f7a1e0372	IPR015565	ATPase, P-type, sodium/potassium-dependent, beta-1 subunit	Bos taurus (Bovine)	InterPro
+b8116533829b9035173d7fd104f1c198	IPR017945	DHBP synthase RibB-like alpha/beta domain	Photobacterium leiognathi subsp. mandapamensis svers.1.1	InterPro
+b81166868d9760a226544baffa43c16b	IPR010794	Maltose operon periplasmic	Mannheimia haemolytica PHL213	InterPro
+b81166cceadf42a52a82cea65e9c55b7	IPR006680	Amidohydrolase 1	Psychroflexus torquis ATCC 700755	InterPro
+b81166f15367790940e209330ed8884d	IPR000477	Reverse transcriptase	Human immunodeficiency virus 1	InterPro
+b81166f15367790940e209330ed8884d	IPR001037	Integrase, C-terminal, retroviral	Human immunodeficiency virus 1	InterPro
+bd33d74be988eccdcd6578fe88f43be9	IPR014721	Ribosomal protein S5 domain 2-type fold, subgroup	Lactobacillus ultunensis DSM 16047	InterPro
+bd33d74be988eccdcd6578fe88f43be9	IPR020568	Ribosomal protein S5 domain 2-type fold	Lactobacillus ultunensis DSM 16047	InterPro
+bd33d8e8a5c11ef31f3c5ef09521f06e	IPR001789	Signal transduction response regulator, receiver domain	Polaribacter sp. MED152	InterPro
+bd33d8e8a5c11ef31f3c5ef09521f06e	IPR007492	LytTr, DNA-binding domain	Polaribacter sp. MED152	InterPro
+bd33d8e8a5c11ef31f3c5ef09521f06e	IPR011006	CheY-like superfamily	Polaribacter sp. MED152	InterPro
+bd33d94451b7dd781e74ced814a38abc	IPR000883	Cytochrome c oxidase, subunit I	Unzela japix	InterPro
+bd33d94451b7dd781e74ced814a38abc	IPR023616	Cytochrome c oxidase, subunit I domain	Unzela japix	InterPro
+bf97cbd516d29fbb4d3ca0d6a9f44e37	IPR011011	Zinc finger, FYVE/PHD-type	Malassezia globosa (strain ATCC MYA-4612 / CBS 7966) (Dandruff-associated fungus)	InterPro
+bf97cbd516d29fbb4d3ca0d6a9f44e37	IPR013083	Zinc finger, RING/FYVE/PHD-type	Malassezia globosa (strain ATCC MYA-4612 / CBS 7966) (Dandruff-associated fungus)	InterPro
+bf97cdef972b39d600e66a11d850a626	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Gramella forsetii (strain KT0803)	InterPro
+bf97cdef972b39d600e66a11d850a626	IPR002933	Peptidase M20	Gramella forsetii (strain KT0803)	InterPro
+bf97cdef972b39d600e66a11d850a626	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Gramella forsetii (strain KT0803)	InterPro
+bf97cdef972b39d600e66a11d850a626	IPR011650	Peptidase M20, dimerisation	Gramella forsetii (strain KT0803)	InterPro
+bf97d0426ad89bdecee134621fbc51ba	IPR000119	Histone-like bacterial DNA-binding protein	Bacteroides sp. 2_1_33B	InterPro
+bf97d0426ad89bdecee134621fbc51ba	IPR010992	IHF-like DNA-binding	Bacteroides sp. 2_1_33B	InterPro
+ce1f1e71e17189c4f69899411ad0c2ba	IPR013762	Integrase-like, catalytic core	Cyanothece sp. (strain PCC 7425 / ATCC 29141)	InterPro
+ce1f1e71e17189c4f69899411ad0c2ba	IPR022000	Bacteriophage P27, p02, N-terminal	Cyanothece sp. (strain PCC 7425 / ATCC 29141)	InterPro
+ce1f1fee57ec013d9123da4a6ad7343b	IPR006680	Amidohydrolase 1	Dokdonia donghaensis MED134	InterPro
+ce1f20457ff6ffa09f0788ffe38e4797	IPR003323	Ovarian tumour, otubain	Daphnia pulex (Water flea)	InterPro
+ce1f205cafb6c93b89fcf3d713a7d462	IPR007352	Protein of unknown function DUF420	Staphylococcus hominis SK119	InterPro
+d0ad64dc58efca30407e7e341bb3d4ed	IPR001159	Double-stranded RNA-binding	Candida dubliniensis (strain CD36 / ATCC MYA-646 / CBS 7987 / NCPF 3949 / NRRL Y-17841) (Yeast)	InterPro
+d0ad64dc58efca30407e7e341bb3d4ed	IPR014720	Double-stranded RNA-binding-like	Candida dubliniensis (strain CD36 / ATCC MYA-646 / CBS 7987 / NCPF 3949 / NRRL Y-17841) (Yeast)	InterPro
+d0ad661b40e4555fa64bef0b15b224bb	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Flavobacteriales bacterium ALC-1	InterPro
+d0ad661b40e4555fa64bef0b15b224bb	IPR002933	Peptidase M20	Flavobacteriales bacterium ALC-1	InterPro
+d0ad661b40e4555fa64bef0b15b224bb	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Flavobacteriales bacterium ALC-1	InterPro
+d0ad661b40e4555fa64bef0b15b224bb	IPR011650	Peptidase M20, dimerisation	Flavobacteriales bacterium ALC-1	InterPro
+d0ad696b3aebe65ae4c3a900b9481860	IPR002591	Type I phosphodiesterase/nucleotide pyrophosphatase/phosphate transferase	Prevotella amnii CRIS 21A-A	InterPro
+d0ad696b3aebe65ae4c3a900b9481860	IPR017849	Alkaline phosphatase-like, alpha/beta/alpha	Prevotella amnii CRIS 21A-A	InterPro
+f5c5fa01d036d66adf709b745261823c	IPR018490	Cyclic nucleotide-binding-like	uncultured cyanobacterium	InterPro
+f5c5fa01d036d66adf709b745261823c	IPR022299	Transcription regulator, NtcA	uncultured cyanobacterium	InterPro
+f5c5fb024322bbfa68c4c9429edcaf6f	IPR001789	Signal transduction response regulator, receiver domain	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+f5c5fb024322bbfa68c4c9429edcaf6f	IPR007492	LytTr, DNA-binding domain	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+f5c5fb024322bbfa68c4c9429edcaf6f	IPR011006	CheY-like superfamily	Krokinobacter sp. (strain 4H-3-7-5) (Krokinobacter diaphorus (strain 4H-3-7-5))	InterPro
+f5c5fb577f474a8974bab9cfca4b2d7a	IPR000719	Protein kinase, catalytic domain	Rattus norvegicus (Rat)	InterPro
+f5c5fb577f474a8974bab9cfca4b2d7a	IPR002290	Serine/threonine- / dual-specificity protein kinase, catalytic  domain	Rattus norvegicus (Rat)	InterPro
+f6c685e970ea48c7e8005313a7581774	IPR000883	Cytochrome c oxidase, subunit I	Acipenser baerii baerii	InterPro
+f6c685e970ea48c7e8005313a7581774	IPR023616	Cytochrome c oxidase, subunit I domain	Acipenser baerii baerii	InterPro
+f6c687f55857c5b8242bcdbe1584210a	IPR001789	Signal transduction response regulator, receiver domain	Muricauda ruestringensis (strain DSM 13258 / LMG 19739 / B1)	InterPro
+f6c687f55857c5b8242bcdbe1584210a	IPR007492	LytTr, DNA-binding domain	Muricauda ruestringensis (strain DSM 13258 / LMG 19739 / B1)	InterPro
+f6c687f55857c5b8242bcdbe1584210a	IPR011006	CheY-like superfamily	Muricauda ruestringensis (strain DSM 13258 / LMG 19739 / B1)	InterPro
+f6c688ab6171fa142801665e7815b607	IPR004776	Auxin efflux carrier	Reinekea blandensis MED297	InterPro
+f6c688b353ac869590247d54b490835a	IPR014825	DNA alkylation repair enzyme	Enterococcus faecalis TX0017	InterPro
+fa7af765a03b155c9dc3e40a63b68ff1	IPR000883	Cytochrome c oxidase, subunit I	Polyphemus pediculus	InterPro
+fa7af765a03b155c9dc3e40a63b68ff1	IPR023616	Cytochrome c oxidase, subunit I domain	Polyphemus pediculus	InterPro
+fa7af8e890647a409b52b315b41b5d48	IPR001261	ArgE/DapE/ACY1/CPG2/YscS, conserved site	Bizionia argentinensis JUB59	InterPro
+fa7af8e890647a409b52b315b41b5d48	IPR002933	Peptidase M20	Bizionia argentinensis JUB59	InterPro
+fa7af8e890647a409b52b315b41b5d48	IPR010161	Peptidase M20B, tripeptide aminopeptidase	Bizionia argentinensis JUB59	InterPro
+fa7af8e890647a409b52b315b41b5d48	IPR011650	Peptidase M20, dimerisation	Bizionia argentinensis JUB59	InterPro
+fa7af97a2c5cf687d8b0fc9c45ec24e6	IPR000225	Armadillo	Phytophthora sojae (strain P6497) (Soybean stem and root rot agent) (Phytophthora megasperma f. sp. glycines)	InterPro
+fa7af97a2c5cf687d8b0fc9c45ec24e6	IPR011989	Armadillo-like helical	Phytophthora sojae (strain P6497) (Soybean stem and root rot agent) (Phytophthora megasperma f. sp. glycines)	InterPro
+fbd421db8789f9ac473aed7ca9826375	IPR013784	Carbohydrate-binding-like fold	Koribacter versatilis (strain Ellin345)	InterPro
+fbd421db8789f9ac473aed7ca9826375	IPR014766	Carboxypeptidase, regulatory domain	Koribacter versatilis (strain Ellin345)	InterPro
+fbd42262146ecf9f5f9072b76aa43ac3	IPR006680	Amidohydrolase 1	Flavobacteriales bacterium ALC-1	InterPro
+fbd42262146ecf9f5f9072b76aa43ac3	IPR011059	Metal-dependent hydrolase, composite domain	Flavobacteriales bacterium ALC-1	InterPro
+fbd4253c6b8cc5faa0325228d03f0a4a	IPR001457	NADH:ubiquinone/plastoquinone oxidoreductase, chain 6	Fagopyrum esculentum subsp. ancestrale (Wild buckwheat)	InterPro
+fbd4276efdc6c42e80396bd71c2f7ae8	IPR003835	Glycosyl transferase, family 19	Rickettsia massiliae (strain Mtu5)	InterPro

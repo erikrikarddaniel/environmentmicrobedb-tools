@@ -1,0 +1,332 @@
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# m5nr2annot
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
+
+$VERBOSE = true
+
+require 'optparse'
+
+@options = {
+  fracfrombestbitscore: false,
+  maxnumhits: false,
+  minbitscore: 50.0
+}
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+m5nr2annot: Outputs various annotations based on input blast files (-m 8) and M5nr associated database files.
+    m5nr2annot [options] file0.blasttab[.gz|.bz2] .. filen.blasttab[.gz|.bz2]
+
+      A group of hits, determined by --minbitscore and other options, are 
+      considered for annotations, in particular the taxonomic (LCA) annotation.
+
+      Each subdirectory to --datadir (InterPro, KEGG, NCBI, SEED and UniProt) 
+      are scanned for datafiles, in the simplest case just the .md52id2func 
+      file, in the KEGG, NCBI and SEED case it's more complex (read the 
+      source...).
+BANNER
+
+  opts.on "--basename=STRING", "Basename of output annotation files, no default" do |v|
+    @options[:basename] = v
+  end
+
+  opts.on "--datadir=DIR", "Directory where M5nr sources tar balls have been unpacked (probably from ftp.metagenomics.anl.gov/data/MD5nr/sources)" do |v|
+    @options[:datadir] =v
+  end
+
+  opts.on "--fracfrombestbitscore=FLOAT", "Include hit if it's within this fraction from the best hit's bitscore, no default" do |v|
+    @options[:fracfrombestbitscore] = v.to_f
+  end
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "--maxnumhits=INT", "Maximum number of hits to consider, no default" do |v|
+    @options[:maxnumhits] = v.to_i
+  end
+
+  opts.on "--minbitscore=FLOAT", "Minimum bitscore for a hit to be considered, default #{@options[:minbitscore]}" do |v|
+    @options[:minbitscore] = v.to_f
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = [ :basename, :datadir, :minbitscore ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
+end
+
+# This will contain, indexed by db name, various data required for annotation.
+# The actual content is specific for each parser and handler method.
+@data = {}	
+
+def _log_hits(db, hits)
+  if hits.length == 0
+    warn "No hits to handle"
+    return
+  end
+  warn "#{db}: Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
+end
+
+# Here comes handlers and parsers. All of them will be setup in the DATADIRS
+# constant hash and used in a "functional programming" way via the
+# self.method() method. Parsers parse different types of database content,
+# while handlers takes a set of hits and outputs the annotations.
+def empty_handler(db, hits)
+end
+
+def simple_handler(db, hits)
+  _log_hits(db, hits)
+end
+
+def empty_parser(db)
+end
+
+def kegg_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+end
+
+def md52id2func_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+end
+
+def ncbi_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+end
+
+# The SEED db parser
+def seed_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  @data[db] = { }
+
+  # There are three files we need: SEED.md52id2ont, SEED.md52id2func and
+  # SEED.id2subsystems, each will be read and placed in the @data structure
+  # under the keys 'SEED' and the respective file endings. The first two will
+  # be a hash indexed by md5sum, the third a hash indexed by subsystem id
+  # (which can be found in the md52id2ont file).
+  #
+  # 1. SEED.md52id2ont
+  begin
+    warn "\tSEED.md52id2ont" if @options[:verbose]
+    data = {}
+    @data['SEED']['md52id2ont'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2ont").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+
+      # We have entries with multiple annotations
+      data[fields[0]] ||= []
+      data[fields[0]] << fields[1]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 2. SEED.md52id2func
+  begin
+    warn "\tSEED.md52id2func" if @options[:verbose]
+    data = {}
+    @data['SEED']['md52id2func'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2func").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+
+      # We may have multiple rows. We only care about picking up the complete list of organisms
+      if data[fields[0]]
+	data[fields[0]][:organisms] << fields[3]
+      else
+	data[fields[0]] = { 
+	  desc: fields[2],
+	  organisms: [ fields[3] ]
+	}
+      end
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2func: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 3. SEED.id2subsystems
+  begin
+    warn "\tSEED.id2subsystems" if @options[:verbose]
+    data = {}
+    @data['SEED']['id2subsystems'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.id2subsystems").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      data[fields[-1]] = fields[0..-2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.id2subsystems: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # Open an output file
+  fname = "#{@options[:basename]}.seed"
+  begin
+    @data[db][:outfile] = File.new(fname, "w")
+  rescue
+    warn "Failed to open file for SEED output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
+  end
+end
+
+def seed_handler(db, hits)
+  return if hits.length == 0
+
+  _log_hits(db, hits)
+
+  # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
+  no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
+  output = [ no_seed_hit ]
+
+  # 1. Get all the hits from the md52id2func file and collect the organism names plus the name of the first (best) hit
+  organisms = []
+
+  hits.each do |hit|
+    if target = @data[db]['md52id2func'][hit[:target]]
+      no_seed_hit[2] ||= target[:desc]
+      organisms += target[:organisms]
+    end
+  end
+  lca = "(LCA: #{organisms.join(", ")})"
+  no_seed_hit << lca
+
+  # 2. Do we have any SEED subsystem hits, if so find the one with the highest score
+  seed_hits = {}
+  hits.each do |hit|
+    if target = @data[db]['md52id2ont'][hit[:target]]
+      output = [ ] if output[0] == no_seed_hit
+      target.each { |t| seed_hits[t] = true }
+    end
+  end
+  seed_hits.keys.each do |ss|
+    output << [ hits[0][:subject], ss ] + @data['SEED']['id2subsystems'][ss] + [ lca ]
+  end
+
+  output.each do |out|
+    @data[db][:outfile].puts out.join("\t")
+  end
+end
+
+# Setup a hash with callback functions for different kinds of subdirectories
+DATADIRS = {
+  '.' => {
+    'parser' => :empty_parser,
+    'handler' => :empty_handler
+  },
+  '..' => {
+    'parser' => :empty_parser,
+    'handler' => :empty_handler
+  },
+  'InterPro' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'KEGG' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'NCBI' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'SEED' => {
+    'parser' => :seed_parser,
+    'handler' => :seed_handler
+  },
+  'UniProt' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+}
+
+# Scan --datadir for directories with database files
+begin
+  Dir.entries(@options[:datadir]).each do |subdir|
+    next unless File.directory?("#{@options[:datadir]}/#{subdir}")
+    if DATADIRS[subdir] and DATADIRS[subdir]['parser']
+      self.method(DATADIRS[subdir]['parser']).call(subdir)
+    else
+      warn "No parser found for #{subdir} subdirectory, skipping"
+    end
+  end
+rescue
+  warn "Failed to read data directory (#{@options[:datadir]}: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+  exit 2
+end
+
+# Loop over infiles
+begin
+  file = nil
+  hits = []
+  first_hit = false
+  ARGV.each do |file|
+    if file == '-'
+      warn "Parsing STDIN" if @options[:verbose]
+      io = STDIN
+    else
+      warn "Parsing #{file}" if @options[:verbose]
+      if file =~ /.gz$/
+	io = IO.popen("gunzip -c #{file}", "r")
+      elsif file =~ /.bz2$/
+	io = IO.popen("bunzip2 -c #{file}", "r")
+      else
+	io = File.new(file)
+      end
+    end
+    io.each do |line|
+      line.sub!(/\s*#.*/, '')
+      next if line == ''
+      fields = line.split(/\s*\t\s*/)
+      s = { subject: fields[0], target: fields[1], bitscore: fields[-1].to_f }
+      if not first_hit
+	first_hit = s
+	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
+      elsif s[:subject] != first_hit[:subject]
+	DATADIRS.keys.each do |db|
+	  self.method(DATADIRS[db]['handler']).call(db, hits)	# This call outputs the actual annotation data
+	end
+	first_hit = s
+	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
+      elsif s[:bitscore] >= @options[:minbitscore]
+	next if @options[:fracfrombestbitscore] and s[:bitscore] < @options[:fracfrombestbitscore] * first_hit[:bitscore]
+	next if @options[:maxnumhits] and hits.length > @options[:maxnumhits]
+	hits << s
+      end
+    end
+  end
+  DATADIRS.keys.each do |db|
+    self.method(DATADIRS[db]['handler']).call(db, hits)
+  end
+rescue
+  warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end
