@@ -1,555 +1,332 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# m5nr2annot
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
 
-#DIR="/media/DATA/m5nr.6/ruby/"
-DIR="/proj/b2011178/db/md5nr.6/"
+$VERBOSE = true
 
+require 'optparse'
 
-h=ARGV.index("-h")
-if h
-puts <<HELP
+@options = {
+  fracfrombestbitscore: false,
+  maxnumhits: false,
+  minbitscore: 50.0
+}
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+m5nr2annot: Outputs various annotations based on input blast files (-m 8) and M5nr associated database files.
+    m5nr2annot [options] file0.blasttab[.gz|.bz2] .. filen.blasttab[.gz|.bz2]
 
-ruby m5nr.rb  -t <[blast, phmmer]>  -i <tabular blast or phmmer>  -o <output file>  -s <[SEED, KEGG, KO]>  -m <mapping file>  -e <evalue cut-off>  -id <identity cut-off>  -l <alignment length cut-off>
+      A group of hits, determined by --minbitscore and other options, are 
+      considered for annotations, in particular the taxonomic (LCA) annotation.
 
-Required parameters:
--t	Indicate whether your input comes from phmmer or blast annotation (values: blast, phmmer)
--i	Input file: tabular output from blast (-m 8) or phmmer (--tblout)
--o	Output file
--s	Database source (values: SEED, KEGG, KO)
+      Each subdirectory to --datadir (InterPro, KEGG, NCBI, SEED and UniProt) 
+      are scanned for datafiles, in the simplest case just the .md52id2func 
+      file, in the KEGG, NCBI and SEED case it's more complex (read the 
+      source...).
+BANNER
 
-Options:
--m      Tab-delimited file with mapping data, obtained from "samtools idxstats". i.e. "sequence name (tab)  sequence length (tab)  # mapped reads"
--e      Max e-value (default: 10E-5)
--id	Min % of identity (default: 50) - Only for blast
--l	Min length of the alignment (default: 15) - Only for blast
--h      Show this help
+  opts.on "--basename=STRING", "Basename of output annotation files, no default" do |v|
+    @options[:basename] = v
+  end
 
-HELP
-exit
+  opts.on "--datadir=DIR", "Directory where M5nr sources tar balls have been unpacked (probably from ftp.metagenomics.anl.gov/data/MD5nr/sources)" do |v|
+    @options[:datadir] =v
+  end
+
+  opts.on "--fracfrombestbitscore=FLOAT", "Include hit if it's within this fraction from the best hit's bitscore, no default" do |v|
+    @options[:fracfrombestbitscore] = v.to_f
+  end
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "--maxnumhits=INT", "Maximum number of hits to consider, no default" do |v|
+    @options[:maxnumhits] = v.to_i
+  end
+
+  opts.on "--minbitscore=FLOAT", "Minimum bitscore for a hit to be considered, default #{@options[:minbitscore]}" do |v|
+    @options[:minbitscore] = v.to_f
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = [ :basename, :datadir, :minbitscore ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
 end
 
-if !ARGV.index("-t")
-puts "-t is a required option"
-exit
+# This will contain, indexed by db name, various data required for annotation.
+# The actual content is specific for each parser and handler method.
+@data = {}	
+
+def _log_hits(db, hits)
+  if hits.length == 0
+    warn "No hits to handle"
+    return
+  end
+  warn "#{db}: Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
 end
 
-if !ARGV.index("-i")
-puts "-i is a required option"
-exit
-end
-=begin
-if !ARGV.index("-m")
-puts "-m is a required option"
-exit
-end
-=end
-
-if !ARGV.index("-o")
-puts "-o is a required option"
-exit
+# Here comes handlers and parsers. All of them will be setup in the DATADIRS
+# constant hash and used in a "functional programming" way via the
+# self.method() method. Parsers parse different types of database content,
+# while handlers takes a set of hits and outputs the annotations.
+def empty_handler(db, hits)
 end
 
-=begin
-if !ARGV.index("-e")
-puts "-e is a required option"
-exit
-end
-=end
-
-if !ARGV.index("-s")
-puts "-s is a required option"
-exit
+def simple_handler(db, hits)
+  _log_hits(db, hits)
 end
 
-
-t=ARGV[ARGV.index("-t")+1]
-ta=["blast", "phmmer"]
-if !ta.index(t)
-puts "Allowed values for -t: blast, phmmer"
-exit
+def empty_parser(db)
 end
 
-s=ARGV[ARGV.index("-s")+1]
-sa=["SEED", "seed", "Seed", "KEGG", "Kegg", "kegg", "KO", "ko", "Ko"]
-if !sa.index(s)
-puts "Allowed values for -s: SEED, KEGG, KO"
-exit
+def kegg_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
 end
 
-=begin
-e=ARGV[ARGV.index("-e")+1].to_f
-if !e.between?(0,10)
-puts "Please indicate a valid number as e-value cut-off (-e)"
-exit
-end
-=end
-
-
-if !File.exists?(ARGV[ARGV.index("-i")+1])
-print "Unable to open "
-print ARGV[ARGV.index("-i")+1]
-print "\n"
-exit
-end 
-
-if ARGV.index("-m")
-if !File.exists?(ARGV[ARGV.index("-m")+1])
-print "Unable to open "
-print ARGV[ARGV.index("-m")+1]
-print "\n"
-exit
-end
+def md52id2func_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
 end
 
-
-=begin
-#Load annotation
-puts "Loading annotations..."
-a=File.readlines(ARGV[ARGV.index("-i")+1])
-annotation=[]
-md5id_a=[]
-contig_a=[]
-evalue_a=[]
-score_a=[]
-identity_a=[]
-over_a=[]
-
-print "Number of total annotations:  "
-print a.length
-print "\n"
-=end
-
-e_t=0.00001
-if ARGV.index("-e")
-e_t=ARGV[ARGV.index("-e")+1].to_f
+def ncbi_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
 end
 
-i_t=50
-if ARGV.index("-id")
-i_t=ARGV[ARGV.index("-id")+1].to_f
+# The SEED db parser
+def seed_parser(db)
+  warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  @data[db] = { }
+
+  # There are three files we need: SEED.md52id2ont, SEED.md52id2func and
+  # SEED.id2subsystems, each will be read and placed in the @data structure
+  # under the keys 'SEED' and the respective file endings. The first two will
+  # be a hash indexed by md5sum, the third a hash indexed by subsystem id
+  # (which can be found in the md52id2ont file).
+  #
+  # 1. SEED.md52id2ont
+  begin
+    warn "\tSEED.md52id2ont" if @options[:verbose]
+    data = {}
+    @data['SEED']['md52id2ont'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2ont").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+
+      # We have entries with multiple annotations
+      data[fields[0]] ||= []
+      data[fields[0]] << fields[1]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 2. SEED.md52id2func
+  begin
+    warn "\tSEED.md52id2func" if @options[:verbose]
+    data = {}
+    @data['SEED']['md52id2func'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.md52id2func").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+
+      # We may have multiple rows. We only care about picking up the complete list of organisms
+      if data[fields[0]]
+	data[fields[0]][:organisms] << fields[3]
+      else
+	data[fields[0]] = { 
+	  desc: fields[2],
+	  organisms: [ fields[3] ]
+	}
+      end
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2func: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 3. SEED.id2subsystems
+  begin
+    warn "\tSEED.id2subsystems" if @options[:verbose]
+    data = {}
+    @data['SEED']['id2subsystems'] = data
+    File.new("#{@options[:datadir]}/#{db}/SEED.id2subsystems").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      data[fields[-1]] = fields[0..-2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.id2subsystems: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # Open an output file
+  fname = "#{@options[:basename]}.seed"
+  begin
+    @data[db][:outfile] = File.new(fname, "w")
+  rescue
+    warn "Failed to open file for SEED output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
+  end
 end
 
-l_t=15
-if ARGV.index("-l")
-l_t=ARGV[ARGV.index("-l")+1].to_f
+def seed_handler(db, hits)
+  return if hits.length == 0
+
+  _log_hits(db, hits)
+
+  # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
+  no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
+  output = [ no_seed_hit ]
+
+  # 1. Get all the hits from the md52id2func file and collect the organism names plus the name of the first (best) hit
+  organisms = []
+
+  hits.each do |hit|
+    if target = @data[db]['md52id2func'][hit[:target]]
+      no_seed_hit[2] ||= target[:desc]
+      organisms += target[:organisms]
+    end
+  end
+  lca = "(LCA: #{organisms.join(", ")})"
+  no_seed_hit << lca
+
+  # 2. Do we have any SEED subsystem hits, if so find the one with the highest score
+  seed_hits = {}
+  hits.each do |hit|
+    if target = @data[db]['md52id2ont'][hit[:target]]
+      output = [ ] if output[0] == no_seed_hit
+      target.each { |t| seed_hits[t] = true }
+    end
+  end
+  seed_hits.keys.each do |ss|
+    output << [ hits[0][:subject], ss ] + @data['SEED']['id2subsystems'][ss] + [ lca ]
+  end
+
+  output.each do |out|
+    @data[db][:outfile].puts out.join("\t")
+  end
 end
 
-ann=ARGV[ARGV.index("-t")+1]
+# Setup a hash with callback functions for different kinds of subdirectories
+DATADIRS = {
+  '.' => {
+    'parser' => :empty_parser,
+    'handler' => :empty_handler
+  },
+  '..' => {
+    'parser' => :empty_parser,
+    'handler' => :empty_handler
+  },
+  'InterPro' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'KEGG' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'NCBI' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+  'SEED' => {
+    'parser' => :seed_parser,
+    'handler' => :seed_handler
+  },
+  'UniProt' => {
+    'parser' => :md52id2func_parser,
+    'handler' => :simple_handler
+  },
+}
 
-case
-
-when ann=="phmmer" || ann=="Phmmer" || ann=="PHMMER"
-
-#Load annotation
-puts "Loading phmmer annotation...."
-a=File.readlines(ARGV[ARGV.index("-i")+1])
-annotation=[]
-md5id_a=[]
-contig_a=[]
-evalue_a=[]
-score_a=[]
-identity_a=[]
-over_a=[]
-
-an=0
-n=3
-while n<a.length  do
-annotation[n-3]=a[n].split(/\ +/)
-if annotation[n-3][4].to_f<=e_t
-md5id_a[an]=annotation[an][0]
-contig_a[an]=annotation[an][2]
-evalue_a[an]=annotation[an][4]
-score_a[an]="NA"
-identity_a[an]="NA"
-over_a[an]="NA"
-an=an+1
-end
-n=n+1
-end
-
-
-when ann=="blast" || ann=="Blast" || ann=="BLAST"
-
-#Load annotation
-puts "Loading blast annotations..."
-a=File.readlines(ARGV[ARGV.index("-i")+1])
-annotation=[]
-md5id_a=[]
-contig_a=[]
-evalue_a=[]
-score_a=[]
-identity_a=[]
-over_a=[]
-
-
-an=0
-n=0
-while n< a.length do
-annotation[n]=a[n].split(/\t+/)
-
-if annotation[n][8].to_f>= annotation[n][6].to_f
-over=annotation[n][7].to_f-annotation[n][8].to_f
-else
-over=annotation[n][9].to_f-annotation[n][6].to_f
+# Scan --datadir for directories with database files
+begin
+  Dir.entries(@options[:datadir]).each do |subdir|
+    next unless File.directory?("#{@options[:datadir]}/#{subdir}")
+    if DATADIRS[subdir] and DATADIRS[subdir]['parser']
+      self.method(DATADIRS[subdir]['parser']).call(subdir)
+    else
+      warn "No parser found for #{subdir} subdirectory, skipping"
+    end
+  end
+rescue
+  warn "Failed to read data directory (#{@options[:datadir]}: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+  exit 2
 end
 
-if annotation[n][10].to_f<=e_t
-	if annotation[n][2].to_f>=i_t
-		if over>=l_t
-		md5id_a[an]=annotation[n][1]
-		contig_a[an]=annotation[n][0]
-		evalue_a[an]=annotation[n][10]
-		if annotation[n][8].to_f>= annotation[n][6].to_f
-		over_a[an]=annotation[n][7].to_f-annotation[n][8].to_f
-		else
-		over_a[an]=annotation[n][9].to_f-annotation[n][6].to_f
-		end	
-		identity_a[an]= annotation[n][2]
-		score_a[an]=annotation[n][11]
-		an=an+1
-		end
+# Loop over infiles
+begin
+  file = nil
+  hits = []
+  first_hit = false
+  ARGV.each do |file|
+    if file == '-'
+      warn "Parsing STDIN" if @options[:verbose]
+      io = STDIN
+    else
+      warn "Parsing #{file}" if @options[:verbose]
+      if file =~ /.gz$/
+	io = IO.popen("gunzip -c #{file}", "r")
+      elsif file =~ /.bz2$/
+	io = IO.popen("bunzip2 -c #{file}", "r")
+      else
+	io = File.new(file)
+      end
+    end
+    io.each do |line|
+      line.sub!(/\s*#.*/, '')
+      next if line == ''
+      fields = line.split(/\s*\t\s*/)
+      s = { subject: fields[0], target: fields[1], bitscore: fields[-1].to_f }
+      if not first_hit
+	first_hit = s
+	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
+      elsif s[:subject] != first_hit[:subject]
+	DATADIRS.keys.each do |db|
+	  self.method(DATADIRS[db]['handler']).call(db, hits)	# This call outputs the actual annotation data
 	end
-end
-n=n+1
-end
-
-
-end
-
-annotation=""
-
-print "Number of total annotations:  "
-print a.length
-print "\n"
-
-print "Number of valid annotations: "
-print md5id_a.length
-print "\n" 
-
-print "Number of valid annotated sequences: "
-print contig_a.uniq.length
-print "\n"
-
-if ARGV.index("-m")
-h=ARGV[ARGV.index("-m")+1]
-end
-
-if h
-#Load hit
-puts "Loading mapping file...."
-hit=[]
-contig_h=[]
-nhit=[]
-q=0
-b=File.readlines(ARGV[ARGV.index("-m")+1])
-while q<b.length-1 do
-hit[q]=b[q].split(/\t+/)
-contig_h[q]=hit[q][0]
-nhit[q]=hit[q][2]
-q=q+1
-end
-end
-
-sys=ARGV[ARGV.index("-s")+1]
-
-case 
-
-when sys=="KEGG" || sys=="kegg" || sys=="kegg"
-
-#Load KEGG Tables
-puts "Loading KEGG......"
-kg_m5id=File.readlines(DIR+"KEGG.md52id2ont.m5id")
-kg_kegg=File.readlines(DIR+"KEGG.md52id2ont.kegg")
-kg_func=File.readlines(DIR+"KEGG.md52id2ont.func")
-
-
-
-n=0
-while n<kg_m5id.length
-kg_m5id[n]=kg_m5id[n].chop
-n=n+1
-end
-
-
-puts "Calculating query......."
-#out=ARGV[ARGV.index("-o")+1]
-#o=File.open(out,"w")
-
-out2=ARGV[ARGV.index("-o")+1]
-o2=File.open(out2,"w")
-
-o2.write("Seq")
-o2.write("\t")
-o2.write("Ref")
-o2.write("\t")
-o2.write("Evalue")
-o2.write("\t")
-o2.write("Identity")
-o2.write("\t")
-o2.write("Align_length")
-o2.write("\t")
-o2.write("Function")
-o2.write("\t")
-o2.write("Kegg")
-o2.write("\t")
-o2.write("Hit")
-o2.write("\n")
-
-
-i=1
-c=0
-test=""
-test2=""
-while c<md5id_a.length
-ind=kg_m5id.index(md5id_a[c])
-if contig_a[c]!=test
-	if ind
-		o2.write(contig_a[c])
-		o2.write("\t")
-		o2.write(md5id_a[c])     
-		o2.write("\t")
-		o2.write(evalue_a[c])
-		o2.write("\t")
-		o2.write(identity_a[c])
-		o2.write("\t")
-		o2.write(over_a[c])
-		o2.write("\t")
-		o2.write(kg_func[ind].chop)
-		o2.write("\t")
-		o2.write(kg_kegg[ind].chop)
-		o2.write("\t")
-		if h
-		hitid=contig_h.index(contig_a[c])
-                if hitid
-		o2.write(nhit[hitid])
-		else
-		o2.write("1")
-		end
-		else
-		o2.write("1")
-		end
-		o2.write("\n")
-		test=contig_a[c]
-
-
-	end
-end
-c=c+1 
-
-if c==i*md5id_a.length/100
-print i
-print "%"
-print "\n" 
-i=i+1
-end
-end
-
-when sys=="KO" || sys=="ko" || sys=="Ko"
-
-#Load KEGG Tables
-puts "Loading KO......"
-kg_m5id=File.readlines(DIR+"KEGG.md52id2ont.m5id")
-kg_kegg=File.readlines(DIR+"KEGG.md52id2ont.kegg")
-kg_func=File.readlines(DIR+"KEGG.md52id2ont.func")
-ko_l1=File.readlines(DIR+"ko.id2hierachy.l1")
-ko_l2=File.readlines(DIR+"ko.id2hierachy.l2")
-ko_l3=File.readlines(DIR+"ko.id2hierachy.l3")
-ko_l4=File.readlines(DIR+"ko.id2hierachy.l4")
-ko_kegg=File.readlines(DIR+"ko.id2hierachy.kegg")
-
-
-n=0
-while n<kg_m5id.length
-kg_m5id[n]=kg_m5id[n].chop
-n=n+1
-end
-
-
-puts "Calculating query......."
-out=ARGV[ARGV.index("-o")+1]
-o=File.open(out,"w")
-
-o.write("Seq")
-o.write("\t")
-o.write("Ref")
-o.write("\t")
-o.write("Evalue")
-o.write("\t")
-o.write("Identity")
-o.write("\t")
-o.write("Align_length")
-o.write("\t")
-o.write("Level1")
-o.write("\t")
-o.write("Level2")
-o.write("\t")
-o.write("Level3")
-o.write("\t")
-o.write("Function")
-o.write("\t")
-o.write("Kegg")
-o.write("\t")
-o.write("Hit")
-o.write("\n")
-
-#out2=ARGV[0]+".kegg.tab"
-#o2=File.open(out2,"w")
-
-i=1
-c=0
-test=""
-test2=""
-while c<md5id_a.length
-ind=kg_m5id.index(md5id_a[c])
-if contig_a[c]!=test
-	if ind
-	ind2=ko_kegg.index(kg_kegg[ind])
-		if ind2
-			o.write(contig_a[c])
-			o.write("\t")
-			o.write(md5id_a[c])
-			o.write("\t")
-			o.write(evalue_a[c])
-			o.write("\t")
-			o.write(identity_a[c])
-			o.write("\t")
-			o.write(over_a[c])
-			o.write("\t")
-			o.write(ko_l1[ind2].chop)
-			o.write("\t")
-			o.write(ko_l2[ind2].chop)
-			o.write("\t")
-			o.write(ko_l3[ind2].chop)
-			o.write("\t")
-			o.write(ko_l4[ind2].chop)
-			o.write("\t")
-			o.write(ko_kegg[ind2].chop)
-			o.write("\t")
-			if h
-        	        hitid=contig_h.index(contig_a[c])
-                	if hitid
-                	o.write(nhit[hitid])
-                	else
-                	o.write("1")
-			end
-               		else
-                	o.write("1")
-			end
-			o.write("\n")
-			test=contig_a[c]
-			
-		end
-	end
-end
-c=c+1
-if c==i*md5id_a.length/100
-print i
-print "%"
-print "\n" 
-i=i+1
-end
-end
-
-when sys=="SEED" || sys=="seed" || sys=="Seed"
-
-#Load SEED Tables
-puts "Loading Subsystems......"
-ss_ssid=File.readlines(DIR+"SEED.id2subsystems.ssid")
-ss_l1=File.readlines(DIR+"SEED.id2subsystems.l1")
-ss_l2=File.readlines(DIR+"SEED.id2subsystems.l2")
-ss_l3=File.readlines(DIR+"SEED.id2subsystems.l3")
-ss_fc=File.readlines(DIR+"SEED.id2subsystems.fc")
-oo_ssid=File.readlines(DIR+"SEED.md52id2ont.ssid")
-oo_m5id=File.readlines(DIR+"SEED.md52id2ont.m5id")
-
-
-n=0
-while n<oo_m5id.length
-oo_m5id[n]=oo_m5id[n].chop
-n=n+1
-end
-
-puts "Calculating query......."
-out=ARGV[ARGV.index("-o")+1]
-o=File.open(out,"w")
-
-o.write("Seq")
-o.write("\t")
-o.write("Ref")
-o.write("\t")
-o.write("Evalue")
-o.write("\t")
-o.write("Identity")
-o.write("\t")
-o.write("Align_length")
-o.write("\t")
-o.write("Level1")
-o.write("\t")
-o.write("Level2")
-o.write("\t")
-o.write("Level3")
-o.write("\t")
-o.write("Function")
-o.write("\t")
-o.write("Hit")
-o.write("\n")
-
-
-i=1
-c=0
-test=""
-while c<md5id_a.length
-if contig_a[c]!=test
-ind=oo_m5id.index(md5id_a[c])
-	if ind
-	ind2=ss_ssid.index(oo_ssid[ind])
-		if ind2
-
-			o.write(contig_a[c])
-			o.write("\t")
-			o.write(md5id_a[c])     
-			o.write("\t")
-			o.write(evalue_a[c])
-			o.write("\t")
-			o.write(identity_a[c])
-			o.write("\t")
-			o.write(over_a[c])
-			o.write("\t")
-			o.write(ss_l1[ind2].chop)
-			o.write("\t")
-			o.write(ss_l2[ind2].chop)
-			o.write("\t")
-			o.write(ss_l3[ind2].chop)
-			o.write("\t")
-			o.write(ss_fc[ind2].chop)
-			o.write("\t")
-			if h
-                        hitid=contig_h.index(contig_a[c])
-                        if hitid
-                        o.write(nhit[hitid])
-                        else
-                        o.write("1")
-                        end
-                        else
-                        o.write("1")
-                        end
-			o.write("\n")
-			test=contig_a[c]
-			
-		end
-	end
-end
-c=c+1
-if c==i*md5id_a.length/100
-print i
-print "%"
-print "\n"
-i=i+1
-end
-end
-
-
-else
-
-puts "Please specify a source (SEED, KEGG, KO)"
-
+	first_hit = s
+	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
+      elsif s[:bitscore] >= @options[:minbitscore]
+	next if @options[:fracfrombestbitscore] and s[:bitscore] < @options[:fracfrombestbitscore] * first_hit[:bitscore]
+	next if @options[:maxnumhits] and hits.length > @options[:maxnumhits]
+	hits << s
+      end
+    end
+  end
+  DATADIRS.keys.each do |db|
+    self.method(DATADIRS[db]['handler']).call(db, hits)
+  end
+rescue
+  warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
 end
