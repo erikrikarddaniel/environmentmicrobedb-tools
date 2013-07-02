@@ -89,12 +89,12 @@ end
 # The actual content is specific for each parser and handler method.
 @data = {}	
 
-def _log_hits(db, hits)
+def _log_hits(hits)
   if hits.length == 0
     warn "No hits to handle"
     return
   end
-  warn "#{db}: Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
+  warn "Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
 end
 
 # Here comes handlers and parsers. All of them will be setup in the DATADIRS
@@ -105,7 +105,6 @@ def empty_handler(db, hits)
 end
 
 def simple_handler(db, hits)
-  _log_hits(db, hits)
 end
 
 def empty_parser(db)
@@ -222,8 +221,6 @@ end
 def seed_handler(db, hits)
   return if hits.length == 0
 
-  _log_hits(db, hits)
-
   # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
   no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
   output = [ no_seed_hit ]
@@ -294,7 +291,7 @@ DATADIRS = {
 
 # Scan --datadir for directories with database files
 begin
-  Dir.entries(@options[:datadir]).each do |subdir|
+  Dir.entries(@options[:datadir]).sort.each do |subdir|
     next unless File.directory?("#{@options[:datadir]}/#{subdir}")
     if DATADIRS[subdir] and DATADIRS[subdir]['parser']
       self.method(DATADIRS[subdir]['parser']).call(subdir)
@@ -335,6 +332,7 @@ begin
 	first_hit = s
 	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
       elsif s[:subject] != first_hit[:subject]
+	_log_hits(hits)
 	DATADIRS.keys.each do |db|
 	  self.method(DATADIRS[db]['handler']).call(db, hits)	# This call outputs the actual annotation data
 	end
@@ -347,6 +345,8 @@ begin
       end
     end
   end
+
+  _log_hits(hits)
   DATADIRS.keys.each do |db|
     self.method(DATADIRS[db]['handler']).call(db, hits)
   end

@@ -42,6 +42,8 @@ m5nr2annot.00:
 m5nr2annot.large:
 	@rm -f $@.seed
 	@../../scripts/m5nr2annot --verbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab
+	@echo "--> KEGG <--" >> $@.out
+	@echo "--> RefSeq <--" >> $@.out
 	@echo "--> SEED <--" >> $@.out
 	@cat $@.seed >> $@.out
 	@$(CHECK)
