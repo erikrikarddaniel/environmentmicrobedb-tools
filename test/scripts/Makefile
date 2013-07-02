@@ -11,7 +11,7 @@ XML_CHECK =
 all: cdnaobservations m5nr2annot sam2meganannot 
 
 clean:
-	@rm -rf *.out *.tmp err sam2meganannot.*.out*
+	@rm -rf *.out *.tmp err m5nr2annot.*.kegg* m5nr2annot.*.refseq* m5nr2annot.*.seed* sam2meganannot.*.out*
 
 cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
 
