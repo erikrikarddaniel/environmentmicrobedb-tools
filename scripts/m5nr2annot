@@ -112,6 +112,47 @@ end
 
 def kegg_parser(db)
   warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  @data[db] = { md5map: { }, k_map: { } }
+
+  # We're parsing the KEGG.md52id2ont and ko.id2hierachy files. The former
+  # contains a mapping from md5 sum to K numbers and function names, while the
+  # latter is a map from K numbers to hierarchy. We construct a map from md5
+  # sum to K number, function and hierarchy.
+
+  # 1. KEGG.md52id2ont
+  begin
+    File.open("#{@options[:datadir]}/#{db}/KEGG.md52id2ont").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db][:md5map][fields[0]] ||= []
+      @data[db][:md5map][fields[0]] << { k_number: fields[1], function: fields[2] }
+      @data[db][:k_map][fields[1]] ||= []
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/KEGG.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 2. ko.id2hierarchy
+  begin
+    File.open("#{@options[:datadir]}/#{db}/ko.id2hierarchy").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db][:k_map][fields[-1]] = fields[1..-2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/ko.id2hierarchy: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # Open an output file
+  fname = "#{@options[:basename]}.kegg"
+  begin
+    @data[db][:outfile] = File.new(fname, "w")
+  rescue
+    warn "Failed to open file for KEGG output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
+  end
 end
 
 def md52id2func_parser(db)
@@ -130,19 +171,19 @@ def ncbi_parser(db)
   begin
     @data[db] = { 
       'accnos' => { 
-        output: File.new("#{@options[:basename]}.refseq.accnos", "w"),
+        outfile: File.new("#{@options[:basename]}.refseq.accnos", "w"),
 	data: {}
       },
       'refseq_accnos' => { 
-        output: File.new("#{@options[:basename]}.refseq.refseq_accnos", "w"),
+        outfile: File.new("#{@options[:basename]}.refseq.refseq_accnos", "w"),
 	data: {}
       },
       'organisms' => { 
-        output: File.new("#{@options[:basename]}.refseq.organisms", "w"),
+        outfile: File.new("#{@options[:basename]}.refseq.organisms", "w"),
 	data: {}
       },
       'proteins' => { 
-        output: File.new("#{@options[:basename]}.refseq.proteins", "w"),
+        outfile: File.new("#{@options[:basename]}.refseq.proteins", "w"),
 	data: {}
       },
     }
@@ -258,17 +299,33 @@ def seed_parser(db)
   end
 end
 
+def kegg_handler(db, hits)
+  return if hits.length == 0
+
+  # Scan the hits collection until we find something that's in the map
+  hits.each do |hit|
+    if khits = @data[db][:md5map][hit[:target]]
+      khits.each do |khit|
+	hierarchy = @data[db][:k_map][khit[:k_number]]
+	hierarchy ||= []
+	@data[db][:outfile].puts "#{hit[:subject]}\t#{khit[:k_number]}\t#{khit[:function]}\t#{hierarchy.map { |h| '"' + h + '"' }.join(", ")}"
+      end
+      return
+    end
+  end
+end
+
 def ncbi_handler(db, hits)
   return if hits.length == 0
 
   # Output for each key in @data['NCBI']: just a comma-separated list of items
   @data[db].keys.each do |key|
-    @data[db][key][:output].print "#{hits[0][:subject]}\t"
+    @data[db][key][:outfile].print "#{hits[0][:subject]}\t"
     data = []
     hits.each do |hit|
       data += @data[db][key][:data][hit[:target]] if @data[db][key][:data][hit[:target]]
     end
-    @data[db][key][:output].puts data.map { |n| '"' + n + '"' }.join(", ")
+    @data[db][key][:outfile].puts data.map { |n| '"' + n + '"' }.join(", ")
   end
 end
 
@@ -326,8 +383,8 @@ DATADIRS = {
     'handler' => :simple_handler
   },
   'KEGG' => {
-    'parser' => :md52id2func_parser,
-    'handler' => :simple_handler
+    'parser' => :kegg_parser,
+    'handler' => :kegg_handler
   },
   'NCBI' => {
     'parser' => :ncbi_parser,
