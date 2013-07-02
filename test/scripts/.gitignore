@@ -3,4 +3,5 @@
 err
 cdnaobservations.sam
 m5nr2annot.large.data
+m5nr2annot.*.refseq*
 m5nr2annot.*.seed

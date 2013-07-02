@@ -13,6 +13,36 @@ Hits for tr|A2TND4|A2TND4_9FLAO: a5a0138cb17e1b092edd7b06925185f4, f5c5fb024322b
 Hits for tr|A2TND5|A2TND5_9FLAO: ce1f1fee57ec013d9123da4a6ad7343b
 Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04570945842aa0fd82ecc2ba959, a8c8fad4d7f47d97189cce81775e2553, 822ae6bb527ff0e8b9a702166b211f99, aa0b02c80855f72246d525846e8543d7, fa7af8e890647a409b52b315b41b5d48, 59f31add94c3dd1b706f72ee3e821cbb, 5d17c2638ec3fe48f0e669c4fc89932e, d0ad661b40e4555fa64bef0b15b224bb, 8bfad9c53d8aeddb9a154a6bb3298f86, bf97cdef972b39d600e66a11d850a626, 37db39f991de45babd4b9f6920b5783b
 Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
+--> KEGG <--
+--> RefSeq <--
+	accnos
+tr|A2TND1|A2TND1_9FLAO	"ZP_01049144.1", "YP_004432116.1"
+tr|A2TND3|A2TND3_9FLAO	"ZP_01049143.1", "YP_004432115.1"
+tr|A2TND4|A2TND4_9FLAO	"ZP_01049141.1", "YP_004432113.1", "ZP_02163450.1", "ZP_01890258.1", "ZP_09500973.1", "YP_003863676.1", "ZP_01061195.1", "YP_004163045.1", "YP_004263207.1"
+tr|A2TND5|A2TND5_9FLAO	"ZP_01049142.1"
+tr|A2TND6|A2TND6_9FLAO	"ZP_01049139.1", "YP_004432111.1", "YP_003716435.1", "ZP_01891656.1", "ZP_08818955.1", "YP_004578368.1", "ZP_01202046.1", "ZP_02183122.1", "ZP_09669829.1", "YP_862546.1", "YP_003583406.1"
+tr|A2TND8|A2TND8_9FLAO	
+	refseq accnos
+tr|A2TND1|A2TND1_9FLAO	"NZ_AAMZ01000001.2", "NC_015496.1"
+tr|A2TND3|A2TND3_9FLAO	"NZ_AAMZ01000001.2", "NC_015496.1"
+tr|A2TND4|A2TND4_9FLAO	"NZ_AAMZ01000001.2", "NC_015496.1", "NZ_ABIB01000011.1", "NZ_ABCO01000003.1", "NZ_AFOE01000032.1", "NC_014472.1", "NZ_AANC01000005.1", "NC_014934.1", "NC_015167.1"
+tr|A2TND5|A2TND5_9FLAO	"NZ_AAMZ01000001.2"
+tr|A2TND6|A2TND6_9FLAO	"NZ_AAMZ01000001.2", "NC_015496.1", "NC_014230.1", "NZ_ABCO01000010.1", "NZ_AFXZ01000009.1", "NC_015638.1", "NZ_AAPD01000002.1", "NZ_ABHI01000004.1", "NZ_JH594606.1", "NC_008571.1", "NC_014041.1"
+tr|A2TND8|A2TND8_9FLAO	
+	organisms
+tr|A2TND1|A2TND1_9FLAO	"Dokdonia donghaensis MED134", "Krokinobacter sp. 4H-3-7-5"
+tr|A2TND3|A2TND3_9FLAO	"Dokdonia donghaensis MED134", "Krokinobacter sp. 4H-3-7-5"
+tr|A2TND4|A2TND4_9FLAO	"Dokdonia donghaensis MED134", "Krokinobacter sp. 4H-3-7-5", "Kordia algicida OT-1", "unidentified eubacterium SCB49", "Mesoflavibacter zeaxanthinifaciens S86", "Maribacter sp. HTCC2170", "Leeuwenhoekiella blandensis MED217", "Cellulophaga algicola DSM 14237", "Cellulophaga lytica DSM 7489"
+tr|A2TND5|A2TND5_9FLAO	"Dokdonia donghaensis MED134"
+tr|A2TND6|A2TND6_9FLAO	"Dokdonia donghaensis MED134", "Krokinobacter sp. 4H-3-7-5", "Croceibacter atlanticus HTCC2559", "unidentified eubacterium SCB49", "Bizionia argentinensis JUB59", "Lacinutrix sp. 5H-3-7-4", "Flavobacteria bacterium BBFL7", "Flavobacteriales bacterium ALC-1", "Gillisia limnaea DSM 15749", "Gramella forsetii KT0803", "Zunongwangia profunda SM-A87"
+tr|A2TND8|A2TND8_9FLAO	
+	proteins
+tr|A2TND1|A2TND1_9FLAO	"conserved hypothetical protein", "hypothetical protein"
+tr|A2TND3|A2TND3_9FLAO	"conserved hypothetical protein", "hypothetical protein"
+tr|A2TND4|A2TND4_9FLAO	"two-component system response regulator, LytR/AlgR family", "LytTR family two component transcriptional regulator", "two-component system response regulator", "two-component system response regulator", "two-component system response regulator", "two-component system response regulator", "two-component system response regulator", "two component transcriptional regulator, lyttr family", "LytTR family two component transcriptional regulator"
+tr|A2TND5|A2TND5_9FLAO	"amidohydrolase family protein"
+tr|A2TND6|A2TND6_9FLAO	"peptidase family M20/M25/M40", "peptidase T", "peptidase T", "peptidase T", "peptidase T", "peptidase T", "aminotripeptidase", "peptidase T", "Peptidase T", "peptidase T", "peptidase T"
+tr|A2TND8|A2TND8_9FLAO	
 --> SEED <--
 tr|A2TND1|A2TND1_9FLAO	No SEED hit	hypothetical protein	(LCA: Cellulophaga sp. MED134, Dokdonia donghaensis MED134, Krokinobacter sp. 4H-3-7-5)
 tr|A2TND3|A2TND3_9FLAO	No SEED hit	hypothetical protein	(LCA: Cellulophaga sp. MED134, Krokinobacter sp. 4H-3-7-5)

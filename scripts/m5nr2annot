@@ -120,6 +120,46 @@ end
 
 def ncbi_parser(db)
   warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  # We're only reading the RefSeq.md52id2func file and picking out accession
+  # numbers (first one is regular, second is RefSeq), protein name and
+  # organism. Each piece of information, referenced in the @data hash by
+  # 'accnos', 'refseq_accnos', 'organisms' and 'proteins', gets its own output
+  # channel.
+
+  begin
+    @data[db] = { 
+      'accnos' => { 
+        output: File.new("#{@options[:basename]}.refseq.accnos", "w"),
+	data: {}
+      },
+      'refseq_accnos' => { 
+        output: File.new("#{@options[:basename]}.refseq.refseq_accnos", "w"),
+	data: {}
+      },
+      'organisms' => { 
+        output: File.new("#{@options[:basename]}.refseq.organisms", "w"),
+	data: {}
+      },
+      'proteins' => { 
+        output: File.new("#{@options[:basename]}.refseq.proteins", "w"),
+	data: {}
+      },
+    }
+    File.open("#{@options[:datadir]}/#{db}/RefSeq.md52id2func").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db].keys.each { |key| @data[db][key][:data][fields[0]] ||= [] }	# Initialise arrays for each md5 sum key
+      @data[db]['accnos'][:data][fields[0]]        << fields[1]
+      @data[db]['refseq_accnos'][:data][fields[0]] << fields[8]
+      @data[db]['organisms'][:data][fields[0]]     << fields[3]
+      @data[db]['proteins'][:data][fields[0]]      << fields[2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/RefSeq.md52id2func: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
 end
 
 # The SEED db parser
@@ -218,6 +258,20 @@ def seed_parser(db)
   end
 end
 
+def ncbi_handler(db, hits)
+  return if hits.length == 0
+
+  # Output for each key in @data['NCBI']: just a comma-separated list of items
+  @data[db].keys.each do |key|
+    @data[db][key][:output].print "#{hits[0][:subject]}\t"
+    data = []
+    hits.each do |hit|
+      data += @data[db][key][:data][hit[:target]] if @data[db][key][:data][hit[:target]]
+    end
+    @data[db][key][:output].puts data.map { |n| '"' + n + '"' }.join(", ")
+  end
+end
+
 def seed_handler(db, hits)
   return if hits.length == 0
 
@@ -276,8 +330,8 @@ DATADIRS = {
     'handler' => :simple_handler
   },
   'NCBI' => {
-    'parser' => :md52id2func_parser,
-    'handler' => :simple_handler
+    'parser' => :ncbi_parser,
+    'handler' => :ncbi_handler
   },
   'SEED' => {
     'parser' => :seed_parser,

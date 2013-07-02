@@ -34,6 +34,16 @@ cdnaobservations.02:
 m5nr2annot.00:
 	@rm -f $@.seed
 	@../../scripts/m5nr2annot --verbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
+	@echo "--> KEGG <--" >> $@.out
+	@echo "--> RefSeq <--" >> $@.out
+	@echo "\taccnos" >> $@.out
+	@cat $@.refseq.accnos >> $@.out
+	@echo "\trefseq accnos" >> $@.out
+	@cat $@.refseq.refseq_accnos >> $@.out
+	@echo "\torganisms" >> $@.out
+	@cat $@.refseq.organisms >> $@.out
+	@echo "\tproteins" >> $@.out
+	@cat $@.refseq.proteins >> $@.out
 	@echo "--> SEED <--" >> $@.out
 	@cat $@.seed >> $@.out
 	@$(CHECK)
