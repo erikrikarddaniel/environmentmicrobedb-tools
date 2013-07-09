@@ -89,12 +89,12 @@ end
 # The actual content is specific for each parser and handler method.
 @data = {}	
 
-def _log_hits(db, hits)
+def _log_hits(hits)
   if hits.length == 0
     warn "No hits to handle"
     return
   end
-  warn "#{db}: Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
+  warn "Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
 end
 
 # Here comes handlers and parsers. All of them will be setup in the DATADIRS
@@ -105,7 +105,6 @@ def empty_handler(db, hits)
 end
 
 def simple_handler(db, hits)
-  _log_hits(db, hits)
 end
 
 def empty_parser(db)
@@ -113,6 +112,47 @@ end
 
 def kegg_parser(db)
   warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  @data[db] = { md5map: { }, k_map: { } }
+
+  # We're parsing the KEGG.md52id2ont and ko.id2hierachy files. The former
+  # contains a mapping from md5 sum to K numbers and function names, while the
+  # latter is a map from K numbers to hierarchy. We construct a map from md5
+  # sum to K number, function and hierarchy.
+
+  # 1. KEGG.md52id2ont
+  begin
+    File.open("#{@options[:datadir]}/#{db}/KEGG.md52id2ont").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db][:md5map][fields[0]] ||= []
+      @data[db][:md5map][fields[0]] << { k_number: fields[1], function: fields[2] }
+      @data[db][:k_map][fields[1]] ||= []
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/KEGG.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # 2. ko.id2hierarchy
+  begin
+    File.open("#{@options[:datadir]}/#{db}/ko.id2hierarchy").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db][:k_map][fields[-1]] = fields[1..-2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/ko.id2hierarchy: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
+  # Open an output file
+  fname = "#{@options[:basename]}.kegg"
+  begin
+    @data[db][:outfile] = File.new(fname, "w")
+  rescue
+    warn "Failed to open file for KEGG output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
+  end
 end
 
 def md52id2func_parser(db)
@@ -121,6 +161,46 @@ end
 
 def ncbi_parser(db)
   warn "Parsing data files in #{@options[:datadir]}/#{db}" if @options[:verbose]
+
+  # We're only reading the RefSeq.md52id2func file and picking out accession
+  # numbers (first one is regular, second is RefSeq), protein name and
+  # organism. Each piece of information, referenced in the @data hash by
+  # 'accnos', 'refseq_accnos', 'organisms' and 'proteins', gets its own output
+  # channel.
+
+  begin
+    @data[db] = { 
+      'accnos' => { 
+        outfile: File.new("#{@options[:basename]}.refseq.accnos", "w"),
+	data: {}
+      },
+      'refseq_accnos' => { 
+        outfile: File.new("#{@options[:basename]}.refseq.refseq_accnos", "w"),
+	data: {}
+      },
+      'organisms' => { 
+        outfile: File.new("#{@options[:basename]}.refseq.organisms", "w"),
+	data: {}
+      },
+      'proteins' => { 
+        outfile: File.new("#{@options[:basename]}.refseq.proteins", "w"),
+	data: {}
+      },
+    }
+    File.open("#{@options[:datadir]}/#{db}/RefSeq.md52id2func").each do |line|
+      line.chomp!
+      fields = line.split(/\s*\t\s*/)
+      @data[db].keys.each { |key| @data[db][key][:data][fields[0]] ||= [] }	# Initialise arrays for each md5 sum key
+      @data[db]['accnos'][:data][fields[0]]        << fields[1]
+      @data[db]['refseq_accnos'][:data][fields[0]] << fields[8]
+      @data[db]['organisms'][:data][fields[0]]     << fields[3]
+      @data[db]['proteins'][:data][fields[0]]      << fields[2]
+    end
+  rescue
+    warn "Failed to parse #{@options[:datadir]}/#{db}/RefSeq.md52id2func: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit
+  end
+
 end
 
 # The SEED db parser
@@ -219,10 +299,38 @@ def seed_parser(db)
   end
 end
 
-def seed_handler(db, hits)
+def kegg_handler(db, hits)
   return if hits.length == 0
 
-  _log_hits(db, hits)
+  # Scan the hits collection until we find something that's in the map
+  hits.each do |hit|
+    if khits = @data[db][:md5map][hit[:target]]
+      khits.each do |khit|
+	hierarchy = @data[db][:k_map][khit[:k_number]]
+	hierarchy ||= []
+	@data[db][:outfile].puts "#{hit[:subject]}\t#{khit[:k_number]}\t#{khit[:function]}\t#{hierarchy.map { |h| '"' + h + '"' }.join(", ")}"
+      end
+      return
+    end
+  end
+end
+
+def ncbi_handler(db, hits)
+  return if hits.length == 0
+
+  # Output for each key in @data['NCBI']: just a comma-separated list of items
+  @data[db].keys.each do |key|
+    @data[db][key][:outfile].print "#{hits[0][:subject]}\t"
+    data = []
+    hits.each do |hit|
+      data += @data[db][key][:data][hit[:target]] if @data[db][key][:data][hit[:target]]
+    end
+    @data[db][key][:outfile].puts data.map { |n| '"' + n + '"' }.join(", ")
+  end
+end
+
+def seed_handler(db, hits)
+  return if hits.length == 0
 
   # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
   no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
@@ -275,12 +383,12 @@ DATADIRS = {
     'handler' => :simple_handler
   },
   'KEGG' => {
-    'parser' => :md52id2func_parser,
-    'handler' => :simple_handler
+    'parser' => :kegg_parser,
+    'handler' => :kegg_handler
   },
   'NCBI' => {
-    'parser' => :md52id2func_parser,
-    'handler' => :simple_handler
+    'parser' => :ncbi_parser,
+    'handler' => :ncbi_handler
   },
   'SEED' => {
     'parser' => :seed_parser,
@@ -294,7 +402,7 @@ DATADIRS = {
 
 # Scan --datadir for directories with database files
 begin
-  Dir.entries(@options[:datadir]).each do |subdir|
+  Dir.entries(@options[:datadir]).sort.each do |subdir|
     next unless File.directory?("#{@options[:datadir]}/#{subdir}")
     if DATADIRS[subdir] and DATADIRS[subdir]['parser']
       self.method(DATADIRS[subdir]['parser']).call(subdir)
@@ -335,6 +443,7 @@ begin
 	first_hit = s
 	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
       elsif s[:subject] != first_hit[:subject]
+	_log_hits(hits)
 	DATADIRS.keys.each do |db|
 	  self.method(DATADIRS[db]['handler']).call(db, hits)	# This call outputs the actual annotation data
 	end
@@ -347,6 +456,8 @@ begin
       end
     end
   end
+
+  _log_hits(hits)
   DATADIRS.keys.each do |db|
     self.method(DATADIRS[db]['handler']).call(db, hits)
   end
