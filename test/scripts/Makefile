@@ -8,16 +8,18 @@ GREP_CHECK = pattern=`cat $@.expect`; if [ `grep "$$pattern" $@.out | wc -l` -gt
 
 XML_CHECK =
 
-all: cdnaobservations m5nr2annot sam2meganannot 
+all: cdnaobservations m5nr2annot sam2meganannot split_seed_branches
 
 clean:
-	@rm -rf *.out *.tmp err sam2meganannot.*.out*
+	@rm -rf *.out *.tmp err sam2meganannot.*.out* split_seed_branches.*.split.*
 
 cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
 
 m5nr2annot: m5nr2annot.00
 
 sam2meganannot: sam2meganannot.00 sam2meganannot.01
+
+split_seed_branches: split_seed_branches.00
 
 cdnaobservations.00:
 	@../../scripts/cdnaobservations --header > $@.out
@@ -77,4 +79,9 @@ sam2meganannot.01:
 	@sort $@.out.seed.csv >> $@.out
 	@echo "KEGG" >> $@.out
 	@sort $@.out.kegg.csv >> $@.out
+	@$(CHECK)
+
+split_seed_branches.00:
+	@../../scripts/split_seed_branches --basename=$@.split $@.tsv
+	@cat $@.split.* > $@.out
 	@$(CHECK)
