@@ -1,0 +1,98 @@
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# split_seed_branches
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
+
+$VERBOSE = true
+
+require 'optparse'
+
+@options = { 
+  inputsep:	/\s*\t\s*/,
+  outputsep:	"\t"
+}
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+split_seed_branches: Splits a SEED annotation file, as output by m5nr2annot, into several files with unique protein names
+  split_seed_branches [options] file0..filen
+BANNER
+
+  opts.on "--basename=STRING", "Basename for output files. A number will be added to each file" do |v|
+    @options[:basename] = v
+  end
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = [ :basename ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
+end
+
+# Loop over infiles
+@results = nil
+begin
+  outputs = [ ]		# Will contain all output file handles
+  file = nil
+  ARGV.each do |file|
+    if file == '-'
+      warn "Parsing STDIN" if @options[:verbose]
+      io = STDIN
+    else
+      warn "Parsing #{file}" if @options[:verbose]
+      if file =~ /.gz$/
+	io = IO.popen("gunzip -c #{file}", "r")
+      elsif file =~ /.bz2$/
+	io = IO.popen("bunzip2 -c #{file}", "r")
+      else
+	io = File.new(file)
+      end
+    end
+    last_id = ""
+    n = -1
+    io.each do |line|
+      line.chomp!
+      fields = line.split(@options[:inputsep])
+      if fields[0] == last_id
+	n += 1
+      else
+	n = 0
+	last_id = fields[0]
+      end
+      outputs[n] ||= File.new(sprintf("#{@options[:basename]}.%03d", n), "w")
+      outputs[n].puts fields.join(@options[:outputsep])
+    end
+  end
+rescue
+  warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end
