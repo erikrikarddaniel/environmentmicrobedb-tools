@@ -11,13 +11,13 @@ XML_CHECK =
 all: cdnaobservations m5nr2annot sam2meganannot split_seed_branches
 
 clean:
-	@rm -rf *.out *.tmp err m5nr2annot.*.kegg* m5nr2annot.*.refseq* m5nr2annot.*.seed* sam2meganannot.*.out*
+	@rm -rf *.out *.tmp err m5nr2annot.*.kegg* m5nr2annot.*.refseq* m5nr2annot.*.seed* organisms2lca.*.names.gz sam2meganannot.*.out*
 
 cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
 
 m5nr2annot: m5nr2annot.00
 
-organisms2lca: organisms2lca.00
+organisms2lca: organisms2lca.00 organisms2lca.01
 
 sam2meganannot: sam2meganannot.00 sam2meganannot.01
 
@@ -65,6 +65,12 @@ m5nr2annot.large:
 
 organisms2lca.00:
 	@../../scripts/organisms2lca --field=2 --service="http://biosql.scilifelab.se/ncbi_taxon_id2full_taxon_hierarchy.json?name=" $@.organisms > $@.out
+	@$(CHECK)
+
+organisms2lca.01:
+	@../../scripts/organisms2lca --verbose --field=2 --names_in=$@.namecache --names_out=$@.names.gz --service="http://biosql.scilifelab.se/ncbi_taxon_id2full_taxon_hierarchy.json?name=" $@.organisms > $@.out 2>&1
+	@echo "---" >> $@.out
+	@gunzip -c $@.names.gz | sort >> $@.out
 	@$(CHECK)
 
 sam2meganannot.00:

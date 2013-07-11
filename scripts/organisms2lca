@@ -52,6 +52,14 @@ BANNER
     exit 0
   end
 
+  opts.on "--names_in=FILENAME", "File with json formated taxon hierarchies, as output by the --names_out output" do |v|
+    @options[:names_in] = v
+  end
+
+  opts.on "--names_out=FILENAME", "Output ile with json formated taxon hierarchies, can be used as cache via the --names_in option" do |v|
+    @options[:names_out] = v
+  end
+
   opts.on "--service=URL", "URL for lookup service, default #{@options[:service]}" do |v|
     @options[:service] = v
   end
@@ -73,6 +81,46 @@ rescue OptionParser::InvalidOption, OptionParser::MissingArgument
   warn "#{$!}"
   warn opt_parser
   exit 1
+end
+
+if @options[:names_out]
+  warn "Will write name cache to #{@options[:names_out]}" if @options[:verbose]
+  begin
+    if @options[:names_out] =~ /.gz$/
+      @names_out = IO.popen("gzip -c > #{@options[:names_out]}", "w")
+    elsif @options[:names_out] =~ /.bz2$/
+      @names_out = IO.popen("bzip2 -c > #{@options[:names_out]}", "w")
+    else
+      @names_out = File.open(@options[:names_out], "w")
+    end
+  rescue
+    warn "Failed to open #{@options[:names_out]} for writing: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit 2
+  end
+end
+
+if @options[:names_in]
+  warn "Reading name cache from #{@options[:names_in]}" if @options[:verbose]
+  i = 0
+  begin
+    names = nil
+    if @options[:names_in] =~ /.gz$/
+      names = IO.popen("gunzip -c #{@options[:names_in]}", "r")
+    elsif @options[:names_in] =~ /.bz2$/
+      names = IO.popen("bunzip2 -c #{@options[:names_in]}", "r")
+    else
+      names = File.open(@options[:names_in])
+    end
+    names.each do |nline|
+      nline.chomp!
+      fields = nline.split(/\t/)
+      @names_out.puts nline if @names_out
+      @organisms[fields[0]] = JSON.parse(fields[1]).reverse
+    end
+  rescue
+    warn "Failed to read names from #{@options[:names_in]}, line #{i}: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+    exit 2
+  end
 end
 
 # The method that calculates the LCA
@@ -103,7 +151,9 @@ def lookup(organism)
   while ( true ) do
     begin
       url = @options[:service] + organism.gsub(" ", "%20")
-      o = JSON.parse(@httpclient.get_content(url))
+      json = @httpclient.get_content(url)
+      o = JSON.parse(json)
+      @names_out.puts "#{organism}\t#{json}" if @names_out
       #warn "#{__LINE__}: #{organism}, url: #{url}, o: #{o}"
       return o.reverse
     rescue
