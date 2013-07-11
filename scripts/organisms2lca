@@ -1,0 +1,155 @@
+#!/usr/bin/env ruby
+#
+# = NAME
+#
+# organisms2lca
+#
+# = SYNOPSIS
+#
+# See below, in opt parser block.
+#
+# = USAGE
+#
+# See below, in opt parser block.
+#
+# = AUTHOR
+#
+# daniel.lundin@scilifelab.se
+
+
+$VERBOSE = false
+require 'httpclient'
+$VERBOSE = true
+require 'json'
+require 'optparse'
+
+@options = {
+  fieldsep:	/\s*,\s*/,
+  inputsep:	/\s*\t\s*/,
+  outputsep:	"\t",
+  service:	"http://biosql.scilifelab.se/ncbi_taxon_id2full_taxon_hierarchy.json?name="
+}
+
+@organisms = { }	# Will contain a lookup table for all organisms that have been fetched
+@httpclient = HTTPClient.new
+
+opt_parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+organisms2lca: Translates a set of organism names into an LCA taxon, via calls 
+  to a lookup service for taxonomy. The lookup service can be defined on the 
+  command line as a URL (the name of each organism will be appended) and 
+  should return a json formated hierarchy as an array of objects where each 
+  object should have a 'scientific_name' field.
+    organisms2lca [options] file0..filen
+BANNER
+
+  opts.on "--field=INT", "Field number in file where taxon set is found, no default" do |v|
+    @options[:field] = v.to_i
+  end
+
+  opts.on "-h", "--help", "This info"  do 
+    puts opts
+    exit 0
+  end
+
+  opts.on "--service=URL", "URL for lookup service, default #{@options[:service]}" do |v|
+    @options[:service] = v
+  end
+
+  opts.on "-v", "--verbose", "Be verbose"  do |v| 
+    @options[:verbose] = v 
+  end
+end
+begin
+  opt_parser.parse!
+  mandatory = [ :field, :fieldsep, :inputsep, :service ]	# Fill in with mandatory option names (i.e. starting with :)
+  missing = mandatory.select { |param| @options[param].nil? }
+  unless missing.empty?
+    warn "Missing options: #{missing.map { |m| "--#{m}" }.join(", ")}"
+    warn opt_parser
+    exit 1
+  end
+rescue OptionParser::InvalidOption, OptionParser::MissingArgument
+  warn "#{$!}"
+  warn opt_parser
+  exit 1
+end
+
+# The method that calculates the LCA
+def lca(organisms)
+  hierarchies = []
+  organisms.each do |organism|
+    @organisms[organism] ||= lookup(organism)
+    hierarchies << @organisms[organism]
+  end
+  lca = nil
+  hierarchies.sort_by { |h| h.map { |t| t["scientific_name"] }.join(":") }.each do |hierarchy|
+    if lca
+      lca.each_with_index do |t,i|
+	unless t == hierarchy[i]
+	  lca = lca[0..i-1]
+	  break
+	end
+      end
+    else
+      lca = hierarchy
+    end
+  end
+  lca
+end
+
+def lookup(organism)
+  warn "Looking up #{organism}" if @options[:verbose]
+  while ( true ) do
+    begin
+      url = @options[:service] + organism.gsub(" ", "%20")
+      o = JSON.parse(@httpclient.get_content(url))
+      #warn "#{__LINE__}: #{organism}, url: #{url}, o: #{o}"
+      return o.reverse
+    rescue
+      # Failed to find organism, try the two first words (i.e. the species)
+      species = organism.split(/\s+/)[0..1].join(" ")
+      if organism != species
+	warn "\t--> Didn't find #{organism}, trying #{species} <--" if @options[:verbose]
+	return @organisms[species] if @organisms[species]	# May already be in the cache
+	organism = species
+      else
+	return [ ]
+      end
+    end
+  end
+  [ ]
+end
+
+# Loop over infiles
+begin
+  file = nil
+  ARGV.each do |file|
+    if file == '-'
+      warn "Parsing STDIN" if @options[:verbose]
+      io = STDIN
+    else
+      warn "Parsing #{file}" if @options[:verbose]
+      if file =~ /.gz$/
+	io = IO.popen("gunzip -c #{file}", "r")
+      elsif file =~ /.bz2$/
+	io = IO.popen("bunzip2 -c #{file}", "r")
+      else
+	io = File.new(file)
+      end
+    end
+    io.each do |line|
+      line.chomp!
+      fields = line.split(@options[:inputsep])
+      output = ( @options[:field] > 1 ? fields[0..@options[:field]-2] : [] )
+      if fields[@options[:field] - 1]
+	organisms = fields[@options[:field] - 1].split(@options[:fieldsep]).map { |o| o.tr('"', '') }
+	output << "\"#{lca(organisms).map { |t| t["scientific_name"] }.join('","')}\""
+      end
+      output += ( fields[@options[:field]] ? fields[@options[:field]..-1] : [] )
+      puts output.join(@options[:outputsep])
+    end
+  end
+rescue
+  warn "Failed to process file '#{file}': #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
+end

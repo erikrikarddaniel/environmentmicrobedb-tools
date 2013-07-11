@@ -17,6 +17,8 @@ cdnaobservations: cdnaobservations.00 cdnaobservations.01 cdnaobservations.02
 
 m5nr2annot: m5nr2annot.00
 
+organisms2lca: organisms2lca.00
+
 sam2meganannot: sam2meganannot.00 sam2meganannot.01
 
 split_seed_branches: split_seed_branches.00
@@ -59,6 +61,10 @@ m5nr2annot.large:
 	@echo "--> RefSeq <--" >> $@.out
 	@echo "--> SEED <--" >> $@.out
 	@cat $@.seed >> $@.out
+	@$(CHECK)
+
+organisms2lca.00:
+	@../../scripts/organisms2lca --field=2 --service="http://biosql.scilifelab.se/ncbi_taxon_id2full_taxon_hierarchy.json?name=" $@.organisms > $@.out
 	@$(CHECK)
 
 sam2meganannot.00:

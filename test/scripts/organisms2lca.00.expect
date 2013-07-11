@@ -1,11 +1,11 @@
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_769059_length_88_cov_2.727273_1_126_+	"Proteobacteria"
-AMb.hsfiltered.normC160.k35.velvet.fgs-NODE_5397743_length_94_cov_1.425532_1_128_+	"Alteromonas macleodii ATCC 27126"
-AMb.hsfiltered.normC160.k35.velvet.fgs-NODE_5397611_length_94_cov_1.425532_1_128_+	"Rhodobacteraceae"
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768866_length_88_cov_1.420455_1_126_+	"Alteromonas macleodii"
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768866_length_88_cov_1.420455_1_126_+	"Alteromonas macleodii ATCC 27126"
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-	
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-	
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-	
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-	
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_769592_length_87_cov_1.333333_1_125_-	"Gammaproteobacteria"
-AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768320_length_87_cov_1.448276_1_125_-	"Enterobacteriaceae"
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_769059_length_88_cov_2.727273_1_126_+	"root","cellular organisms","Bacteria","Proteobacteria"
+AMb.hsfiltered.normC160.k35.velvet.fgs-NODE_5397743_length_94_cov_1.425532_1_128_+	"root","cellular organisms","Bacteria","Proteobacteria","Gammaproteobacteria","Alteromonadales","Alteromonadaceae","Alteromonas","Alteromonas macleodii","Alteromonas macleodii ATCC 27126"
+AMb.hsfiltered.normC160.k35.velvet.fgs-NODE_5397611_length_94_cov_1.425532_1_128_+	"root","cellular organisms","Bacteria","Proteobacteria","Alphaproteobacteria","Rhodobacterales","Rhodobacteraceae"
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768866_length_88_cov_1.420455_1_126_+	"root","cellular organisms","Bacteria","Proteobacteria","Gammaproteobacteria","Alteromonadales","Alteromonadaceae","Alteromonas","Alteromonas macleodii"
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768866_length_88_cov_1.420455_1_126_+	"root","cellular organisms","Bacteria","Proteobacteria","Gammaproteobacteria","Alteromonadales","Alteromonadaceae","Alteromonas","Alteromonas macleodii"
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768688_length_87_cov_1.448276_1_125_-
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_769592_length_87_cov_1.333333_1_125_-	"root","cellular organisms","Bacteria","Proteobacteria","Gammaproteobacteria"
+AMa.hsfiltered.normC160.k39.velvet.fgs-NODE_768320_length_87_cov_1.448276_1_125_-	"root","cellular organisms","Bacteria","Proteobacteria","Gammaproteobacteria","Enterobacteriales","Enterobacteriaceae"
