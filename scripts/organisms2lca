@@ -83,6 +83,7 @@ rescue OptionParser::InvalidOption, OptionParser::MissingArgument
   exit 1
 end
 
+@names_out = nil
 if @options[:names_out]
   warn "Will write name cache to #{@options[:names_out]}" if @options[:verbose]
   begin
