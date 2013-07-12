@@ -159,12 +159,15 @@ def lookup(organism)
       #warn "#{__LINE__}: #{organism}, url: #{url}, o: #{o}"
       return o.reverse
     rescue
-      # Failed to find organism, try the two first words (i.e. the species)
-      species = organism.split(/\s+/)[0..1].join(" ")
-      if organism != species
-	warn "\t--> Didn't find #{organism}, trying #{species} <--" if @options[:verbose]
-	return @organisms[species] if @organisms[species]	# May already be in the cache
-	organism = species
+      f = organism.split(/\s+/)
+      if f.length > 2
+	warn "\t--> Didn't find #{organism}, trying #{f[0..1].join(" ")} <--" if @options[:verbose]
+	organism = f[0..1].join(" ")
+	return @organisms[organism] if @organisms[organism]	# May already be in the cache
+      elsif f.length > 1
+	warn "\t--> Didn't find #{organism}, trying #{f[0]} <--" if @options[:verbose]
+	organism = f[0]
+	return @organisms[organism] if @organisms[organism]	# May already be in the cache
       else
 	return [ ]
       end
