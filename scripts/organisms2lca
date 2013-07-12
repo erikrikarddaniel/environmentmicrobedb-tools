@@ -133,6 +133,7 @@ def lca(organisms)
   end
   lca = nil
   hierarchies.sort_by { |h| h.map { |t| t["scientific_name"] }.join(":") }.each do |hierarchy|
+    next if hierarchy.length == 0
     if lca
       lca.each_with_index do |t,i|
 	unless t == hierarchy[i]
