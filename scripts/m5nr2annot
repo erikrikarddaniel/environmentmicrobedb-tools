@@ -239,7 +239,6 @@ def seed_parser(db)
 	warn "\t\tSEED.md52id2ont error at #{linenum}" if @options[:verbose]
       end
     end
-    warn "done" if @options[:verbose]
   rescue
     warn "Failed to parse #{@options[:datadir]}/#{db}/SEED.md52id2ont: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
     exit

@@ -1,16 +1,7 @@
-Waiting for 7 parsing threads
-Parsing data files in m5nr2annot.00.data/UniProt
-Parsing data files in m5nr2annot.00.data/SEED
 	SEED.md52id2ont
-Parsing data files in m5nr2annot.00.data/NCBI
-Parsing data files in m5nr2annot.00.data/KEGG
-Parsing data files in m5nr2annot.00.data/InterPro
-done
 	SEED.md52id2func
 		SEED.md52id2func error at 1198
 	SEED.id2subsystems
-Parsing done
-Parsing m5nr2annot.00.blasttab
 First hit tr|A2TND1|A2TND1_9FLAO, e-value: 4.0e-34, bitscore: 148.0
 	Adding hit d7277892659488394c602f21053d11fd, e-value: 4.0e-24, bitscore: 115.0
 Hits for tr|A2TND1|A2TND1_9FLAO: 92f1aff22a98181d3e51b1b757d3fa8c, d7277892659488394c602f21053d11fd
