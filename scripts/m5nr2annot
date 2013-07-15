@@ -99,12 +99,12 @@ end
 # The actual content is specific for each parser and handler method.
 @data = {}	
 
-def _log_hits(hits)
+def _log_hits(hits, linenum = false)
   if hits.length == 0
     warn "No hits to handle"
     return
   end
-  warn "Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
+  warn "#{ linenum ? "#{linenum}: " : ""}Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
 end
 
 # Here comes handlers and parsers. All of them will be setup in the DATADIRS
@@ -460,6 +460,8 @@ begin
       next if line == ''
       fields = line.split(/\s*\t\s*/)
       s = { subject: fields[0], target: fields[1], evalue: fields[-2].to_f, bitscore: fields[-1].to_f }
+      #warn "#{__LINE__}: first_hit: #{first_hit}"
+      #warn "#{__LINE__}: s        : #{s}"
       if not first_hit
 	first_hit = s
 	warn "First hit for #{s[:subject]}: #{s[:target]}, e-value: #{s[:evalue]}, bitscore: #{s[:bitscore]}" if @options[:verbose]
@@ -471,7 +473,7 @@ begin
 	end
 	first_hit = s
 	warn "First hit for #{s[:subject]}: #{s[:target]}, e-value: #{s[:evalue]}, bitscore: #{s[:bitscore]}" if @options[:verbose]
-	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
+	hits = ( s[:bitscore] > @options[:minbitscore] ? [ s ] : [ ] )
       elsif s[:bitscore] >= @options[:minbitscore]
 	next if @options[:fracfrombestbitscore] and s[:bitscore] < @options[:fracfrombestbitscore] * first_hit[:bitscore]
 	next if @options[:maxnumhits] and hits.length > @options[:maxnumhits]
