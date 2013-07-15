@@ -2,13 +2,13 @@
 	SEED.md52id2func
 		SEED.md52id2func error at 1198
 	SEED.id2subsystems
-First hit tr|A2TND1|A2TND1_9FLAO, e-value: 4.0e-34, bitscore: 148.0
+First hit for tr|A2TND1|A2TND1_9FLAO: 92f1aff22a98181d3e51b1b757d3fa8c, e-value: 4.0e-34, bitscore: 148.0
 	Adding hit d7277892659488394c602f21053d11fd, e-value: 4.0e-24, bitscore: 115.0
 Hits for tr|A2TND1|A2TND1_9FLAO: 92f1aff22a98181d3e51b1b757d3fa8c, d7277892659488394c602f21053d11fd
-First hit tr|A2TND3|A2TND3_9FLAO, e-value: 3.0e-44, bitscore: 182.0
+First hit for tr|A2TND3|A2TND3_9FLAO: a301dcaa2c2cd77e6ef4e590c026c249, e-value: 3.0e-44, bitscore: 182.0
 	Adding hit 758c429e741ed37730977c9ba3ef083f, e-value: 5.0e-32, bitscore: 141.0
 Hits for tr|A2TND3|A2TND3_9FLAO: a301dcaa2c2cd77e6ef4e590c026c249, 758c429e741ed37730977c9ba3ef083f
-First hit tr|A2TND4|A2TND4_9FLAO, e-value: 2.0e-131, bitscore: 473.0
+First hit for tr|A2TND4|A2TND4_9FLAO: a5a0138cb17e1b092edd7b06925185f4, e-value: 2.0e-131, bitscore: 473.0
 	Adding hit f5c5fb024322bbfa68c4c9429edcaf6f, e-value: 5.0e-124, bitscore: 448.0
 	Adding hit 8121c4d8ffc17b48ce1eab85ca8d0cae, e-value: 1.0e-100, bitscore: 370.0
 	Adding hit ab7cf45dc995980b3a79b48321eb9e8c, e-value: 4.0e-99, bitscore: 365.0
@@ -18,9 +18,9 @@ First hit tr|A2TND4|A2TND4_9FLAO, e-value: 2.0e-131, bitscore: 473.0
 	Adding hit 25414944acefb2d2ee2845063b51adf0, e-value: 2.0e-97, bitscore: 360.0
 	Adding hit 9811247329c6da2116f2cc6d81e53447, e-value: 4.0e-97, bitscore: 359.0
 Hits for tr|A2TND4|A2TND4_9FLAO: a5a0138cb17e1b092edd7b06925185f4, f5c5fb024322bbfa68c4c9429edcaf6f, 8121c4d8ffc17b48ce1eab85ca8d0cae, ab7cf45dc995980b3a79b48321eb9e8c, d561924210c88be0826fbd32eab29908, 77e90e882504fb9a5043600553f53bc4, 81a124530801e7ba6a92f3568b0353d5, 25414944acefb2d2ee2845063b51adf0, 9811247329c6da2116f2cc6d81e53447
-First hit tr|A2TND5|A2TND5_9FLAO, e-value: 0.0, bitscore: 753.0
+First hit for tr|A2TND5|A2TND5_9FLAO: ce1f1fee57ec013d9123da4a6ad7343b, e-value: 0.0, bitscore: 753.0
 Hits for tr|A2TND5|A2TND5_9FLAO: ce1f1fee57ec013d9123da4a6ad7343b
-First hit tr|A2TND6|A2TND6_9FLAO, e-value: 0.0, bitscore: 829.0
+First hit for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, e-value: 0.0, bitscore: 829.0
 	Adding hit 25abc04570945842aa0fd82ecc2ba959, e-value: 0.0, bitscore: 782.0
 	Adding hit a8c8fad4d7f47d97189cce81775e2553, e-value: 0.0, bitscore: 725.0
 	Adding hit 822ae6bb527ff0e8b9a702166b211f99, e-value: 0.0, bitscore: 681.0
@@ -33,9 +33,9 @@ First hit tr|A2TND6|A2TND6_9FLAO, e-value: 0.0, bitscore: 829.0
 	Adding hit bf97cdef972b39d600e66a11d850a626, e-value: 3.0e-177, bitscore: 626.0
 	Adding hit 37db39f991de45babd4b9f6920b5783b, e-value: 1.0e-176, bitscore: 624.0
 Hits for tr|A2TND6|A2TND6_9FLAO: 828f0b1d224abe584637fea0970fcb4d, 25abc04570945842aa0fd82ecc2ba959, a8c8fad4d7f47d97189cce81775e2553, 822ae6bb527ff0e8b9a702166b211f99, aa0b02c80855f72246d525846e8543d7, fa7af8e890647a409b52b315b41b5d48, 59f31add94c3dd1b706f72ee3e821cbb, 5d17c2638ec3fe48f0e669c4fc89932e, d0ad661b40e4555fa64bef0b15b224bb, 8bfad9c53d8aeddb9a154a6bb3298f86, bf97cdef972b39d600e66a11d850a626, 37db39f991de45babd4b9f6920b5783b
-First hit tr|A2TND8|A2TND8_9FLAO, e-value: 2.0e-101, bitscore: 374.0
+First hit for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4, e-value: 2.0e-101, bitscore: 374.0
 Hits for tr|A2TND8|A2TND8_9FLAO: 8cff73fe94f77b71a3e3b94c3311b7a4
-First hit all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-, e-value: 1.0e-14, bitscore: 84.0
+First hit for all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-: 98c14f6b1be1eddad8a4589f4ed34475, e-value: 1.0e-14, bitscore: 84.0
 	Adding hit b577676ee63796341b822d767dcbac4e, e-value: 5.0e-13, bitscore: 78.6
 	Adding hit 899235ed8872288e2b7cab8f872f8926, e-value: 6.0e-13, bitscore: 78.2
 	Adding hit f4be243413b53b8ca624c6ed13931300, e-value: 7.0e-13, bitscore: 77.8
