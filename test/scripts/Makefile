@@ -41,13 +41,13 @@ m5nr2annot.00:
 	@echo "--> KEGG <--" >> $@.out
 	@cat $@.kegg >> $@.out
 	@echo "--> RefSeq <--" >> $@.out
-	@echo "\taccnos" >> $@.out
+	@echo "	accnos" >> $@.out
 	@cat $@.refseq.accnos >> $@.out
-	@echo "\trefseq accnos" >> $@.out
+	@echo "	refseq accnos" >> $@.out
 	@cat $@.refseq.refseq_accnos >> $@.out
-	@echo "\torganisms" >> $@.out
+	@echo "	organisms" >> $@.out
 	@cat $@.refseq.organisms >> $@.out
-	@echo "\tproteins" >> $@.out
+	@echo "	proteins" >> $@.out
 	@cat $@.refseq.proteins >> $@.out
 	@echo "--> SEED <--" >> $@.out
 	@cat $@.seed >> $@.out
