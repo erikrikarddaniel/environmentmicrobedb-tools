@@ -135,11 +135,13 @@ def kegg_parser(db)
   end
 
   # 2. ko.id2hierarchy
+  # (We may see multiple entries for a single K-number here.)
   begin
     File.open("#{@options[:datadir]}/#{db}/ko.id2hierarchy").each do |line|
       line.chomp!
       fields = line.split(/\s*\t\s*/)
-      @data[db][:k_map][fields[-1]] = fields[1..-2]
+      @data[db][:k_map][fields[-1]] ||= []
+      @data[db][:k_map][fields[-1]] << fields[1..-2]
     end
   rescue
     warn "Failed to parse #{@options[:datadir]}/#{db}/ko.id2hierarchy: #{$!}, backtrace:\n\t#{$!.backtrace.join("\n\t")}"
@@ -306,9 +308,14 @@ def kegg_handler(db, hits)
   hits.each do |hit|
     if khits = @data[db][:md5map][hit[:target]]
       khits.each do |khit|
-	hierarchy = @data[db][:k_map][khit[:k_number]]
-	hierarchy ||= []
-	@data[db][:outfile].puts "#{hit[:subject]}\t#{khit[:k_number]}\t#{khit[:function]}\t#{hierarchy.map { |h| '"' + h + '"' }.join(", ")}"
+	hierarchies = @data[db][:k_map][khit[:k_number]]
+	if hierarchies.length > 0
+	  hierarchies.each do |hierarchy|
+	    @data[db][:outfile].puts "#{hit[:subject]}\t#{khit[:k_number]}\t#{khit[:function]}\t#{hierarchy.map { |h| '"' + h + '"' }.join(", ")}"
+	  end
+	else
+	  @data[db][:outfile].puts "#{hit[:subject]}\t#{khit[:k_number]}\t#{khit[:function]}"
+	end
       end
       return
     end
