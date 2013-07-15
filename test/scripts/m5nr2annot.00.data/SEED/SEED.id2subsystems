@@ -126,3 +126,6 @@ Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter
 Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Two-component system response regulator	SS000011686
 Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Putative two-component sensor histidine kinase	SS000011687
 Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter	Putative two-component response regulator	SS000011688
+Carbohydrates	CO2 fixation	Photorespiration_(oxidative_C2_cycle)	Catalase (EC 1.11.1.6)	SS00005495
+Stress Response	Oxidative stress	Oxidative_stress	Catalase (EC 1.11.1.6)	SS00008279
+Stress Response	Oxidative stress	Protection_from_Reactive_Oxygen_Species	Catalase (EC 1.11.1.6)	SS000015020

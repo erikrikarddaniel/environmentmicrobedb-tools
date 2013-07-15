@@ -1395,3 +1395,376 @@ fbd424256932dbb412ac1ef80698c15c	fig|502800.6.peg.3050	Phage tail length tape-me
 087ce0d39d3a608b1d5a8f4331892c37	fig|375286.6.peg.1482	NADH-ubiquinone oxidoreductase chain B (EC 1.6.5.3)	Janthinobacterium sp. Marseille	SEED
 087ce0d39d3a608b1d5a8f4331892c37	fig|375286.7.peg.1478	NADH-ubiquinone oxidoreductase chain B (EC 1.6.5.3)	Janthinobacterium sp. Marseille	SEED
 087ce85d6ef5d48a12c093aad7038015	fig|445335.4.peg.322	putative S-layer protein/N-acetylmuramoyl-L-alanine amidase	Clostridium botulinum NCTC 2916	SEED
+002ee12deb2515133d952c224f346864	fig|565638.4.peg.1913	Catalase (EC 1.11.1.6)	Enterococcus faecalis T3	SEED
+002ee12deb2515133d952c224f346864	fig|565646.5.peg.2204	Catalase (EC 1.11.1.6)	Enterococcus faecalis HIP11704	SEED
+002ee12deb2515133d952c224f346864	fig|749511.3.peg.1810	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0855	SEED
+002ee12deb2515133d952c224f346864	fig|749514.3.peg.417	catalase	Enterococcus faecalis TX1341	SEED
+002ee12deb2515133d952c224f346864	fig|749515.3.peg.2315	catalase	Enterococcus faecalis TX1342	SEED
+02752611a5180c2bdca657d06aee31d1	fig|457430.3.peg.3024	Catalase (EC 1.11.1.6)	Streptomyces roseosporus NRRL 11379	SEED
+02752611a5180c2bdca657d06aee31d1	fig|457431.3.peg.3375	Catalase (EC 1.11.1.6)	Streptomyces roseosporus NRRL 15998	SEED
+03fdb90492358a439b94edaa6b8d1b63	fig|1036171.3.peg.2618	Catalase (EC 1.11.1.6)	Paenibacillus polymyxa ATCC 842	SEED
+04c26945544a1957e1b1a5c801ee8361	fig|1001590.3.peg.174	Catalase (EC 1.11.1.6)	Leptospira interrogans str. 2006001854	SEED
+04c26945544a1957e1b1a5c801ee8361	fig|1001597.3.peg.527	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Canicola str. LT1962	SEED
+063035f64e8da4d31b24144a7d65b58c	fig|189518.1.peg.1859	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Lai str. 56601	SEED
+07bcc5826a0cc639a6b2b4fb4687da5a	fig|1030009.3.peg.2894	catalase (hydroperoxidase)	Listeria monocytogenes M7	SEED
+07bcc5826a0cc639a6b2b4fb4687da5a	fig|552536.5.peg.2708	Catalase (EC 1.11.1.6)	Listeria monocytogenes HCC23	SEED
+07bcc5826a0cc639a6b2b4fb4687da5a	fig|552536.6.peg.2714	Catalase (EC 1.11.1.6)	Listeria monocytogenes HCC23	SEED
+07bcc5826a0cc639a6b2b4fb4687da5a	fig|563174.3.peg.2949	Catalase (EC 1.11.1.6)	Listeria monocytogenes L99	SEED
+0a2d40b32acf40a5263b0546f558d38a	fig|227882.1.peg.3054	Catalase (EC 1.11.1.6)	Streptomyces avermitilis MA-4680	SEED
+0a2d40b32acf40a5263b0546f558d38a	fig|227882.9.peg.3259	Catalase (EC 1.11.1.6)	Streptomyces avermitilis MA-4680	SEED
+0c28781ced4965224e0039f8342a541b	fig|60481.10.peg.905	Catalase (EC 1.11.1.6)	Shewanella sp. MR-7	SEED
+0c28781ced4965224e0039f8342a541b	fig|60481.13.peg.983	Catalase (EC 1.11.1.6)	Shewanella sp. MR-7	SEED
+0da58f8a09fc3ac64cb314917d12e0c8	fig|565642.4.peg.2025	Catalase (EC 1.11.1.6)	Enterococcus faecalis ATCC 4200	SEED
+0dcc05008309391b9ddb3b4683402dec	fig|211586.12.peg.1027	Catalase (EC 1.11.1.6)	Shewanella oneidensis MR-1	SEED
+0dcc05008309391b9ddb3b4683402dec	fig|211586.1.peg.996	Catalase (EC 1.11.1.6)	Shewanella oneidensis MR-1	SEED
+0dcc05008309391b9ddb3b4683402dec	fig|211586.9.peg.966	Catalase (EC 1.11.1.6)	Shewanella oneidensis MR-1	SEED
+0fd116a65ced0af59b4754cce4bf0bd8	fig|696281.4.peg.1476	Catalase	Desulfotomaculum ruminis DSM 2154	SEED
+13add1f53cb5f16164a58677ffe9c746	fig|742159.3.peg.1556	Catalase (EC 1.11.1.6)	Achromobacter piechaudii ATCC 43553	SEED
+14598e73c5a205efe3c6533f3c7a938e	fig|458817.3.peg.728	Catalase (EC 1.11.1.6)	Shewanella halifaxensis HAW-EB4	SEED
+14598e73c5a205efe3c6533f3c7a938e	fig|458817.8.peg.766	Catalase (EC 1.11.1.6)	Shewanella halifaxensis HAW-EB4	SEED
+1498d21aa6dcdcd435d1f07fab4c41c0	fig|749496.3.peg.1117	catalase	Enterococcus faecalis TX0012	SEED
+17f78ed755a899626710a679168a0fc9	fig|398579.3.peg.563	Catalase (EC 1.11.1.6)	Shewanella pealeana ATCC 700345	SEED
+17f78ed755a899626710a679168a0fc9	fig|398579.7.peg.665	Catalase (EC 1.11.1.6)	Shewanella pealeana ATCC 700345	SEED
+1a0d8c1b5dde4f2be9a559c9334e16a4	fig|314280.3.peg.1574	Catalase (EC 1.11.1.6)	Photobacterium profundum 3TCK	SEED
+1a0d8c1b5dde4f2be9a559c9334e16a4	fig|314280.5.peg.1664	Catalase (EC 1.11.1.6)	Photobacterium profundum 3TCK	SEED
+1a925f6d823a0b977088aba5bff0c47d	fig|637905.5.peg.3518	Catalase (EC 1.11.1.6)	Shewanella violacea DSS12	SEED
+1c8a2f88c622005c92f0c25e7c972bae	fig|314275.3.peg.3913	Catalase (EC 1.11.1.6)	Alteromonas macleodii 'Deep ecotype'	SEED
+1c8a2f88c622005c92f0c25e7c972bae	fig|314275.5.peg.517	Catalase (EC 1.11.1.6)	Alteromonas macleodii 'Deep ecotype'	SEED
+1e45ef1914408092fb6dcbffa9845101	fig|386043.6.peg.2656	Catalase (EC 1.11.1.6)	Listeria welshimeri serovar 6b str. SLCC5334	SEED
+1e45ef1914408092fb6dcbffa9845101	fig|386043.9.peg.2737	Catalase (EC 1.11.1.6)	Listeria welshimeri serovar 6b str. SLCC5334	SEED
+1e8bd471bfd9322d7056d063eb5641cd	fig|360911.3.peg.2507	Catalase (EC 1.11.1.6)	Exiguobacterium sp. AT1b	SEED
+1fbc8381f85dc6e09b4755afa19cdf4c	fig|526993.3.peg.2766	Catalase (EC 1.11.1.6)	Bacillus cereus AH1272	SEED
+1fbc8381f85dc6e09b4755afa19cdf4c	fig|526994.3.peg.2886	Catalase (EC 1.11.1.6)	Bacillus cereus AH1273	SEED
+2249927abc1ff7425d041fa8ac432eac	fig|318167.10.peg.538	Catalase (EC 1.11.1.6)	Shewanella frigidimarina NCIMB 400	SEED
+2249927abc1ff7425d041fa8ac432eac	fig|318167.14.peg.583	Catalase (EC 1.11.1.6)	Shewanella frigidimarina NCIMB 400	SEED
+23319645317a60c6d9878a69691fb264	fig|525257.3.peg.2740	Catalase (EC 1.11.1.6)	Chryseobacterium gleum ATCC 35910	SEED
+23674824480463751821b39aa60464eb	fig|85963.1.peg.805	Catalase (EC 1.11.1.6)	Helicobacter pylori J99	SEED
+23674824480463751821b39aa60464eb	fig|85963.7.peg.881	Catalase (EC 1.11.1.6)	Helicobacter pylori J99	SEED
+2396c44e57ed40ff9fded329667eb238	fig|997346.3.peg.781	catalase/peroxidase	Desmospora sp. 8437	SEED
+245777e880494800d0f07e8573a09c85	fig|257311.1.peg.4166	Catalase (EC 1.11.1.6)	Bordetella parapertussis 12822	SEED
+245777e880494800d0f07e8573a09c85	fig|257313.1.peg.3417	Catalase (EC 1.11.1.6)	Bordetella pertussis Tohama I	SEED
+253b5b770004024fd469875004fa004b	fig|527021.3.peg.748	Catalase (EC 1.11.1.6)	Bacillus thuringiensis Bt407	SEED
+254af25c46f3e700f58b643126b8d3da	fig|526972.3.peg.5566	Catalase (EC 1.11.1.6)	Bacillus cereus AH621	SEED
+2737a49d50c89d151271f01ecd9e724f	fig|521098.4.peg.714	Catalase (EC 1.11.1.6)	Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446	SEED
+288ec9f25838e49a2e744c49bcf13495	fig|565647.5.peg.1798	Catalase (EC 1.11.1.6)	Enterococcus faecalis E1Sol	SEED
+29521a37f6982fca2dc6747a334a767f	fig|60480.16.peg.2873	Catalase (EC 1.11.1.6)	Shewanella sp. MR-4	SEED
+29521a37f6982fca2dc6747a334a767f	fig|60480.19.peg.3141	Catalase (EC 1.11.1.6)	Shewanella sp. MR-4	SEED
+2c638364307995fce5398267d7c2ced8	fig|642492.3.peg.1771	Catalase (EC 1.11.1.6)	Clostridium lentocellum DSM 5427	SEED
+2e8b38103b7a81c8a0565e6a4522f08a	fig|441620.7.peg.384	Catalase (EC 1.11.1.6)	Methylobacterium populi BJ001	SEED
+2fe3dcaf70da1bc6eed38c13d95c5448	fig|693971.4.peg.2049	Catalase (EC 1.11.1.6)	Shewanella baltica OS183	SEED
+2fe3dcaf70da1bc6eed38c13d95c5448	fig|693974.3.peg.2244	Catalase (EC 1.11.1.6)	Shewanella baltica BA175	SEED
+2ff8da3056488fa5c0f9378f027d7315	fig|720555.4.peg.403	Catalase (EC 1.11.1.6)	Bacillus atrophaeus 1942	SEED
+2ff8da3056488fa5c0f9378f027d7315	fig|723888.3.peg.145	Catalase (EC 1.11.1.6)	Bacillus atrophaeus 1013-1	SEED
+2ff8da3056488fa5c0f9378f027d7315	fig|723889.3.peg.1018	Catalase (EC 1.11.1.6)	Bacillus atrophaeus 1013-2	SEED
+2ff8da3056488fa5c0f9378f027d7315	fig|743710.3.peg.512	Catalase (EC 1.11.1.6)	Bacillus atrophaeus ATCC 49822-1	SEED
+2ff8da3056488fa5c0f9378f027d7315	fig|743711.3.peg.3391	Catalase (EC 1.11.1.6)	Bacillus atrophaeus ATCC 49822-2	SEED
+315be63a5a2e1776eff384e88e9e8b0f	fig|257310.1.peg.4975	Catalase (EC 1.11.1.6)	Bordetella bronchiseptica RB50	SEED
+315be63a5a2e1776eff384e88e9e8b0f	fig|257310.5.peg.5089	Catalase (EC 1.11.1.6)	Bordetella bronchiseptica RB50	SEED
+315be63a5a2e1776eff384e88e9e8b0f	fig|257311.4.peg.4622	Catalase (EC 1.11.1.6)	Bordetella parapertussis 12822	SEED
+315be63a5a2e1776eff384e88e9e8b0f	fig|743273.3.peg.2353	Catalase (EC 1.11.1.6)	Bordetella pertussis B0558	SEED
+315be63a5a2e1776eff384e88e9e8b0f	fig|743276.3.peg.1947	Catalase (EC 1.11.1.6)	Bordetella pertussis B1834	SEED
+33bcbc23948362a90b53058952876e4f	fig|326297.10.peg.3023	Catalase (EC 1.11.1.6)	Shewanella amazonensis SB2B	SEED
+33bcbc23948362a90b53058952876e4f	fig|326297.7.peg.2759	Catalase (EC 1.11.1.6)	Shewanella amazonensis SB2B	SEED
+347c77a6d08c01404a35d5e59bdd172b	fig|457429.3.peg.2331	Catalase (EC 1.11.1.6)	Streptomyces pristinaespiralis ATCC 25486	SEED
+34a8b6823c9db6742e09d9c9790ebd55	fig|393127.4.peg.246	Catalase (EC 1.11.1.6)	Listeria monocytogenes Finland 1988	SEED
+362248b1b72fd8dccd9fdc090910d56b	fig|996805.3.peg.3400	Catalase (EC 1.11.1.6)	Leptospira santarosai str. 2000030832	SEED
+3ae55217880165858405301c7c13231b	fig|272626.1.peg.2900	Catalase (EC 1.11.1.6)	Listeria innocua Clip11262	SEED
+3ae55217880165858405301c7c13231b	fig|272626.9.peg.2996	Catalase (EC 1.11.1.6)	Listeria innocua Clip11262	SEED
+3b1314774d492b1c0acb9c367e4945a7	fig|1007103.3.peg.5790	Catalase (EC 1.11.1.6)	Paenibacillus elgii B69	SEED
+3de0b5a44f72fdc796f8922ed3feceb1	fig|169963.11.peg.2855	Catalase (EC 1.11.1.6)	Listeria monocytogenes EGD-e	SEED
+3de0b5a44f72fdc796f8922ed3feceb1	fig|169963.1.peg.2774	Catalase (EC 1.11.1.6)	Listeria monocytogenes EGD-e	SEED
+3de0b5a44f72fdc796f8922ed3feceb1	fig|393126.4.peg.1959	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL R2-561	SEED
+3f34ed1857084e72f8637ad01f537509	fig|402882.10.peg.3686	Catalase (EC 1.11.1.6)	Shewanella baltica OS185	SEED
+3f34ed1857084e72f8637ad01f537509	fig|402882.13.peg.3734	Catalase (EC 1.11.1.6)	Shewanella baltica OS185	SEED
+3f3a02fbeedf1e185e8cf58a22881365	fig|440085.6.peg.291	Catalase (EC 1.11.1.6)	Methylobacterium chloromethanicum CM4	SEED
+3fbab6ca558b5e7723242498fd05b845	fig|384676.6.peg.453	Catalase (EC 1.11.1.6)	Pseudomonas entomophila L48	SEED
+3fbab6ca558b5e7723242498fd05b845	fig|384676.9.peg.486	Catalase (EC 1.11.1.6)	Pseudomonas entomophila L48	SEED
+4268a51ebca35657dd69642e4b9b93b1	fig|743722.3.peg.1646	Catalase (EC 1.11.1.6)	Sphingobacterium sp. 21	SEED
+437a0df16fe38c335fcc292cf411edc1	fig|262543.4.peg.2193	Catalase (EC 1.11.1.6)	Exiguobacterium sibiricum 255-15	SEED
+437a0df16fe38c335fcc292cf411edc1	fig|262543.8.peg.2227	Catalase (EC 1.11.1.6)	Exiguobacterium sibiricum 255-15	SEED
+467a9fd84a669d4aa5ebf3bedbb63000	fig|457425.4.peg.3647	Catalase (EC 1.11.1.6)	Streptomyces albus J1074	SEED
+467a9fd84a669d4aa5ebf3bedbb63000	fig|889487.3.peg.4377	Catalase (EC 1.11.1.6)	Streptomyces sp. S4	SEED
+46bb5555c0d97f20ba7e806bb2a80558	fig|755732.3.peg.1376	Catalase	Fluviicola taffensis DSM 16823	SEED
+492502a1f26436d7f6e18fa5da78f19a	fig|886882.3.peg.2658	Catalase (EC 1.11.1.6)	Paenibacillus polymyxa SC2	SEED
+4a2e30e57882142d17ddda3858819d4c	fig|272630.7.peg.208	Catalase (EC 1.11.1.6)	Methylobacterium extorquens AM1	SEED
+4a70f3907a252527e3dc800562adbf36	fig|443255.19.peg.3849	Catalase (EC 1.11.1.6)	Streptomyces clavuligerus ATCC 27064	SEED
+4a70f3907a252527e3dc800562adbf36	fig|443255.6.peg.1327	Catalase (EC 1.11.1.6)	Streptomyces clavuligerus ATCC 27064	SEED
+4a70f3907a252527e3dc800562adbf36	fig|443255.8.peg.2148	Catalase (EC 1.11.1.6)	Streptomyces clavuligerus ATCC 27064	SEED
+4e409cd09fbf756b51898eff4d440fad	fig|393123.3.peg.2859	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL N1-017	SEED
+4eaa575e264c774eb8f71c20731a78c1	fig|425104.7.peg.4186	Catalase (EC 1.11.1.6)	Shewanella sediminis HAW-EB3	SEED
+501a7223bf864b7f458dd1785f54b664	fig|399599.3.peg.3661	Catalase (EC 1.11.1.6)	Shewanella baltica OS195	SEED
+501a7223bf864b7f458dd1785f54b664	fig|399599.8.peg.3723	Catalase (EC 1.11.1.6)	Shewanella baltica OS195	SEED
+501a7223bf864b7f458dd1785f54b664	fig|693973.4.peg.2808	Catalase (EC 1.11.1.6)	Shewanella baltica OS678	SEED
+521f4813ccbe53a9797e44defbb2e077	fig|100226.15.peg.6317	Catalase (EC 1.11.1.6) (Streptomyces coelicolor A3	2	SEED
+521f4813ccbe53a9797e44defbb2e077	fig|100226.1.peg.6149	Catalase (EC 1.11.1.6) (Streptomyces coelicolor A3	2	SEED
+521f4813ccbe53a9797e44defbb2e077	fig|457428.4.peg.6828	Catalase (EC 1.11.1.6)	Streptomyces lividans TK24	SEED
+544af0be64b0520b8d3496610a1676f8	fig|683837.3.peg.2689	Catalase (EC 1.11.1.6)	Listeria seeligeri serovar 1/2b str. SLCC3954	SEED
+55fe864465353177e89223eef45bfd16	fig|526983.3.peg.4008	Catalase (EC 1.11.1.6)	Bacillus cereus Rock3-28	SEED
+577a5023796a401b4ce884c79a32b933	fig|526990.3.peg.939	Catalase (EC 1.11.1.6)	Bacillus cereus AH603	SEED
+57eeae80715f283342acdd36c466d001	fig|407976.7.peg.3507	Catalase (EC 1.11.1.6)	Shewanella baltica OS223	SEED
+588088bf98b3b18e796c5742a51f16d7	fig|467200.3.peg.1999	Catalase (EC 1.11.1.6)	Streptomyces griseoflavus Tu4000	SEED
+589e31a672ade70d4ed532f0b7cce12d	fig|991778.3.peg.2795	protein containing Catalase related subgroup domain	Rhodopirellula baltica WH47	SEED
+58e0b64f180406a6f35d1b2cc7ed8c71	fig|137722.3.peg.5031	Catalase (EC 1.11.1.6)	Azospirillum sp. B510	SEED
+5f05a79dcc90cd3010fd3f09279d3096	fig|527026.3.peg.2175	Catalase (EC 1.11.1.6)	Bacillus thuringiensis serovar sotto str. T04001	SEED
+6411f58df2c6df3d0f9801110f061f04	fig|339854.4.peg.2782	Catalase (EC 1.11.1.6)	Bacillus thuringiensis serovar israelensis ATCC 35646	SEED
+6411f58df2c6df3d0f9801110f061f04	fig|405531.7.peg.4808	Catalase (EC 1.11.1.6)	Bacillus cereus G9842	SEED
+6411f58df2c6df3d0f9801110f061f04	fig|527020.3.peg.2183	Catalase (EC 1.11.1.6)	Bacillus thuringiensis IBL 4222	SEED
+6857b3a7174a80c0048257e87cab8492	fig|382245.13.peg.4012	Catalase (EC 1.11.1.6)	Aeromonas salmonicida subsp. salmonicida A449	SEED
+6857b3a7174a80c0048257e87cab8492	fig|382245.6.peg.3788	Catalase (EC 1.11.1.6)	Aeromonas salmonicida subsp. salmonicida A449	SEED
+6b572a4b4ca98086591f3ddf0ef47f28	fig|525278.3.peg.504	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX1322	SEED
+6b572a4b4ca98086591f3ddf0ef47f28	fig|565639.4.peg.618	Catalase (EC 1.11.1.6)	Enterococcus faecalis T8	SEED
+6b572a4b4ca98086591f3ddf0ef47f28	fig|749493.3.peg.1631	catalase	Enterococcus faecalis TX4000	SEED
+6b572a4b4ca98086591f3ddf0ef47f28	fig|749506.3.peg.2111	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0411	SEED
+6b6a9fe28e80a20587401667a3523bd1	fig|996802.3.peg.2239	Catalase (EC 1.11.1.6)	Leptospira interrogans str. 2002000624	SEED
+70c96812e85010a8e3ae7c352906e7c8	fig|323850.11.peg.3187	Catalase (EC 1.11.1.6)	Shewanella loihica PV-4	SEED
+70c96812e85010a8e3ae7c352906e7c8	fig|323850.3.peg.2691	Catalase (EC 1.11.1.6)	Shewanella sp. PV-4	SEED
+724470f38d49468b6de43498609ba082	fig|243090.15.peg.2034	Catalase (EC 1.11.1.6)	Rhodopirellula baltica SH 1	SEED
+724470f38d49468b6de43498609ba082	fig|243090.1.peg.2401	Catalase (EC 1.11.1.6)	Pirellula sp. 1	SEED
+73bdeb9a934f7008f6ae1c48bbe39fdf	fig|315730.5.peg.5167	Catalase (EC 1.11.1.6)	Bacillus weihenstephanensis KBAB4	SEED
+7680a6e85565bec074efa515ec871918	fig|382638.14.peg.1172	Catalase (EC 1.11.1.6)	Helicobacter acinonychis str. Sheeba	SEED
+7680a6e85565bec074efa515ec871918	fig|382638.8.peg.1204	Catalase (EC 1.11.1.6)	Helicobacter acinonychis str. Sheeba	SEED
+771132ff1f3c84934cd365c09893aec1	fig|1001592.3.peg.1261	Catalase (EC 1.11.1.6)	Leptospira santarosai str. 2000027870	SEED
+786581cc2fe64bc9e7095d7587c13694	fig|762376.5.peg.6534	Catalase (EC 1.11.1.6)	Achromobacter xylosoxidans A8	SEED
+78acdd55b8a73461df6a7837792fa594	fig|393124.10.peg.545	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL N3-165	SEED
+78acdd55b8a73461df6a7837792fa594	fig|393124.3.peg.2505	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL N3-165	SEED
+78acdd55b8a73461df6a7837792fa594	fig|637381.3.peg.74	Catalase (EC 1.11.1.6)	Listeria monocytogenes 08-5923	SEED
+78acdd55b8a73461df6a7837792fa594	fig|653938.3.peg.74	Catalase (EC 1.11.1.6)	Listeria monocytogenes 08-5578	SEED
+7a14178af575cb9172d2ae68aa010217	fig|985080.3.peg.883	Catalase (EC 1.11.1.6)	Helicobacter pylori 2018	SEED
+7a14178af575cb9172d2ae68aa010217	fig|985081.3.peg.884	Catalase (EC 1.11.1.6)	Helicobacter pylori 2017	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|474186.5.peg.1276	Catalase (EC 1.11.1.6)	Enterococcus faecalis OG1RF	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|525271.4.peg.426	Catalase (EC 1.11.1.6)	Enterococcus faecalis ATCC 29200	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|565636.4.peg.1820	Catalase (EC 1.11.1.6)	Enterococcus faecalis T1	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|565641.4.peg.1817	Catalase (EC 1.11.1.6)	Enterococcus faecalis X98	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|565645.4.peg.1931	Catalase (EC 1.11.1.6)	Enterococcus faecalis Merz96	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|699185.3.peg.2694	Catalase (EC 1.11.1.6)	Enterococcus faecalis S613	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|699186.3.peg.729	Catalase (EC 1.11.1.6)	Enterococcus faecalis R712	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749489.3.peg.1816	Catalase (EC 1.11.1.6)	Enterococcus faecalis DAPTO 512	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749490.3.peg.1206	Catalase (EC 1.11.1.6)	Enterococcus faecalis DAPTO 516	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749499.3.peg.2193	catalase	Enterococcus faecalis TX0031	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749500.3.peg.1413	catalase	Enterococcus faecalis TX0043	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749501.3.peg.617	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0102	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749505.3.peg.2115	catalase	Enterococcus faecalis TX0312	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749516.3.peg.2545	catalase	Enterococcus faecalis TX1346	SEED
+7ae66d3fcc580f03eaced8e5f3c6a836	fig|749518.3.peg.498	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX2134	SEED
+7c1b63d6b58d60b992c43a8027faa8ed	fig|138119.3.peg.3671	Catalase (EC 1.11.1.6)	Desulfitobacterium sp. Y51	SEED
+7c1b63d6b58d60b992c43a8027faa8ed	fig|138119.41.peg.4797	Catalase (EC 1.11.1.6)	Desulfitobacterium hafniense Y51	SEED
+7c8cb7e8042465ca2bf7175924810e6f	fig|526976.3.peg.1428	Catalase (EC 1.11.1.6)	Bacillus cereus BDRD-ST196	SEED
+7ca8d79f55f0c8a719062111aa6dba9a	fig|653045.3.peg.5571	Catalase (EC 1.11.1.6)	Streptomyces violaceusniger Tu 4113	SEED
+7caef09a184db3831e5c84584cf01bae	fig|621372.3.peg.708	Catalase (EC 1.11.1.6)	Paenibacillus sp. oral taxon 786 str. D14	SEED
+7fb24efc6fd72dd940f5c716601f1af0	fig|393123.7.peg.201	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL N1-017	SEED
+81e381bdda1446970388c0e879e85eeb	fig|749507.3.peg.1497	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0470	SEED
+845880707aea702016adf7bec24a437d	fig|661410.3.peg.279	Catalase (EC 1.11.1.6)	Methylobacterium extorquens DM4	SEED
+8551b0c59a7de5dbdbc701cb5897b97f	fig|349741.3.peg.2203	Catalase (EC 1.11.1.6)	Akkermansia muciniphila ATCC BAA-835	SEED
+8551b0c59a7de5dbdbc701cb5897b97f	fig|349741.6.peg.2370	Catalase (EC 1.11.1.6)	Akkermansia muciniphila ATCC BAA-835	SEED
+8643e67ed9c9c0d75ddcc45370f11396	fig|217.1.peg.1696	Catalase (EC 1.11.1.6)	Helicobacter mustelae 43772	SEED
+8643e67ed9c9c0d75ddcc45370f11396	fig|679897.3.peg.1322	Catalase (EC 1.11.1.6)	Helicobacter mustelae 12198	SEED
+879de04a48feb25028b7da0930b372b3	fig|225849.3.peg.4087	Catalase (EC 1.11.1.6)	Shewanella piezotolerans WP3	SEED
+879de04a48feb25028b7da0930b372b3	fig|225849.4.peg.4076	Catalase (EC 1.11.1.6)	Shewanella piezotolerans WP3	SEED
+886693237deea7ec912983ed2bf05ad8	fig|667129.3.peg.2335	Catalase (EC 1.11.1.6)	Serratia odorifera DSM 4582	SEED
+899235ed8872288e2b7cab8f872f8926	fig|1026882.3.peg.2143	catalase	Methylophaga aminisulfidivorans MP	SEED
+8a56b93ca7b65dd26f86959633352eda	fig|645465.3.peg.2931	Catalase (EC 1.11.1.6)	Streptomyces sp. e14	SEED
+8db21194d7c80278dea2a9cbd9c1fb32	fig|518766.5.peg.1197	Catalase (EC 1.11.1.6)	Rhodothermus marinus DSM 4252	SEED
+8db21194d7c80278dea2a9cbd9c1fb32	fig|518766.7.peg.2809	Catalase (EC 1.11.1.6)	Rhodothermus marinus DSM 4252	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|720556.3.peg.317	Catalase (EC 1.11.1.6)	Bacillus atrophaeus Detrick-1	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|720557.3.peg.2254	Catalase (EC 1.11.1.6)	Bacillus atrophaeus Detrick-2	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|720558.3.peg.2539	Catalase (EC 1.11.1.6)	Bacillus atrophaeus Detrick-3	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|723892.3.peg.3713	Catalase (EC 1.11.1.6)	Bacillus atrophaeus ATCC 9372-2	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|876283.3.peg.1079	Catalase (EC 1.11.1.6)	Bacillus atrophaeus BACI051-N	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|882453.3.peg.2419	Catalase (EC 1.11.1.6)	Bacillus atrophaeus str. Dugway	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|882455.3.peg.10	Catalase (EC 1.11.1.6)	Bacillus atrophaeus BACI051-E	SEED
+8dd8650ce6217cfaf2c4e6c771c89540	fig|903520.3.peg.2018	Catalase (EC 1.11.1.6)	Bacillus atrophaeus ATCC 9372-1	SEED
+8e31e25fd1aa501fe66e9c3627ce4002	fig|272564.6.peg.1069	Catalase (EC 1.11.1.6)	Desulfitobacterium hafniense DCB-2	SEED
+8ee4446e3fb02d3ba9acc8442ca0bf60	fig|264462.1.peg.724	Catalase (EC 1.11.1.6)	Bdellovibrio bacteriovorus HD100	SEED
+8ee4446e3fb02d3ba9acc8442ca0bf60	fig|264462.9.peg.726	Catalase (EC 1.11.1.6)	Bdellovibrio bacteriovorus HD100	SEED
+92128b84f65df3a9bba3a789ce72baec	fig|526988.3.peg.5183	Catalase (EC 1.11.1.6)	Bacillus cereus Rock4-18	SEED
+92508e58d804847430ba8e8fc56bee85	fig|682181.3.peg.3682	Catalase (EC 1.11.1.6)	Streptomyces sp. SA3_actF	SEED
+92508e58d804847430ba8e8fc56bee85	fig|683219.3.peg.3883	Catalase (EC 1.11.1.6)	Streptomyces sp. SA3_actG	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001586.3.peg.9	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Bulgarica str. Mallika	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001588.3.peg.1610	Catalase (EC 1.11.1.6)	Leptospira interrogans str. 2002000621	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001591.3.peg.3656	Catalase (EC 1.11.1.6)	Leptospira interrogans str. C10069	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001598.3.peg.1433	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. LT2050	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001599.3.peg.3713	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Grippotyphosa str. LT2186	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001601.3.peg.2246	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Zanoni str. LT2156	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001602.3.peg.197	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2756C6	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001603.3.peg.1532	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz R154	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001986.3.peg.4207	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. 2006007831	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|1001987.3.peg.2969	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. 2001025091	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|189518.3.peg.1850	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Lai str. 56601	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|267671.1.peg.1970	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|267671.5.peg.2420	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996803.3.peg.5735	Catalase (EC 1.11.1.6)	Leptospira interrogans str. 2002000626	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996809.3.peg.2806	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Canicola str. HAI0024	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996810.3.peg.256	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Grippotyphosa str. 2006006971	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996811.3.peg.6	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV192	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996812.3.peg.1122	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV199	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996813.3.peg.4166	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV204	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996816.3.peg.1704	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV239	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996821.3.peg.1562	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV999	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996822.3.peg.4411	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2752	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996823.3.peg.1350	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2759	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996824.3.peg.4412	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2763	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996825.3.peg.1748	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2767	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996827.3.peg.1588	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2772	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996828.3.peg.3898	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2776	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996829.3.peg.4336	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2787	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996830.3.peg.4232	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2790	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996831.3.peg.3478	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2791	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996832.3.peg.3114	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2799	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996834.3.peg.830	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2805	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996835.3.peg.3790	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2806	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996836.3.peg.2897	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2811	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996837.3.peg.1491	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2812	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996838.3.peg.4530	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2825	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996839.3.peg.2743	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2832	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996840.3.peg.1669	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2840	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996841.3.peg.1655	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2897	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996842.3.peg.3814	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2908	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996843.3.peg.269	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2933	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996844.3.peg.1821	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2948	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996845.3.peg.1908	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2953	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996846.3.peg.2901	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2958	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996847.3.peg.4446	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2959	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996848.3.peg.4262	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV2973	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996849.3.peg.1529	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3086	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996850.3.peg.115	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3094	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996851.3.peg.81	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3096	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996853.3.peg.1493	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3323	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996854.3.peg.1395	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3373	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996856.3.peg.118	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3737	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996857.3.peg.3853	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3738	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996858.3.peg.3196	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3834	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996859.3.peg.3147	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz LV3879	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996860.3.peg.1330	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. Fiocruz R83	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996861.3.peg.3464	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. R066	SEED
+93c0bdcad99a7e2079b2e3eebd98f46c	fig|996862.3.peg.8	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Copenhageni str. HAI0156	SEED
+942d0c8e8e687fa9e5496c3ef76cd44e	fig|565644.5.peg.1163	Catalase (EC 1.11.1.6)	Enterococcus faecalis CH188	SEED
+942d0c8e8e687fa9e5496c3ef76cd44e	fig|749508.3.peg.2011	catalase	Enterococcus faecalis TX0630	SEED
+942d0c8e8e687fa9e5496c3ef76cd44e	fig|749509.3.peg.1035	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0635	SEED
+94c4256dc4c23b59133351243d924eb2	fig|1001587.6.peg.5126	Catalase (EC 1.11.1.6)	Leptospira interrogans serovar Pomona str. Pomona	SEED
+956e754d777280ac14d2a4639f81046e	fig|380703.5.peg.3785	Catalase (EC 1.11.1.6)	Aeromonas hydrophila subsp. hydrophila ATCC 7966	SEED
+956e754d777280ac14d2a4639f81046e	fig|380703.7.peg.3960	Catalase (EC 1.11.1.6)	Aeromonas hydrophila subsp. hydrophila ATCC 7966	SEED
+95a01bd00c4b410bcaca710cc32c2c8b	fig|550540.3.peg.648	Catalase (EC 1.11.1.6)	Ferrimonas balearica DSM 9799	SEED
+966f36c123ccd5c011f10d78a2718253	fig|526981.3.peg.5132	Catalase (EC 1.11.1.6)	Bacillus cereus Rock1-3	SEED
+98c14f6b1be1eddad8a4589f4ed34475	fig|314277.4.peg.1533	Catalase (EC 1.11.1.6)	Marinomonas sp. MED121	SEED
+9ae5144e1a6045b7838b8620fb6adeed	fig|253839.3.peg.4280	Catalase (EC 1.11.1.6)	Streptomyces sp. C	SEED
+9c378b58e98df20d3d5dfe4f7ca3e0d8	fig|66692.3.peg.950	Catalase (EC 1.11.1.6)	Bacillus clausii KSM-K16	SEED
+9c378b58e98df20d3d5dfe4f7ca3e0d8	fig|66692.6.peg.1370	Catalase (EC 1.11.1.6)	Bacillus clausii KSM-K16	SEED
+9cec968ba10ea7b6853a9a700bb693e2	fig|465543.3.peg.2120	Catalase (EC 1.11.1.6)	Streptomyces sp. SPB74	SEED
+9df54ed45f2781b439ed2385284575a7	fig|996637.3.peg.4687	putative catalase	Streptomyces griseoaurantiacus M045	SEED
+a0366fa48f4976744a11047fd3d39304	fig|591159.3.peg.3415	Catalase (EC 1.11.1.6)	Streptomyces viridochromogenes DSM 40736	SEED
+a0df3688f10bea3b85ae2fe1075618e6	fig|425104.3.peg.3509	Catalase (EC 1.11.1.6)	Shewanella sediminis HAW-EB3	SEED
+a172d5a5187e1b7a52ad3c56e6e3a738	fig|527025.3.peg.180	Catalase (EC 1.11.1.6)	Bacillus thuringiensis serovar thuringiensis str. T01001	SEED
+a172d5a5187e1b7a52ad3c56e6e3a738	fig|527031.3.peg.122	Catalase (EC 1.11.1.6)	Bacillus thuringiensis serovar berliner ATCC 10792	SEED
+a172d5a5187e1b7a52ad3c56e6e3a738	fig|541229.3.peg.4947	catalase	Bacillus thuringiensis serovar chinensis CT-43	SEED
+a20831b53d6cd70a3f80865781e00283	fig|325240.15.peg.1130	Catalase (EC 1.11.1.6)	Shewanella baltica OS155	SEED
+a20831b53d6cd70a3f80865781e00283	fig|325240.9.peg.1124	Catalase (EC 1.11.1.6)	Shewanella baltica OS155	SEED
+a20831b53d6cd70a3f80865781e00283	fig|693970.3.peg.1026	Catalase	Shewanella baltica OS117	SEED
+a7d7e936bb0878555abe62e8713220d3	fig|936153.3.peg.1918	Catalase (EC 1.11.1.6)	Enterococcus faecalis 62	SEED
+a96ef66666c3584887a9a6aaf1792427	fig|749494.3.peg.1455	catalase	Enterococcus faecalis TX4244	SEED
+a977de7af2189b3d79f32881bde9a449	fig|265669.1.peg.2751	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 4b F2365	SEED
+a977de7af2189b3d79f32881bde9a449	fig|265669.9.peg.2795	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 4b F2365	SEED
+aa1ec783614beafed349ce992276987d	fig|591157.3.peg.4112	Catalase (EC 1.11.1.6)	Streptomyces sp. SPB78	SEED
+aa735491a8af9f4f945f423c222a9ff8	fig|566461.4.peg.1423	Catalase (EC 1.11.1.6)	Streptomyces ghanaensis ATCC 14672	SEED
+aaa77ecad1bf8be842a5d41d96b3dcca	fig|590409.4.peg.3204	Catalase (EC 1.11.1.6)	Dickeya dadantii Ech586	SEED
+ac840157079711ba86a612b41464f7f9	fig|349520.5.peg.2449	Catalase (EC 1.11.1.6)	Paenibacillus polymyxa E681	SEED
+ad3891274b154488816f293edcee69de	fig|443218.3.peg.382	catalase	Amycolicicoccus subflavus DQS3-9A1	SEED
+afdb3dd14e20153d6080fdddbf0aed33	fig|869727.3.peg.898	Catalase (EC 1.11.1.6)	Helicobacter pylori 908	SEED
+afff9a645b9132363485e400d43f03d1	fig|565651.6.peg.176	Catalase (EC 1.11.1.6)	Enterococcus faecalis AR01/DG	SEED
+b07ad933fc50b85bcea1d7560e9a871a	fig|94122.5.peg.1034	Catalase (EC 1.11.1.6)	Shewanella sp.ANA-3	SEED
+b07ad933fc50b85bcea1d7560e9a871a	fig|94122.6.peg.1169	Catalase (EC 1.11.1.6)	Shewanella sp. ANA-3	SEED
+b2ee856a462b6bb78419a9dfa033e514	fig|649189.3.peg.4982	Catalase (EC 1.11.1.6)	Streptomyces sp. ACT-1	SEED
+b42c4ba04d1fd65f2c1b166b3fe3b3f3	fig|743274.3.peg.405	Catalase (EC 1.11.1.6)	Bordetella pertussis B1193	SEED
+b4824f85cecaf200d2f80c42eae0d0ca	fig|327275.3.peg.773	catalase	Shewanella sp. HN-41	SEED
+b638c6b8b5010766ea3833139263b5f0	fig|714943.3.peg.6012	Catalase (EC 1.11.1.6)	Mucilaginibacter paludis DSM 18603	SEED
+b6930dfad0269d37aa03969b8c7a9012	fig|525367.9.peg.1919	Catalase (EC 1.11.1.6)	Listeria grayi DSM 20601	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|267409.1.peg.910	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 1/2a F6854	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|267409.5.peg.923	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 1/2a F6854	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393128.3.peg.2866	Catalase (EC 1.11.1.6)	Listeria monocytogenes F6900	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393128.7.peg.1972	Catalase (EC 1.11.1.6)	Listeria monocytogenes F6900	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393130.3.peg.1947	Catalase (EC 1.11.1.6)	Listeria monocytogenes J0161	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393130.8.peg.1613	Catalase (EC 1.11.1.6)	Listeria monocytogenes J0161	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393131.3.peg.2776	Catalase (EC 1.11.1.6)	Listeria monocytogenes J2818	SEED
+ba30e6c8f623ad1dd59bd791ce2f5a6a	fig|393131.7.peg.1918	Catalase (EC 1.11.1.6)	Listeria monocytogenes J2818	SEED
+bdac0745e913bb2493c43870a34ad339	fig|227882.1.peg.2028	Catalase (EC 1.11.1.6)	Streptomyces avermitilis MA-4680	SEED
+bdac0745e913bb2493c43870a34ad339	fig|227882.9.peg.2164	Catalase (EC 1.11.1.6)	Streptomyces avermitilis MA-4680	SEED
+beb65e1b380b7401991b8139817b103e	fig|226185.1.peg.1497	Catalase (EC 1.11.1.6)	Enterococcus faecalis V583	SEED
+beb65e1b380b7401991b8139817b103e	fig|226185.9.peg.1500	Catalase (EC 1.11.1.6)	Enterococcus faecalis V583	SEED
+beb65e1b380b7401991b8139817b103e	fig|491074.3.peg.216	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0104	SEED
+beb65e1b380b7401991b8139817b103e	fig|491075.3.peg.427	Catalase (EC 1.11.1.6)	Enterococcus faecalis HH22	SEED
+beb65e1b380b7401991b8139817b103e	fig|565640.5.peg.2420	Catalase (EC 1.11.1.6)	Enterococcus faecalis T11	SEED
+beb65e1b380b7401991b8139817b103e	fig|749491.3.peg.672	catalase	Enterococcus faecalis TX2137	SEED
+beb65e1b380b7401991b8139817b103e	fig|749503.3.peg.2351	catalase	Enterococcus faecalis TX0309A	SEED
+beb65e1b380b7401991b8139817b103e	fig|749504.3.peg.498	catalase	Enterococcus faecalis TX0309B	SEED
+bfb6bcb027067baff9c65c7845afee28	fig|539329.3.peg.1297	Catalase (EC 1.11.1.6)	Francisella philomiragia subsp. philomiragia ATCC 25015	SEED
+bff8d071baf42f633e441cfc4b83736e	fig|315750.5.peg.802	Catalase (EC 1.11.1.6)	Bacillus pumilus SAFR-032	SEED
+bff8d071baf42f633e441cfc4b83736e	fig|315750.8.peg.903	Catalase (EC 1.11.1.6)	Bacillus pumilus SAFR-032	SEED
+c05160495dd098c82dc95e2415ceee09	fig|1017264.3.peg.4063	catalase	Bordetella pertussis CS	SEED
+c05160495dd098c82dc95e2415ceee09	fig|257313.5.peg.4162	Catalase (EC 1.11.1.6)	Bordetella pertussis Tohama I	SEED
+c239c410be0feb24b564b1514a410563	fig|526971.3.peg.5622	Catalase (EC 1.11.1.6)	Bacillus cereus MM3	SEED
+c2a871d7dc4b25f62e597153214e6f88	fig|363253.4.peg.913	Catalase (EC 1.11.1.6)	Lawsonia intracellularis PHE/MN1-00	SEED
+c2a871d7dc4b25f62e597153214e6f88	fig|363253.5.peg.914	Catalase (EC 1.11.1.6)	Lawsonia intracellularis PHE/MN1-00	SEED
+c4e2ed04940df806cc97a529a09cd207	fig|525372.3.peg.4275	Catalase (EC 1.11.1.6)	Sphingobacterium spiritivorum ATCC 33300	SEED
+c501ae478c36b9acf7c31c6d72061152	fig|393133.3.peg.2459	Catalase (EC 1.11.1.6)	Listeria monocytogenes 10403S	SEED
+c501ae478c36b9acf7c31c6d72061152	fig|393133.8.peg.1100	Catalase (EC 1.11.1.6)	Listeria monocytogenes 10403S	SEED
+c524724bd71b15d32903df451d62e971	fig|536229.4.peg.940	Catalase (EC 1.11.1.6)	Bacillus pumilus ATCC 7061	SEED
+c611cc0fbd52383f5697ada0a4cae884	fig|298386.1.peg.298	Catalase (EC 1.11.1.6)	Photobacterium profundum SS9	SEED
+c611cc0fbd52383f5697ada0a4cae884	fig|298386.8.peg.4040	Catalase (EC 1.11.1.6)	Photobacterium profundum SS9	SEED
+cb627e6412f8aeecf9b52d0fa6c96bec	fig|996804.3.peg.1865	Catalase (EC 1.11.1.6)	Leptospira weilii str. 2006001855	SEED
+cd7e02375d1e2af8560d3b9ecc17b807	fig|565649.5.peg.1831	Catalase (EC 1.11.1.6)	Enterococcus faecalis Fly1	SEED
+cf1d69628cc75c96cdc2eabc76a281a5	fig|216595.1.peg.2308	Catalase (EC 1.11.1.6)	Pseudomonas fluorescens SBW25	SEED
+cf92b9b8521550255234cda6478753bf	fig|272564.4.peg.4344	Catalase (EC 1.11.1.6)	Desulfitobacterium hafniense DCB-2	SEED
+d24b75e6eef7b7a2935efcb30d936e2c	fig|526984.3.peg.5289	Catalase (EC 1.11.1.6)	Bacillus cereus Rock3-29	SEED
+d28378c1366d1afe3a38fe2afcb93a8b	fig|526997.3.peg.891	Catalase (EC 1.11.1.6)	Bacillus mycoides DSM 2048	SEED
+d5272eba830d07eea64f07aa5f71a527	fig|878320.4.peg.3818	Catalase (EC 1.11.1.6)	Aeromonas caviae Ae398	SEED
+d646af440249cd6a475d0a2d100da2b7	fig|591167.3.peg.4128	Catalase (EC 1.11.1.6)	Streptomyces flavogriseus ATCC 33331	SEED
+d6b9175d2caf0e97b35149ac32ec7554	fig|749502.3.peg.2333	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX0109	SEED
+d6b9175d2caf0e97b35149ac32ec7554	fig|749513.3.peg.2220	catalase	Enterococcus faecalis TX1302	SEED
+d71364e5b8a3df2365237e7595821e42	fig|355277.4.peg.2038	Catalase (EC 1.11.1.6)	Leptospira borgpetersenii serovar Hardjo-bovis JB197	SEED
+dd792736e9536ed7c40f850b72205c27	fig|525373.3.peg.3591	Catalase (EC 1.11.1.6)	Sphingobacterium spiritivorum ATCC 33861	SEED
+dd833d3c68d4f7c0eb0ae6b1de246aed	fig|998088.4.peg.253	Catalase	Aeromonas veronii B565	SEED
+de165c80626a7ea9be6b75f81ebe2579	fig|1001589.3.peg.2460	Catalase (EC 1.11.1.6)	Leptospira weilii str. 2006001853	SEED
+de2e1885ae6ce2f4d1e88c2b48367cdd	fig|484022.4.peg.1663	Catalase (EC 1.11.1.6)	Francisella philomiragia subsp. philomiragia ATCC 25017	SEED
+de2e1885ae6ce2f4d1e88c2b48367cdd	fig|484022.8.peg.1705	Catalase (EC 1.11.1.6)	Francisella philomiragia subsp. philomiragia ATCC 25017	SEED
+dfe0e4807b7c74feb8a2010b39e95dec	fig|529120.3.peg.1745	Catalase (EC 1.11.1.6)	Alteromonas macleodii ATCC 27126	SEED
+e2e845e745c5453e13deab905ae92d18	fig|355249.3.peg.1983	Catalase (EC 1.11.1.6)	Streptomyces sp. Tu6071	SEED
+e50cb3e59f61607ee44583d11a487968	fig|465541.3.peg.4018	Catalase (EC 1.11.1.6)	Streptomyces sp. Mg1	SEED
+e53cb1c01aa2cfae75c55ff6f8633d98	fig|647653.3.peg.6359	Catalase (EC 1.11.1.6)	Streptomyces sp. ACTE	SEED
+e73f961f323f535b48ee6cb579dc9873	fig|457427.3.peg.2471	Catalase (EC 1.11.1.6)	Streptomyces hygroscopicus ATCC 53653	SEED
+e8c3417e60a9cf3e2283d19eaa715312	fig|457425.4.peg.4711	Catalase (EC 1.11.1.6)	Streptomyces albus J1074	SEED
+e8c34640f557db732f0e62a1fe9baf78	fig|527019.3.peg.6006	Catalase (EC 1.11.1.6)	Bacillus thuringiensis IBL 200	SEED
+eabefa872f378ba37a1ed74f3bdd61e4	fig|485918.5.peg.5008	Catalase (EC 1.11.1.6)	Chitinophaga pinensis DSM 2588	SEED
+eabefa872f378ba37a1ed74f3bdd61e4	fig|485918.6.peg.5750	Catalase (EC 1.11.1.6)	Chitinophaga pinensis DSM 2588	SEED
+ec8f24c676323f3c37e3be6e4d886fe9	fig|419610.10.peg.262	Catalase (EC 1.11.1.6)	Methylobacterium extorquens PA1	SEED
+ec9fe7105027fc0370a5fe66e03a6dc2	fig|355276.3.peg.2304	Catalase (EC 1.11.1.6)	Leptospira borgpetersenii serovar Hardjo-bovis L550	SEED
+ed11b0b94dccf797d281a74aafba59f9	fig|391596.3.peg.918	Catalase (EC 1.11.1.6)	Pedobacter sp. BAL39	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|565643.5.peg.2146	Catalase (EC 1.11.1.6)	Enterococcus faecalis DS5	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|565648.4.peg.1367	Catalase (EC 1.11.1.6)	Enterococcus faecalis JH1	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|702445.3.peg.2448	Catalase (EC 1.11.1.6)	Bacteroides vulgatus EK4.2	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|749495.4.peg.2853	Catalase (EC 1.11.1.6)	Enterococcus faecalis TX4248	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|749497.3.peg.343	catalase	Enterococcus faecalis TX0017	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|749498.3.peg.312	catalase	Enterococcus faecalis TX0027	SEED
+ed9ce3a87d8eed21b54785d057568e0f	fig|749517.3.peg.2434	catalase	Enterococcus faecalis TX1467	SEED
+edea45c3c515afbcb8edbbe2cf8ef387	fig|565650.5.peg.2082	Catalase (EC 1.11.1.6)	Enterococcus faecalis D6	SEED
+ef47809abdb1b0fc1e0b1cebeb075b94	fig|315730.11.peg.5255	Catalase (EC 1.11.1.6)	Bacillus weihenstephanensis KBAB4	SEED
+f0446a4027dd0a82e5aaa2d72d80bc46	fig|582744.3.peg.537	Catalase (EC 1.11.1.6)	Methylovorus sp. SIP3-4	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|1027396.3.peg.2923	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. Scott A	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|267410.1.peg.1261	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 4b H7858	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|267410.6.peg.1230	Catalase (EC 1.11.1.6)	Listeria monocytogenes str. 4b H7858	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393117.11.peg.1365	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL J1-194	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393117.3.peg.3115	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL J1-194	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393118.7.peg.931	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL J1-175	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393121.3.peg.3064	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL J2-071	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393121.7.peg.109	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL J2-071	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|393125.10.peg.186	Catalase (EC 1.11.1.6)	Listeria monocytogenes FSL R2-503	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|401650.12.peg.161	Catalase (EC 1.11.1.6)	Listeria monocytogenes HPB2262	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|401650.3.peg.2872	Catalase (EC 1.11.1.6)	Listeria monocytogenes Aureli 1997	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|634178.4.peg.2792	Catalase (EC 1.11.1.6)	Listeria monocytogenes Clip80459	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|930781.3.peg.307	catalase	Listeria monocytogenes 1816	SEED
+f23f4b984aede035a1f0dcc3bb97568c	fig|930782.3.peg.3324	catalase	Listeria monocytogenes 220	SEED
+f3d4b9b497738664605c6990de05d356	fig|216595.4.peg.5463	Catalase (EC 1.11.1.6)	Pseudomonas fluorescens SBW25	SEED
+f4be243413b53b8ca624c6ed13931300	fig|887061.3.peg.534	Catalase (EC 1.11.1.6)	Methylovorus sp. MP688	SEED
+f6f8ce31dfa4ca5dc73cadcd9e8d8a37	fig|419610.8.peg.225	Catalase (EC 1.11.1.6)	Methylobacterium extorquens PA1	SEED
+f95730dae661ebaa48622a0d0dedc658	fig|455632.3.peg.2356	Catalase (EC 1.11.1.6)	Streptomyces griseus subsp. griseus NBRC 13350	SEED
+f95730dae661ebaa48622a0d0dedc658	fig|455632.4.peg.2359	Catalase (EC 1.11.1.6)	Streptomyces griseus subsp. griseus NBRC 13350	SEED
+fbe0212c90c86e28fd758448b619d134	fig|314608.4.peg.719	Catalase (EC 1.11.1.6)	Shewanella benthica KT99	SEED
+ff0d4cec14db180d6427cd9cf4d62a4c	fig|526968.3.peg.5011	Catalase (EC 1.11.1.6)	Bacillus cereus R309803	SEED

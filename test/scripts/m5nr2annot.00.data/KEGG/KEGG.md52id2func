@@ -43,3 +43,81 @@ effe2c8c6fd49093d11bbe51e5d39d77	asa:ASA_1395	PTS system, fructose-specific IIBC
 effe2d579a0a002bf0cf074b030b42aa	cao:Celal_0199	hypothetical protein	Cellulophaga algicola DSM 14237	KEGG
 effe3065f5db54adaf9e826c900d1111	pag:PLES_05211	nitric-oxide reductase subunit B	Pseudomonas aeruginosa LESB58	KEGG
 effe319b8ff978f3c370e39b4b3556f1	pam:PANA_3316	hypothetical protein	Pantoea ananatis LMG 20103	KEGG
+0414d713810fd1414fcce7a75f8765aa	azl:AZL_c00160	catalase	Azospirillum sp. B510	KEGG
+07bcc5826a0cc639a6b2b4fb4687da5a	lmh:LMHCC_2737	catalase (EC:1.11.1.6)	Listeria monocytogenes HCC23	KEGG
+0a2d40b32acf40a5263b0546f558d38a	sma:SAV_3052	catalase	Streptomyces avermitilis MA-4680	KEGG
+0c28781ced4965224e0039f8342a541b	shm:Shewmr7_0945	catalase (EC:1.11.1.6)	Shewanella sp. MR-7	KEGG
+0dcc05008309391b9ddb3b4683402dec	son:SO_1070	catalase	Shewanella oneidensis MR-1	KEGG
+1111458757e28c86763f27d348d848cd	yli:YALI0F30987g	YALI0F30987p	Yarrowia lipolytica CLIB122	KEGG
+14598e73c5a205efe3c6533f3c7a938e	shl:Shal_0729	catalase (EC:1.11.1.6)	Shewanella halifaxensis HAW-EB4	KEGG
+17f78ed755a899626710a679168a0fc9	spl:Spea_0638	catalase (EC:1.11.1.6)	Shewanella pealeana ATCC 700345	KEGG
+1a925f6d823a0b977088aba5bff0c47d	svo:SVI_3659	catalase	Shewanella violacea DSS12	KEGG
+1c8a2f88c622005c92f0c25e7c972bae	amc:MADE_00522	catalase	Alteromonas macleodii Deep ecotype	KEGG
+1e45ef1914408092fb6dcbffa9845101	lwe:lwe2731	catalase (EC:1.11.1.6)	Listeria welshimeri SLCC5334 (serotype 6b)	KEGG
+1e8bd471bfd9322d7056d063eb5641cd	eat:EAT1b_2525	catalase (EC:1.11.1.6)	Exiguobacterium sp. AT1b	KEGG
+2249927abc1ff7425d041fa8ac432eac	sfr:Sfri_0563	catalase (EC:1.11.1.6)	Shewanella frigidimarina NCIMB 400	KEGG
+23674824480463751821b39aa60464eb	hpj:jhp0809	catalase	Helicobacter pylori J99	KEGG
+245777e880494800d0f07e8573a09c85	bpa:BPP4406	catalase (EC:1.11.1.6)	Bordetella parapertussis 12822	KEGG
+245777e880494800d0f07e8573a09c85	bpe:BP3852	catalase (EC:1.11.1.6)	Bordetella pertussis Tohama I	KEGG
+2737a49d50c89d151271f01ecd9e724f	aac:Aaci_0342	catalase (EC:1.11.1.6)	Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446	KEGG
+29521a37f6982fca2dc6747a334a767f	she:Shewmr4_3029	catalase (EC:1.11.1.6)	Shewanella sp. MR-4	KEGG
+2aa6e26c550471965351a373adcfc06b	hms:HMU10960	catalase (EC:1.11.1.6)	Helicobacter mustelae 12198	KEGG
+2e8b38103b7a81c8a0565e6a4522f08a	mpo:Mpop_0365	catalase (EC:1.11.1.6)	Methylobacterium populi BJ001	KEGG
+2ff8da3056488fa5c0f9378f027d7315	bae:BATR1942_02000	catalase	Bacillus atrophaeus 1942	KEGG
+315be63a5a2e1776eff384e88e9e8b0f	bbr:BB4994	catalase (EC:1.11.1.6)	Bordetella bronchiseptica RB50	KEGG
+33bcbc23948362a90b53058952876e4f	saz:Sama_2941	catalase (EC:1.11.1.6)	Shewanella amazonensis SB2B	KEGG
+3ae55217880165858405301c7c13231b	lin:lin2920	catalase	Listeria innocua CLIP 11262 (serotype 6a)	KEGG
+3de0b5a44f72fdc796f8922ed3feceb1	lmo:lmo2785	catalase	Listeria monocytogenes EGD-e (serotype 1/2a)	KEGG
+3f34ed1857084e72f8637ad01f537509	sbm:Shew185_3468	catalase (EC:1.11.1.6)	Shewanella baltica OS185	KEGG
+3f3a02fbeedf1e185e8cf58a22881365	mch:Mchl_0333	catalase (EC:1.11.1.6)	Methylobacterium chloromethanicum CM4	KEGG
+3fbab6ca558b5e7723242498fd05b845	pen:PSEEN0517	catalase (EC:1.11.1.6)	Pseudomonas entomophila L48	KEGG
+437a0df16fe38c335fcc292cf411edc1	esi:Exig_2191	catalase (EC:1.11.1.6)	Exiguobacterium sibiricum 255-15	KEGG
+492502a1f26436d7f6e18fa5da78f19a	ppm:PPSC2_c2784	catalase	Paenibacillus polymyxa SC2	KEGG
+4a2e30e57882142d17ddda3858819d4c	mea:Mex_1p0179	catalase (hydroperoxidase II) (EC:1.11.1.6)	Methylobacterium extorquens AM1	KEGG
+4eaa575e264c774eb8f71c20731a78c1	sse:Ssed_3940	catalase (EC:1.11.1.6)	Shewanella sediminis HAW-EB3	KEGG
+501a7223bf864b7f458dd1785f54b664	sbn:Sbal195_3591	catalase (EC:1.11.1.6)	Shewanella baltica OS195	KEGG
+521f4813ccbe53a9797e44defbb2e077	sco:SCO6204	catalase	Streptomyces coelicolor A3(2)	KEGG
+544af0be64b0520b8d3496610a1676f8	lsg:lse_2685	hypothetical protein	Listeria seeligeri SLCC3954 (serovar 1/2b)	KEGG
+57eeae80715f283342acdd36c466d001	sbp:Sbal223_3392	catalase (EC:1.11.1.6)	Shewanella baltica OS223	KEGG
+6411f58df2c6df3d0f9801110f061f04	bcg:BCG9842_B0344	catalase-2 (EC:1.11.1.6)	Bacillus cereus G9842	KEGG
+6857b3a7174a80c0048257e87cab8492	asa:ASA_4040	catalase	Aeromonas salmonicida subsp. salmonicida A449	KEGG
+70c96812e85010a8e3ae7c352906e7c8	slo:Shew_3190	catalase (EC:1.11.1.6)	Shewanella loihica PV-4	KEGG
+724470f38d49468b6de43498609ba082	rba:RB4376	catalase (EC:1.11.1.6)	Rhodopirellula baltica SH 1 (Pirellula sp. strain 1)	KEGG
+7680a6e85565bec074efa515ec871918	hac:Hac_1240	hypothetical protein	Helicobacter acinonychis Sheeba	KEGG
+786581cc2fe64bc9e7095d7587c13694	axy:AXYL_06528	catalase 2 (EC:1.11.1.6)	Achromobacter xylosoxidans A8	KEGG
+78acdd55b8a73461df6a7837792fa594	lmn:LM5578_0074	catalase	Listeria monocytogenes 08-5578 (serotype 1/2a)	KEGG
+78acdd55b8a73461df6a7837792fa594	lmy:LM5923_0074	catalase	Listeria monocytogenes 08-5923 (serotype 1/2a)	KEGG
+7c1b63d6b58d60b992c43a8027faa8ed	dsy:DSY4294	hypothetical protein	Desulfitobacterium hafniense Y51	KEGG
+845880707aea702016adf7bec24a437d	mdi:METDI0162	catalase (hydroperoxidase II) (EC:1.11.1.6)	Methylobacterium extorquens DM4	KEGG
+879de04a48feb25028b7da0930b372b3	swp:swp_4429	catalase (EC:1.11.1.6)	Shewanella piezotolerans WP3	KEGG
+8db21194d7c80278dea2a9cbd9c1fb32	rmr:Rmar_2779	catalase (EC:1.11.1.6)	Rhodothermus marinus DSM 4252	KEGG
+8e31e25fd1aa501fe66e9c3627ce4002	dhd:Dhaf_1029	catalase (EC:1.11.1.6)	Desulfitobacterium hafniense DCB-2	KEGG
+8ee4446e3fb02d3ba9acc8442ca0bf60	bba:Bd0798	hypothetical protein (EC:1.11.1.6)	Bdellovibrio bacteriovorus HD100	KEGG
+93c0bdcad99a7e2079b2e3eebd98f46c	lic:LIC12032	catalase	Leptospira interrogans serovar Copenhageni Fiocruz L1-130	KEGG
+93c0bdcad99a7e2079b2e3eebd98f46c	lil:LA_1859	catalase	Leptospira interrogans serovar Lai 56601	KEGG
+956e754d777280ac14d2a4639f81046e	aha:AHA_3994	catalase (EC:1.11.1.6)	Aeromonas hydrophila subsp. hydrophila ATCC 7966	KEGG
+95a01bd00c4b410bcaca710cc32c2c8b	fbl:Fbal_0644	catalase (EC:1.11.1.6)	Ferrimonas balearica DSM 9799	KEGG
+9c378b58e98df20d3d5dfe4f7ca3e0d8	bcl:ABC1283	catalase (EC:1.11.1.6)	Bacillus clausii KSM-K16	KEGG
+a20831b53d6cd70a3f80865781e00283	sbl:Sbal_0894	catalase (EC:1.11.1.6)	Shewanella baltica OS155	KEGG
+a30d9e1c0c9ba4c711623506e0b73dcb	sgr:SGR_2316	putative catalase	Streptomyces griseus subsp. griseus NBRC 13350	KEGG
+a977de7af2189b3d79f32881bde9a449	lmf:LMOf2365_2776	catalase (EC:1.11.1.6)	Listeria monocytogenes F2365 (serotype 4b)	KEGG
+aaa77ecad1bf8be842a5d41d96b3dcca	ddc:Dd586_3193	catalase (EC:1.11.1.6)	Dickeya dadantii Ech586	KEGG
+ac840157079711ba86a612b41464f7f9	ppy:PPE_02435	vegetative catalase (EC:1.11.1.6)	Paenibacillus polymyxa E681	KEGG
+b07ad933fc50b85bcea1d7560e9a871a	shn:Shewana3_0908	catalase domain-containing protein	Shewanella sp. ANA-3	KEGG
+bdac0745e913bb2493c43870a34ad339	sma:SAV_2026	catalase	Streptomyces avermitilis MA-4680	KEGG
+beb65e1b380b7401991b8139817b103e	efa:EF1597	catalase/peroxidase	Enterococcus faecalis V583, vancomycin-resistant clinical isolate	KEGG
+bff8d071baf42f633e441cfc4b83736e	bpu:BPUM_0892	catalase KatX2 (EC:1.11.1.6)	Bacillus pumilus SAFR-032	KEGG
+c2a871d7dc4b25f62e597153214e6f88	lip:LI0842	hydroperoxidase II (EC:1.11.1.6)	Lawsonia intracellularis PHE/MN1-00	KEGG
+c611cc0fbd52383f5697ada0a4cae884	ppr:PBPRB0286	putative catalase	Photobacterium profundum SS9	KEGG
+d1b3ed9320598d9513b5c3ebbfe9543b	ang:An14g07200	hypothetical protein	Aspergillus niger CBS 513.88	KEGG
+d71364e5b8a3df2365237e7595821e42	lbj:LBJ_1598	catalase	Leptospira borgpetersenii serovar Hardjo-bovis JB197	KEGG
+de2e1885ae6ce2f4d1e88c2b48367cdd	fph:Fphi_1643	catalase (EC:1.11.1.6)	Francisella philomiragia subsp. philomiragia ATCC 25017	KEGG
+e776d7822ff7146c97c9d72d51b088e4	amu:Amuc_2070	hydroperoxidase II (EC:1.11.1.6)	Akkermansia muciniphila ATCC BAA-835	KEGG
+eabefa872f378ba37a1ed74f3bdd61e4	cpi:Cpin_5844	catalase (EC:1.11.1.6)	Chitinophaga pinensis DSM 2588	KEGG
+ec8f24c676323f3c37e3be6e4d886fe9	mex:Mext_0289	catalase (EC:1.11.1.6)	Methylobacterium extorquens PA1	KEGG
+ec9fe7105027fc0370a5fe66e03a6dc2	lbl:LBL_1816	catalase	Leptospira borgpetersenii serovar Hardjo-bovis L550	KEGG
+ef47809abdb1b0fc1e0b1cebeb075b94	bwe:BcerKBAB4_4605	catalase (EC:1.11.1.6)	Bacillus weihenstephanensis KBAB4	KEGG
+f0446a4027dd0a82e5aaa2d72d80bc46	mei:Msip34_0529	catalase (EC:1.11.1.6)	Methylovorus sp. SIP3-4	KEGG
+f23f4b984aede035a1f0dcc3bb97568c	lmc:Lm4b_02761	catalase	Listeria monocytogenes Clip81459 (serotype 4b)	KEGG
+f3d4b9b497738664605c6990de05d356	pfs:PFLU5339	catalase (EC:1.11.1.6)	Pseudomonas fluorescens SBW25	KEGG
+f4be243413b53b8ca624c6ed13931300	mep:MPQ_0554	catalase	Methylovorus sp. MP688	KEGG
