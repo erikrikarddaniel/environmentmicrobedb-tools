@@ -445,9 +445,10 @@ begin
       line.sub!(/\s*#.*/, '')
       next if line == ''
       fields = line.split(/\s*\t\s*/)
-      s = { subject: fields[0], target: fields[1], bitscore: fields[-1].to_f }
+      s = { subject: fields[0], target: fields[1], e_value: fields[-2].to_f, bitscore: fields[-1].to_f }
       if not first_hit
 	first_hit = s
+	warn "First hit #{fields[0]}, e-value: #{s[:e_value]}, bitscore: #{s[:bitscore]}" if @options[:verbose]
 	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
       elsif s[:subject] != first_hit[:subject]
 	_log_hits(hits)
@@ -455,6 +456,7 @@ begin
 	  self.method(DATADIRS[db]['handler']).call(db, hits)	# This call outputs the actual annotation data
 	end
 	first_hit = s
+	warn "First hit #{fields[0]}, e-value: #{s[:e_value]}, bitscore: #{s[:bitscore]}" if @options[:verbose]
 	hits = [ s ] if s[:bitscore] > @options[:minbitscore]
       elsif s[:bitscore] >= @options[:minbitscore]
 	next if @options[:fracfrombestbitscore] and s[:bitscore] < @options[:fracfrombestbitscore] * first_hit[:bitscore]
