@@ -26,7 +26,6 @@ PROGRESS_INTERVAL = 100000
   fracfrombestbitscore: false,
   maxnumhits: false,
   minbitscore: 50.0,
-  threads: false
 }
 opt_parser = OptionParser.new do |opts|
   opts.banner = <<BANNER
@@ -65,10 +64,6 @@ BANNER
 
   opts.on "--minbitscore=FLOAT", "Minimum bitscore for a hit to be considered, default #{@options[:minbitscore]}" do |v|
     @options[:minbitscore] = v.to_f
-  end
-
-  opts.on "--[no-]threads", "Use threads when reading database files, default #{@options[:threads]}" do |v|
-    @options[:threads] = v
   end
 
   opts.on "-v", "--verbose", "Be verbose"  do |v| 
@@ -413,22 +408,13 @@ DATADIRS = {
 
 # Scan --datadir for directories with database files
 begin
-  threads = []
   Dir.entries(@options[:datadir]).sort.each do |subdir|
     next unless File.directory?("#{@options[:datadir]}/#{subdir}")
     if DATADIRS[subdir] and DATADIRS[subdir]['parser']
-      if @options[:threads]
-	threads << Thread.new { self.method(DATADIRS[subdir]['parser']).call(subdir) }
-      else
-	self.method(DATADIRS[subdir]['parser']).call(subdir)
-      end
+      self.method(DATADIRS[subdir]['parser']).call(subdir)
     else
       warn "No parser found for #{subdir} subdirectory, skipping"
     end
-  end
-  warn "Waiting for #{threads.length} parsing threads" if @options[:verbose]
-  threads.each do |t| 
-    t.join 
   end
   warn "Parsing done" if @options[:verbose]
 rescue
