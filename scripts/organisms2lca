@@ -131,10 +131,10 @@ def lca(organisms)
     @organisms[organism] ||= lookup(organism)
     hierarchies << @organisms[organism]
   end
-  lca = nil
+  lca = [ ]
   hierarchies.sort_by { |h| h.map { |t| t["scientific_name"] }.join(":") }.each do |hierarchy|
     next if hierarchy.length == 0
-    if lca
+    if lca.length > 0
       lca.each_with_index do |t,i|
 	unless t == hierarchy[i]
 	  lca = lca[0..i-1]
@@ -199,6 +199,8 @@ begin
       output = ( @options[:field] > 1 ? fields[0..@options[:field]-2] : [] )
       if fields[@options[:field] - 1]
 	organisms = fields[@options[:field] - 1].split(@options[:fieldsep]).map { |o| o.tr('"', '') }
+	lca = lca(organisms)
+	warn "No LCA for #{organisms}" if lca.length == 0
 	output << "\"#{lca(organisms).map { |t| t["scientific_name"] }.join('","')}\""
       end
       output += ( fields[@options[:field]] ? fields[@options[:field]..-1] : [] )
