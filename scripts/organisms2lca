@@ -24,7 +24,7 @@ require 'json'
 require 'optparse'
 
 @options = {
-  fieldsep:	/\s*,\s*/,
+  fieldsep:	/"\s*,\s*"/,
   inputsep:	/\s*\t\s*/,
   outputsep:	"\t",
   service:	"http://biosql.scilifelab.se/ncbi_taxon_id2full_taxon_hierarchy.json?name="
