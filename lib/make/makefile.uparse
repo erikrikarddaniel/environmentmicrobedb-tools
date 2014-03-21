@@ -1,0 +1,200 @@
+FIRST_REAL_BASE = 1
+MERGE_OPTIONS = -fastq_truncqual 2 -fastq_maxdiffs 3
+QC_PARAMETERS = -fastq_minlen 400 -fastq_maxee 1
+USEARCH64BIT =
+
+# This one is sometimes 10, with MiSeq data it's 11
+OTU_FIELD_NUM = 11
+
+RADIUSES = 0.5 1.0 1.5 2.0 3.0
+
+MINSIZE = -minsize 2
+
+OTUTAXTABLE = perl -e 'BEGIN { print "otu sequence\n"; } s/\s*\n//; if ( /^>(.*)/ ) { print "$$s\n" if $$s; $$s = "$$1 "; } else { $$s .= $$_; } END { print "$$s\n" }' -n $(word 2, $^) | join -j 1 $< - | join -j 1 - $(word 3,$^) | sed 's/ /\t/g' > $@
+
+# Copies files using cp or gunzip -c from the INBOX to the current directory
+# following names in the colon separated file sample_list.
+copy_samples: sample_list
+	@for l in `cat $<`; do \
+	  f=`echo $$l|awk -F: '{print $$1}'`; \
+	  s=`echo $$l|awk -F: '{print $$2}'`; \
+	  if [ -e $$s ]; then \
+	    echo "Sample file $$s already exists, exiting"; \
+	    exit 1; \
+	  fi; \
+	  if [ `echo $$f|grep -c '.gz$$'` -eq 1 ]; then \
+	    gunzip -c $$f > $$s; \
+	  else \
+	    cp $$f $$s; \
+	  fi; \
+	done
+
+trim_all_r1: $(wildcard *.r1.fastq)
+	@if [ `which fastx_trimmer 2>/dev/null|wc -l` -eq 0 ]; then \
+	  echo "You must load the Fastx module to proceed"; \
+	  exit 2; \
+	fi
+	for f in $^; do \
+	  mv $$f $$f.untrimmed; \
+	  fastx_trimmer -f $(FIRST_REAL_BASE) -Q33 < $$f.untrimmed > $$f; \
+	done
+
+# Merge all individual fastq files, the latter must have .r1.fastq and 
+# .r2.fastq file endings.
+merge_all: $(subst .r1.fastq,.merged.fastq,$(wildcard *.r1.fastq))
+
+merge_stats.tsv: $(wildcard *.merged.fastq)
+	echo "sample	r1-count	merged-count	prop. left" > $@
+	for mf in $^; do \
+	  s=`basename $$mf .merged.fastq`; \
+	  r1=`grep -c '^@HWI' $$s.r1.fastq`; \
+	  m=`grep -c '@HWI' $$mf`; \
+	  echo "$$s	$$r1	$$m	`echo \"$${m}.0 $${r1}.0\" | awk '{ print $$1/$$2}'`"; \
+	done >> $@
+
+# Get quality statistics for all merged fastq files. Stats are collected in
+# files ending with .fastqstats.
+merged_stats: $(subst .fastq,.fastqstats,$(wildcard *.merged.fastq))
+
+qc_all: $(subst .merged.fastq,.merged.qc.fasta,$(wildcard *.merged.fastq))
+
+# Make sure no intermediate files below this line are deleted as part of pattern rules
+.SECONDARY:
+
+%.merged.fastq: %.r1.fastq %.r2.fastq
+	usearch -fastq_mergepairs $< -reverse $(word 2, $^) $(MERGE_OPTIONS) -fastqout $@
+
+%.fastqstats: %.fastq
+	usearch -fastq_stats $< -log $@
+
+%.qc.fasta: %.fastq
+	usearch -fastq_filter $< $(QC_PARAMETERS) -fastaout $@ | tee $@.out 2>&1
+
+qc_sum_stats.tsv: $(filter-out all_samples.merged.qc.fasta,$(wildcard *.merged.qc.fasta))
+	@echo "Sample	Before	After	Prop. disc." > $@; \
+	for f in $^; do \
+	  b=`basename $$f .qc.fasta`; \
+	  nb=`grep -c '^@HWI' $$b.fastq`; \
+	  na=`grep -c '^>' $$f`; \
+	  d=`expr $$nb - $$na`; \
+	  echo "$$b $$nb $$na $$d" | awk '{ print $$1 "\t" $$2 "\t" $$3 "\t" $$4/$$2}'; \
+	done >> $@
+
+all_samples.merged.qc.fasta: $(filter-out all_samples.merged.qc.fasta,$(wildcard *.merged.qc.fasta))
+	cat $^ > $@
+
+%.derep.fasta: %.fasta
+	usearch$(USEARCH64BIT) -derep_fulllength $< -output $@ -sizeout
+
+%.sorted.fasta: %.fasta
+	usearch -sortbysize $< -output $@ $(MINSIZE)
+
+makefile.otu_clustering:
+	@echo -n "all_otus: " > $@
+	@for r in $(RADIUSES); do \
+	  echo -n "all_samples.merged.qc.derep.sorted.otus_r$$r.fasta "; \
+	done >> $@
+	@echo >> $@
+	@echo >> $@
+	@echo -n "all_mapbacks: " >> $@
+	@for r in $(RADIUSES); do \
+	  echo -n "all_samples.merged.qc.derep.sorted.otus_r$$r.mapback "; \
+	done >> $@
+	@echo >> $@
+	@echo >> $@
+	@for r in $(RADIUSES); do \
+	  echo "all_samples.merged.qc.derep.sorted.clusters_r$$r.fasta: all_samples.merged.qc.derep.sorted.fasta"; \
+	  echo "	usearch$(USEARCH64BIT) -cluster_otus \$$< -otus \$$@ -otu_radius_pct $$r"; \
+	  echo ; \
+	  echo "all_samples.merged.qc.derep.sorted.otus_r$$r.fasta: all_samples.merged.qc.derep.sorted.clusters_r$$r.fasta"; \
+	  echo "	awk '/^>/ { n = n + 1}; { sub(/^>.*/, sprintf(\">OTU_%06d\", n)); print }'  \$$< > \$$@"; \
+	  echo ; \
+	  echo "all_samples.merged.qc.derep.sorted.otus_r$$r.mapback: all_samples.merged.qc.derep.sorted.otus_r$$r.fasta $(filter-out all_samples.merged.qc.fasta,$(wildcard *.qc.fasta))"; \
+	  echo "	@outdir=\$$@.d; \\"; \
+	  echo "	r=\`echo \$$< | sed 's/.*otus_r//'|sed 's/\\.fasta//'\`; \\"; \
+	  echo "	id=\`echo \$$\$$r | awk '{ print sprintf(\"%1.4f\", 1.0 - \$$\$$1/100) }'\`; \\"; \
+	  echo "	if [ ! -e \$$\$$outdir ]; then mkdir \$$\$$outdir; fi; \\"; \
+	  echo "	for sample in \$$(wordlist 2,10000,\$$^); do \\"; \
+	  echo "	  usearch -usearch_global \$$\$$sample -db \$$< -strand plus -id \$$\$$id -uc \$$\$$outdir/\`basename \$$\$$sample .fasta\`.uc; \\"; \
+	  echo "	done"; \
+	  echo "	touch \$$@"; \
+	  echo ; \
+	done >> $@
+
+all_otu_levels_fasta: makefile.otu_clustering all_samples.merged.qc.derep.sorted.fasta
+	make -f $< all_otus
+
+all_mapback_samples: makefile.otu_clustering all_samples.merged.qc.derep.sorted.fasta
+	make -f $< all_mapbacks
+
+%.otulist: %.fasta
+	awk '/^>/ { sub(">", ""); print }' $< > $@
+
+all_otucounts: $(subst .uc,.otucount,$(wildcard *.uc))
+
+%.otucount: %.uc
+	awk '/^H/ { print $$NF }' $< | sort | uniq -c > $@
+
+all_otusums: $(subst .mapback.d,.otusums.tsv,$(wildcard *.mapback.d))
+
+%.otusums.tsv: %.mapback.d
+	( cd $< ; make -f ../Makefile otusums.tsv )
+	ln -s $</otusums.tsv $@
+
+# Two targets for cluster-level subdirectories
+otusums.tsv: $(subst .otucount,.otusum,$(wildcard *.otucount))
+	echo "sample	n. otus	n. obs." > $@
+	for f in *.otusum; do \
+	  bf=`basename $$f .qc.otusum`; \
+	  echo "$$bf	`wc -l $$bf.qc.otucount|awk '{ print $$1 }'`	`cat $$f`"; \
+	done >> $@
+
+%.otusum: %.otucount
+	awk '{ sum = sum + $$1 }; END { print sum }' $< > $@
+
+%.otutable: %.otulist %.mapback
+	cd $(word 2, $^).d; make -f ../Makefile all_otucounts
+	for f in $(word 2, $^).d/*.otucount; do \
+	  join -1 1 -2 2 -a 1 $< $$f | sed "/ /! s/$$/ 0/" > $$f.full; \
+	done
+	cp $< $@.tmp
+	for f in $(word 2, $^).d/*.otucount.full; do \
+	  head="$$head `basename $$f .qc.otucount.full`" ; \
+	  join -1 1 -2 1 $@.tmp $$f > $@; \
+	  mv $@ $@.tmp; \
+	done ; \
+	echo "otu$$head" | sed 's/ /\t/g' > $@
+	sed 's/ /\t/g' $@.tmp >> $@
+	rm $@.tmp
+
+%.otutaxtable: %.otutable %.fasta %.taxonomy
+	$(OTUTAXTABLE)
+
+%.sid_95.otutaxtable: %.otutable %.fasta %.sid_95.taxonomy
+	$(OTUTAXTABLE)
+
+%.sid_90.otutaxtable: %.otutable %.fasta %.sid_90.taxonomy
+	$(OTUTAXTABLE)
+
+%.ss.otutaxtable: %.ss.otutable %.fasta %.taxonomy
+	$(OTUTAXTABLE)
+
+%.ss.sid_95.otutaxtable: %.ss.otutable %.fasta %.sid_95.taxonomy
+	$(OTUTAXTABLE)
+
+all_explicets: $(subst .otutaxtable,.explicet.tsv,$(wildcard *.otutaxtable))
+
+%.explicet.tsv: %.otutaxtable
+	perl -ane '$$l=scalar(@F) - 4; $$F[-1] =~ s/;\s*$$//; $$F[-1] =~ s|;|/|g; print join("\t", "$$F[-1]/$$F[0]", @F[1..$$l]), "\n";' < $< | sed 's/.trimbc.merged//g' > $@
+
+all_otutables: $(subst .fasta,.otutable,$(wildcard *.otus_r*.fasta))
+
+all_otutaxtables: $(subst .fasta,.otutaxtable,$(wildcard *.otus_r*[0-9].fasta))
+
+all_sina_silva: $(subst .fasta,.silva_ssuref.arb,$(wildcard *.otus_*.fasta))
+
+%.co.alnfasta: %.fasta
+	clustalo --force -i $< -o $@
+
+%.ft.newick: %.alnfasta
+	FastTree -nt $< > $@
