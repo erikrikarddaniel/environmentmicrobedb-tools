@@ -129,3 +129,38 @@ Regulation and Cell signaling		Two-component_regulatory_systems_in_Campylobacter
 Carbohydrates	CO2 fixation	Photorespiration_(oxidative_C2_cycle)	Catalase (EC 1.11.1.6)	SS00005495
 Stress Response	Oxidative stress	Oxidative_stress	Catalase (EC 1.11.1.6)	SS00008279
 Stress Response	Oxidative stress	Protection_from_Reactive_Oxygen_Species	Catalase (EC 1.11.1.6)	SS000015020
+Carbohydrates	Monosaccharides	D-galactonate_catabolism	D-galactonate transporter	SS00001818
+Carbohydrates	Monosaccharides	D-galactonate_catabolism	Galactonate dehydratase (EC 4.2.1.6)	SS00001819
+Carbohydrates	Monosaccharides	D-galactonate_catabolism	2-dehydro-3-deoxygalactonokinase (EC 2.7.1.58)	SS00001820
+Carbohydrates	Monosaccharides	D-Galacturonate_and_D-Glucuronate_Utilization	Endo-1,4-beta-xylanase A precursor (EC 3.2.1.8)	SS00002971
+Carbohydrates	Monosaccharides	D-Galacturonate_and_D-Glucuronate_Utilization	Alcohol dehydrogenase, zinc-containing	SS00002972
+Carbohydrates	Monosaccharides	D-Galacturonate_and_D-Glucuronate_Utilization	Intracellular alpha-amylase (EC 3.2.1.1)	SS00002973
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Muconate cycloisomerase (EC 5.5.1.1)	SS00003189
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Muconolactone isomerase (EC 5.3.3.4)	SS00003190
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Beta-ketoadipate enol-lactone hydrolase (EC 3.1.1.24)	SS00003191
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Succinyl-CoA:3-ketoacid-coenzyme A transferase subunit B (EC 2.8.3.5)	SS00003196
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	mandelate racemase/muconate lactonizing enzyme family protein	SS00003197
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Catechol 1,2-dioxygenase 1 (EC 1.13.11.1)	SS00003198
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Muconolactone isomerase (EC 5.3.3.4),putative	SS00003199
+Metabolism of Aromatic Compounds	Metabolism of central aromatic intermediates	Catechol_branch_of_beta-ketoadipate_pathway	Ring hydroxylating dioxygenase, alpha subunit:Rieske	SS00003200
+Carbohydrates	Monosaccharides	D-gluconate_and_ketogluconates_metabolism	2-ketogluconate kinase (EC 2.7.1.13)	SS00004717
+Carbohydrates	Monosaccharides	D-gluconate_and_ketogluconates_metabolism	Gluconate dehydratase (EC 4.2.1.39)	SS00004718
+Carbohydrates	Monosaccharides	D-gluconate_and_ketogluconates_metabolism	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	SS00004719
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff_Pathway	Gluconokinase (EC 2.7.1.12)	SS00005924
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff_Pathway	Gluconate dehydratase (EC 4.2.1.39)	SS00005925
+Carbohydrates	Central carbohydrate metabolism	Entner-Doudoroff_Pathway	DL-glyceraldehyde dehydrogenase	SS00005926
+Carbohydrates		Sugar_utilization_in_Thermotogales	Regulator of pectin and galacturonate utilization, GntR family	SS00006633
+Carbohydrates		Sugar_utilization_in_Thermotogales	Alcohol dehydrogenase, zinc-containing	SS00006634
+Carbohydrates		Sugar_utilization_in_Thermotogales	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	SS00006635
+Metabolism of Aromatic Compounds	Peripheral pathways for catabolism of aromatic compounds	Benzoate_catabolism	Muconate cycloisomerase (EC 5.5.1.1)	SS00007152
+Metabolism of Aromatic Compounds	Peripheral pathways for catabolism of aromatic compounds	Benzoate_catabolism	Muconolactone isomerase (EC 5.3.3.4)	SS00007153
+Metabolism of Aromatic Compounds	Peripheral pathways for catabolism of aromatic compounds	Benzoate_catabolism	3-Oxoadipate enol-lactonase (EC 3.1.1.24)	SS00007154
+Miscellaneous		Muconate_lactonizing_enzyme_family	Muconate cycloisomerase (EC 5.5.1.1)	SS000012497
+Miscellaneous		Muconate_lactonizing_enzyme_family	L-alanine-DL-glutamate epimerase	SS000012498
+Phages, Prophages, Transposable elements, Plasmids	Gene Transfer Agent (GTA)	Gene_Transfer_Agent	Gene Transfer Agent (GTA) ORFG01	SS000012499
+Cell Wall and Capsule		Recycling_of_Peptidoglycan_Amino_Acids	Gamma-D-Glutamyl-meso-Diaminopimelate Amidase	SS000014025
+Cell Wall and Capsule		Recycling_of_Peptidoglycan_Amino_Acids	L-alanine-DL-glutamate epimerase	SS000014026
+Cell Wall and Capsule		Recycling_of_Peptidoglycan_Amino_Acids	Aminoacyl-histidine dipeptidase (Peptidase D) (EC 3.4.13.3)	SS000014027
+Sulfur Metabolism		Sulfur_oxidation	Sulfur oxidation molybdopterin C protein	SS000015572
+Sulfur Metabolism		Sulfur_oxidation	transcriptional regulator SoxR	SS000015573
+Sulfur Metabolism		Sulfur_oxidation	Thiol:disulfide interchange protein, thioredoxin family	SS000015574

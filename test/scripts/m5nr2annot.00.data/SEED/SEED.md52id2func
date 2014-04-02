@@ -1768,3 +1768,532 @@ f95730dae661ebaa48622a0d0dedc658	fig|455632.3.peg.2356	Catalase (EC 1.11.1.6)	St
 f95730dae661ebaa48622a0d0dedc658	fig|455632.4.peg.2359	Catalase (EC 1.11.1.6)	Streptomyces griseus subsp. griseus NBRC 13350	SEED
 fbe0212c90c86e28fd758448b619d134	fig|314608.4.peg.719	Catalase (EC 1.11.1.6)	Shewanella benthica KT99	SEED
 ff0d4cec14db180d6427cd9cf4d62a4c	fig|526968.3.peg.5011	Catalase (EC 1.11.1.6)	Bacillus cereus R309803	SEED
+006ec6431eb8e70ce2bf54f44d9dd9c9	fig|882378.3.peg.2155	Ribose 5-phosphate isomerase A (EC 5.3.1.6)	Burkholderia rhizoxinica HKI 454	SEED
+006ec94aaf8c0169f635f2f1944c841e	fig|391735.5.peg.2709	Muconolactone isomerase (EC 5.3.3.4),putative	Verminephrobacter eiseniae EF01-2	SEED
+006ec9acc1ce28da0af62413fcc5a8c1	fig|522306.3.peg.4132	NAD(FAD)-utilizing dehydrogenases	Accumulibacter phosphatis clade IIA str. UW-1	SEED
+012a6c085d60e805082fc2a39fc572a0	fig|525373.3.peg.3838	hyphothetical protein	Sphingobacterium spiritivorum ATCC 33861	SEED
+012a6e016176d0a9a69c0b88934bd02d	fig|744979.4.peg.1774	Muconolactone isomerase (EC 5.3.3.4),putative	Ahrensia sp. R2A130	SEED
+012a6f2e5951d794c4e7d0948ecae72d	fig|74547.1.peg.978	Outer membrane efflux protein	Prochlorococcus marinus str. MIT 9313	SEED
+01e77faef5f3739fe1f678c089724cae	fig|393117.3.peg.2135	hypothetical protein	Listeria monocytogenes FSL J1-194	SEED
+01e783cd89b161000b618f8151a76578	fig|388399.4.peg.3096	Muconolactone isomerase (EC 5.3.3.4),putative	Sagittula stellata E-37	SEED
+01e78478f44883d2dd41c249cf801846	fig|246196.19.peg.2669	[NiFe] hydrogenase metallocenter assembly protein HypD	Mycobacterium smegmatis str. MC2 155	SEED
+04d5514fafad7ca3d4f6fd4b38db9715	fig|83406.3.peg.2126	Cell division protein FtsX	gamma proteobacterium HdN1	SEED
+04d553d3eb29ffcf3d80a048256397ad	fig|697303.4.peg.1354	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter wiegelii Rt8.B1	SEED
+04d554f86d0f3a4fb00098e2b6903898	fig|164756.15.peg.5123	Serine/threonine protein kinase (EC 2.7.11.1)	Mycobacterium sp. MCS	SEED
+068ff964c59b3cae4454a591807ba943	fig|316274.7.peg.4453	RsbR, positive regulator of sigma-B	Herpetosiphon aurantiacus ATCC 23779	SEED
+068ffa99689048229b961f367c80e453	fig|391595.3.peg.1391	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter litoralis Och 149	SEED
+068ffca6ce8caee07f78e0b6e6bc4836	fig|288000.8.peg.5380	hyphothetical protein	Bradyrhizobium sp. BTAi1	SEED
+0b265b7ebaf4cd5f82a01a91a94a9b66	fig|674977.3.peg.130	Branched-chain amino acid transport ATP-binding protein LivG (TC 3.A.1.4.1)	Vibrio alginolyticus 40B	SEED
+0b265e5690c1217a124e9be8a8a98533	fig|467200.3.peg.4673	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces griseoflavus Tu4000	SEED
+0b26628869b65c895bd140aab6c2cb36	fig|243160.12.peg.3364	Flagellar motor switch protein FliG	Burkholderia mallei ATCC 23344	SEED
+0b66416d7f96652d6fa6ad701ec67efa	fig|500635.8.peg.1820	hypothetical protein	Mitsuokella multacida DSM 20544	SEED
+0b6641ff8f05c7afad450e6925cba5b4	fig|375451.14.peg.3763	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter denitrificans OCh 114	SEED
+0b6641ff8f05c7afad450e6925cba5b4	fig|375451.6.peg.3660	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter denitrificans OCh 114	SEED
+0b66456103b70d3b8f40e23c00be2771	fig|519441.4.peg.133	Deoxyadenosine kinase (EC 2.7.1.76) / Deoxyguanosine kinase (EC 2.7.1.113)	Streptobacillus moniliformis DSM 12112	SEED
+0c8c29722a5329c80c3b66c6d6ba8d43	fig|930170.3.peg.3306	Transketolase (EC 2.2.1.1)	Bacillus thuringiensis serovar finitimus YBT-020	SEED
+0c8c2d17015f84ccc06b2bbf832d2e4e	fig|89187.3.peg.180	Muconolactone isomerase (EC 5.3.3.4),putative	Roseovarius nubinhibens ISM	SEED
+0c8c2d17015f84ccc06b2bbf832d2e4e	fig|89187.6.peg.168	Muconolactone isomerase (EC 5.3.3.4),putative	Roseovarius nubinhibens ISM	SEED
+0c8c2eb2d824bd2df23c38e0d60d09a3	fig|563193.3.peg.924	Regulatory sensor-transducer, BlaR1/MecR1 family / TonB-dependent receptor	Parabacteroides sp. D13	SEED
+12e770902ea4e03600a7853adb79f98b	fig|222523.6.peg.4334	hyphothetical protein	Bacillus cereus ATCC 10987	SEED
+12e7744d4e16ea9eabfe5e34580e0a03	fig|556261.3.peg.2651	Gluconate dehydratase (EC 4.2.1.39)	Clostridium sp. D5	SEED
+12e776e863294edb70b9e72a5f0acafa	fig|575609.3.peg.1309	serine/threonine kinase, putative regulatory protein	Peptoniphilus sp. oral taxon 386 str. F0131	SEED
+14443df27b49ea3d7d4b6e73873a91f5	fig|391625.5.peg.1714	Homoserine kinase (EC 2.7.1.39)	Plesiocystis pacifica SIR-1	SEED
+14443e351a45e7e98b6d996b3c91b71d	fig|100226.15.peg.2442	Mandelate racemase/muconate lactonizing enzyme-like protein (Streptomyces coelicolor A3	2	SEED
+14443e351a45e7e98b6d996b3c91b71d	fig|100226.1.peg.2366	Mandelate racemase/muconate lactonizing enzyme-like protein (Streptomyces coelicolor A3	2	SEED
+14444213777c575f1ba5251c02857c0e	fig|467200.3.peg.882	hyphothetical protein	Streptomyces griseoflavus Tu4000	SEED
+1455ac19285162b3ccc39aa181532563	fig|615.1.peg.3468	Sensory transduction histidine kinase	Serratia marcescens Db11	SEED
+1455ad02067d8fc3b356732ffb4ccd74	fig|469382.4.peg.3806	Gluconate dehydratase (EC 4.2.1.39)	Halogeometricum borinquense DSM 11551	SEED
+1455b1b6bc4126166cdefc16c02a804a	fig|228399.5.peg.1234	Beta N-acetyl-glucosaminidase (EC 3.2.1.52)	Actinobacillus pleuropneumoniae serovar 1 str. 4074	SEED
+1541a1ab1a91ee871a72040847bf690b	fig|247633.3.peg.1885	Iron-sulfur cluster assembly ATPase protein SufC	marine gamma proteobacterium HTCC2143	SEED
+1541a4ffd1d1108a4920e84870a7b13d	fig|388401.3.peg.3268	Muconolactone isomerase (EC 5.3.3.4),putative	Rhodobacterales bacterium HTCC2150	SEED
+1541a71cebcda920b7bf2143dc5fe520	fig|498741.3.peg.187	Nicotinamidase (EC 3.5.1.19)	Borrelia sp. SV1	SEED
+161702e86a2c5bf94c22a225142ca63b	fig|349101.4.peg.1944	Isopentenyl-diphosphate delta-isomerase (EC 5.3.3.2)	Rhodobacter sphaeroides ATCC 17029	SEED
+1617030512e48aaa31610310e3172097	fig|273057.1.peg.2416	Gluconate dehydratase (EC 4.2.1.39)	Sulfolobus solfataricus P2	SEED
+1617062ed9effa1657545fae3aaf8e41	fig|101031.3.peg.3680	hypothetical protein	Bacillus B-14905	SEED
+171c0dff4523d38fbe9244bba9ac77c2	fig|339670.8.peg.93	General secretion pathway protein I	Burkholderia ambifaria AMMD	SEED
+171c109c972d59207b6111ad11d39b19	fig|314262.3.peg.1650	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. MED193	SEED
+171c109c972d59207b6111ad11d39b19	fig|314262.5.peg.1219	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. MED193	SEED
+171c1523b3b9124a0b98915382db61ae	fig|40041.11.peg.1545	hyphothetical protein	Streptococcus equi subsp. zooepidemicus	SEED
+17729688eeb091f89e42684748606215	fig|267748.5.peg.517	ATP-dependent DNA helicase UvrD/PcrA	Mycoplasma mobile 163K	SEED
+1772972f4ac9bb3710782aabb38d7758	fig|351016.3.peg.1685	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. AzwK-3b	SEED
+17729b3c746dd80bc65427eed7e80d52	fig|551115.6.peg.5491	hypothetical protein	'Nostoc azollae' 0708	SEED
+18cb0469caa37e9acc3b9ff2bb498707	fig|156586.6.peg.2393	hyphothetical protein	Flavobacteria bacterium BBFL7	SEED
+18cb04bcf6ab12505b7915658fe2975f	fig|645465.3.peg.569	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces sp. e14	SEED
+18cb07c6a698dc40c96eb9ec044d5e4f	fig|313612.3.peg.4871	Two-component system response regulator	Lyngbya sp. PCC 8106	SEED
+1aa89375a5f62d9e8a458729f227a5b5	fig|743276.3.peg.1179	FIG00432397: hypothetical protein	Bordetella pertussis B1834	SEED
+1aa89475926955b887f48cf3c802e39b	fig|888064.3.peg.1974	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus italicus DSM 15952	SEED
+1aa8979ad0d5a356e20fafc5ed6dcf4c	fig|399549.6.peg.1892	Acetolactate synthase large subunit (EC 2.2.1.6)	Metallosphaera sedula DSM 5348	SEED
+1b9ffb3c069494e380b7e3926d2e82d1	fig|321967.8.peg.1107	Glyoxalase family protein	Lactobacillus casei ATCC 334	SEED
+1b9ffd1a8017140bd0cd51a431428c0f	fig|66692.3.peg.525	Gluconate dehydratase (EC 4.2.1.39)	Bacillus clausii KSM-K16	SEED
+1b9ffd1a8017140bd0cd51a431428c0f	fig|66692.6.peg.550	Gluconate dehydratase (EC 4.2.1.39)	Bacillus clausii KSM-K16	SEED
+1b9fff5df43d03870e9e9a4418182ea6	fig|1031711.3.peg.4717	secreted protein popf2	Ralstonia solanacearum Po82	SEED
+1c0b54e3f8fbb4c13a4db1c1d65c2059	fig|717606.6.peg.3320	NAD-specific glutamate dehydrogenase (EC 1.4.1.2)	Paenibacillus curdlanolyticus YK9	SEED
+1c0b57e0acd37b711024c2633df63b82	fig|457427.3.peg.5771	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces hygroscopicus ATCC 53653	SEED
+1c0b586a6671766f20a978d598d96781	fig|536232.3.peg.1009	Anaerobic sulfite reductase subunit B	Clostridium botulinum A2 str. Kyoto	SEED
+1c161850f83e41afc09b5b5148a44d68	fig|444177.5.peg.3227	hypothetical protein	Lysinibacillus sphaericus C3-41	SEED
+1c161a823a7affd411cdb6391a16d650	fig|457428.4.peg.3282	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces lividans TK24	SEED
+1c161dfbf5a9dcd3b5cc23c6835b143e	fig|446468.4.peg.5246	Predicted rhamnulose-1-phosphate aldolase (EC 4.1.2.19) / Predicted lactaldehyde dehydrogenase (EC 1.2.1.22)	Nocardiopsis dassonvillei subsp. dassonvillei DSM 43111	SEED
+1ccf2098aec9a7695f04d80a0b3896f2	fig|943945.3.peg.164	DNA polymerase IV (EC 2.7.7.7)	Mycoplasma fermentans M64	SEED
+1ccf23b2ce661803cc6c417e482bbca6	fig|485917.6.peg.2621	Gluconate dehydratase (EC 4.2.1.39)	Pedobacter heparinus DSM 2366	SEED
+1ccf271ab13b016d4a52bd33a2815ddd	fig|365659.3.peg.754	Cell envelope-associated transcriptional attenuator LytR-CpsA-Psr, subfamily F1 (as in PMID19099556)	Streptococcus mitis B6	SEED
+1d41b696892485b7e1a7d7ab6039482c	fig|78245.7.peg.1577	long-chain acyl-CoA synthetase	Xanthobacter autotrophicus Py2	SEED
+1d41b945ed6d8bce27d3529401298702	fig|445972.6.peg.616	Gluconate dehydratase (EC 4.2.1.39)	Anaerotruncus colihominis DSM 17241	SEED
+1d41ba8dcb3f66af9f0520df507ea56f	fig|1004153.3.peg.142	Transcriptional activator NhaR	Escherichia coli AA86	SEED
+1f9ced91a52356f72b61277c616213fd	fig|448385.16.peg.1639	hyphothetical protein	Sorangium cellulosum 'So ce 56'	SEED
+1f9cf1454c842d0e640431032ad9a7ea	fig|272569.1.peg.2782	Gluconate dehydratase (EC 4.2.1.39)	Haloarcula marismortui ATCC 43049	SEED
+1f9cf190b008a89cbf86d58c24b727ab	fig|517418.3.peg.2555	HhH-GPD	Chloroherpeton thalassium ATCC 35110	SEED
+1fed67566cdea56bd6182bb7bd038169	fig|525366.3.peg.285	Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	Lactobacillus vaginalis ATCC 49540	SEED
+1fed68d31dab8a9f1ec25f9bfcd49226	fig|314267.3.peg.1505	Muconolactone isomerase (EC 5.3.3.4),putative	Sulfitobacter sp. NAS-14.1	SEED
+1fed68d31dab8a9f1ec25f9bfcd49226	fig|314267.6.peg.708	Muconolactone isomerase (EC 5.3.3.4),putative	Sulfitobacter sp. NAS-14.1	SEED
+1fed6aeb6dd5cee048ad6e9c3a99a984	fig|903814.3.peg.1126	Dipeptide transport system permease protein DppC (TC 3.A.1.5.2)	Eubacterium limosum KIST612	SEED
+28637f1f2e883265f3de975436476c63	fig|527012.3.peg.2258	6-phospho-3-hexuloisomerase	Yersinia kristensenii ATCC 33638	SEED
+2863899dc7dcb630c9407d88d06c19a9	fig|633131.3.peg.1603	Muconolactone isomerase (EC 5.3.3.4),putative	Thalassiobium sp. R2A62	SEED
+286389d083ac0b740f7291566da384fa	fig|551115.6.peg.3287	Sucrose-phosphatase	'Nostoc azollae' 0708	SEED
+293858d13c92896971a35cdd19be61db	fig|322159.8.peg.547	Transposase, IS204/IS1001/IS1096/IS1165	Streptococcus thermophilus LMD-9	SEED
+29385cc5c8fd7e4687a90f68b759b241	fig|411902.9.peg.5207	Mandelate racemase/muconate lactonizing enzyme-like protein	Clostridium bolteae ATCC BAA-613	SEED
+29386044951c9743092c1451b2b5b6ea	fig|682795.3.peg.1551	transcriptional regulator, LytR/AlgR family	Acidobacterium sp. MP5ACTX8	SEED
+29fda11cddd871165b67848579c2f4a7	fig|269482.4.peg.3022	Transcriptional regulator, IclR family	Burkholderia vietnamiensis strain G4	SEED
+29fda3835ce1997bf7b45a2037e9a899	fig|999541.3.peg.599	mandelate racemase/muconate lactonizing protein	Burkholderia gladioli BSR3	SEED
+29fda4aa6fbec52fd67bfd7a32bef10e	fig|406558.4.peg.1210	FIG001621: Zinc protease	Streptococcus pneumoniae SP9-BS68	SEED
+2d25001348859e67d5e44d2140ea34a4	fig|150340.18.peg.3780	FIG065221: Holliday junction DNA helicase	Vibrio sp. Ex25	SEED
+2d250661a29f2ed51362517a2aa26985	fig|391619.3.peg.3020	Muconolactone isomerase (EC 5.3.3.4),putative	Phaeobacter gallaeciensis BS107	SEED
+2d250a744df801a7cd9d9efd21d225ca	fig|446469.4.peg.2441	Transcriptional regulator, TetR family	Sanguibacter keddiei keddieii DSM 10542	SEED
+2d2a1c658ee247c3fb3444c3dd66b1bf	fig|656444.3.peg.1433	Phage tail completion protein	Escherichia coli TA280	SEED
+2d2a1c782c1f4632fcb688f19c72d871	fig|525372.3.peg.1590	Galactonate dehydratase (EC 4.2.1.6)	Sphingobacterium spiritivorum ATCC 33300	SEED
+2d2a1c782c1f4632fcb688f19c72d871	fig|525373.3.peg.391	Galactonate dehydratase (EC 4.2.1.6)	Sphingobacterium spiritivorum ATCC 33861	SEED
+2d2a1cbc2784b56351a73007e486ab5c	fig|526988.3.peg.3474	DNA alkylation repair enzyme	Bacillus cereus Rock4-18	SEED
+2d5593b7f2b93ac5050a4b317a2ff8da	fig|469599.3.peg.2060	ADP-heptose synthase (EC 2.7.-.-) / D-glycero-beta-D-manno-heptose 7-phosphate kinase	Fusobacterium sp. 2_1_31	SEED
+2d55950937957ba6db622a1414b7c395	fig|247633.3.peg.1508	Gluconate dehydratase (EC 4.2.1.39)	marine gamma proteobacterium HTCC2143	SEED
+2d55989df4bdd5a18b6844e9cfcec7d2	fig|391009.4.peg.965	SSU ribosomal protein S2p (SAe)	Thermosipho melanesiensis BI429	SEED
+2f44c9e59665ae5c4d5119c70ea41111	fig|742767.3.peg.484	hypothetical protein	Dysgonomonas mossii DSM 22836	SEED
+2f44ca1d18398d2e7e00de9f85120c77	fig|411684.3.peg.1565	Gluconate dehydratase (EC 4.2.1.39)	Hoeflea phototrophica DFL-43	SEED
+2f44d0d305d379c49782231dc6f303ad	fig|1031711.3.peg.4264	hypothetical transmembrane protein	Ralstonia solanacearum Po82	SEED
+33920f8270fabbf03f23314f77f655eb	fig|439855.10.peg.4116	Protein YicC	Escherichia coli SMS-3-5	SEED
+3392112f6940b8282a8edab03d62138e	fig|876044.3.peg.2453	Mandelate racemase/muconate lactonizing enzyme	gamma proteobacterium IMCC3088	SEED
+3392130049891e90257f65cbf50a6a96	fig|486408.6.peg.158	5,10-methylenetetrahydrofolate reductase (EC 1.5.1.20)	Lactobacillus rhamnosus HN001	SEED
+368881fbe657b6b2158ac8727df17400	fig|272635.4.peg.256	tRNA uridine 5-carboxymethylaminomethyl modification enzyme GidA	Mycoplasma pulmonis UAB CTIP	SEED
+3688823d16e8e34b8a0fa3ed61236a3b	fig|266835.1.peg.2013	Gluconate dehydratase (EC 4.2.1.39)	Mesorhizobium loti MAFF303099	SEED
+3688823d16e8e34b8a0fa3ed61236a3b	fig|266835.9.peg.2091	Gluconate dehydratase (EC 4.2.1.39)	Mesorhizobium loti MAFF303099	SEED
+368882857785c4cbf690075579748c29	fig|1000568.3.peg.739	transcriptional regulatory protein, C-terminal domain protein	Megasphaera sp. UPII 199-6	SEED
+38339dee08936d8f022a7a0a7dba2a41	fig|980518.3.peg.4410	tRNA (cytosine34-2'-O-)-methyltransferase (EC 2.1.1.-)	Enterobacter mori LMG 25706	SEED
+3833a0e3f43d0a6064ead91b7662ac3b	fig|391735.7.peg.3180	Muconolactone isomerase (EC 5.3.3.4),putative	Verminephrobacter eiseniae EF01-2	SEED
+3833a264d0e1f8273c509193847b8bc5	fig|357544.13.peg.871	Phosphoheptose isomerase 1 (EC 5.3.1.-)	Helicobacter pylori HPAG1	SEED
+38e75a04ebe1cb09627bf6207065b0ce	fig|247634.3.peg.3379	Sensory box histidine kinase/response regulator	marine gamma proteobacterium HTCC2148	SEED
+38e75b10ca486b9507dd42fa4e8eb533	fig|391613.3.peg.1540	Muconolactone isomerase (EC 5.3.3.4),putative	Roseovarius sp. TM1035	SEED
+38e75b7c18ed4e12f233791550200d83	fig|1036673.3.peg.233	GsiB	Paenibacillus mucilaginosus KNP414	SEED
+39896b9fd92e99293e12c262004385da	fig|469615.3.peg.189	Alkaline shock protein	Fusobacterium gonidiaformans ATCC 25563	SEED
+39896bed98031c5f9fdcdf6f5ad7b9b9	fig|263820.1.peg.485	Gluconate dehydratase (EC 4.2.1.39)	Picrophilus torridus DSM 9790	SEED
+39896e07eac7adb8b1f5744d74da2593	fig|343509.12.peg.804	Heat shock protein 60 family co-chaperone GroES	Sodalis glossinidius str. 'morsitans'	SEED
+3a36bf127eba4e155d64ec7a08270930	fig|457394.3.peg.3299	hypothetical protein	Bacteroides sp. 4_3_47FAA	SEED
+3a36bf846b028225124e69a720cee83f	fig|388739.3.peg.200	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. SK209-2-6	SEED
+3a36c1a0a12378b7b1a37361acc0448e	fig|266265.5.peg.4794	Succinate dehydrogenase flavoprotein subunit (EC 1.3.99.1)	Burkholderia xenovorans LB400	SEED
+3d31472c2280ac6de8830e69284a4faa	fig|521006.8.peg.2266	Periplasmic thiol:disulfide interchange protein DsbA	Neisseria gonorrhoeae NCCP11945	SEED
+3d3148e1735890e89ca62704d602592d	fig|513051.3.peg.1289	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia multivorans CGD1	SEED
+3d314d48bce2eb640284cd8a84928ac0	fig|656913.3.peg.1270	Ribosome small subunit-stimulated GTPase EngC	Haemophilus influenzae NT127	SEED
+3d5a48eae4bd1dc5a3a78ffb7b83d073	fig|344609.3.peg.3351	Pseudouridine 5'-phosphate glycosidase	Shigella boydii BS512	SEED
+3d5a491ea8f5b8683295022d8c313b34	fig|640510.3.peg.4185	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia sp. CCGE1001	SEED
+3d5a491ea8f5b8683295022d8c313b34	fig|640510.4.peg.1696	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia sp. CCGE1001	SEED
+3d5a4aaa1a23edef991fc20aadeef84b	fig|451707.4.peg.3699	transporter, putative	Bacillus cereus NVH0597-99	SEED
+3e3a55f41f48af74661e3af5f681a56d	fig|655225.3.peg.62	Phosphoglycerate mutase family 2	Oenococcus oeni AWRIB429	SEED
+3e3a57739f6a944647ba442417a1489c	fig|273063.1.peg.2742	mandelate racemase/muconate lactonizing enzyme family protein	Sulfolobus tokodaii str. 7	SEED
+3e3a598450e143fb744f8d830255e953	fig|936154.3.peg.1148	tRNA delta(2)-isopentenylpyrophosphate transferase	Streptococcus parauberis KCTC 11537	SEED
+3f9c2205877e01c73763482769eac1f4	fig|749414.3.peg.2673	hypothetical protein	Streptomyces bingchenggensis BCW-1	SEED
+3f9c24ff1d73c9e973fe111c629d51de	fig|439496.3.peg.3806	hyphothetical protein	Rhodobacterales bacterium Y4I	SEED
+3f9c2533600a1a749baaa92122dc5119	fig|910238.3.peg.899	Putative inner membrane protein	Escherichia albertii TW15818	SEED
+42992b82c866480eb608dadf2751bc86	fig|485913.3.peg.64	hypothetical protein	Ktedonobacter racemifer DSM 44963	SEED
+42992b9277e4db94e24aba79cc3804a0	fig|391626.6.peg.1058	Muconolactone isomerase (EC 5.3.3.4),putative	Octadecabacter antarcticus 307	SEED
+42992bf027b1931f9118e64e26ebed30	fig|326424.13.peg.4681	Cytochrome c oxidase polypeptide III (EC 1.9.3.1)	Frankia alni ACN14a	SEED
+44abc19c8bfebf22a45dd16d066d6f1c	fig|400668.8.peg.2666	Malonyl CoA-acyl carrier protein transacylase (EC 2.3.1.39)	Marinomonas sp. MWYL1	SEED
+44abc2a84ca6633507b8522d8744e1dd	fig|621372.3.peg.3717	Gluconate dehydratase (EC 4.2.1.39)	Paenibacillus sp. oral taxon 786 str. D14	SEED
+44abc59fb71ac431ee872e8525c23b11	fig|316279.3.peg.175	Thiol peroxidase, Bcp-type (EC 1.11.1.15)	Synechococcus sp. CC9902	SEED
+4503669cec63a79249f70fbbe7621575	fig|314231.3.peg.2816	Aspartyl-tRNA synthetase (EC 6.1.1.12) @ Aspartyl-tRNA(Asn) synthetase (EC 6.1.1.23) ## unambiguous	Fulvimarina pelagi HTCC2506	SEED
+45036a52af9744835f02565def0c1a35	fig|486408.6.peg.1845	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus rhamnosus HN001	SEED
+45036a65534639bc4c7a0f49e29d2041	fig|1002340.3.peg.2860	K+-dependent Na+/Ca+ exchanger related-protein	Phaeobacter gallaeciensis ANG1	SEED
+456dbd790dd69cc2e4fa98394c5bf250	fig|228908.1.peg.363	DEAD box helicase [Sulfolobus solfataricus]; COG1061: DNA or RNA helicases of superfamily II; IPR001410: DEAD/DEAH box helicase; IPR001650: Helicase C-terminal domain	Nanoarchaeum equitans Kin4-M	SEED
+456dbf5dcc045e9c48be3a2937e7d0e6	fig|314264.4.peg.868	mandelate racemase/muconate lactonizing enzyme family protein	Roseovarius sp. 217	SEED
+456dbffe1194ebb5a5b924c83d248867	fig|405948.6.peg.2028	hypothetical protein	Saccharopolyspora erythraea NRRL 2338	SEED
+47c1021d074ccc7c22289083669600db	fig|1001598.3.peg.733	Excinuclease ABC subunit C	Leptospira interrogans serovar Copenhageni str. LT2050	SEED
+47c10239b54ea7833b08b10df4cca78a	fig|457421.5.peg.1148	putative MR-MLE-family protein	Clostridiales bacterium 1_7_47FAA	SEED
+47c102aa0b74236fb9a27b84c0ba0190	fig|311424.5.peg.826	LSU ribosomal protein L11p (L12e)	Dehalococcoides sp. VS	SEED
+47d374b841469afc8f8b775c68c9d6b4	fig|908340.3.peg.2507	Predicted transcriptional regulators	Clostridium sp. HGF2	SEED
+47d3752aa68ee483c6f250806a25bf1c	fig|591159.3.peg.81	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces viridochromogenes DSM 40736	SEED
+47d3761b9f9ace28ec6b7d80f0dc4867	fig|652103.6.peg.4991	hypothetical protein	Rhodopseudomonas palustris DX-1	SEED
+48419eca1a01ef1261d0c405bb16f3e9	fig|445972.6.peg.1636	putative methyltransferase	Anaerotruncus colihominis DSM 17241	SEED
+48419f6cea73afe6ae1fc2294996e0aa	fig|478749.5.peg.844	Gluconate dehydratase (EC 4.2.1.39)	Bryantella formatexigens DSM 14469	SEED
+4841a0999be1d5911ea355dfb79628a9	fig|224326.1.peg.1190	B. burgdorferi predicted coding region BB0806	Borrelia burgdorferi B31	SEED
+488d9fe7b13c01d1d239fb8b640fce44	fig|441163.4.peg.7136	LysR-type transcriptional regulator NahR	Burkholderia oklahomensis EO147	SEED
+488da240dd75132a5d28ae38026dd650	fig|575605.3.peg.769	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus jensenii 115-3-CHN	SEED
+488da240dd75132a5d28ae38026dd650	fig|575606.3.peg.774	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus jensenii 27-2-CHN	SEED
+488da240dd75132a5d28ae38026dd650	fig|596326.3.peg.2625	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus jensenii 208-1	SEED
+488da6967dbd9245760752cc296920bc	fig|394503.6.peg.1970	Translation elongation factor P	Clostridium cellulolyticum H10	SEED
+4bf48b3a86d944625953903a1cae36d8	fig|693973.4.peg.3386	Phosphoadenylyl-sulfate reductase [thioredoxin] (EC 1.8.4.8)	Shewanella baltica OS678	SEED
+4bf48b4b1a7bfda7e33463c75d8c65dc	fig|367336.3.peg.1534	Muconolactone isomerase (EC 5.3.3.4),putative	Rhodobacterales bacterium HTCC2255	SEED
+4bf48b65f7886faa1138b1125238cc44	fig|314292.13.peg.946	hypothetical protein	Vibrio angustum S14	SEED
+4c57ce6735c5995eb7336072c071628d	fig|717774.3.peg.362	L(+)-tartrate dehydratase alpha subunit (EC 4.2.1.32)	Marinomonas mediterranea MMB-1	SEED
+4c57ceb65164ab56c548bad850b9554a	fig|765698.3.peg.2676	Gluconate dehydratase (EC 4.2.1.39)	Mesorhizobium ciceri biovar biserrulae WSM1271	SEED
+4c57cf30bb18166b39b1bfad79ef6a05	fig|1001599.3.peg.3584	FAD-binding oxidoreductase	Leptospira interrogans serovar Grippotyphosa str. LT2186	SEED
+4f146c4ed258fffc1c9c661dbc20bd7c	fig|882102.3.peg.739	hyphothetical protein	Vibrio anguillarum 775	SEED
+4f146dba6a7316cc1d8ff235820ffa4f	fig|566461.4.peg.4175	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces ghanaensis ATCC 14672	SEED
+4f1475958071622b4a7f450e32bec174	fig|742767.3.peg.349	undecaprenyl-phosphate glucose phosphotransferase	Dysgonomonas mossii DSM 22836	SEED
+4fc5883f927db0d463692064dc054873	fig|675635.11.peg.1454	glyoxalase/bleomycin resistance protein/dioxygenase	Pseudonocardia dioxanivorans CB1190	SEED
+4fc58b532ba079509cabfd816e3e71cd	fig|384765.3.peg.1653	Muconolactone isomerase (EC 5.3.3.4),putative	Labrenzia aggregata IAM 12614	SEED
+4fc58dd4020b44244b9d5f7b9bd8fb5c	fig|65393.5.peg.341	O-antigen export system, permease protein	Cyanothece sp PCC 7424	SEED
+509686e5e39d25cbd6b398121e8c3915	fig|1041521.3.peg.478	phosphoketolase	Lactobacillus salivarius GJ-24	SEED
+50968a09268d4163ed686411988c6634	fig|536019.3.peg.6134	Gluconate dehydratase (EC 4.2.1.39)	Mesorhizobium opportunistum WSM2075	SEED
+50968a894dbcb2e02954ad732813a5b9	fig|526993.3.peg.541	Glutamate-rich protein grpB	Bacillus cereus AH1272	SEED
+55d2fc95cb5d9f95107148a2df35d4e3	fig|446468.5.peg.3374	YbaK family protein	Nocardiopsis dassonvillei subsp. dassonvillei DSM 43111	SEED
+55d30037389eaf4c871fb4b577510938	fig|518636.5.peg.3320	Mandelate racemase/muconate lactonizing enzyme-like protein	Clostridium asparagiforme DSM 15981	SEED
+55d3016747f6c835f0c81590a2deb657	fig|74547.5.peg.2842	Anthranilate phosphoribosyltransferase (EC 2.4.2.18)	Prochlorococcus marinus str. MIT 9313	SEED
+5619bc09952861ddef9da557e771360e	fig|443144.3.peg.530	Membrane protein 2, distant similarity to thiosulphate:quinone oxidoreductase DoxD	Geobacter sp. M21	SEED
+5619bc3b18d12b74e8115923abb7d977	fig|891391.3.peg.2080	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus acidophilus 30SC	SEED
+5619bfd94efe4755f937561968040f84	fig|233413.1.peg.3123	PPE FAMILY PROTEIN	Mycobacterium bovis AF2122/97	SEED
+581e30da9465f133af682385c41838ed	fig|527000.3.peg.1883	Cobalt-zinc-cadmium resistance protein CzcD	Bacillus pseudomycoides DSM 12442	SEED
+581e3132b89b595f39ae38a82c9e5a8c	fig|405948.6.peg.4017	Mandelate racemase/muconate lactonizing enzyme-like protein	Saccharopolyspora erythraea NRRL 2338	SEED
+581e31606d73318c15bb6a7bada767b8	fig|349968.3.peg.408	iron-chelator utilization protein	Yersinia bercovieri ATCC 43970	SEED
+59a8d95e69349a03c7a05acb5bce87cf	fig|596324.3.peg.1539	hypothetical protein	Treponema vincentii ATCC 35580	SEED
+59a8dc644fbcb92517d30ebf742b8027	fig|227882.1.peg.5775	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces avermitilis MA-4680	SEED
+59a8dc644fbcb92517d30ebf742b8027	fig|227882.9.peg.6131	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces avermitilis MA-4680	SEED
+59a8e0481649e2072c3f0a971162df7b	fig|1029813.3.peg.1728	Universal stress protein family	Mycobacterium avium subsp. paratuberculosis CLIJ644	SEED
+59ac132571fc2e327e0987758b3b60a1	fig|996637.3.peg.6680	hypothetical protein	Streptomyces griseoaurantiacus M045	SEED
+59ac1439dc2f08439b525d79be8c6912	fig|52598.3.peg.2237	Muconolactone isomerase (EC 5.3.3.4),putative	Sulfitobacter sp. EE-36	SEED
+59ac1439dc2f08439b525d79be8c6912	fig|52598.8.peg.154	Muconolactone isomerase (EC 5.3.3.4),putative	Sulfitobacter sp. EE-36	SEED
+59ac1486d3572b4f4ab1a1f8a08b4d23	fig|536227.4.peg.4162	Thioredoxin reductase (EC 1.8.1.9)	Clostridium carboxidivorans P7	SEED
+5acc9795c6e20bb9cf428ec83179f317	fig|298654.4.peg.464	NADH dehydrogenase (EC 1.6.99.3)	Frankia sp. EuI1c	SEED
+5acc9a7155d5793ea5a9429980eadbaf	fig|621372.3.peg.3005	Gluconate dehydratase (EC 4.2.1.39)	Paenibacillus sp. oral taxon 786 str. D14	SEED
+5acc9c75ac70a77dc7b7e5b5bcfb6822	fig|469618.3.peg.1337	hypothetical protein	Fusobacterium varium ATCC 27725	SEED
+6792befff8741829a82b0b63c77c2f4a	fig|703612.3.peg.2362	hyphothetical protein	Bacillus subtilis subsp. spizizenii ATCC 6633	SEED
+6792c0477ad56609ad3ab29428f3816f	fig|272569.1.peg.3244	Mandelate racemase/muconate lactonizing enzyme-like protein	Haloarcula marismortui ATCC 43049	SEED
+6792c0836e709d9ed1564941a1f1dd8e	fig|761193.3.peg.4010	putative transcriptional regulator, Crp/Fnr family	Runella slithyformis DSM 19594	SEED
+67da3fb9b8ce0e797223f4e022484b5e	fig|270374.3.peg.3127	Siroheme synthase / Precorrin-2 oxidase (EC 1.3.1.76) / Sirohydrochlorin ferrochelatase (EC 4.99.1.4) / Uroporphyrinogen-III methyltransferase (EC 2.1.1.107)	Marinobacter sp. ELB17	SEED
+67da3fb9db3b383c011ffdafd99540d1	fig|298653.4.peg.4576	Mandelate racemase/muconate lactonizing enzyme-like protein	Frankia sp. EAN1pec	SEED
+67da3fb9db3b383c011ffdafd99540d1	fig|298653.7.peg.4863	Mandelate racemase/muconate lactonizing enzyme-like protein	Frankia sp. EAN1pec	SEED
+67da400db089efe5636f66e1a281227e	fig|351016.3.peg.611	3-ketoacyl-CoA thiolase (EC 2.3.1.16)	Roseobacter sp. AzwK-3b	SEED
+68acfc162a4652dcb962cef0490c2b99	fig|644283.4.peg.2510	Glycine N-methyltransferase (EC 2.1.1.20) @ Sarcosine N-methyltransferase / Sarcosine N-methyltransferase @ Dimethylglycine N-methyltransferase	Micromonospora aurantiaca ATCC 27029	SEED
+68acfd6a251d3f9f1e181de3be9929fe	fig|1002340.3.peg.2688	Muconolactone isomerase (EC 5.3.3.4),putative	Phaeobacter gallaeciensis ANG1	SEED
+68acfe22c5deab4f3c5fae5d5ed8c9b8	fig|585535.3.peg.56	Ribosomal large subunit pseudouridine synthase B (EC 4.2.1.70)	Helicobacter pylori 35A	SEED
+6a7df3578a1f4d135650cc4b9c53fed7	fig|985010.3.peg.977	Transcriptional regulator, LysR family	Pseudomonas sp. TJI-51	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|399726.4.peg.125	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter sp. X514	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|399726.7.peg.133	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter sp. X514	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|573062.3.peg.1370	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter sp. X513	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|573062.4.peg.171	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter sp. X513	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|588857.3.peg.1699	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter sp. X561	SEED
+6a7df4328cf2f8ed6a5eebf936881d56	fig|589861.3.peg.1797	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter ethanolicus CCSD1	SEED
+6a7df746f2066cc206fe92c0f94f797e	fig|193567.1.peg.953	GTPase and tRNA-U34 5-formylation enzyme TrmE	Streptococcus pyogenes SSI-1	SEED
+6b42267f42745fa9c0b9b396291ca96b	fig|546271.5.peg.825	chorismate mutase	Selenomonas sputigena ATCC 35185	SEED
+6b4228a70746668474e6f13bf144237b	fig|398527.4.peg.5861	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia phytofirmans PsJN	SEED
+6b4229e150383dc3478561cf8fb3b045	fig|1313.3.peg.868	hydrolase, putative	Streptococcus pneumoniae INV104B	SEED
+6dafe685fdcd3763131130933fd5bf6e	fig|314262.3.peg.1477	hypothetical protein	Roseobacter sp. MED193	SEED
+6daff06cdb13d5a97d5c986e58fdb3fc	fig|749414.3.peg.7648	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces bingchenggensis BCW-1	SEED
+6daff17f09a8a8b464f1da3243585635	fig|315749.4.peg.4081	Adenylosuccinate synthetase (EC 6.3.4.4)	Bacillus cereus subsp. cytotoxis NVH 391-98	SEED
+6e5e1f8a6f5dac83b7a9e562931fbd45	fig|591158.3.peg.6158	Transcriptional regulator, TetR family	Streptomyces sp. AA4	SEED
+6e5e2038bce09097ca1c0353fa3f2e15	fig|314277.4.peg.1331	Muconolactone isomerase (EC 5.3.3.4),putative	Marinomonas sp. MED121	SEED
+6e5e2c31287522da66b667dc01e349e0	fig|546275.3.peg.2356	Aminoacyl-histidine dipeptidase (Peptidase D) (EC 3.4.13.3)	Fusobacterium periodonticum ATCC 33693	SEED
+6e707e56ee64e5a431ab9292e543776e	fig|630527.3.peg.968	Sucrose operon repressor ScrR, LacI family	Lactobacillus gasseri 202-4	SEED
+6e7083b902815ff953b081706600a52f	fig|525337.3.peg.1841	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus paracasei subsp. paracasei ATCC 25302	SEED
+6e708508eaebd3eada0ecce7061f6840	fig|59919.7.peg.1566	hyphothetical protein	Prochlorococcus marinus subsp. pastoris str. CCMP1986	SEED
+6ea8d2996161851766fc7530c8b1e28f	fig|41431.8.peg.4160	Possible Transcriptional Regulator, MerR family protein	Cyanothece sp. PCC 8801	SEED
+6ea8d2fbb7449df2cc14f845725535a1	fig|391616.3.peg.4479	Muconolactone isomerase (EC 5.3.3.4),putative	Octadecabacter antarcticus 238	SEED
+6ea8d36199382b8c094a39d87c1ad15b	fig|209261.1.peg.3015	Uncharacterized ABC transporter, permease component YrbE	Salmonella enterica subsp. enterica serovar Typhi Ty2	SEED
+720eada362eb172157b1f342c02b211c	fig|483217.6.peg.324	hypothetical protein	Bacteroides dorei DSM 17855	SEED
+720eadcafa997aad0c80cbe9e05ec058	fig|244592.3.peg.3282	Muconolactone isomerase (EC 5.3.3.4),putative	Labrenzia alexandrii DFL-11	SEED
+720eade5eb18d8a4d73cfce2d9561a19	fig|495036.3.peg.2372	Serine phosphatase RsbU, regulator of sigma subunit	Geobacillus sp. G11MC16	SEED
+734ff6c7347520e57ae6bf45bee7325b	fig|412966.10.peg.2211	Permease of the drug/metabolite transporter (DMT) superfamily	Vibrio cholerae 1587	SEED
+734ff8f9c8dfa202bcb0712abba25aa0	fig|485914.4.peg.538	Gluconate dehydratase (EC 4.2.1.39)	Halomicrobium mukohataei DSM 12286	SEED
+734ffb545f9a4acd497f2d50fbf74c14	fig|74546.3.peg.1329	hypothetical protein	Prochlorococcus marinus str. MIT 9312	SEED
+75973c9945fcf65bb9e805054ae84b82	fig|546267.4.peg.2057	hyphothetical protein	Neisseria polysaccharea ATCC 43768	SEED
+7597417aa29fc26febb38bd91dba9ebe	fig|314256.5.peg.3612	Galactonate dehydratase (EC 4.2.1.6)	Oceanicola granulosus HTCC2516	SEED
+759741e401b4f48559f6b91102e1bd94	fig|1035839.3.peg.382	Stringent starvation protein B	Haemophilus [parainfluenzae] CCUG 13788	SEED
+784e37c56297430ad404becf8f9e40b2	fig|908340.3.peg.1175	hypothetical protein	Clostridium sp. HGF2	SEED
+784e39494c20b7b313b41d0dd33261bc	fig|996637.3.peg.497	dehydratase	Streptomyces griseoaurantiacus M045	SEED
+784e39a859c33aaf1aaf3e6f0cb25f40	fig|1806.1.peg.602	Carbon monoxide dehydrogenase medium chain (EC 1.2.99.2)	Mycobacterium microti OV254	SEED
+78b0ab89980344e874b3d3bfd6bcd79e	fig|671074.4.peg.3505	Poly(A) polymerase (EC 2.7.7.19)	Vibrio mimicus VM603	SEED
+78b0b02ae292f4df27d7e0abfa5d0c7d	fig|485913.3.peg.11036	Mandelate racemase/muconate lactonizing enzyme-like protein	Ktedonobacter racemifer DSM 44963	SEED
+78b0b039b247d78676d289a68670482e	fig|91464.3.peg.4359	hypothetical protein	Synechococcus sp. PCC 7335	SEED
+7b1c9d6a373f0c7d4adf68784cb9341f	fig|479432.6.peg.1499	Probable low-affinity inorganic phosphate transporter	Streptosporangium roseum DSM 43021	SEED
+7b1c9e33656197da8fb5906963fa6bc4	fig|749927.5.peg.3246	Gluconate dehydratase (EC 4.2.1.39)	Amycolatopsis mediterranei U32	SEED
+7b1ca00c15150d46abfc358df722c035	fig|861360.3.peg.3158	6 Protein of unknown function, without similarity to other proteins	Arthrobacter arilaitensis Re117	SEED
+7f64a18c0a36ff94bdea397fe7460fa6	fig|742740.3.peg.1434	sodium/pantothenate symporter	Clostridium symbiosum WAL-14163	SEED
+7f64a267a3b7a82957a5c26e3e90727b	fig|279010.12.peg.4152	Gluconate dehydratase (EC 4.2.1.39)	Bacillus licheniformis ATCC 14580	SEED
+7f64a267a3b7a82957a5c26e3e90727b	fig|279010.13.peg.4148	Gluconate dehydratase (EC 4.2.1.39)	Bacillus licheniformis ATCC 14580	SEED
+7f64a267a3b7a82957a5c26e3e90727b	fig|279010.5.peg.3285	Gluconate dehydratase (EC 4.2.1.39)	Bacillus licheniformis ATCC 14580	SEED
+7f64a267a3b7a82957a5c26e3e90727b	fig|665958.3.peg.3863	Gluconate dehydratase (EC 4.2.1.39)	Bacillus sp. BT1B_CT2	SEED
+7f64a358c8c7737c1e706a7b6cd0e119	fig|671074.4.peg.3008	FOG: WD40 repeat	Vibrio mimicus VM603	SEED
+8139abea518827595dcce9d1a40f8203	fig|979556.3.peg.537	Mannose-6-phosphate isomerase (EC 5.3.1.8)	Microbacterium testaceum StLB037	SEED
+8139ae472c257010540dde83d2bf5add	fig|273075.1.peg.742	Mandelate racemase/muconate lactonizing enzyme-like protein	Thermoplasma acidophilum DSM 1728	SEED
+8139b2811360754f66c07393d8927617	fig|679191.3.peg.1122	Thiamin-regulated outer membrane receptor Omr1	Prevotella amnii CRIS 21A-A	SEED
+81e0eeb6f5523fb3f0c6d1996df8e8f5	fig|349741.6.peg.317	tRNA-guanine transglycosylase (EC 2.4.2.29)	Akkermansia muciniphila ATCC BAA-835	SEED
+81e0f0f66e327f8e1a792cd425b3bea5	fig|397948.3.peg.149	Mandelate racemase/muconate lactonizing enzyme-like	Caldivirga maquilingensis IC-167	SEED
+81e0f34f0265c24f196d78bde26d6352	fig|484018.6.peg.2954	hyphothetical protein	Bacteroides plebeius DSM 17135	SEED
+833de014a0c089376debf07482baf4db	fig|419610.8.peg.1148	ABC transporter substrate-binding protein	Methylobacterium extorquens PA1	SEED
+833de16d5ff1875c196de11f6951ed78	fig|397948.3.peg.74	Gluconate dehydratase (EC 4.2.1.39)	Caldivirga maquilingensis IC-167	SEED
+833de1cb4efe79690dc8a55f9ac6e7e7	fig|615.1.peg.4219	MoaE protein	Serratia marcescens Db11	SEED
+84a19e6c4f87c98d93ca5ca66ea0f803	fig|762963.3.peg.1065	ribosomal protein L2	Actinomyces sp. oral taxon 170 str. F0386	SEED
+84a19f423c551c6b37996061f4df3113	fig|391593.3.peg.1829	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. CCS2	SEED
+84a1a091cf09ab0597dd7949f924c4c0	fig|411467.6.peg.1813	D-3-phosphoglycerate dehydrogenase (EC 1.1.1.95)	Bacteroides capillosus ATCC 29799	SEED
+85b5fe1b6e7e47213459e41f437eab39	fig|351746.4.peg.900	Rubredoxin	Pseudomonas putida F1	SEED
+85b600f7dc2408037bca591d5a65eec8	fig|644107.3.peg.3290	Muconolactone isomerase (EC 5.3.3.4),putative	Silicibacter lacuscaerulensis ITI-1157	SEED
+85b60264f025ae87510fb56ca0ae5dd3	fig|722438.3.peg.543	hypothetical protein	Mycoplasma pneumoniae FH	SEED
+85f9a89aa52667385e05981456dd65c3	fig|592010.4.peg.957	Chaperone protein HtpG	Abiotrophia defectiva ATCC 49176	SEED
+85f9abad41ff9138c85bc2a90089e653	fig|913327.3.peg.732	Muconolactone isomerase (EC 5.3.3.4),putative	gamma proteobacterium SCGC AAA007-O20	SEED
+85f9abbf05b8977560d840dcadd78d4f	fig|590998.5.peg.146	RecQ family ATP-dependent DNA helicase	Cellulomonas fimi ATCC 484	SEED
+8613ee22147e02812de2019671231c9e	fig|930942.3.peg.433	Glycosyltransferase LafB, responsible for the formation of Gal-Glc-DAG	Lactobacillus animalis KCTC 3501	SEED
+8613f04cb2c8952f4716df09052caa23	fig|100226.1.peg.3435	Mandelate racemase/muconate lactonizing enzyme-like protein (Streptomyces coelicolor A3	2	SEED
+8613f10b619a51261906151af6e3d169	fig|756272.4.peg.3474	hypothetical protein	Planctomyces brasiliensis DSM 5305	SEED
+872f7419d3e73c9ae2288fead6cf151e	fig|448385.16.peg.2271	hypothetical protein	Sorangium cellulosum 'So ce 56'	SEED
+872f741c2f6a35026eaebb051cee02cd	fig|545693.3.peg.3663	Gluconate dehydratase (EC 4.2.1.39)	Bacillus megaterium QM B1551	SEED
+872f7537d3641eaf7a43073e357a8f1c	fig|754333.3.peg.3866	6-phospho-beta-glucosidase (EC 3.2.1.86)	Escherichia albertii TW11588	SEED
+87ce4fb9ca6879ed5cb366f549eb9b68	fig|760192.3.peg.3887	hypothetical protein	Haliscomenobacter hydrossis DSM 1100	SEED
+87ce537b6a812e232448a93784a12bb2	fig|331869.3.peg.2083	Gluconate dehydratase (EC 4.2.1.39)	alpha proteobacterium BAL199	SEED
+87ce5454eff882dfaee151b1cef766ad	fig|408672.3.peg.2777	hypothetical protein	Nocardioidaceae bacterium Broad-1	SEED
+8964ba8543893dc6ad5b6796d9139b54	fig|348780.3.peg.902	unknown	Natronomonas pharaonis DSM 2160	SEED
+8964bbbd56965933af575454268ee41d	fig|485917.5.peg.1276	Gluconate dehydratase (EC 4.2.1.39)	Pedobacter heparinus DSM 2366	SEED
+8964bbe8029751444a60c1264876f9af	fig|273036.3.peg.2412	hypothetical protein	Staphylococcus aureus RF122	SEED
+8a15a9ba08309239f942ffb60b20aeb1	fig|1007103.3.peg.2050	Putative cytoplasmic protein	Paenibacillus elgii B69	SEED
+8a15aaa006cdb577ebdac184fb0c1519	fig|314232.3.peg.1144	Muconolactone isomerase (EC 5.3.3.4),putative	Loktanella vestfoldensis SKA53	SEED
+8a15aaa006cdb577ebdac184fb0c1519	fig|314232.4.peg.1482	Muconolactone isomerase (EC 5.3.3.4),putative	Loktanella vestfoldensis SKA53	SEED
+8a15abe54d75e2fff949709e94e7974b	fig|675813.3.peg.2702	Dihydroxyacetone kinase, ATP-dependent (EC 2.7.1.29)	Vibrio metschnikovii CIP 69.14	SEED
+8a1eb6bb774798375da439466d3041b4	fig|522306.3.peg.3511	hypothetical protein	Accumulibacter phosphatis clade IIA str. UW-1	SEED
+8a1eb7fe13b4ebb5db61a71463ba547b	fig|498216.5.peg.2470	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus casei str. Zhang	SEED
+8a1eb7fe13b4ebb5db61a71463ba547b	fig|537973.8.peg.1466	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus paracasei subsp. paracasei 8700:2	SEED
+8a1eba4b73865237464fe5ed253caee1	fig|272631.5.peg.2231	hyphothetical protein	Mycobacterium leprae TN	SEED
+8ade61d9eb463de04daef51c62bc84f3	fig|203124.6.peg.5082	Type II secretory pathway, ATPase PulE/Tfp pilus assembly pathway, ATPase PilB	Trichodesmium erythraeum IMS101	SEED
+8ade626480888f559a70f5b3ef58d191	fig|340101.3.peg.2687	Gluconate dehydratase (EC 4.2.1.39)	Victivallis vadensis ATCC BAA-548	SEED
+8ade63a9319429e669fd939bc2a6cd1d	fig|931281.3.peg.3898	5-methylaminomethyl-2-thiouridine-forming enzyme mnmC	Pseudomonas putida BIRD-1	SEED
+8b95bbe2fcd34d62c40b120c01ad73aa	fig|398720.4.peg.3008	hyphothetical protein	Leeuwenhoekiella blandensis MED217	SEED
+8b95bedbc36f74026e70bbcdf24f647f	fig|471853.5.peg.3447	Gluconate dehydratase (EC 4.2.1.39)	Beutenbergia cavernae DSM 12333	SEED
+8b95bf2b7121b4733f15abefa7251dad	fig|886379.4.peg.2147	hypothetical protein	Anaerophaga thermohalophila DSM 12881	SEED
+8c118682fb815afd749082f9acacd15f	fig|590168.4.peg.553	Glycosyltransferase	Thermotoga naphthophila RKU-10	SEED
+8c118945df4d10e81ab57b98aad3ee9a	fig|247639.3.peg.1249	Gluconate dehydratase (EC 4.2.1.39)	marine gamma proteobacterium HTCC2080	SEED
+8c1189ba1012af537698ff5fe163dfd1	fig|452637.4.peg.3832	O-acetylhomoserine sulfhydrylase (EC 2.5.1.49) / O-succinylhomoserine sulfhydrylase (EC 2.5.1.48)	Opitutus terrae PB90-1	SEED
+8d12aec48d94f99f425977a5e992347f	fig|221988.4.peg.1654	Cytochrome c-type heme lyase subunit nrfG, nitrite reductase complex assembly	Mannheimia succiniciproducens MBEL55E	SEED
+8d12af4ceff4f98915537fae319c3cad	fig|509192.3.peg.100	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter ethanolicus JW 200	SEED
+8d12b21191804534756fe8ac7a323b22	fig|565655.4.peg.1677	hypothetical protein	Enterococcus casseliflavus EC20	SEED
+8de37437b08cb4decf3cbf61e121f9d7	fig|349741.3.peg.1753	PKD domain protein	Akkermansia muciniphila ATCC BAA-835	SEED
+8de374752a344a4202db7992d6434a0c	fig|981384.3.peg.501	Muconolactone isomerase (EC 5.3.3.4),putative	Ruegeria sp. TW15	SEED
+8de3769d3526a69c3c46208a9ee1652f	fig|691161.5.peg.1800	Aspartate aminotransferase (AspB-4) (EC 2.6.1.1)	Clostridium difficile 6534	SEED
+918c3dec062408580913c409e1d19874	fig|679897.3.peg.1618	Phosphatidylglycerophosphatase A (EC 3.1.3.27)	Helicobacter mustelae 12198	SEED
+918c3fbb0799b350cd90ab20d1756e8d	fig|324057.4.peg.777	Gluconate dehydratase (EC 4.2.1.39)	Paenibacillus sp. JDR-2	SEED
+918c40133da4dc486a16be2f3c815d7b	fig|649349.3.peg.2618	GTP-binding protein HflX	Leadbetterella byssophila DSM 17132	SEED
+956d9a1308306802b2135a27ac01cc4f	fig|156889.7.peg.3037	diguanylate cyclase/phosphodiesterase (GGDEF & EAL domains) with PAS/PAC sensor(s)	Magnetococcus sp. MC-1	SEED
+956d9aa29ca018f4f8a27ccfcaa215eb	fig|340099.4.peg.2026	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter pseudethanolicus ATCC 33223	SEED
+956d9aa29ca018f4f8a27ccfcaa215eb	fig|340099.6.peg.2173	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter pseudethanolicus ATCC 33223	SEED
+956d9aa29ca018f4f8a27ccfcaa215eb	fig|509193.3.peg.573	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter brockii subsp. finnii Ako-1	SEED
+956d9aa29ca018f4f8a27ccfcaa215eb	fig|509193.4.peg.2189	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter brockii subsp. finnii Ako-1	SEED
+956d9aa29ca018f4f8a27ccfcaa215eb	fig|580331.4.peg.163	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter italicus Ab9	SEED
+956d9e8c3408befce0c796eb07735a42	fig|656024.3.peg.4020	Protein yceI precursor	Frankia symbiont of Datisca glomerata	SEED
+95af3cfc0d4c83baf445cbfde10d59d6	fig|761193.3.peg.2151	hypothetical protein	Runella slithyformis DSM 19594	SEED
+95af3f04a2fc40132f9660aa1933c853	fig|399549.6.peg.1284	Gluconate dehydratase (EC 4.2.1.39)	Metallosphaera sedula DSM 5348	SEED
+95af428141ebf6e306d62c3a3fa10320	fig|888815.3.peg.656	A/G-specific adenine glycosylase	Streptococcus sanguinis SK353	SEED
+980a3a27cc95e8e24ceb31b262ac4a59	fig|649349.3.peg.3	putative LacI-family transcriptional regulator	Leadbetterella byssophila DSM 17132	SEED
+980a3ec8ef6902bb97f3f8fce3306574	fig|485914.4.peg.516	Gluconate dehydratase (EC 4.2.1.39)	Halomicrobium mukohataei DSM 12286	SEED
+980a3eef5571252232792f05cc10c4f3	fig|457430.3.peg.3512	Chromosome partition protein smc	Streptomyces roseosporus NRRL 11379	SEED
+9a8d108c7a74697d77a1c4225d05b150	fig|527028.3.peg.1798	hypothetical protein	Bacillus thuringiensis serovar pulsiensis BGSC 4CC1	SEED
+9a8d1428acd5335003b41fa0de1da2fb	fig|405948.11.peg.4368	Mandelate racemase/muconate lactonizing enzyme-like protein	Saccharopolyspora erythraea NRRL 2338	SEED
+9a8d14d876f2077060364df2e149d5f8	fig|742741.3.peg.531	Transcriptional regulator	Clostridium symbiosum WAL-14673	SEED
+9bd33c013266d06e422e0e23cdf50b5d	fig|393125.10.peg.569	ABC transporter, ATP-binding/permease protein	Listeria monocytogenes FSL R2-503	SEED
+9bd33db25b2292163c4933043b81fd83	fig|314264.3.peg.2561	mandelate racemase/muconate lactonizing enzyme family protein	Roseovarius sp. 217	SEED
+9bd33e54b27d11dabd8b319f649e54e3	fig|525367.9.peg.1131	LSU ribosomal protein L11p (L12e)	Listeria grayi DSM 20601	SEED
+9fba1449058cd9bd1c908a8eda1f6e72	fig|526226.5.peg.4263	hypothetical protein	Gordonia bronchialis DSM 43247	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|565642.4.peg.447	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis ATCC 4200	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|657310.3.peg.607	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus sp. 7L76	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|749493.3.peg.1759	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX4000	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|749506.3.peg.2644	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis TX0411	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|749508.3.peg.283	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX0630	SEED
+9fba1525d667cfcf912d7c68fcc950aa	fig|936153.3.peg.2533	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis 62	SEED
+9fba18dde39746531b6444b99eefb345	fig|457421.5.peg.3112	TRAP-type transport system, small permease component, predicted N-acetylneuraminate transporter	Clostridiales bacterium 1_7_47FAA	SEED
+a0520914ee2f1702f3a46bc5d6f078b6	fig|996637.3.peg.6343	Iron-dependent repressor IdeR/DtxR	Streptomyces griseoaurantiacus M045	SEED
+a0520fbcc9c4af3893092a41d89f1294	fig|292414.10.peg.763	Muconolactone isomerase (EC 5.3.3.4),putative	Ruegeria sp. TM1040	SEED
+a0520fbcc9c4af3893092a41d89f1294	fig|292414.1.peg.2007	Muconolactone isomerase (EC 5.3.3.4),putative	Silicibacter sp. TM1040	SEED
+a05210ba06b0d9a73fb1fab03ff3531e	fig|869675.3.peg.5305	FIG00641929: hypothetical protein	Escherichia coli 1.2264	SEED
+a144dd93191dffca0a022660e08062e3	fig|762051.3.peg.1147	General stress protein 13	Leuconostoc kimchii IMSNU11154	SEED
+a144de6e7a04661840fabcf70e47140c	fig|391624.3.peg.1645	Muconolactone isomerase (EC 5.3.3.4),putative	Oceanibulbus indolifex HEL-45	SEED
+a144e176776e90d441ec7f7e724e537f	fig|388399.4.peg.1840	Alanyl-tRNA synthetase (EC 6.1.1.7)	Sagittula stellata E-37	SEED
+a5e6f550f153bf6e2e5f0265e077d646	fig|481743.5.peg.2500	Helix-turn-helix, AraC type:Response regulator receiver	Geobacillus sp. Y412MC10	SEED
+a5e6f6972587ac1f6d31d96b8abb68e1	fig|744980.3.peg.2475	Muconolactone isomerase (EC 5.3.3.4),putative	Roseibium sp. TrichSKD4	SEED
+a5e6f812801a11f86e9cc583258dda40	fig|391613.3.peg.3	DNA-binding response regulator PetR	Roseovarius sp. TM1035	SEED
+a67c29819cbcac0b69efa4b62fa63eee	fig|246197.24.peg.4983	Aquaporin Z	Myxococcus xanthus DK 1622	SEED
+a67c2eb2221c142b720a913e60be0197	fig|2433.3.peg.3089	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter Sp. GAI101	SEED
+a67c2eb2221c142b720a913e60be0197	fig|391589.3.peg.3306	Muconolactone isomerase (EC 5.3.3.4),putative	Roseobacter sp. GAI101	SEED
+a67c2f51bce4be2dd0b4199eaf449b24	fig|596309.3.peg.1532	hypothetical protein	Rhodococcus erythropolis SK121	SEED
+aad23a4932cbf242125b2574ff5959fb	fig|470145.6.peg.1738	Tartrate-resistant acid phosphatase type 5 precursor (EC 3.1.3.2)	Bacteroides coprocola DSM 17136	SEED
+aad23c8d2e33921dc392ae77084dffef	fig|97393.1.peg.770	Mandelate racemase/muconate lactonizing enzyme-like protein	Ferroplasma acidarmanus	SEED
+aad23d2d033eca0487473d67f473ddb5	fig|318586.5.peg.2403	transcriptional regulator, Crp/Fnr family	Paracoccus denitrificans PD1222	SEED
+aadbf90a8f67a710fe5364f4a23c7a90	fig|526972.3.peg.1922	Protein GerPC, required for proper assembly of spore coat, mutations lead to super-dormant spore	Bacillus cereus AH621	SEED
+aadbfe29d090132ac3caf71789f32fe5	fig|525361.3.peg.2863	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus rhamnosus LMS2-1	SEED
+aadbff0c6e8dd02c47a9c3665432b832	fig|203124.1.peg.4206	hyphothetical protein	Trichodesmium erythraeum IMS101	SEED
+ab0ef9dc491f9a5355d2dc89d7f7347c	fig|451754.5.peg.69	Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-)	Clostridium perfringens B str. ATCC 3626	SEED
+ab0efbb229f385989d072b34736f66e7	fig|266779.1.peg.4007	L-alanine-DL-glutamate epimerase and related enzymes of enolase superfamily	Mesorhizobium sp. BNC1	SEED
+ab0efbb229f385989d072b34736f66e7	fig|266779.9.peg.460	Gluconate dehydratase (EC 4.2.1.39)	Chelativorans sp. BNC1	SEED
+ab0efbf712ce100cad2e35463969d02c	fig|657323.3.peg.2422	Peptide deformylase (EC 3.5.1.88)	Ruminococcus sp. SR1/5	SEED
+ac1192a00eafa45ded8d994e7d401184	fig|316273.3.peg.573	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	Xanthomonas campestris pv. vesicatoria str. 85-10	SEED
+ac1193b7027ac68836dbd21d67b9dbdf	fig|467661.3.peg.2821	Muconolactone isomerase (EC 5.3.3.4),putative	Rhodobacteraceae bacterium KLH11	SEED
+ac119837451d489bf066253eb1d07a89	fig|526968.3.peg.699	Lactoylglutathione lyase (EC 4.4.1.5)	Bacillus cereus R309803	SEED
+ace2f8c98a2e770c320b1877df958f51	fig|909421.4.peg.919	GGDEF family protein	Vibrio coralliilyticus P1	SEED
+ace2faf128043e96d2303ec7ab9565a6	fig|488538.3.peg.1879	Gluconate dehydratase (EC 4.2.1.39)	alpha proteobacterium IMCC1322	SEED
+ace2fdadb6cbe212fc0753263e7d0f6d	fig|391597.3.peg.2822	Flagellar motor switch protein FliM	Limnobacter sp. MED105	SEED
+ad5e9ea6e7cc9f51aba3016fb9bb3602	fig|760570.3.peg.907	Aminoglycoside adenylyltransferase	Streptococcus parasanguinis ATCC 15912	SEED
+ad5eaac8ed1b84c901ee24a82ba8bd81	fig|591167.3.peg.1742	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces flavogriseus ATCC 33331	SEED
+ad5eac82c08b4f95ffb1ac969a63fafd	fig|391589.3.peg.1581	hyphothetical protein	Roseobacter sp. GAI101	SEED
+adc644323ed4fd92e0bb9a1c968e8fa5	fig|382464.3.peg.1345	hypothetical protein	Verrucomicrobiae bacterium DG1235	SEED
+adc64446656b780c5c8e0fbddf2a6fe0	fig|761193.3.peg.2001	Galactonate dehydratase	Runella slithyformis DSM 19594	SEED
+adc64579f61c7684905286e12cbb4627	fig|469371.4.peg.2446	NAD-dependent glyceraldehyde-3-phosphate dehydrogenase (EC 1.2.1.12)	Thermobispora bispora DSM 43833	SEED
+af8a5e09398e7a93a91d5c3be61bc0a8	fig|103690.1.peg.5602	putative dihydrokaempferol 4-reductase	Nostoc sp. PCC 7120	SEED
+af8a6231bce25423e0f5da9f77ebe452	fig|647653.3.peg.1377	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces sp. ACTE	SEED
+af8a64a34d95754f3bbc3c2bc48aac24	fig|186497.1.peg.1259	Function Code: 16.4 Hypothetical	Pyrococcus furiosus DSM 3638	SEED
+b20f4a7c70196ffca6516d180a85ebe0	fig|177439.6.peg.3424	hypothetical protein	Desulfotalea psychrophila LSv54	SEED
+b20f4caf08a6f837efd28b4550ae5aab	fig|309801.4.peg.2455	Mandelate racemase/muconate lactonizing enzyme-like protein	Thermomicrobium roseum DSM 5159	SEED
+b20f4de94238d05689ad0648252848d7	fig|448385.11.peg.694	hypothetical protein	Sorangium cellulosum So ce 56	SEED
+b23b179dc3fbf540905055a0556a11dc	fig|904321.3.peg.1990	glyoxal reductase	Staphylococcus epidermidis VCU045	SEED
+b23b1829cb96fe003d8dfa3d7a5fa4de	fig|644076.3.peg.571	Muconolactone isomerase (EC 5.3.3.4),putative	Silicibacter sp. TrichCH4B	SEED
+b23b199fa000cf2e2de73bdafd12d0b3	fig|259536.19.peg.2462	hyphothetical protein	Psychrobacter arcticus 273-4	SEED
+b36859ee9c0858d0a01e06e6e9653557	fig|243164.3.peg.213	glycosyl transferase, group 2 family protein	Dehalococcoides ethenogenes 195	SEED
+b3685c748812ccb2e44b2a8998b967d7	fig|383372.4.peg.3745	Mandelate racemase/muconate lactonizing enzyme-like protein	Roseiflexus castenholzi DSM 13941	SEED
+b3685c748812ccb2e44b2a8998b967d7	fig|383372.6.peg.4307	Mandelate racemase/muconate lactonizing enzyme-like protein	Roseiflexus castenholzii DSM 13941	SEED
+b3685efd446a1f2ec785d91c819cf86f	fig|582744.3.peg.115	Alkyl hydroperoxide reductase subunit C-like protein	Methylovorus sp. SIP3-4	SEED
+b42bce68d9394e93e2040ae343137f71	fig|426117.7.peg.793	ABC transporter, ATP-binding protein	Methylobacterium sp. 4-46	SEED
+b42bd138c37a0f2f7efc2a085cd18f29	fig|269483.3.peg.2828	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia cepacia R18194	SEED
+b42bd138c37a0f2f7efc2a085cd18f29	fig|269483.5.peg.7684	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia sp. 383	SEED
+b42bd4a727027b13f8380f73b8e90a9d	fig|316057.3.peg.2962	Protein pucC	Rhodopseudomonas palustris BisB5	SEED
+b91ff0ec59ae065846fb549dcf9e8fa8	fig|66692.6.peg.489	Tricarboxylate transport protein TctC	Bacillus clausii KSM-K16	SEED
+b91ff36088e5b9df555439d5de2b7576	fig|565654.4.peg.2484	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus casseliflavus EC10	SEED
+b91ff504eefe52a79fa4f0b229b5ba50	fig|749499.3.peg.759	copper-translocating P-type ATPase	Enterococcus faecalis TX0031	SEED
+b94255e981fcb2f5b28c00811e3e1266	fig|682148.3.peg.93	unknown protein	Gardnerella vaginalis 5-1	SEED
+b9425710b0f7452b477b2aa27f45ed45	fig|439497.5.peg.552	Muconolactone isomerase (EC 5.3.3.4),putative	Ruegeria sp. R11	SEED
+b94257a8f72894fea53fd4c84cc902a8	fig|349521.5.peg.6149	hypothetical protein	Hahella chejuensis KCTC 2396	SEED
+bc52b6f472dc8ac0169330782379003f	fig|395492.8.peg.1366	hypothetical protein	Rhizobium leguminosarum bv. trifolii WSM2304	SEED
+bc52b98a0fbd7a55c88d7cadb468368f	fig|568703.9.peg.2525	Gluconate dehydratase (EC 4.2.1.39)	Lactobacillus rhamnosus GG	SEED
+bc52bb6431d9457c3c65082052f10a63	fig|477974.3.peg.2073	FIG069887: hypothetical protein	Desulforudis audaxviator MP104C	SEED
+be7ac3872a67e9b760b44e1043f16a6d	fig|593585.3.peg.1900	hyphothetical protein	Vibrio cholerae bv. albensis VL426	SEED
+be7ac6d1ddea17fb37e1bc9936c32e98	fig|913329.4.peg.1627	Gluconate dehydratase (EC 4.2.1.39)	SAR324 cluster bacterium SCGC AAA001-C10	SEED
+be7ac7ad8c9856a960a1966ba162538e	fig|640512.4.peg.5892	Transcriptional regulator, LysR family	Burkholderia sp. CCGE1003	SEED
+c0ba76c2ea976629997a0f34574d9c46	fig|439483.4.peg.1771	hypothetical protein	Campylobacterales bacterium GD 1	SEED
+c0ba78bc2021ed32880270139645803d	fig|518636.5.peg.530	Gluconate dehydratase (EC 4.2.1.39)	Clostridium asparagiforme DSM 15981	SEED
+c0ba79195cf397b33fc0699d96f98929	fig|295319.3.peg.3733	FIG000988: Predicted permease	Salmonella enterica subsp. enterica serovar Paratypi A str. ATCC 9150	SEED
+c1dcc8e6f96a30219446312d323282e5	fig|347834.17.peg.693	Radical SAM family enzyme, similar to coproporphyrinogen III oxidase, oxygen-independent, clustered with nucleoside-triphosphatase RdgB	Rhizobium etli CFN 42	SEED
+c1dcc981b245731c78474b129ab29b93	fig|97393.1.peg.198	Gluconate dehydratase (EC 4.2.1.39)	Ferroplasma acidarmanus	SEED
+c1dccc0922757f03ce6695473bbf94b9	fig|378806.7.peg.281	response regulator/sensor histidine kinase AsgD	Stigmatella aurantiaca DW4/3-1	SEED
+c206799f1b9d3cccabd20b40885ba856	fig|926030.3.peg.5028	Phage tail length tape-measure protein 1	Escherichia coli O55:H7 str. USDA 5905	SEED
+c2067ac7035b60d600da1d042bf0f21b	fig|653045.3.peg.1696	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces violaceusniger Tu 4113	SEED
+c2067afeb73c15165353ed91c8465b4c	fig|411470.6.peg.1349	DNA-binding protein; possible transcriptional regulator	Ruminococcus gnavus ATCC 29149	SEED
+c582dae4811977a8d271856a83f9813d	fig|498761.4.peg.941	FIG072699: hypothetical protein	Heliobacterium modesticaldum Ice1	SEED
+c582dcfc565629b5173a3e79d7db90fe	fig|396598.3.peg.2502	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia graminis C4D1M	SEED
+c582de8153e7c12ed793a5c51711afac	fig|100226.15.peg.7907	hyphothetical protein (Streptomyces coelicolor A3	2	SEED
+c5911d2b299f2ecd63ddd838d52c320e	fig|548476.3.peg.47	hyphothetical protein	Corynebacterium aurimucosum ATCC 700975	SEED
+c591226e16882812bce8a0922068bcb9	fig|314256.5.peg.2592	Muconolactone isomerase (EC 5.3.3.4),putative	Oceanicola granulosus HTCC2516	SEED
+c59123f060707a740a8615e7c1b39611	fig|118168.3.peg.6537	hypothetical protein	Microcoleus chthonoplastes PCC 7420	SEED
+c6400a785051028847aa5bfa2501214c	fig|167539.5.peg.1786	SSU ribosomal protein S13p (S18e)	Prochlorococcus marinus subsp. marinus str. CCMP1375	SEED
+c64011e9b1fafb4bc7507516846242f3	fig|246200.3.peg.424	Muconolactone isomerase (EC 5.3.3.4),putative	Silicibacter pomeroyi DSS-3	SEED
+c64011e9b1fafb4bc7507516846242f3	fig|246200.7.peg.4428	Muconolactone isomerase (EC 5.3.3.4),putative	Ruegeria pomeroyi DSS-3	SEED
+c640124d4f9fb537746ab023ea6ece29	fig|644107.3.peg.2182	Carbamoyl-phosphate synthase small chain (EC 6.3.5.5)	Silicibacter lacuscaerulensis ITI-1157	SEED
+c88d74913f3c034a886c2b0eea5c42fe	fig|561230.3.peg.2291	hyphothetical protein	Pectobacterium carotovorum subsp. carotovorum PC1	SEED
+c88d77d64b9082558eda0e9c401d871c	fig|858215.3.peg.424	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacterium xylanolyticum LX-11	SEED
+c88d780185599cbd4f59df0b42127ca4	fig|176279.3.peg.2245	Hypothetical sugar kinase similar to L-Ribulokinase (FGGY family)	Staphylococcus epidermidis RP62A	SEED
+d100127478b9bb4f565107bd6420e5ed	fig|935586.3.peg.1063	hyphothetical protein	Neisseria meningitidis ES14902	SEED
+d1001414ed738379abf777153a5c4415	fig|314270.3.peg.3305	Muconolactone isomerase (EC 5.3.3.4),putative	Rhodobacterales bacterium HTCC2083	SEED
+d10014652dc593a3a54a3d6b8076cb07	fig|106370.11.peg.3242	hypothetical protein	Frankia sp. Ccl3	SEED
+d29ed2cd1b9d2560f22ea2e891f16d20	fig|485915.5.peg.1232	Methyltransferase type 12	Desulfohalobium retbaense DSM 5692	SEED
+d29ed3bbd95665cdfe41ee6d9de738f0	fig|526218.4.peg.1209	Gluconate dehydratase (EC 4.2.1.39)	Sebaldella termitidis ATCC 33386	SEED
+d29ed3bbd95665cdfe41ee6d9de738f0	fig|526218.6.peg.222	Gluconate dehydratase (EC 4.2.1.39)	Sebaldella termitidis ATCC 33386	SEED
+d29ed47d5ea4711538155ad4aae88ee0	fig|1001590.3.peg.4198	hypothetical protein	Leptospira interrogans str. 2006001854	SEED
+d35ae54d36f494ea41e340b190f121b1	fig|940296.3.peg.674	PHAGE-RELATED DNA BINDING PROTEIN	Neisseria gonorrhoeae TCDC-NG08107	SEED
+d35ae92f376ec30fb7cfc6d1aafadad9	fig|420336.5.peg.597	Gluconate dehydratase (EC 4.2.1.39)	Epulopiscium sp. 'N.t. morphotype B'	SEED
+d35aea0ef4390ff5f56ed8330d88f7a9	fig|228405.5.peg.1960	Transcriptional regulator, HxlR family	Hyphomonas neptunium ATCC 15444	SEED
+d39d6d2c05d88353c1c6599c20aba04d	fig|935593.3.peg.1845	Phage shock protein E precursor	Neisseria meningitidis M04-240196	SEED
+d39d7174f131eb89dee79db2e23cb3db	fig|102897.3.peg.2903	Mandelate racemase/muconate lactonizing enzyme-like protein	Frankia sp. EUN1f	SEED
+d39d71c002e51f39e54b92622f3861e9	fig|228399.1.peg.337	Beta-galactosidase, beta subunit	Actinobacillus pleuropneumoniae serovar 1 str. 4074	SEED
+d5554063c428019759d40c24aa79412c	fig|314264.4.peg.490	Ribosomal large subunit pseudouridine synthase A (EC 4.2.1.70)	Roseovarius sp. 217	SEED
+d555419a5dac74a5c3d1034f1e569771	fig|235909.3.peg.804	Gluconate dehydratase (EC 4.2.1.39)	Geobacillus kaustophilus HTA426	SEED
+d555419a5dac74a5c3d1034f1e569771	fig|235909.7.peg.2096	Gluconate dehydratase (EC 4.2.1.39)	Geobacillus kaustophilus HTA426	SEED
+d55541cc6b5cb2e26ce688f25c31a9de	fig|347834.17.peg.655	Glutathione synthetase (EC 6.3.2.3)	Rhizobium etli CFN 42	SEED
+da285c8aa9fe643085e3edba8ff47c15	fig|446468.6.peg.2004	hyphothetical protein	Nocardiopsis dassonvillei subsp. dassonvillei DSM 43111	SEED
+da285df9ddd144891970793eccc27a5f	fig|565652.4.peg.2487	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus casseliflavus EC30	SEED
+da2860a988913e071bb993d8ca411269	fig|262727.6.peg.1237	Lipoate synthase	Haemophilus influenzae R2846	SEED
+dd91f0d465907dff0ca32336691d73f1	fig|546275.3.peg.2136	probable ABC transporter	Fusobacterium periodonticum ATCC 33693	SEED
+dd91f4c25dc3952954f8f5978286c104	fig|371731.3.peg.1351	Muconolactone isomerase (EC 5.3.3.4),putative	Rhodobacter sp. SW2	SEED
+dd91f7b6963d8122b37f16f0bcf987ec	fig|883.3.peg.2902	hypothetical protein	Desulfovibrio vulgaris str. 'Miyazaki F'	SEED
+dfebc1cdc08198bc0a639bf2bc944178	fig|235909.7.peg.1898	unknown	Geobacillus kaustophilus HTA426	SEED
+dfebc7d7c4740372391f44eeea729596	fig|481743.5.peg.4790	Gluconate dehydratase (EC 4.2.1.39)	Geobacillus sp. Y412MC10	SEED
+dfebc90e5bdd256aa492479fc8777437	fig|121723.5.peg.940	Methionine ABC transporter ATP-binding protein	Photobacterium sp. SKA34	SEED
+e35e9c0b0057556d696e517cdf1d81e4	fig|637887.3.peg.2929	hypothetical protein	Clostridium thermocellum DSM 1313	SEED
+e35e9e558888f662f0d7591e19e3464b	fig|252305.3.peg.1415	Muconolactone isomerase (EC 5.3.3.4),putative	Oceanicola batsensis HTCC2597	SEED
+e35e9e558888f662f0d7591e19e3464b	fig|252305.5.peg.1375	Muconolactone isomerase (EC 5.3.3.4),putative	Oceanicola batsensis HTCC2597	SEED
+e35ea1df17ebe1ee5f5a6a3524250bf3	fig|565653.4.peg.598	PTS system, beta-glucoside-specific IIB component (EC 2.7.1.69) / PTS system, beta-glucoside-specific IIC component (EC 2.7.1.69) / PTS system, beta-glucoside-specific IIA component (EC 2.7.1.69)	Enterococcus gallinarum EG2	SEED
+e678e598e329de1dd201bad4415e0cee	fig|588581.3.peg.2375	Predicted beta-xyloside ABC transporter, substrate-binding component	Clostridium papyrosolvens DSM 2782	SEED
+e678e6233853489a2fbc8055d2f18b27	fig|697281.3.peg.2271	galactonate dehydratase	Mahella australiensis 50-1 BON	SEED
+e678ec9eb5dc06e8c7d63b35e1b3b5e6	fig|316056.16.peg.2786	Dimethylmenaquinone methyltransferase family protein	Rhodopseudomonas palustris BisB18	SEED
+e6bda01e69c5fae20ee745ff2895c1c2	fig|114615.4.peg.6323	hyphothetical protein	Bradyrhizobium sp. ORS278	SEED
+e6bda029252b2a3315fbd961e0b5ee28	fig|247634.3.peg.3753	Gluconate dehydratase (EC 4.2.1.39)	marine gamma proteobacterium HTCC2148	SEED
+e6bda0ad5c743fadea14c9bfb1ea6866	fig|272624.3.peg.2857	D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)	Legionella pneumophila subsp. pneumophila str. Philadelphia 1	SEED
+e6edbd1200682110f82a2f6bc91d2496	fig|675635.11.peg.4662	hypothetical protein	Pseudonocardia dioxanivorans CB1190	SEED
+e6edbf0b75f4637bb9fb63dfe698f279	fig|309801.4.peg.1878	Gluconate dehydratase (EC 4.2.1.39)	Thermomicrobium roseum DSM 5159	SEED
+e6edc28a56e0b4f1763c071c9933c513	fig|525371.3.peg.1326	Uridylate kinase (EC 2.7.4.-)	Roseomonas cervicalis ATCC 49957	SEED
+e744a7363a99710ab1c454434cbc4884	fig|888063.3.peg.532	esterase YbdB	Enterobacter hormaechei ATCC 49162	SEED
+e744a7372348e628aa41ae357638a82f	fig|383629.4.peg.2949	Muconolactone isomerase (EC 5.3.3.4),putative	Phaeobacter gallaeciensis 2.10	SEED
+e744b02260281b129f80e2c80ef6afa8	fig|649189.3.peg.3701	hyphothetical protein	Streptomyces sp. ACT-1	SEED
+e7b5cd846156ec0de19989eae2cf3921	fig|1001598.3.peg.2420	FIG00762668: hypothetical protein	Leptospira interrogans serovar Copenhageni str. LT2050	SEED
+e7b5cfeb886c978e951d11a324cc2b2b	fig|743722.3.peg.4874	Gluconate dehydratase (EC 4.2.1.39)	Sphingobacterium sp. 21	SEED
+e7b5d11e5e3bbdcc2b16b64cfd04a5e0	fig|981384.3.peg.2437	hypothetical protein	Ruegeria sp. TW15	SEED
+ea97838c19b4e7be39f2be447636aaac	fig|331978.4.peg.6969	Glutamine amidotransferase, class I	Burkholderia pseudomallei Pasteur 52237	SEED
+ea97840a3bcf2459fcca5ee99a4506b2	fig|640512.3.peg.3411	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia sp. CCGE1003	SEED
+ea97840a3bcf2459fcca5ee99a4506b2	fig|640512.4.peg.1820	Gluconate dehydratase (EC 4.2.1.39)	Burkholderia sp. CCGE1003	SEED
+ea97868cc62ee0059fe5ef6bcc211aaf	fig|32049.15.peg.2069	Iron-sulfur cluster assembly ATPase protein SufC	Synechococcus sp. PCC 7002	SEED
+ed124a90193d461af32233dea202dc33	fig|316278.4.peg.268	Possible glycosyltransferase 2 fused to TPR-repeat domain	Synechococcus sp. RCC307	SEED
+ed124bcf4c56cd696d5b2c9b309fb65d	fig|471854.4.peg.3062	2-oxo-3-deoxygalactonate 6-phosphate aldolase and galactonate dehydratase	Dyadobacter fermentans DSM 18053	SEED
+ed124bcf4c56cd696d5b2c9b309fb65d	fig|471854.5.peg.5392	hyphothetical protein	Dyadobacter fermentans DSM 18053	SEED
+ed124ea90b52415307e88e7cc9762f24	fig|1001582.3.peg.3129	Intracellular protease 1	Bacillus amyloliquefaciens LL3	SEED
+ef77bc2a90b888105614de9a5ce13085	fig|469586.3.peg.3823	Conjugative transposon protein TraB	Bacteroides sp. 1_1_6	SEED
+ef77bdc95e0c8278805f7f78ac4391f0	fig|749495.4.peg.500	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis TX4248	SEED
+ef77be5d7d53c11f2c40e88517358777	fig|471870.8.peg.2805	hypothetical protein	Bacteroides intestinalis DSM 17393	SEED
+ef9ea3a9f0574bea626fdcc126aac67d	fig|402880.8.peg.192	Coenzyme F420 hydrogenase beta subunit (FruB) (EC 1.12.98.1)	Methanococcus maripaludis C5	SEED
+ef9ea3d93c568278feef74e9db8cb9e0	fig|351627.4.peg.2639	mandelate racemase/muconate lactonizing enzyme family protein	Caldicellulosiruptor saccharolyticus DSM 8903	SEED
+ef9ea3d93c568278feef74e9db8cb9e0	fig|351627.8.peg.2962	mandelate racemase/muconate lactonizing enzyme family protein	Caldicellulosiruptor saccharolyticus DSM 8903	SEED
+ef9ea3e0dec816631ec141e6dadf7e94	fig|288000.5.peg.3629	hypothetical protein	Bradyrhizobium sp. BTAi1	SEED
+f06530fbfa1bea2a35387d52a292563f	fig|247156.8.peg.5695	hyphothetical protein	Nocardia farcinica IFM 10152	SEED
+f0653141dc0899697e2ce32fcd4bb6d7	fig|273063.1.peg.2535	Gluconate dehydratase (EC 4.2.1.39)	Sulfolobus tokodaii str. 7	SEED
+f06531c065429625d1e1292b886b1906	fig|557599.3.peg.3964	POSSIBLE MEMBRANE PROTEIN	Mycobacterium kansasii ATCC 12478	SEED
+f0c4acbaaacf7572350e71fe05835ace	fig|411902.9.peg.5885	probable sugar ABC transporter, substrate-binding protein, putative	Clostridium bolteae ATCC BAA-613	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|525271.4.peg.1872	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis ATCC 29200	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|565641.4.peg.350	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis X98	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|565643.5.peg.729	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis DS5	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|565645.4.peg.650	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis Merz96	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|565646.5.peg.1888	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis HIP11704	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|699185.3.peg.57	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis S613	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|699186.3.peg.1628	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis R712	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749489.3.peg.182	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis DAPTO 512	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749490.3.peg.2162	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis DAPTO 516	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749497.3.peg.721	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX0017	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749498.3.peg.1611	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX0027	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749500.3.peg.100	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX0043	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749501.3.peg.190	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis TX0102	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|749518.3.peg.2785	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis TX2134	SEED
+f0c4b176af2d1c41b8975792291ccf18	fig|936153.3.peg.908	Gluconate dehydratase (EC 4.2.1.39)	Enterococcus faecalis 62	SEED
+f0c4b3f47cc75a88b66cf20026db9cb5	fig|293826.4.peg.2880	Sigma-54 dependent DNA-binding response regulator	Alkaliphilus metalliredigens QYMF	SEED
+f13c23c5d59e0dadeffce7f0c4ee65a9	fig|526983.3.peg.2706	serine/threonine protein phosphatase	Bacillus cereus Rock3-28	SEED
+f13c23f85db579ae0cef18b11190811e	fig|583358.3.peg.1620	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter mathranii subsp. mathranii str. A3	SEED
+f13c23f85db579ae0cef18b11190811e	fig|583358.4.peg.221	Gluconate dehydratase (EC 4.2.1.39)	Thermoanaerobacter mathranii subsp. mathranii str. A3	SEED
+f13c256d9d1c83b89c20718b90f45c18	fig|417397.11.peg.654	GGDEF family protein	Vibrio cholerae 623-39	SEED
+f1e6d497ddbd2ff9081ef0a9c91b767b	fig|290340.10.peg.4242	Transcription regulator [contains diacylglycerol kinase catalytic domain]	Arthrobacter aurescens TC1	SEED
+f1e6d6c3f8a6eaec8347339c4af039fb	fig|749492.3.peg.1414	mandelate racemase / muconate lactonizing enzyme protein	Enterococcus faecalis TX2141	SEED
+f1e6d7059caf8c71c559a3e1e9d9e2ac	fig|479434.4.peg.1414	hypothetical protein	Sphaerobacter thermophilus DSM 20745	SEED
+f72d00fb250f1077f17328b7a8bc123f	fig|377629.3.peg.170	hypothetical protein	Teredinibacter turnerae T7901	SEED
+f72d01f4bc4af1caf054e6ea8926b93c	fig|908341.3.peg.3769	D-galactonate dehydratase	Paenibacillus sp. HGF5	SEED
+f72d033e20cdea507b5b9294f8b30358	fig|527021.3.peg.1954	hypothetical protein	Bacillus thuringiensis Bt407	SEED
+f7b9230a03b6f1526326e83747ec4d41	fig|405948.6.peg.5872	L-threonine 3-dehydrogenase (EC 1.1.1.103)	Saccharopolyspora erythraea NRRL 2338	SEED
+f7b923f758d0b69ff969ec76c8d5319f	fig|697281.3.peg.2131	galactonate dehydratase	Mahella australiensis 50-1 BON	SEED
+f7b924da0a51f3d26fbf15bf5257da2c	fig|996285.3.peg.452	curli fiber surface-exposed nucleator CsgB, putative	Pseudomonas stutzeri DSM 4166	SEED
+f88049bd6570235aee5dea39632d2d35	fig|586220.3.peg.1293	Xylose isomerase (EC 5.3.1.5)	Leuconostoc mesenteroides subsp. cremoris ATCC 19254	SEED
+f88049dc0cf90a38675fa62f9e8c9547	fig|290400.10.peg.1791	Muconolactone isomerase (EC 5.3.3.4),putative	Jannaschia sp. CCS1	SEED
+f8804a2534398e4e12d110c567292def	fig|527002.3.peg.2745	hypothetical protein	Yersinia aldovae ATCC 35236	SEED
+f8b2654b453bfc8156e546f6a043ecf7	fig|687916.3.peg.2801	LSU ribosomal protein L21p	Yersinia pestis KIM D27	SEED
+f8b266c4240e30888daa73453c5a3d8c	fig|680198.5.peg.6286	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces scabiei 87.22	SEED
+f8b266fb804377e88bf48b59cde2ed4c	fig|929500.3.peg.1098	Multimodular transpeptidase-transglycosylase (EC 2.4.1.129) (EC 3.4.-.-) / Penicillin-binding protein 1A/1B (PBP1)	Lactobacillus coryniformis subsp. torquens KCTC 3535	SEED
+f9906bcd982f5974078556dca72e5dda	fig|577650.3.peg.3114	integral membrane sensor signal transduction histidine kinase	Desulfobulbus propionicus DSM 2032	SEED
+f9906d2a133c3a6d8b39d85c51f680ed	fig|266117.10.peg.570	Mandelate racemase/muconate lactonizing enzyme-like protein	Rubrobacter xylanophilus DSM 9941	SEED
+f9906d2a133c3a6d8b39d85c51f680ed	fig|266117.6.peg.505	Mandelate racemase/muconate lactonizing enzyme-like protein	Rubrobacter xylanophilus DSM 9941	SEED
+f9907431d078135bb0d4fda15de3dd53	fig|260120.2.peg.34	Phage protein	Siphoviridae Mycobacterium phage U2	SEED
+fb2ef247ba7ce9331d4e4deed536ed84	fig|445972.6.peg.3206	Acyl-phosphate:glycerol-3-phosphate O-acyltransferase PlsY	Anaerotruncus colihominis DSM 17241	SEED
+fb2ef5791fa277abed2d66cb53e98b2f	fig|324057.4.peg.2984	Gluconate dehydratase (EC 4.2.1.39)	Paenibacillus sp. JDR-2	SEED
+fb2ef59fe258e9bc1cd0f65cb890b586	fig|657309.4.peg.4673	unknown	Bacteroides xylanisolvens XB1A	SEED
+fe02d3f8cd755979e7b0dec53c8941bb	fig|795359.3.peg.321	hyphothetical protein	Thermodesulfobacterium sp. OPB45	SEED
+fe02d4e7874c65ac4557aeb130c0b782	fig|463191.3.peg.3513	Mandelate racemase/muconate lactonizing enzyme-like protein	Streptomyces sviceus ATCC 29083	SEED
+fe02d7af715ae4ddfb5d328fdfc4b02f	fig|530564.3.peg.4157	hyphothetical protein	Pirellula staleyi DSM 6068	SEED

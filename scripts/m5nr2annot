@@ -66,6 +66,10 @@ BANNER
     @options[:minbitscore] = v.to_f
   end
 
+  opts.on "--traceids=LIST", "Output verbose information about hits for the ids in the list; for debug purposes" do |v|
+    @options[:traceids] = v.split(/,/)
+  end
+
   opts.on "-v", "--verbose", "Be verbose"  do |v| 
     @options[:verbose] = v 
   end
@@ -336,11 +340,18 @@ def ncbi_handler(db, hits)
 end
 
 def seed_handler(db, hits)
+  trace = false
+  if @options[:traceids].find { |tid| tid == hits[0][:subject] }
+    warn "#{__LINE__}: Handling traced id #{hits[0][:subject]}" 
+    trace = true
+  end
+
   return if hits.length == 0
 
   # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
   no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
   output = [ no_seed_hit ]
+  warn "\tTRACEID #{__LINE__}: output: '#{output}'" if trace
 
   # 1. Get all the hits from the md52id2func file and collect the organism names plus the name of the first (best) hit
   organisms = []
@@ -353,6 +364,7 @@ def seed_handler(db, hits)
   end
   lca = "(LCA: #{organisms.join(", ")})"
   no_seed_hit << lca
+  warn "\tTRACEID #{__LINE__}: output: '#{output}'" if trace
 
   # No output if we didn't find anything above (== no organisms)
   output = [ ] if organisms.length == 0
@@ -366,8 +378,11 @@ def seed_handler(db, hits)
     end
   end
   seed_hits.keys.each do |ss|
+    warn "\tTRACEID #{__LINE__}: ss: '#{ss}'" if trace
     output << [ hits[0][:subject], ss ] + @data['SEED']['id2subsystems'][ss] + [ lca ]
+    warn "\tTRACEID #{__LINE__}: output: '#{output}'" if trace
   end
+  warn "\tTRACEID #{__LINE__}: output: '#{output}'" if trace
 
   output.each do |out|
     @data[db][:outfile].puts out.join("\t")

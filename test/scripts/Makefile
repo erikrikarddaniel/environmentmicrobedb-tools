@@ -37,7 +37,7 @@ cdnaobservations.02:
 
 m5nr2annot.00:
 	@rm -f $@.seed
-	@../../scripts/m5nr2annot --veryverbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
+	@../../scripts/m5nr2annot --traceids="tr|A3X3I1|A3X3I1_9RHOB" --veryverbose --datadir=$@.data --basename=$@ --fracfrombestbitscore=0.75 $@.blasttab > $@.out 2>&1
 	@sed -i "/Parsing/d" $@.out
 	@sed -i "/Waiting/d" $@.out
 	@echo "--> KEGG <--" >> $@.out
