@@ -160,6 +160,7 @@ def kegg_parser(db)
   # Open an output file
   fname = "#{@options[:basename]}.kegg"
   begin
+    warn "Opening #{fname} for KEGG output" if @options[:verbose]
     @data[db][:outfile] = File.new(fname, "w")
   rescue
     warn "Failed to open file for KEGG output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
@@ -298,6 +299,7 @@ def seed_parser(db)
   # Open an output file
   fname = "#{@options[:basename]}.seed"
   begin
+    warn "Opening #{fname} for SEED output" if @options[:verbose]
     @data[db][:outfile] = File.new(fname, "w")
   rescue
     warn "Failed to open file for SEED output #{fname}: #{$!}, backtrace: #{$!.backtrace.join("\n\t")}"
@@ -340,13 +342,13 @@ def ncbi_handler(db, hits)
 end
 
 def seed_handler(db, hits)
+  return if hits.length == 0
+
   trace = false
   if @options[:traceids].find { |tid| tid == hits[0][:subject] }
     warn "#{__LINE__}: Handling traced id #{hits[0][:subject]}" 
     trace = true
   end
-
-  return if hits.length == 0
 
   # We'll build an array of arrays for output, one of the outer per subsystem hit, one of the inner per piece of information
   no_seed_hit = [ hits[0][:subject], 'No SEED hit' ]
@@ -372,9 +374,13 @@ def seed_handler(db, hits)
   # 2. Do we have any SEED subsystem hits, if so find the one with the highest score
   seed_hits = {}
   hits.each do |hit|
+    warn "\tTRACEID #{__LINE__}: hit: '#{hit}'" if trace
     if target = @data[db]['md52id2ont'][hit[:target]]
       output = [ ] if output[0] == no_seed_hit
-      target.each { |t| seed_hits[t] = true }
+      target.each do |t| 
+	warn "\tTRACEID #{__LINE__}: t: '#{t}'" if trace
+	seed_hits[t] = true 
+      end
     end
   end
   seed_hits.keys.each do |ss|
