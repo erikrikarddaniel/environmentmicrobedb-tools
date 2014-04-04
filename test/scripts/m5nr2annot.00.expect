@@ -1,9 +1,9 @@
 --> KEGG <--
 tr|A2TND6|A2TND6_9FLAO	K01258	tripeptide aminopeptidase [EC:3.4.11.4]
-all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Metabolism", "Energy Metabolism", "00680 Methane metabolism [PATH:ko00680]", "E1.11.1.6; catalase [EC:1.11.1.6]"
-all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Metabolism", "Amino Acid Metabolism", "00380 Tryptophan metabolism [PATH:ko00380]", "E1.11.1.6; catalase [EC:1.11.1.6]"
 all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Cellular Processes", "Transport and Catabolism", "04146 Peroxisome [PATH:ko04146]", "HAO; (S)-2-hydroxy-acid oxidase [EC:1.1.3.15]"
 all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Human Diseases", "Neurodegenerative Diseases", "05014 Amyotrophic lateral sclerosis (ALS) [PATH:ko05014]", "CCS; copper chaperone for superoxide dismutase"
+all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Metabolism", "Amino Acid Metabolism", "00380 Tryptophan metabolism [PATH:ko00380]", "E1.11.1.6; catalase [EC:1.11.1.6]"
+all.hsfiltered.normC160.k21.ray.fgs-contig-1001000003_63_192_-	K03781	catalase [EC:1.11.1.6]	"Metabolism", "Energy Metabolism", "00680 Methane metabolism [PATH:ko00680]", "E1.11.1.6; catalase [EC:1.11.1.6]"
 --> RefSeq <--
 	accnos
 tr|A2TND1|A2TND1_9FLAO	"ZP_01049144.1", "YP_004432116.1"

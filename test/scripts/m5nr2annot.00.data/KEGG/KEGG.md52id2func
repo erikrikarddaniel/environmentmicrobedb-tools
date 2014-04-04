@@ -121,3 +121,80 @@ f0446a4027dd0a82e5aaa2d72d80bc46	mei:Msip34_0529	catalase (EC:1.11.1.6)	Methylov
 f23f4b984aede035a1f0dcc3bb97568c	lmc:Lm4b_02761	catalase	Listeria monocytogenes Clip81459 (serotype 4b)	KEGG
 f3d4b9b497738664605c6990de05d356	pfs:PFLU5339	catalase (EC:1.11.1.6)	Pseudomonas fluorescens SBW25	KEGG
 f4be243413b53b8ca624c6ed13931300	mep:MPQ_0554	catalase	Methylovorus sp. MP688	KEGG
+006ec94aaf8c0169f635f2f1944c841e	vei:Veis_2909	mandelate racemase/muconate lactonizing protein	Verminephrobacter eiseniae EF01-2	KEGG
+0a89c3eed0c4b8c7c8af6ca161e97cb3	sis:LS215_2810	mandelate racemase/muconate lactonizing protein (EC:4.2.1.6)	Sulfolobus islandicus L.S.2.15	KEGG
+0b6641ff8f05c7afad450e6925cba5b4	rde:RD1_3939	racemase, putative	Roseobacter denitrificans OCh 114	KEGG
+0f850e0a8d3072a450f47fc4428d5a92	hvo:HVO_B0038A	D-xylonate dehydratase	Haloferax volcanii DS2	KEGG
+14443e351a45e7e98b6d996b3c91b71d	sco:SCO2401	dehydratase	Streptomyces coelicolor A3(2)	KEGG
+1455ad02067d8fc3b356732ffb4ccd74	hbo:Hbor_37610	galactonate dehydratase	Halogeometricum borinquense DSM 11551	KEGG
+1617030512e48aaa31610310e3172097	sso:SSO2665	muconate cycloisomerase related protein	Sulfolobus solfataricus P2	KEGG
+1b9ffd1a8017140bd0cd51a431428c0f	bcl:ABC0524	galactonate dehydratase (EC:4.2.1.6)	Bacillus clausii KSM-K16	KEGG
+1c4c5686cb8d4ffe571a11ea7b310358	sia:M1425_2162	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.14.25	KEGG
+1c4c5686cb8d4ffe571a11ea7b310358	sid:M164_2165	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.16.4	KEGG
+1c4c5686cb8d4ffe571a11ea7b310358	sim:M1627_2242	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.16.27	KEGG
+2c2cebaf45bfb08cf724a468eb5e733f	sii:LD85_2966	mandelate racemase/muconate lactonizing enzyme, C-terminal domain protein	Sulfolobus islandicus L.D.8.5	KEGG
+2c2cebaf45bfb08cf724a468eb5e733f	siy:YG5714_2823	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus Y.G.57.14	KEGG
+2eb9f8c25447cdd85dba42b060a6b238	hla:Hlac_2866	galactonate dehydratase	Halorubrum lacusprofundi ATCC 49239	KEGG
+313d912f46761ef4bbbe1c979413fa49	hje:HacjB3_07855	galactonate dehydratase	Halalkalicoccus jeotgali B3	KEGG
+3688823d16e8e34b8a0fa3ed61236a3b	mlo:mlr2605	isomerase	Mesorhizobium loti MAFF303099	KEGG
+39896bed98031c5f9fdcdf6f5ad7b9b9	pto:PTO0485	gluconate/galactonate dehydratase (EC:4.2.1.39)	Picrophilus torridus DSM 9790	KEGG
+3e3a57739f6a944647ba442417a1489c	sto:ST2572	hypothetical protein	Sulfolobus tokodaii strain7	KEGG
+4c57ceb65164ab56c548bad850b9554a	mci:Mesci_2210	mandelate racemase/muconate lactonizing protein	Mesorhizobium ciceri biovar biserrulae WSM1271	KEGG
+59a8dc644fbcb92517d30ebf742b8027	sma:SAV_5772	dehydratase	Streptomyces avermitilis MA-4680	KEGG
+6792c0477ad56609ad3ab29428f3816f	hma:pNG7031	galactonate dehydratase	Haloarcula marismortui ATCC 43049	KEGG
+67da3fb9db3b383c011ffdafd99540d1	fre:Franean1_4678	mandelate racemase/muconate lactonizing protein	Frankia sp. EAN1pec	KEGG
+6a7df4328cf2f8ed6a5eebf936881d56	tex:Teth514_0127	galactonate dehydratase	Thermoanaerobacter sp. X514	KEGG
+6a7df4328cf2f8ed6a5eebf936881d56	thx:Thet_0163	mandelate racemase/muconate lactonizing protein	Thermoanaerobacter sp. X513	KEGG
+6b4228a70746668474e6f13bf144237b	bpy:Bphyt_1992	mandelate racemase/muconate lactonizing protein	Burkholderia phytofirmans PsJN	KEGG
+705c2bb5abb89efc1ac3b616ce4513c5	sia:M1425_2649	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.14.25	KEGG
+734ff8f9c8dfa202bcb0712abba25aa0	hmu:Hmuk_0100	mandelate racemase/muconate lactonizing protein	Halomicrobium mukohataei DSM 12286	KEGG
+76aa03253aa5783631c836716bd5ca76	nmg:Nmag_0821	mandelate racemase/muconate lactonizing protein	Natrialba magadii ATCC 43099	KEGG
+7b1c9e33656197da8fb5906963fa6bc4	amd:AMED_3144	mandelate racemase/gluconate dehydratase	Amycolatopsis mediterranei U32	KEGG
+7c329531de1050df9951421f53f8de57	hje:HacjB3_09680	galactonate dehydratase	Halalkalicoccus jeotgali B3	KEGG
+7f64a267a3b7a82957a5c26e3e90727b	bld:BLi04070	galactonate dehydratase (EC:4.2.1.6)	Bacillus licheniformis DSM13 (ATCC 14580)	KEGG
+7f64a267a3b7a82957a5c26e3e90727b	bli:BL03851	galactonate dehydratase	Bacillus licheniformis ATCC 14580	KEGG
+8139ae472c257010540dde83d2bf5add	tac:Ta0756	muconate cycloisomerase related protein	Thermoplasma acidophilum DSM 1728	KEGG
+81e0f0f66e327f8e1a792cd425b3bea5	cma:Cmaq_0154	mandelate racemase/muconate lactonizing protein	Caldivirga maquilingensis IC-167	KEGG
+833de16d5ff1875c196de11f6951ed78	cma:Cmaq_0074	mandelate racemase/muconate lactonizing protein	Caldivirga maquilingensis IC-167	KEGG
+8613f04cb2c8952f4716df09052caa23	sco:SCO3475	galactonate dehydratase	Streptomyces coelicolor A3(2)	KEGG
+872f741c2f6a35026eaebb051cee02cd	bmq:BMQ_3632	galactonate dehydratase (EC:4.2.1.6)	Bacillus megaterium QM B1551	KEGG
+8964bbbd56965933af575454268ee41d	phe:Phep_2597	mandelate racemase/muconate lactonizing protein	Pedobacter heparinus DSM 2366	KEGG
+8a1eb7fe13b4ebb5db61a71463ba547b	lcz:LCAZH_2631	mandelate racemase/muconate lactonizing enzyme	Lactobacillus casei Zhang	KEGG
+8b95bedbc36f74026e70bbcdf24f647f	bcv:Bcav_3392	mandelate racemase/muconate lactonizing protein	Beutenbergia cavernae DSM 12333	KEGG
+8c129d06fb865ec860fb139bb7d0221e	htu:Htur_4441	mandelate racemase/muconate lactonizing protein	Haloterrigena turkmenica DSM 5511	KEGG
+902d02c4eb08e7262fb686a00df7bdee	sin:YN1551_3011	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus Y.N.15.51	KEGG
+918c3fbb0799b350cd90ab20d1756e8d	pjd:Pjdr2_0782	galactonate dehydratase	Paenibacillus sp. JDR-2	KEGG
+956d9aa29ca018f4f8a27ccfcaa215eb	tbo:Thebr_2120	mandelate racemase/muconate lactonizing protein	Thermoanaerobacter brockii subsp. finnii Ako-1	KEGG
+956d9aa29ca018f4f8a27ccfcaa215eb	tit:Thit_0160	mandelate racemase/muconate lactonizing protein	Thermoanaerobacter italicus Ab9	KEGG
+956d9aa29ca018f4f8a27ccfcaa215eb	tpd:Teth39_2075	galactonate dehydratase	Thermoanaerobacter pseudethanolicus ATCC 33223	KEGG
+95af3f04a2fc40132f9660aa1933c853	mse:Msed_1303	gluconate dehydratase / galactonate dehydratase (EC:4.2.1.39 4.2.1.6)	Metallosphaera sedula DSM 5348	KEGG
+999818faa5327e853453e3ab09599f29	sid:M164_2634	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.16.4	KEGG
+999818faa5327e853453e3ab09599f29	sim:M1627_2703	mandelate racemase/muconate lactonizing protein	Sulfolobus islandicus M.16.27	KEGG
+9a8d1428acd5335003b41fa0de1da2fb	sen:SACE_4344	mandelate racemase/muconate lactonizing enzyme-like protein	Saccharopolyspora erythraea NRRL 2338	KEGG
+a0520fbcc9c4af3893092a41d89f1294	sit:TM1040_3673	mandelate racemase/muconate lactonizing-like protein	Ruegeria sp. TM1040	KEGG
+ab0efbb229f385989d072b34736f66e7	mes:Meso_4521	mandelate racemase/muconate lactonizing-like protein	Mesorhizobium sp. BNC1	KEGG
+ace2faf128043e96d2303ec7ab9565a6	apb:SAR116_1857	mandelate racemase/muconate lactonizing enzyme (EC:4.1.2.21)	Candidatus Puniceispirillum marinum IMCC1322	KEGG
+b20f4caf08a6f837efd28b4550ae5aab	tro:trd_A0591	galactonate dehydratase (EC:4.2.1.6)	Thermomicrobium roseum DSM 5159	KEGG
+b3685c748812ccb2e44b2a8998b967d7	rca:Rcas_3848	mandelate racemase/muconate lactonizing protein	Roseiflexus castenholzii DSM 13941	KEGG
+b42bd138c37a0f2f7efc2a085cd18f29	bur:Bcep18194_B2837	mandelate racemase/muconate lactonizing protein (EC:4.1.2.21)	Burkholderia sp. 383	KEGG
+b7c35fddc52d3942fee0c87d7d2a8445	htu:Htur_3894	mandelate racemase/muconate lactonizing protein	Haloterrigena turkmenica DSM 5511	KEGG
+bc52b98a0fbd7a55c88d7cadb468368f	lrh:LGG_02664	galactonate dehydratase	Lactobacillus rhamnosus GG	KEGG
+bcf6de6f52f6d191c51c47133baeeb5e	hvo:HVO_A0331	mandelate racemase/muconate lactonizing enzyme family protein	Haloferax volcanii DS2	KEGG
+c64011e9b1fafb4bc7507516846242f3	sil:SPOA0428	mandelate racemase/muconate lactonizing enzyme family protein	Silicibacter pomeroyi DSS-3	KEGG
+cb76f33ff65cb153af92c646a05c536d	vdi:Vdis_1648	mandelate racemase/muconate lactonizing protein	Vulcanisaeta distributa DSM 14429	KEGG
+d29ed3bbd95665cdfe41ee6d9de738f0	str:Sterm_0218	mandelate racemase/muconate lactonizing protein	Sebaldella termitidis ATCC 33386	KEGG
+d555419a5dac74a5c3d1034f1e569771	gka:GK1955	galactonate dehydratase (EC:4.2.1.6)	Geobacillus kaustophilus HTA426	KEGG
+d6aa6e6e6aa6bb7246206a94f60660d8	hma:rrnAC3069	galactonate dehydratase	Haloarcula marismortui ATCC 43049	KEGG
+dfebc7d7c4740372391f44eeea729596	gym:GYMC10_4825	galactonate dehydratase	Geobacillus sp. Y412MC10	KEGG
+e1465d6350856e425c89a48c5c2c3398	scb:SCAB_63921	dehydratase	Streptomyces scabiei 87.22	KEGG
+e6edbf0b75f4637bb9fb63dfe698f279	tro:trd_1956	2-oxo-3-deoxygalactonate 6-phosphate aldolase and galactonate dehydratase	Thermomicrobium roseum DSM 5159	KEGG
+ea97840a3bcf2459fcca5ee99a4506b2	bgf:BC1003_1702	mandelate racemase/muconate lactonizing protein	Burkholderia sp. CCGE1003	KEGG
+ed0500c1ec62dff38e07366196e0137d	hmu:Hmuk_0122	galactonate dehydratase	Halomicrobium mukohataei DSM 12286	KEGG
+ed124bcf4c56cd696d5b2c9b309fb65d	dfe:Dfer_5256	mandelate racemase/muconate lactonizing protein	Dyadobacter fermentans DSM 18053	KEGG
+ef9ea3d93c568278feef74e9db8cb9e0	csc:Csac_2739	mandelate racemase/muconate lactonizing protein	Caldicellulosiruptor saccharolyticus DSM 8903	KEGG
+f0653141dc0899697e2ce32fcd4bb6d7	sto:ST2366	hypothetical protein	Sulfolobus tokodaii strain7	KEGG
+f13c23f85db579ae0cef18b11190811e	tmt:Tmath_0217	mandelate racemase/muconate lactonizing protein	Thermoanaerobacter mathranii subsp. mathranii A3	KEGG
+f82487a9aa254cc6d98dd12a9d7a7e79	htu:Htur_4653	mandelate racemase/muconate lactonizing protein	Haloterrigena turkmenica DSM 5511	KEGG
+f88049dc0cf90a38675fa62f9e8c9547	jan:Jann_1665	mandelate racemase/muconate lactonizing enzyme	Jannaschia sp. CCS1	KEGG
+f9906d2a133c3a6d8b39d85c51f680ed	rxy:Rxyl_0552	mandelate racemase/muconate lactonizing-like protein	Rubrobacter xylanophilus DSM 9941	KEGG
+fb2ef5791fa277abed2d66cb53e98b2f	pjd:Pjdr2_2992	mandelate racemase/muconate lactonizing protein	Paenibacillus sp. JDR-2	KEGG

@@ -312,6 +312,7 @@ def kegg_handler(db, hits)
   # Scan the hits collection until we find something that's in the map
   hits.each do |hit|
     if khits = @data[db][:md5map][hit[:target]]
+      warn "Found khits for #{hit[:subject]}: #{khits}" if @options[:verbose]
       khits.each do |khit|
 	hierarchies = @data[db][:k_map][khit[:k_number]]
 	if hierarchies.length > 0
@@ -325,6 +326,7 @@ def kegg_handler(db, hits)
       return
     end
   end
+  warn "Found NO khits for #{hits[0][:subject]}" if @options[:verbose]
 end
 
 def ncbi_handler(db, hits)
