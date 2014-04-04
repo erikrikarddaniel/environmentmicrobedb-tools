@@ -100,7 +100,7 @@ end
 
 def _log_hits(hits, linenum = false)
   if hits.length == 0
-    warn "No hits to handle"
+    warn "No hits to handle" if @options[:verbose]
     return
   end
   warn "#{ linenum ? "#{linenum}: " : ""}Hits for #{hits[0][:subject]}: #{hits.map { |h| h[:target] }.join(", ")}" if @options[:verbose]
@@ -345,8 +345,8 @@ def seed_handler(db, hits)
   return if hits.length == 0
 
   trace = false
-  if @options[:traceids].find { |tid| tid == hits[0][:subject] }
-    warn "#{__LINE__}: Handling traced id #{hits[0][:subject]}" 
+  if @options[:traceids] and @options[:traceids].find { |tid| tid == hits[0][:subject] }
+    warn "\tTRACEID #{__LINE__}: Handling traced id #{hits[0][:subject]}" 
     trace = true
   end
 
@@ -381,6 +381,8 @@ def seed_handler(db, hits)
 	warn "\tTRACEID #{__LINE__}: t: '#{t}'" if trace
 	seed_hits[t] = true 
       end
+      warn "\tTRACEID #{__LINE__}: Breaking out" if trace
+      break
     end
   end
   seed_hits.keys.each do |ss|
