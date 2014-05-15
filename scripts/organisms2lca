@@ -152,7 +152,7 @@ def lookup(organism)
   warn "Looking up #{organism}" if @options[:verbose]
   while ( true ) do
     begin
-      url = @options[:service] + organism.gsub(" ", "%20")
+      url = @options[:service] + organism.gsub(" ", "%20").gsub("'", "''")
       json = @httpclient.get_content(url)
       o = JSON.parse(json)
       @names_out.puts "#{organism}\t#{json}" if @names_out
