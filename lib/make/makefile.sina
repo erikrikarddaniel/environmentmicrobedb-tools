@@ -1,13 +1,14 @@
 SILVA_DIR = /proj/b2011210/nobackup/data/silva
 SILVA_SSU_BLAST_DB = $(SILVA_DIR)/SSURef
 SILVA_SSU_REF = $(SILVA_DIR)/SSURef.arb
+SILVA_SSU_REF_NR99 = $(SILVA_DIR)/SSURefNR99.arb
 
 SINA = @if [ `echo $@|grep 'sid_'|wc -l` -gt 0 ]; then \
 	  d=`echo $@|grep -o 'sid_[0-9][0-9]'|sed 's/sid_//'|awk '{printf "%f\n", $$1/100.0}'`; \
 	  minsim="--search-min-sim $$d"; \
 	elif [ `echo $@|grep 'otus_r'|wc -l` -gt 0 ]; then \
 	  r=`echo $@|grep -o 'otus_r[0-9]\+\.[0-9]\+'|sed 's/otus_r//'`; \
-	  d=`echo $$r |awk '{printf "%f\n",1.0 - $$1/100.0}'`; \
+	  d=`echo $$r |awk '{printf "%f\n",1.0 - $$1}'`; \
 	  minsim="--search-min-sim $$d"; \
 	elif [ `echo $@|grep '9[0-9]'|wc -l` -gt 0 ]; then \
 	  d=`echo $@|grep -o '9[0-9]'|awk '{printf "%f\n", $$1/100.0}'`; \
@@ -23,22 +24,34 @@ SINA = @if [ `echo $@|grep 'sid_'|wc -l` -gt 0 ]; then \
 	  --log-file $(basename $@).sinalog; \
 	killall arb_pt_server
 
-all_silva: $(subst .fasta,.silva_ssuref.arb,$(wildcard all*otus_r*fasta))
+all_silva: $(subst .fasta,.silva_ssuref_nr99.arb,$(wildcard all*otus_r*fasta))
 
-all_sid_95s: $(subst .fasta,.sid_95.silva_ssuref.arb,$(wildcard all*otus_r*fasta))
+all_sid_95s: $(subst .fasta,.sid_95.silva_ssuref_nr99.arb,$(wildcard all*otus_r*fasta))
 
-all_sid_90s: $(subst .fasta,.sid_90.silva_ssuref.arb,$(wildcard all*otus_r*fasta))
+all_sid_90s: $(subst .fasta,.sid_90.silva_ssuref_nr99.arb,$(wildcard all*otus_r*fasta))
 
-all_levels_silva_taxonomies: $(subst .silva_ssuref.sinalog,.silvataxonomy,$(wildcard *.silva_ssuref.sinalog))
+all_levels_silva_taxonomies: $(subst .silva_ssuref_nr99.sinalog,.silvataxonomy,$(wildcard *.silva_ssuref_nr99.sinalog))
 
 %.silva_ssuref.arb: %.fasta $(SILVA_SSU_REF)
+	$(SINA)
+
+%.silva_ssuref_nr99.arb: %.fasta $(SILVA_SSU_REF_NR99)
 	$(SINA)
 
 %.sid_95.silva_ssuref.arb: %.fasta $(SILVA_SSU_REF)
 	$(SINA)
 
+%.sid_95.silva_ssuref_nr99.arb: %.fasta $(SILVA_SSU_REF_NR99)
+	$(SINA)
+
 %.sid_90.silva_ssuref.arb: %.fasta $(SILVA_SSU_REF)
 	$(SINA)
 
-%.silvataxonomy: %.silva_ssuref.sinalog
+%.sid_90.silva_ssuref_nr99.arb: %.fasta $(SILVA_SSU_REF_NR99)
+	$(SINA)
+
+%.silvataxonomy_full_ssuref: %.silva_ssuref.sinalog
+	sina2taxonomy $< | sed 's/  */_/g' > $@
+
+%.silvataxonomy: %.silva_ssuref_nr99.sinalog
 	sina2taxonomy $< | sed 's/  */_/g' > $@

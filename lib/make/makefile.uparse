@@ -62,13 +62,13 @@ qc_all: $(subst .merged.fastq,.merged.qc.fasta,$(wildcard *.merged.fastq))
 .SECONDARY:
 
 %.merged.fastq: %.r1.fastq %.r2.fastq
-	usearch -fastq_mergepairs $< -reverse $(word 2, $^) $(MERGE_OPTIONS) -fastqout $@
+	usearch$(USEARCH64BIT) -fastq_mergepairs $< -reverse $(word 2, $^) $(MERGE_OPTIONS) -fastqout $@
 
 %.fastqstats: %.fastq
-	usearch -fastq_stats $< -log $@
+	usearch$(USEARCH64BIT) -fastq_stats $< -log $@
 
 %.qc.fasta: %.fastq
-	usearch -fastq_filter $< $(QC_PARAMETERS) -fastaout $@ | tee $@.out 2>&1
+	usearch$(USEARCH64BIT) -fastq_filter $< $(QC_PARAMETERS) -fastaout $@ | tee $@.out 2>&1
 
 qc_sum_stats.tsv: $(filter-out all_samples.merged.qc.fasta,$(wildcard *.merged.qc.fasta))
 	@echo "Sample	Before	After	Prop. disc." > $@; \
@@ -87,7 +87,7 @@ all_samples.merged.qc.fasta: $(filter-out all_samples.merged.qc.fasta,$(wildcard
 	usearch$(USEARCH64BIT) -derep_fulllength $< -output $@ -sizeout
 
 %.sorted.fasta: %.fasta
-	usearch -sortbysize $< -output $@ $(MINSIZE)
+	usearch$(USEARCH64BIT) -sortbysize $< -output $@ $(MINSIZE)
 
 makefile.otu_clustering:
 	@echo -n "all_otus: " > $@
@@ -115,7 +115,7 @@ makefile.otu_clustering:
 	  echo "	id=\`echo \$$\$$r | awk '{ print sprintf(\"%1.4f\", 1.0 - \$$\$$1/100) }'\`; \\"; \
 	  echo "	if [ ! -e \$$\$$outdir ]; then mkdir \$$\$$outdir; fi; \\"; \
 	  echo "	for sample in \$$(wordlist 2,10000,\$$^); do \\"; \
-	  echo "	  usearch -usearch_global \$$\$$sample -db \$$< -strand plus -id \$$\$$id -uc \$$\$$outdir/\`basename \$$\$$sample .fasta\`.uc; \\"; \
+	  echo "	  usearch$(USEARCH64BIT) -usearch_global \$$\$$sample -db \$$< -strand plus -id \$$\$$id -uc \$$\$$outdir/\`basename \$$\$$sample .fasta\`.uc; \\"; \
 	  echo "	done"; \
 	  echo "	touch \$$@"; \
 	  echo ; \
