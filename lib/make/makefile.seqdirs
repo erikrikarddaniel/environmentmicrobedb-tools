@@ -1,0 +1,7 @@
+SHELL := /bin/bash
+
+%.fastq.gz: %.fastq
+	gzip $<
+
+%.intl.fasta.gz: %.read1.fastq.gz %.read2.fastq.gz
+	fq2fa --merge --filter <(gunzip -c $<) <(gunzip -c $(word 2,$^)) >(gzip -c > $@)

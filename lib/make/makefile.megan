@@ -1,0 +1,16 @@
+# Makefile with pattern rules for common Megan associated tasks.
+
+# I'm using subshell constructs only found in bash:
+SHELL := /bin/bash
+
+# DIAMOND alignment
+REFSEQ_DIAMOND_DB = /proj/b2011210/nobackup/data/ncbi/refseq_protein.dmnd
+
+DIAMOND_OPTS = --min-score 40 --sensitive --tmpdir $(SNIC_TMP) --threads 8
+
+#%.refseq-diamond.sam: %.fastq.gz $(REFSEQ_DIAMOND_DB)
+#	cp $(word 2,$^) $(SNIC_TMP)
+#	diamond blastx -d $(SNIC_TMP)/$(basename $(word 2,$^)) --query <(gunzip -c $<) --sam $@ $(DIAMOND_OPTS)
+
+%.refseq-diamond.sam: %.fastq $(REFSEQ_DIAMOND_DB)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< --sam $@ $(DIAMOND_OPTS)

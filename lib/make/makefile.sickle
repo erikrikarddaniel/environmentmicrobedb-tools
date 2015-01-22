@@ -1,5 +1,12 @@
+SHELL := /bin/bash
+
 SICKLE_OPTS = 
 SICKLE_PE_OPTS = 
 
-%.pesickle.fastq: %_1.fastq.gz %_2.fastq.gz
-	sickle pe $(SICKLE_OPTS) $(SICKLE_PE_OPTS) -f $< -r $(word 2,$^) -t sanger -o $(basename $@).r1.fastq -p $(basename $@).r2.fastq -s $(basename $@).stons.fastq
+SICKLE = sickle pe $(SICKLE_OPTS) $(SICKLE_PE_OPTS) -f $< -r $(word 2,$^) -t sanger -o >(gzip -c > $@.read1.fastq.gz) -p >(gzip -c > $@.read2.fastq.gz) -s >(gzip -c > $@.unpaired.fastq.gz)
+
+%.pesickle: %.read1.fastq.gz %.read2.fastq.gz
+	$(SICKLE)
+
+%.pesickle: %_1.fastq.gz %_2.fastq.gz
+	$(SICKLE)
