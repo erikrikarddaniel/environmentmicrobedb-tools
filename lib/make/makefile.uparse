@@ -84,10 +84,10 @@ all_samples.merged.qc.fasta: $(filter-out all_samples.merged.qc.fasta,$(wildcard
 	cat $^ > $@
 
 %.derep.fasta: %.fasta
-	usearch$(USEARCH64BIT) -derep_fulllength $< -output $@ -sizeout
+	usearch$(USEARCH64BIT) -derep_fulllength $< -fastaout $@ -sizeout
 
 %.sorted.fasta: %.fasta
-	usearch$(USEARCH64BIT) -sortbysize $< -output $@ $(MINSIZE)
+	usearch$(USEARCH64BIT) -sortbysize $< -fastaout $@ $(MINSIZE)
 
 makefile.otu_clustering:
 	@echo -n "all_otus: " > $@
