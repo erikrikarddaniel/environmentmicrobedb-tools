@@ -11,6 +11,12 @@ CREATE_SUBDIRECTORY_LINK = [ ! -e Makefile ] && ln -s $(MAKEFILE_REPOSITORY)/$(A
 	assemstats 100 `cat $<`	> $@
 	rm $<
 
+%.assemstats.tsv: %.fna
+	echo "minlen	sum	n	trim_n	min	med	mean	max	n50	n50_len	n90	n90_len	filename" > $@
+	for n in 100 1000 10000 100000; do \
+	  echo "$$n	`assemstats $$n $< | grep -v 'sum'`" >> $@; \
+	done
+
 %.mapback: %.contigfilelist
 	for f in `cat $<`; do ( cd `dirname $$f`; $(CREATE_SUBDIRECTORY_LINK); make mapback); done
 	rm $<
