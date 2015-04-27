@@ -5,12 +5,16 @@ SHELL := /bin/bash
 
 # DIAMOND alignment
 REFSEQ_DIAMOND_DB = /proj/b2011210/nobackup/data/ncbi/refseq_protein.dmnd
+NR_DIAMOND_DB = /proj/b2011210/nobackup/data/ncbi/nr.dmnd
 
-DIAMOND_OPTS = --min-score 40 --sensitive --tmpdir $(SNIC_TMP) --threads 8
+DIAMOND_OPTS = --min-score 30 --max-target-seqs 500 --sensitive --tmpdir $(SNIC_TMP) --threads 16
 
 #%.refseq-diamond.sam: %.fastq.gz $(REFSEQ_DIAMOND_DB)
 #	cp $(word 2,$^) $(SNIC_TMP)
 #	diamond blastx -d $(SNIC_TMP)/$(basename $(word 2,$^)) --query <(gunzip -c $<) --sam $@ $(DIAMOND_OPTS)
 
 %.refseq-diamond.sam: %.fastq $(REFSEQ_DIAMOND_DB)
-	diamond blastx -d $(basename $(word 2,$^)) --query $< --sam $@ $(DIAMOND_OPTS)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< --sam $@ -o $(basename $@).blast8 $(DIAMOND_OPTS)
+
+%.nr-diamond.sam: %.faa $(NR_DIAMOND_DB)
+	diamond blastp -d $(basename $(word 2,$^)) --query $< --sam $@ -o $(basename $@).blast8 $(DIAMOND_OPTS)
