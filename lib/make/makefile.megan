@@ -3,6 +3,10 @@
 # I'm using subshell constructs only found in bash:
 SHELL := /bin/bash
 
+# Create a Megan file using commands in a file ending with .mkrma
+%.rma: %.mkrma
+	        xvfb-run --auto-servernum --server-num=1 MEGAN -g +s -c $<
+
 # DIAMOND alignment
 REFSEQ_DIAMOND_DB = /proj/b2011210/nobackup/data/ncbi/refseq_protein.dmnd
 NR_DIAMOND_DB = /proj/b2011210/nobackup/data/ncbi/nr.dmnd
@@ -13,8 +17,26 @@ DIAMOND_OPTS = --min-score 30 --max-target-seqs 500 --sensitive --tmpdir $(SNIC_
 #	cp $(word 2,$^) $(SNIC_TMP)
 #	diamond blastx -d $(SNIC_TMP)/$(basename $(word 2,$^)) --query <(gunzip -c $<) --sam $@ $(DIAMOND_OPTS)
 
-%.refseq-diamond.sam: %.fastq $(REFSEQ_DIAMOND_DB)
-	diamond blastx -d $(basename $(word 2,$^)) --query $< --sam $@ -o $(basename $@).blast8 $(DIAMOND_OPTS)
+%.nr-diamond.daa: %.fastq $(NR_DIAMOND_DB)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
 
-%.nr-diamond.sam: %.faa $(NR_DIAMOND_DB)
-	diamond blastp -d $(basename $(word 2,$^)) --query $< --sam $@ -o $(basename $@).blast8 $(DIAMOND_OPTS)
+%.refseq-diamond.daa: %.fastq $(REFSEQ_DIAMOND_DB)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
+
+%.nr-diamond.daa: %.fna $(NR_DIAMOND_DB)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
+
+%.refseq-diamond.daa: %.fna $(REFSEQ_DIAMOND_DB)
+	diamond blastx -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
+
+%.nr-diamond.daa: %.faa $(NR_DIAMOND_DB)
+	diamond blastp -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
+
+%.refseq-diamond.daa: %.faa $(REFSEQ_DIAMOND_DB)
+	diamond blastp -d $(basename $(word 2,$^)) --query $< -a $(basename $@) $(DIAMOND_OPTS)
+
+%.sam: %.daa
+	diamond view -f sam -a $< -o $@
+
+%.blast8: %.daa
+	diamond view -f tab -a $< -o $@
