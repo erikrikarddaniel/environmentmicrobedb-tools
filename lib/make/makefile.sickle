@@ -7,6 +7,8 @@ SICKLE = sickle pe $(SICKLE_OPTS) $(SICKLE_PE_OPTS) -f $< -r $(word 2,$^) -t san
 
 %.pesickle: %.read1.fastq.gz %.read2.fastq.gz
 	$(SICKLE)
+	touch $@
 
 %.pesickle: %_1.fastq.gz %_2.fastq.gz
 	$(SICKLE)
+	touch $@

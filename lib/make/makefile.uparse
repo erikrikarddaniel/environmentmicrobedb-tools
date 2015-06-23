@@ -12,6 +12,8 @@ MINSIZE = -minsize 2
 
 OTUTAXTABLE = perl -e 'BEGIN { print "otu sequence\n"; } s/\s*\n//; if ( /^>(.*)/ ) { print "$$s\n" if $$s; $$s = "$$1 "; } else { $$s .= $$_; } END { print "$$s\n" }' -n $(word 2, $^) | join -j 1 $< - | join -j 1 - $(word 3,$^) | sed 's/ /\t/g' > $@
 
+SEQ_PREFIX = MISEQ
+
 # Copies files using cp or gunzip -c from the INBOX to the current directory
 # following names in the colon separated file sample_list.
 copy_samples: sample_list
@@ -47,8 +49,8 @@ merge_stats.tsv: $(wildcard *.merged.fastq)
 	echo "sample	r1-count	merged-count	prop. left" > $@
 	for mf in $^; do \
 	  s=`basename $$mf .merged.fastq`; \
-	  r1=`grep -c '^@HWI' $$s.r1.fastq`; \
-	  m=`grep -c '@HWI' $$mf`; \
+	  r1=`grep -c '^@$(SEQ_PREFIX)' $$s.r1.fastq`; \
+	  m=`grep -c '@$(SEQ_PREFIX)' $$mf`; \
 	  echo "$$s	$$r1	$$m	`echo \"$${m}.0 $${r1}.0\" | awk '{ print $$1/$$2}'`"; \
 	done >> $@
 
@@ -74,7 +76,7 @@ qc_sum_stats.tsv: $(filter-out all_samples.merged.qc.fasta,$(wildcard *.merged.q
 	@echo "Sample	Before	After	Prop. disc." > $@; \
 	for f in $^; do \
 	  b=`basename $$f .qc.fasta`; \
-	  nb=`grep -c '^@HWI' $$b.fastq`; \
+	  nb=`grep -c '^@$(SEQ_PREFIX)' $$b.fastq`; \
 	  na=`grep -c '^>' $$f`; \
 	  d=`expr $$nb - $$na`; \
 	  echo "$$b $$nb $$na $$d" | awk '{ print $$1 "\t" $$2 "\t" $$3 "\t" $$4/$$2}'; \
